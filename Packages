@@ -1,0 +1,16 @@
+Package: hnparser
+Version: 0.1.0-1704656532
+Architecture: amd64
+Maintainer: HN parser developer <ibylich@gmail.com>
+Installed-Size: 11065
+Depends: libssl3 (>= 3.0.0~~alpha1), systemd, libc6 (>= 2.34)
+Filename: ./hnparser_0.1.0-1704656532_amd64.deb
+Size: 3038264
+MD5sum: 4dcf68881e9aef4c2839a23740bc2b24
+SHA1: a7e9d976f3e52cf311c947174557e6c4ce13369a
+SHA256: 0e692c0865cf0d2f6c032a566e59e2e517feecd16738c95a8b6245048abf953d
+Section: admin
+Priority: optional
+Description: [generated from Rust crate hnparser]
+ HN parser
+

@@ -1,0 +1,5 @@
+Types: deb
+URIs: https://iliabylich.github.io/ppa/
+Suites: ./
+Components:
+Signed-By: /etc/apt/trusted.gpg.d/iliabylich_ppa.gpg

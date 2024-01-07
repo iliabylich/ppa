@@ -1,0 +1,626 @@
+Package: aquamarine
+Version: 0.8.0-1
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 1593
+Depends: hyprutils, libc6 (>= 2.38), libdisplay-info2 (>= 0.2.0), libdrm2 (>= 2.4.119), libegl1, libgbm1 (>= 21.3.0~rc1), libgcc-s1 (>= 4.3), libinput10 (>= 1.26.0), libopengl0, libseat1 (>= 0.5.0), libstdc++6 (>= 13.1), libudev1 (>= 183), libwayland-client0 (>= 1.20.0)
+Filename: ./aquamarine_0.8.0-1_amd64.deb
+Size: 390172
+MD5sum: 737922353f931b2348ce6d3246de04ef
+SHA1: e3d2f006513e07f6142b72b7fa71aa9cb74ce31a
+SHA256: e92f346a1e40f49c00102133c3f0edcd75540ffb82e5e318ef67647ead8ca8f6
+Section: utils
+Priority: extra
+Description: Aquamarine is a very light linux rendering backend library
+
+Package: bzmenu
+Version: 0.2.1
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 5509
+Depends: libc6 (>= 2.39), libdbus-1-3 (>= 1.10), libgcc-s1 (>= 4.2), bluez
+Filename: ./bzmenu_0.2.1_amd64.deb
+Size: 1577280
+MD5sum: 5b3083a189e2ee9831848f57fdbfbef6
+SHA1: 75b610f497f6b1de4639cc4eb075cae99a122976
+SHA256: 141c8b0c43db2e24bf0bd9ea9707e9aedc73b902d121fca4ef423a158732d5c1
+Section: utils
+Priority: extra
+Description: Launcher-driven Wi-Fi manager for Linux
+
+Package: fonts-adwaita-mono-nerd
+Version: 3.4.0
+Architecture: all
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 46482
+Filename: ./fonts-adwaita-mono-nerd_3.4.0_all.deb
+Size: 7914812
+MD5sum: 67fa86031d4509f73786d76ef4b2397e
+SHA1: c0bd10b763131f0001da4d38e8fc513178afc9dd
+SHA256: d2eca9fd9ad82aec15c60a8ca7b3d429f61e62eb452f311705c26d668d9a28a2
+Section: utils
+Priority: extra
+Description: The Adwaita Mono font family (patched with NerdFont)
+
+Package: fonts-apple-color-emoji
+Version: 18.4
+Architecture: all
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 42168
+Filename: ./fonts-apple-color-emoji_18.4_all.deb
+Size: 42109352
+MD5sum: edbdc51da23148235427452210561aeb
+SHA1: 91f3beaffc184b6ed991eb0073633c83367ef0c7
+SHA256: 13f6603a65186bf43af1d6f71257652c0abf07a9bbe1a51f72ac49c68e5a9880
+Section: utils
+Priority: extra
+Description: Apple Color Emoji font
+
+Package: fonts-inter-variable-nerd
+Version: 4.1
+Architecture: all
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 94016
+Filename: ./fonts-inter-variable-nerd_4.1_all.deb
+Size: 10592476
+MD5sum: 6974c09f129977a1615e158be8477d0b
+SHA1: 6020439a2da724f320298ca7ef2958e515e3b9fa
+SHA256: 0a2c1b23a8c4bea3c3f7be21470a557c4d303f853c01657a5e6a6e743b19dd18
+Section: utils
+Priority: extra
+Description: The Inter font family (patched with NerdFont)
+
+Package: fx
+Version: 0.0.1751461338
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 11295
+Filename: ./fx_0.0.1751461338_amd64.deb
+Size: 3018852
+MD5sum: 74629a1a6efe5e461f41272e22871f00
+SHA1: 400d152d1a28086a0fbecb15cb47f947a119bca4
+SHA256: d191001b32177c5ba852fe4ab7761efa4ca3433f918040a2a046a9c600ac58d2
+Section: utils
+Priority: extra
+Description: Terminal JSON viewer & processor
+
+Package: gaskpass
+Version: 1.0.1
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 24
+Depends: libc6 (>= 2.34), libglib2.0-0t64 (>= 2.32.0), libgtk-4-1 (>= 4.0.0)
+Filename: ./gaskpass_1.0.1_amd64.deb
+Size: 3948
+MD5sum: b1c47ad024b38060a0e97358b172427b
+SHA1: 9e98f989b564af1d550c0a0ee186657703261c55
+SHA256: f5a2f5b562a90974f02a468c409c3eb21aa7b842d6e8f4e7811074516d32b8da
+Section: utils
+Priority: extra
+Description: a micro tool written in GTK4 to be used as SUDO_ASKPASS
+
+Package: ghostty
+Version: 1.1.3
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 33686
+Depends: libadwaita-1-0 (>= 1.5~beta), libc6 (>= 2.38), libfontconfig1 (>= 2.12.6), libglib2.0-0t64 (>= 2.42.0), libgtk-4-1 (>= 4.12.0), libwayland-client0 (>= 1.9.91), libx11-6
+Filename: ./ghostty_1.1.3_amd64.deb
+Size: 15981032
+MD5sum: 69a7fb5ffc957355b1f163f10ce352ac
+SHA1: 1745bd563134ec23dae7e17a87fdd2491fb4cced
+SHA256: 51702b0f47ae55dc1c9429264cebac8df48caa107cdcfac109f352cd7e74c032
+Section: utils
+Priority: extra
+Description: Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration.
+
+Package: gnome-terminal
+Version: 4.0.0
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 6096
+Depends: libadwaita-1-0 (>= 1.4~beta), libc6 (>= 2.38), libcairo2 (>= 1.2.4), libgcc-s1 (>= 3.0), libglib2.0-0t64 (>= 2.83.0), libgtk-4-1 (>= 4.9.2), libpango-1.0-0 (>= 1.45.5), libstdc++6 (>= 4.1.1), libuuid1 (>= 2.16), libvte-2.91-gtk4-0 (>= 0.79.90), libx11-6
+Filename: ./gnome-terminal_4.0.0_amd64.deb
+Size: 911448
+MD5sum: 57d438e9f3525f46a0e84d5cda3f66fc
+SHA1: b70df0d76ff08acf6aca89618fd51c77839f673d
+SHA256: 35db9ded721a2bb8c3ac44208c69bc52851a221da0eb4ceaa05934502eee3b4b
+Section: utils
+Priority: extra
+Description: GNOME Terminal
+
+Package: hnparser
+Version: 0.0.1751571540
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 4347
+Filename: ./hnparser_0.0.1751571540_amd64.deb
+Size: 1591968
+MD5sum: 6e1a42f83508ddfa905c69a0540140de
+SHA1: 28ca211d698e9728ae76475d018c5dd8cbc5e2ff
+SHA256: 42a9d9c501a9949fa2c39f7d3599ff01e880969296cc6dc104accaa7db110fbe
+Section: utils
+Priority: extra
+Description: HN parser
+
+Package: hyprcursor
+Version: 0.1.12-1
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 711
+Depends: hyprlang, libc6 (>= 2.38), libcairo2 (>= 1.2.4), libgcc-s1 (>= 4.3), libglib2.0-0t64 (>= 2.12.0), librsvg2-2 (>= 2.46.0), libstdc++6 (>= 13.1), libtomlplusplus3t64 (>= 3.2.0), libzip5 (>= 1.0)
+Filename: ./hyprcursor_0.1.12-1_amd64.deb
+Size: 190076
+MD5sum: d0c9c8b4382105a1130f45196fb461ed
+SHA1: 02405e9015fe35c1435513f0aefafd0d7a863867
+SHA256: 491e56332c30e73d28b1351af11438921d5ad59e0b22f3b15726132a0b8f0cb7
+Section: utils
+Priority: extra
+Description: The hyprland cursor format, library and utilities.
+
+Package: hyprgraphics
+Version: 0.1.3
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 210
+Depends: hyprutils, libc6 (>= 2.29), libcairo2 (>= 1.10.0), libgcc-s1 (>= 4.3), libjpeg62-turbo (>= 1.3.1), libjxl0.11 (>= 0.7.0), libmagic1t64 (>= 5.12), libspng0 (>= 0.7.3), libstdc++6 (>= 13), libwebp7 (>= 1.5.0)
+Filename: ./hyprgraphics_0.1.3_amd64.deb
+Size: 67608
+MD5sum: 169d1a5c5300bba6f517da91e9b6795f
+SHA1: 25b866eb0e6be0ce235b18b96ae13a72bf99f411
+SHA256: c52f9a8c5c9695c974579fcfc8ae61a2b2d3000cff27597565c01f793f683621
+Section: utils
+Priority: extra
+Description: Hyprland graphics / resource utilities
+
+Package: hyprland
+Version: 0.49.0
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 16639
+Depends: aquamarine, hyprcursor, hyprgraphics, hyprlang, hyprutils, libc6 (>= 2.38), libcairo2 (>= 1.2.4), libdrm2 (>= 2.4.116), libegl1, libgbm1 (>= 7.11~1), libgcc-s1 (>= 4.3), libgles2 (>= 1.0.0), libglib2.0-0t64 (>= 2.40.0), libinput10 (>= 1.23.0), libpango-1.0-0 (>= 1.18.0), libpangocairo-1.0-0 (>= 1.14.0), libpixman-1-0 (>= 0.11.2), libre2-11-absl20240722, libstdc++6 (>= 14), libtomlplusplus3t64 (>= 3.2.0), libuuid1 (>= 2.16), libwayland-server0 (>= 1.23.0), libxcb-composite0, libxcb-errors0 (>= 1.0.1), libxcb-icccm4 (>= 0.4.2), libxcb-render0, libxcb-res0 (>= 1.10), libxcb-xfixes0, libxcb1, libxcursor1 (>> 1.1.2), libxkbcommon0 (>= 0.8.0)
+Filename: ./hyprland_0.49.0_amd64.deb
+Size: 3303432
+MD5sum: f131b806880f6dcce40ed88a1fd82cbf
+SHA1: 57d8b154df47894f704f9c0f55a8f8fabe2ee590
+SHA256: f5379f40334ce33fd5de75c43a7fc58c00ab11d67e8c448d7db9238afe6083d4
+Section: utils
+Priority: extra
+Description: Hyprland is an independent, highly customizable, dynamic tiling Wayland compositor that doesn't sacrifice on its looks.
+
+Package: hyprland-protocols
+Version: 0.6.4
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 56
+Filename: ./hyprland-protocols_0.6.4_amd64.deb
+Size: 8380
+MD5sum: 029f7c08536d4b38f6c4a20135201084
+SHA1: d4435d3b240d0e6aa15232853b12776dfbde19d1
+SHA256: 6fa3a37a9f70c0d467ee0f0a1b96aeeb939db744c9e3bb5d895e02e0153c289b
+Section: utils
+Priority: extra
+Description: Wayland protocol extensions for Hyprland
+
+Package: hyprland-qt-support
+Version: 0.1.0-3
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 499
+Depends: hyprlang, libc6 (>= 2.14), libgcc-s1 (>= 3.0), libqt6core6t64 (>= 6.8.2), libqt6gui6 (>= 6.1.2), libqt6qml6 (>= 6.6.0), libqt6quick6 (>= 6.6.0), libstdc++6 (>= 5), qt6-base-private-abi (= 6.8.2)
+Filename: ./hyprland-qt-support_0.1.0-3_amd64.deb
+Size: 85072
+MD5sum: 5f85c31da214e54cc426435451e4a7d4
+SHA1: 322bcd4f46c6697209c3ade9a2c705c84668927c
+SHA256: 2aba8e87dc4da337d2f8c696eddf73ba05ed18ac8d2f1672bb102831e48feffd
+Section: utils
+Priority: extra
+Description: A qml style provider for hypr* qt apps
+
+Package: hyprland-qtutils
+Version: 0.1.4
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 456
+Depends: hyprutils, libc6 (>= 2.34), libgcc-s1 (>= 4.3), libqt6core6t64 (>= 6.8.2), libqt6gui6 (>= 6.1.2), libqt6qml6 (>= 6.6.0), libqt6quickcontrols2-6 (>= 6.6.0), libqt6widgets6 (>= 6.1.2), libstdc++6 (>= 13), qml6-module-qtcore, qml6-module-qtqml-workerscript, qml6-module-qtqml-models, qml6-module-qtquick, qml6-module-qtquick-controls, qml6-module-qtquick-layouts, qml6-module-qtquick-templates, qml6-module-qtquick-window
+Filename: ./hyprland-qtutils_0.1.4_amd64.deb
+Size: 93212
+MD5sum: 87f8f7b72e2356a9309af593ccde4b77
+SHA1: b6917127fdcdbd6b6f00e268b3be144552b44c03
+SHA256: f36c75083b11622eb0a4a78ef7c21ebd2762a43d0759a2087ec8ce7c7056b09a
+Section: utils
+Priority: extra
+Description: Hyprland QT/qml utility apps
+
+Package: hyprlang
+Version: 0.6.3
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 264
+Depends: hyprutils, libc6 (>= 2.38), libgcc-s1 (>= 4.3), libstdc++6 (>= 13)
+Filename: ./hyprlang_0.6.3_amd64.deb
+Size: 89328
+MD5sum: 33b478694a8c87dfd99ddda3291ee3c9
+SHA1: 115ca36fc860629fa63025b2af6faef4cbbe07a1
+SHA256: 09bf5f77f5261ae4e731bf00e3c1fc14ce560b089986cee5e79c5d0549b2c090
+Section: utils
+Priority: extra
+Description: The official implementation library for the hypr config language.
+
+Package: hyprlock
+Version: 0.8.2
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 1149
+Depends: hyprgraphics, hyprlang, hyprutils, libc6 (>= 2.38), libcairo2 (>= 1.2.4), libdrm2 (>= 2.4.109), libegl1, libgbm1 (>= 21.3.0~rc1), libgcc-s1 (>= 4.3), libgles2 (>= 1.0.0), libglib2.0-0t64 (>= 2.12.0), libpam0g (>= 0.99.7.1), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libsdbus-c++2 (>= 2.1.0), libstdc++6 (>= 13), libwayland-client0 (>= 1.20.0), libwayland-egl1 (>= 1.15.0), libxkbcommon0 (>= 0.5.0)
+Filename: ./hyprlock_0.8.2_amd64.deb
+Size: 325640
+MD5sum: 6022187d5a803a9897489493a02eb5b3
+SHA1: 93894607040d34c5cda71f304d033a0efbcbc5be
+SHA256: af4ded3f0dd99252be0b4d166e669f05aef3c6e54fb38f3aef8552b058637b2f
+Section: utils
+Priority: extra
+Description: Hyprland's GPU-accelerated screen locking utility
+
+Package: hyprpolkitagent
+Version: 0.1.2-3
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 208
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 4.3), libpolkit-qt6-1-1 (>= 0.200.0), libqt6core6t64 (>= 6.8.2), libqt6gui6 (>= 6.1.2), libqt6qml6 (>= 6.6.0), libqt6quickcontrols2-6 (>= 6.6.0), libqt6widgets6 (>= 6.1.2), libstdc++6 (>= 13)
+Filename: ./hyprpolkitagent_0.1.2-3_amd64.deb
+Size: 65688
+MD5sum: 077b91fda54e02bf4bd34747447b11be
+SHA1: 8c230a73f757e5ec14c13bb9fa250e6674c1608e
+SHA256: 80f36a2220ff496373b26a42e28d40e30b9954f78e68638f77a435ab7923061d
+Section: utils
+Priority: extra
+Description: A polkit authentication agent written in QT/QML
+
+Package: hyprspace
+Version: 0-0-stamp
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 11626
+Depends: libc6 (>= 2.32), libgcc-s1 (>= 4.3), libstdc++6 (>= 13.1)
+Filename: ./hyprspace_0-0-stamp_amd64.deb
+Size: 2643184
+MD5sum: 523f447fd2f7d8a25e4772fb395852e4
+SHA1: 9ce47a7cd885849e4d842aae6e4ad93007bc73dc
+SHA256: f63d9c50b3280d96d5590c557e7e104a5bfd8efc038cee1b914fa4045bfb4baf
+Section: utils
+Priority: extra
+Description: Workspace overview plugin for Hyprland
+
+Package: hyprsunset
+Version: 0.2.0-1
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 254
+Depends: hyprutils, libc6 (>= 2.38), libgcc-s1 (>= 4.3), libstdc++6 (>= 13.1), libwayland-client0 (>= 1.20.0)
+Filename: ./hyprsunset_0.2.0-1_amd64.deb
+Size: 73444
+MD5sum: e4cb034ada7141e1404ff67b66893ede
+SHA1: 26ada822ff904dada2c3cbee479a7b7b82207515
+SHA256: 2ab6ddf71e548e7f94dad489afb8a42cd68e456f6b972dad51b6b86036da1226
+Section: utils
+Priority: extra
+Description: An application to enable a blue-light filter on Hyprland
+
+Package: hyprsysteminfo
+Version: 0.1.3-3
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 243
+Depends: hyprutils, libc6 (>= 2.38), libgcc-s1 (>= 4.3), libqt6core6t64 (>= 6.8.2), libqt6gui6 (>= 6.1.2), libqt6qml6 (>= 6.6.0), libqt6quick6 (>= 6.6.0), libqt6quickcontrols2-6 (>= 6.6.0), libqt6waylandclient6 (>= 6.6.0), libqt6widgets6 (>= 6.1.2), libstdc++6 (>= 13), qt6-waylandclient-private-abi (= 6.8.2)
+Filename: ./hyprsysteminfo_0.1.3-3_amd64.deb
+Size: 77612
+MD5sum: b07346b5fad1047ab29188214b0be89e
+SHA1: 0d1662a3943aec8b436a4ce19ceb0bcbf0e1dccd
+SHA256: d5b83ef05a88ec02321d2a8df4bc0a0ee2275f73d01070b894c9f73f3709f52e
+Section: utils
+Priority: extra
+Description: A tiny qt6/qml application to display information about the running system
+
+Package: hyprutils
+Version: 0.7.1
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 433
+Depends: libc6 (>= 2.14), libgcc-s1 (>= 4.3), libpixman-1-0 (>= 0.25.2), libstdc++6 (>= 13)
+Filename: ./hyprutils_0.7.1_amd64.deb
+Size: 121452
+MD5sum: 3491b0c4ed9e99b292582114b5302a3f
+SHA1: 3d45e980bf7bbeed62bc6068eec8d3e5abaf0848
+SHA256: af818606cb3f081dd00ff0e499fe5108f3dad4ad426692a7241faad911dcaa6f
+Section: utils
+Priority: extra
+Description: Hyprland utilities library used across the ecosystem
+
+Package: hyprwayland-scanner
+Version: 0.4.4-2
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 210
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 4.3), libpugixml1v5 (>= 1.4), libstdc++6 (>= 13.1)
+Filename: ./hyprwayland-scanner_0.4.4-2_amd64.deb
+Size: 73096
+MD5sum: 83561f2ca20e60eaafadd8e448c86ebf
+SHA1: 0e501abb1c0f4632f4260a7be2fb34f7587728e2
+SHA256: 10e97ed50ceaab2ee1e22b3deaf16320f279a72238415fd23150c7df12aa3689
+Section: utils
+Priority: extra
+Description: A Hyprland implementation of wayland-scanner, in and for C++.
+
+Package: iwmenu
+Version: 0.2.0
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 7485
+Depends: libc6 (>= 2.39), libgcc-s1 (>= 4.2), iwd
+Filename: ./iwmenu_0.2.0_amd64.deb
+Size: 2081688
+MD5sum: 2be7cbb0a7095ba8f19dfdc1d2e41b4a
+SHA1: 80abf6065f1225978eef6d20105f7f311f095290
+SHA256: 755dbd4789db795973d885bec866e8e890c72e6e5eb3bda5bedd3b1e66b7f8b6
+Section: utils
+Priority: extra
+Description: Launcher-driven Wi-Fi manager for Linux
+
+Package: layer-shell
+Version: 0.0.1751467301
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 7332
+Depends: libc6 (>= 2.39), libgcc-s1 (>= 4.2), libgdk-pixbuf-2.0-0 (>= 2.31.1), libglib2.0-0t64 (>= 2.40.0), libgtk-4-1 (>= 4.13.5), libgtk4-layer-shell0 (>= 1.0.2), libvte-2.91-gtk4-0 (>= 0.47.90), fonts-inter-variable
+Filename: ./layer-shell_0.0.1751467301_amd64.deb
+Size: 2192892
+MD5sum: 0295550ae00bd023080a4d64fcf9eca5
+SHA1: 9dc929a7985f96949824c085457c9b65ea3e8498
+SHA256: dbdf8407b4bbf1e09682975053294e52ba854b7924494641f71d8719a4ce978c
+Section: utils
+Priority: extra
+Description: A custom layer shell
+
+Package: libinput-gestures
+Version: 2.80.0
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 40
+Depends: libinput-tools, python3
+Filename: ./libinput-gestures_2.80.0_amd64.deb
+Size: 10308
+MD5sum: fada9e78fdd5ba425765f9563efc9eff
+SHA1: 3f80520f79e0623d9a8315deb0b39330eec6af91
+SHA256: 87fabf247eb9767f2edf172ae6f6e1b2231865762786d220e346f174205b2d65
+Section: utils
+Priority: extra
+Description: Actions gestures on your touchpad using libinput
+
+Package: localsend
+Version: 1.17.0+58
+Architecture: amd64
+Essential: no
+Maintainer: Tienisto <dev.tien.donam@gmail.com>
+Installed-Size: 30600
+Pre-Depends: libc6 (>= 2.31)
+Depends: libappindicator3-1 | libayatana-appindicator3-1, gir1.2-appindicator3-0.1 | gir1.2-ayatanaappindicator3-0.1, libayatana-ido3-0.4-0, xdg-user-dirs
+Filename: ./LocalSend-1.17.0-linux-x86-64.deb
+Size: 11709940
+MD5sum: 59e559f84fe892f067c232c5c2b9b075
+SHA1: eba64eb18930d0a832bea05b33f5263762e5647a
+SHA256: b0244b2c3eacb2a81d61b2662534d6036ab37ace10d6782da36b630c222fa04c
+Section: x11
+Priority: optional
+Homepage: https://localsend.org/
+Description: An open source cross-platform alternative to AirDrop
+Uploaders: TheGB0077 <gb.lima.dev@gmail.com>
+
+Package: make-btrfs-snapshot
+Version: 2.0.0
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 2128
+Depends: grub2-common, grub-common, btrfs-progs
+Filename: ./make-btrfs-snapshot_2.0.0_amd64.deb
+Size: 482824
+MD5sum: 9cadcebd729b229da5fd3d80f3e1e84b
+SHA1: c7b26b2738f30c1e7101d49e43cefb7d1e58b68b
+SHA256: 8ad8e324a0229dfc6d5c8bc2b9830ed1bb543c9d45e6f797eee5ce3b4f1d9856
+Section: utils
+Priority: extra
+Description: a set of tools to automatically create btrfs snapshots and update grub on any dpkg operation
+
+Package: mangl
+Version: 1.1.5
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 444
+Depends: libbz2-1.0, libc6 (>= 2.38), libfreetype6 (>= 2.2.1), libgl1, libglfw3 (>= 3.4), zlib1g (>= 1:1.1.4)
+Filename: ./mangl_1.1.5_amd64.deb
+Size: 148132
+MD5sum: feeaa0deb2312ec8a8bebdb709465af8
+SHA1: 3bf306e283be77e64cfddca43c4e63aa1e941444
+SHA256: 3be05f255b8cd8114c4c3d0d2bc4064c2e080bcfcd00dbc17b2e2af7903358af
+Section: utils
+Priority: extra
+Description: An enhanced man page viewer for linux and BSD systems based on OpenGL and mandoc libraries
+
+Package: matugen
+Version: 2.4.1
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 5593
+Depends: libc6 (>= 2.39), libgcc-s1 (>= 4.2)
+Filename: ./matugen_2.4.1_amd64.deb
+Size: 1732584
+MD5sum: d98f7209e2c829d9a2189107c6f93f39
+SHA1: 6a757dcb3ee4ff7e6713b6491183a70c68463288
+SHA256: 98dcf129ebdd1196223b042d17c895e1bcaf304792178b6def24759a209bd28b
+Section: utils
+Priority: extra
+Description: A material you color generation tool
+
+Package: metapackage
+Version: 0.0.1751543918
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 7
+Depends: nautilus, gnome-system-monitor, tuigreet, greetd, localsend, loupe, d-spy, wezterm, gcc, build-essential, cmake, meson, ragel, valgrind, google-perftools, bison, strace, rustfilt, sqlite3, gh, pkg-config, make, git, llvm, clang, lld, clangd, linux-perf, gdb, sassc, autoconf, automake, xxd, clang-tidy, blueprint-compiler, podman, musl, hugo, jq, nmap, yq, pipx, gnupg2, just, git-delta, bat, fastfetch, htop, nano, tree, ffmpeg, libnotify-bin, stow, traceroute, wget, curl, fx, starship, du-dust, gaskpass, xremap, pipewire-dbus, apache2-utils, wireplumber, bash-completion, file, less, sudo, fakeroot, openssh-client, zip, unzip, pkexec, logrotate, lsd, iotop, powertop, shellcheck, iputils-ping, x11-utils, parallel, libjemalloc-dev, libgtk-4-dev, libgtk4-layer-shell-dev, libvte-2.91-gtk4-dev, libpipewire-0.3-dev, libdbus-1-dev, libssl-dev, libclang-rt-dev, musl-dev, apt-file, make-btrfs-snapshot, xwayland, lsb-release, network-manager, iwd, discover, ncurses-term, xdg-utils, wireless-tools, fonts-inter-variable, fonts-inter-variable-nerd, fonts-adwaita-mono-nerd, fonts-apple-color-emoji, hyprland, hyprlock, swaybg, dunst, wl-clipboard, wf-recorder, slurp, grim, satty, cliphist, layer-shell, pavucontrol, swayosd, hyprsunset, hyprland-qtutils, hyprsysteminfo, hyprpolkitagent, hyprland-qt-support, xdg-desktop-portal-hyprland, unsplash-wallpaper, matugen, hyprspace, bluez, fuzzel, iwmenu, bzmenu
+Filename: ./metapackage_0.0.1751543918_amd64.deb
+Size: 1824
+MD5sum: e336b7f812b8e16428e79600059fcfc6
+SHA1: f5d4be3d13b7d2a0700beea59a2ab342dfc51525
+SHA256: de324cd239706d6adcd88943c65562d30f549aeec83a9e1e013aee92ccf304dc
+Section: utils
+Priority: extra
+Description: Meta-package that depends on all packages that I use
+
+Package: mpclipboard-server
+Version: 0.0.1751572258
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 2622
+Filename: ./mpclipboard-server_0.0.1751572258_amd64.deb
+Size: 882936
+MD5sum: af4761dfe63592e47696e00bf34406b2
+SHA1: f70ab3ace7dcf7ecf978f307e3ff6382c72a7eae
+SHA256: b851758ace27476f4a7a8163f50bcc65d463b9405151fe2820795e675a797c8b
+Section: utils
+Priority: extra
+Description: MPClipboard server
+
+Package: onemorebeer-ui
+Version: 0.0.1751571998
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 4627
+Filename: ./onemorebeer-ui_0.0.1751571998_amd64.deb
+Size: 1685104
+MD5sum: 512b0ab5f650b0d7ff46138e385c9f76
+SHA1: f5dabbb98734d0a8be7fa990a06538e86eeb2b0e
+SHA256: 7c628927a1d9d88d22a54678adf37988d2980dd28b9f772dfa4248eb311db53a
+Section: utils
+Priority: extra
+Description: onemorebeer ui
+
+Package: pipewire-dbus
+Version: 2.0.0
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 4195
+Depends: libc6 (>= 2.39), libgcc-s1 (>= 4.2), libpipewire-0.3-0t64 (>= 0.3.1)
+Filename: ./pipewire-dbus_2.0.0_amd64.deb
+Size: 1202372
+MD5sum: eb4fc21a36719ba4b536a82332984a73
+SHA1: 91a10eb217505115ec9c038546fae5a0d9dd2491
+SHA256: 47d43b2f8a419d37dc144c0250160b5c6af0222970306a048e6811cbf38d50eb
+Section: utils
+Priority: extra
+Description: A daemon service that triggers Pipewire volume events over DBus
+
+Package: satty
+Version: 0.19.0
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 4340
+Depends: libadwaita-1-0 (>= 1.0.1), libc6 (>= 2.39), libcairo-gobject2 (>= 1.10.0), libcairo2 (>= 1.2.4), libfontconfig1 (>= 2.12.6), libgcc-s1 (>= 4.2), libgdk-pixbuf-2.0-0 (>= 2.31.1), libglib2.0-0t64 (>= 2.54.0), libgtk-4-1 (>= 4.6.0), libpango-1.0-0 (>= 1.14.0)
+Filename: ./satty_0.19.0_amd64.deb
+Size: 1304880
+MD5sum: 0f166d844c0baebd2a2df80a8eebf011
+SHA1: 1892d687987c62a6ee34f23e157e58de639e27cd
+SHA256: f4807e8903b5afbe3875f5ff09a8331adad6c9ddbedba5042521bffddd032368
+Section: utils
+Priority: extra
+Description: Satty - Modern Screenshot Annotation. A tool inspired by Swappy and Flameshot.
+
+Package: spot
+Version: 0.5.0
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 23928
+Depends: libadwaita-1-0 (>= 1.2~alpha), libasound2t64 (>= 1.0.29), libc6 (>= 2.39), libcairo2 (>= 1.2.4), libgcc-s1 (>= 4.2), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0t64 (>= 2.54.0), libgstreamer-plugins-base1.0-0 (>= 1.0.0), libgstreamer1.0-0 (>= 1.4.0), libgtk-4-1 (>= 4.0.0), libpango-1.0-0 (>= 1.14.0), libpulse0 (>= 0.99.1), libssl3t64 (>= 3.2.0), zlib1g (>= 1:1.1.4)
+Filename: ./spot_0.5.0_amd64.deb
+Size: 6030532
+MD5sum: 37eef32999775f483e764ddede6de14d
+SHA1: f9d31505b86194ea96ffff8ad9c6020e7e3ca65b
+SHA256: b89234ec179d16e3c377964993e11dbfc6394bd4ddd173c4fc2e8f8729563e2e
+Section: utils
+Priority: extra
+Description: Native Spotify client for the GNOME desktop
+
+Package: unsplash-wallpaper
+Version: 1.0.1
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 4067
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Filename: ./unsplash-wallpaper_1.0.1_amd64.deb
+Size: 1436552
+MD5sum: 97a90a4c779373fb0cb4ccf4130f3d85
+SHA1: 46f31bd82949a93be33d8e2bf572b75a3aceebfb
+SHA256: 39f16355541defd718ff591fd1c0de97dc05625885c39b0d76dcec28739d2e7b
+Section: utils
+Priority: extra
+Description: A tiny tool to download multiple images from Unsplash API in parallel
+
+Package: vala-language-server
+Version: 0.48.7
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 977
+Depends: libc6 (>= 2.34), libgee-0.8-2 (>= 0.20.0), libglib2.0-0t64 (>= 2.62.0), libjson-glib-1.0-0 (>= 1.5.2), libjsonrpc-glib-1.0-1 (>= 3.27.90), libvala-0.56-0 (>= 0.55.90)
+Filename: ./vala-language-server_0.48.7_amd64.deb
+Size: 287680
+MD5sum: dddc6ec65f9e9e7e05f3127a300f2c50
+SHA1: 43242a15ad857328879abc6021c062242d8e340b
+SHA256: f8d2d4fc096f753aa19c4d79f0052bddd1edb9699096c2f01fa5df587f634a6a
+Section: utils
+Priority: extra
+Description: Code Intelligence for Vala & Genie
+
+Package: wezterm
+Version: 0.0.1-20240318
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 75096
+Depends: libc6 (>= 2.39), libfontconfig1 (>= 2.12.6), libgcc-s1 (>= 4.2), libssl3t64 (>= 3.0.0), libwayland-client0 (>= 1.11.0), libwayland-egl1 (>= 1.15.0), libx11-6, libx11-xcb1, libxcb-image0 (>= 0.2.1), libxcb-util1 (>= 0.4.0), libxcb1 (>= 1.11.1), libxkbcommon-x11-0 (>= 0.5.0), libxkbcommon0 (>= 0.6.1)
+Filename: ./wezterm_0.0.1-20240318_amd64.deb
+Size: 18836212
+MD5sum: 5bb7a29ff53ad5607916f20d3fb5d57d
+SHA1: 3054ea75066a5769660e8d10529180d606d75275
+SHA256: 73c6b6ab5b194a6d45c5393eaec21a65549db98cc8c92eb9fbede4bfed3d12b5
+Section: utils
+Priority: extra
+Description: A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust
+
+Package: xdg-desktop-portal-hyprland
+Version: 1.3.9-3
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 842
+Depends: hyprlang, hyprutils, libc6 (>= 2.38), libdrm2 (>= 2.4.109), libgbm1 (>= 21.3.0~rc1), libgcc-s1 (>= 4.3), libpipewire-0.3-0t64 (>= 0.3.1), libqt6core6t64 (>= 6.8.2), libqt6gui6 (>= 6.1.2), libqt6widgets6 (>= 6.1.2), libsdbus-c++2 (>= 2.1.0), libstdc++6 (>= 13.1), libwayland-client0 (>= 1.20.0)
+Filename: ./xdg-desktop-portal-hyprland_1.3.9-3_amd64.deb
+Size: 247936
+MD5sum: f7c0d5c498894d64f3a9726fdfb5c64f
+SHA1: f57931aebc67c0212d8f3988107c32ca58d0c958
+SHA256: 9c3df290853a55c6106d6d1f549fb47230b6ee94602245d31641a71808039c94
+Section: utils
+Priority: extra
+Description: xdg-desktop-portal backend for Hyprland
+
+Package: xremap
+Version: 0.10.12
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 3557
+Depends: libc6 (>= 2.39), libgcc-s1 (>= 4.2)
+Filename: ./xremap_0.10.12_amd64.deb
+Size: 1112536
+MD5sum: 6a441475c96b3c2cf08caf140e20db6e
+SHA1: ca80072167a875e216aad526dcd360ce2628b1de
+SHA256: 5d886a54a0c028a2c9fddf0057baa9df0aca4cc4e20b4cca8837b0e052a94b39
+Section: utils
+Priority: extra
+Description: Key remapper for X11 and Wayland
+

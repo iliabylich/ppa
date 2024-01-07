@@ -1,0 +1,42 @@
+version = { specific = "0.8.0-1" }
+dependencies = [
+    "libgles2-mesa-dev",
+
+    "/shared/deb-latest/hyprwayland-scanner.deb",
+    "/shared/deb-latest/hyprutils.deb",
+
+    "libseat-dev",
+    "libinput-dev",
+    "libwayland-dev",
+    "wayland-protocols",
+    "libpixman-1-dev",
+    "libdrm-dev",
+    "libgbm-dev",
+    "libudev-dev",
+    "libdisplay-info-dev",
+    "hwdata",
+    "libpugixml-dev",
+]
+arch = "amd64"
+
+[source.git-clone]
+url = "https://github.com/hyprwm/aquamarine.git"
+branch_or_tag = "v0.8.0"
+
+[debian]
+changelog = true
+compat = 10
+
+[debian.control]
+description = "Aquamarine is a very light linux rendering backend library"
+dependencies = ["${shlibs:Depends}"]
+
+[debian.rules]
+override_dh_auto_configure = ["echo skip"]
+override_dh_auto_build = [
+    "cmake --no-warn-unused-cli -DCMAKE_BUILD_TYPE:STRING=Release -DCMAKE_INSTALL_PREFIX:PATH=/usr -S . -B ./build",
+    "cmake --build ./build --config Release --target all -j`nproc`",
+]
+override_dh_auto_install = [
+    "cmake --install build --prefix debian/aquamarine/usr",
+]

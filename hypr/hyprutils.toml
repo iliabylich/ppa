@@ -1,0 +1,18 @@
+version = { specific = "0.7.1" }
+dependencies = ["libpixman-1-dev"]
+arch = "amd64"
+
+[source.git-clone]
+url = "https://github.com/hyprwm/hyprutils.git"
+branch_or_tag = "v0.7.1"
+
+[debian]
+changelog = true
+compat = 10
+
+[debian.control]
+description = "Hyprland utilities library used across the ecosystem"
+dependencies = ["${shlibs:Depends}"]
+
+[debian.rules]
+"%" = ["dh $@"]

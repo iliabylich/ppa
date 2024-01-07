@@ -1,0 +1,34 @@
+version = { specific = "0.1.3" }
+dependencies = [
+    "/shared/deb-latest/hyprutils.deb",
+    "libpixman-1-dev",
+    "libcairo2-dev",
+    "libjpeg-dev",
+    "libwebp-dev",
+    "libmagic-dev",
+    "libjxl-dev",
+    "libspng-dev",
+]
+arch = "amd64"
+
+[source.git-clone]
+url = "https://github.com/hyprwm/hyprgraphics.git"
+branch_or_tag = "v0.1.3"
+
+[debian]
+changelog = true
+compat = 10
+
+[debian.control]
+description = "Hyprland graphics / resource utilities"
+dependencies = ["${shlibs:Depends}"]
+
+[debian.rules]
+override_dh_auto_configure = ["echo skip"]
+override_dh_auto_build = [
+    "cmake --no-warn-unused-cli -DCMAKE_BUILD_TYPE:STRING=Release -DCMAKE_INSTALL_PREFIX:PATH=/usr -S . -B ./build",
+    "cmake --build ./build --config Release --target all -j`nproc`",
+]
+override_dh_auto_install = [
+    "cmake --install build --prefix debian/hyprgraphics/usr",
+]

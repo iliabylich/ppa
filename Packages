@@ -1,3 +1,19 @@
+Package: commentary
+Version: 0.1.0-1704714866
+Architecture: amd64
+Maintainer: Commentary developer <ibylich@gmail.com>
+Installed-Size: 7283
+Depends: libc6 (>= 2.34), systemd
+Filename: ./commentary_0.1.0-1704714866_amd64.deb
+Size: 2508524
+MD5sum: 77cd71a6c66bce70286cdc0a789ac153
+SHA1: f487dc161ce07697ab4bf91024a7520bef84545d
+SHA256: 854049beced408849bbba729aeecc23069318e1370b25696028da8547b48ff45
+Section: admin
+Priority: optional
+Description: [generated from Rust crate commentary]
+ Commentary is a simple comment system for static websites.
+
 Package: hnparser
 Version: 0.1.0-1704713366
 Architecture: amd64

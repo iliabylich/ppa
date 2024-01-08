@@ -2,7 +2,8 @@ require 'open-uri'
 require 'json'
 
 REPOS = [
-  'iliabylich/hn-parser'
+  'iliabylich/hn-parser',
+  'iliabylich/commentary',
 ]
 
 `rm -rf *.deb`

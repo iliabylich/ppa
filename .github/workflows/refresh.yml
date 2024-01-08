@@ -11,6 +11,35 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      - run: echo 42
+      - name: import GPG key
+        run: |
+          echo "${{ secrets.GPG_PRIVATE_KEY }}" > private.key
+          gpg --import --no-tty --batch private.key
+          rm -f private.key
+
+      - name: show GPG keys
+        run: gpg -K
+
+      - name: re-generate *.deb files
+        run: ruby download-latest.rb
+
+      - run: dpkg-scanpackages --multiversion . > Packages
+      - run: gzip -k -f Packages
+
+      - run: apt-ftparchive release . > Release
+
+      - run: gpg --pinentry-mode loopback --passphrase="${{ secrets.GPG_PASSPHRASE }}" --batch --yes --default-key "ibylich@gmail.com" -abs -o - Release > Release.gpg
+      - run: gpg --pinentry-mode loopback --passphrase="${{ secrets.GPG_PASSPHRASE }}" --batch --yes --default-key "ibylich@gmail.com" --clearsign -o - Release > InRelease
+
+      - name: show diff
+        run: git diff --name-only
+
+      - name: commit & push
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add .
+          git commit -m 'update index'
+          git push

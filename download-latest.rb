@@ -4,6 +4,7 @@ require 'json'
 REPOS = [
   'iliabylich/hn-parser',
   'iliabylich/commentary',
+  'iliabylich/obj-load',
 ]
 
 `rm -rf *.deb`

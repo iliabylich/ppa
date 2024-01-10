@@ -24,8 +24,11 @@ def get_assets(repo, release_id)
 end
 
 REPOS.each do |repo|
-  latest_release_id = get_latest_release(repo)['id']
-  assets = get_assets(repo, latest_release_id)
+  releases = download_json("https://api.github.com/repos/#{repo}/releases")
+  latest = releases.detect { |release| release['name'] == 'latest' }
+  raise "Failed to find a release called 'latest' in #{repo}" if latest.nil?
+
+  assets = latest['assets']
   deb_asset = assets
     .select { |asset| asset['name'].end_with?('.deb') }
     .max_by { |asset| asset['created_at'] }

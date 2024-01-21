@@ -15,16 +15,16 @@ Description: [generated from Rust crate commentary]
  Commentary is a simple comment system for static websites.
 
 Package: hnparser
-Version: 0.1.0-1705394231
+Version: 0.1.0-1705880723
 Architecture: amd64
 Maintainer: HN parser developer <ibylich@gmail.com>
-Installed-Size: 6481
+Installed-Size: 5112
 Depends: systemd
-Filename: ./hnparser_0.1.0-1705394231_amd64.deb
-Size: 2387516
-MD5sum: 120717a6f87fcae1e8a4c9d65cd05f41
-SHA1: c264b445fad3c39c4f4b39e9f8c7ee46e1a8d030
-SHA256: 4c747198393ba9f85fb6573f4ac0959d91b4cf5ae99bb31c009098db9592cdc3
+Filename: ./hnparser_0.1.0-1705880723_amd64.deb
+Size: 1780908
+MD5sum: f7dd339fc507b08dcc8c23e557ae2806
+SHA1: 83fb374040b568908e6ac14cebe7afdfe4dd8a44
+SHA256: 91ad4d28730dc0396450eb5b4702efff4242b48c9d2cba036200dfd8e29cf959
 Section: admin
 Priority: optional
 Description: [generated from Rust crate hnparser]

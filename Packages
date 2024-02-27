@@ -1,14 +1,14 @@
 Package: commentary
-Version: 0.1.0-1705531004
+Version: 0.1.0-1709064657
 Architecture: amd64
 Maintainer: Commentary developer <ibylich@gmail.com>
-Installed-Size: 4305
+Installed-Size: 4273
 Depends: systemd
-Filename: ./commentary_0.1.0-1705531004_amd64.deb
-Size: 1803040
-MD5sum: ce3fc3548a4d809c0209e85314cd24d1
-SHA1: 1933a63ee616aacb984abdb61a073c383d4d405e
-SHA256: 340c7a45222c5cba17e599d50d7099e84bb45a682d5367b3f9307d2830d89dbf
+Filename: ./commentary_0.1.0-1709064657_amd64.deb
+Size: 1796472
+MD5sum: 00e80e3e42042116c4dc3600a1154794
+SHA1: 93c656f832ff28559c8b27a542336d685afb73f8
+SHA256: 9df28b5af6c93d4fd6868b7ba7f98a9209381282417547f4125765ff29722e1d
 Section: admin
 Priority: optional
 Description: [generated from Rust crate commentary]

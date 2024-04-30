@@ -31,16 +31,16 @@ Description: [generated from Rust crate hnparser]
  HN parser
 
 Package: obj-down-up-load-server
-Version: 0.1.0-1713807572
+Version: 0.1.0-1714501975
 Architecture: amd64
 Maintainer: Obj-load developer <ibylich@gmail.com>
-Installed-Size: 1874
+Installed-Size: 1270
 Depends: systemd
-Filename: ./obj-down-up-load-server_0.1.0-1713807572_amd64.deb
-Size: 637836
-MD5sum: f37e193c8b0326d05f9f5b7e402df3fa
-SHA1: 788a7b784665ec7e52473bef2aa68e51778875c6
-SHA256: b79e28da9c5a138be8115d727750a7b44647996fc983ef3adc5b1b23b61b73ac
+Filename: ./obj-down-up-load-server_0.1.0-1714501975_amd64.deb
+Size: 509472
+MD5sum: 4955e7a752cc39f6cc5e293cdd964e0e
+SHA1: fefbfa7d5a89b3a125b24cb47bf21198240eda69
+SHA256: addabe5043a43119ccb9789f7b43c22e04c2eb0d2ba1cab3d914d798a7884b0b
 Section: admin
 Priority: optional
 Description: [generated from Rust crate obj-down-up-load-server]

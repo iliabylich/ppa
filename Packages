@@ -30,6 +30,21 @@ Priority: optional
 Description: [generated from Rust crate hnparser]
  HN parser
 
+Package: hyprwayland-scanner
+Version: 0.3.8
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 178
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 4.3), libpugixml1v5 (>= 1.4), libstdc++6 (>= 13.1)
+Filename: ./hyprwayland-scanner_0.3.8_amd64.deb
+Size: 60148
+MD5sum: 87d73c28241e4382b1bf6a9b52ab04a7
+SHA1: 0a94f9bb83b2a0b4ed74cf0ec26af1999d4168ab
+SHA256: 99c59400fe04172ce2676c3eb2d5eee916b130c0db8c2e55ea169b34aaa4ae9c
+Section: utils
+Priority: extra
+Description: A Hyprland implementation of wayland-scanner, in and for C++.
+
 Package: obj-down-up-load-server
 Version: 0.1.0-1716548595
 Architecture: amd64

@@ -5,6 +5,7 @@ REPOS = [
   'iliabylich/hn-parser',
   'iliabylich/commentary',
   'iliabylich/obj-load',
+  'iliabylich/hyprwayland-scanner-deb',
 ]
 
 `rm -rf *.deb`

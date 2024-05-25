@@ -30,6 +30,21 @@ Priority: optional
 Description: [generated from Rust crate hnparser]
  HN parser
 
+Package: hyprcursor
+Version: 0.1.9
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 663
+Depends: libc6 (>= 2.38), libcairo2 (>= 1.2.4), libgcc-s1 (>= 4.3), libhyprlang2 (>= 0.5.1), librsvg2-2 (>= 2.46.0), libstdc++6 (>= 13.1), libtomlplusplus3t64 (>= 3.2.0), libzip4t64 (>= 1.0)
+Filename: ./hyprcursor_0.1.9_amd64.deb
+Size: 179404
+MD5sum: eb9c02d8d8d2d37264b0574edf834bab
+SHA1: 116d3cf1c8a3ad048338d0c599365635ef3ac2ea
+SHA256: 3f105792612c7135484c3619cbb1d1d47c8d7a01fe7e7afcc4a9866aaddf52ca
+Section: utils
+Priority: extra
+Description: The hyprland cursor format, library and utilities.
+
 Package: hyprwayland-scanner
 Version: 0.3.8
 Architecture: amd64

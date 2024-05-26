@@ -7,6 +7,7 @@ REPOS = [
   'iliabylich/obj-load',
   'iliabylich/hyprwayland-scanner-deb',
   'iliabylich/hyprcursor-deb',
+  'iliabylich/hyprland-deb',
 ]
 
 `rm -rf *.deb`

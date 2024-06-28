@@ -75,6 +75,25 @@ Section: utils
 Priority: extra
 Description: A Hyprland implementation of wayland-scanner, in and for C++.
 
+Package: localsend
+Version: 1.14.0+45
+Architecture: amd64
+Essential: no
+Maintainer: Tienisto <dev.tien.donam@gmail.com>
+Installed-Size: 30600
+Pre-Depends: libc6 (>= 2.31)
+Depends: libappindicator3-1 | libayatana-appindicator3-1, gir1.2-appindicator3-0.1 | gir1.2-ayatanaappindicator3-0.1, libayatana-ido3-0.4-0, xdg-user-dirs
+Filename: ./LocalSend-1.14.0-linux-x86-64.deb
+Size: 9354316
+MD5sum: 76be2087927f04c6d0a7ba179bbc25af
+SHA1: ca7ebaab92f57504c155868e06e397945bd493f4
+SHA256: 9a823f990eab24d33c0d3c27698a15812f08a266f342462ed4755afa52d703ca
+Section: x11
+Priority: optional
+Homepage: https://localsend.org/
+Description: An open source cross-platform alternative to AirDrop
+Uploaders: TheGB0077 <gb.lima.dev@gmail.com>
+
 Package: obj-down-up-load-server
 Version: 0.1.0-1716548595
 Architecture: amd64

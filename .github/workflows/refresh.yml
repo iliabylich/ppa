@@ -22,8 +22,12 @@ jobs:
       - name: show GPG keys
         run: gpg -K
 
-      - name: re-generate *.deb files
-        run: ruby download-latest.rb
+      - run: ./download-latest-deb.rb iliabylich/hn-parser
+      - run: ./download-latest-deb.rb iliabylich/commentary
+      - run: ./download-latest-deb.rb iliabylich/obj-load
+      - run: ./download-latest-deb.rb iliabylich/hyprwayland-scanner-deb
+      - run: ./download-latest-deb.rb iliabylich/hyprcursor-deb
+      - run: ./download-latest-deb.rb iliabylich/hyprland-deb
 
       - run: dpkg-scanpackages --multiversion . > Packages
       - run: gzip -k -f Packages

@@ -60,6 +60,21 @@ Section: utils
 Priority: extra
 Description: Hyprland is a highly customizable dynamic tiling Wayland compositor that doesn't sacrifice on its looks.
 
+Package: hyprland
+Version: 0.41.2
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 58390
+Depends: hyprcursor, hyprutils, libc6 (>= 2.38), libcairo2 (>= 1.2.4), libdisplay-info1 (>= 0.1.1), libdrm2 (>= 2.4.119), libegl1, libgbm1 (>= 21.1.0), libgcc-s1 (>= 4.3), libgl1, libglib2.0-0t64 (>= 2.12.0), libhyprlang2 (>= 0.5.1), libinput10 (>= 1.26.0), libliftoff0 (>= 0.4.1), libpango-1.0-0 (>= 1.18.0), libpangocairo-1.0-0 (>= 1.14.0), libpixman-1-0 (>= 0.30.0), libseat1 (>= 0.5.0), libstdc++6 (>= 13.1), libudev1 (>= 183), libuuid1 (>= 2.16), libwayland-client0 (>= 1.20.0), libwayland-server0 (>= 1.20.92), libxcb-composite0, libxcb-errors0 (>= 1.0.1), libxcb-icccm4 (>= 0.4.1), libxcb-render0, libxcb-res0 (>= 1.10), libxcb-xfixes0, libxcb1, libxkbcommon0 (>= 0.8.0), kitty (>= 0.0.0), hyprwayland-scanner (>= 0.0.0)
+Filename: ./hyprland_0.41.2_amd64.deb
+Size: 48550896
+MD5sum: 69c9284d449171de6e9b06c6f103e35f
+SHA1: 28525f3cf225f63a6ab26a5e2d7afda45e4e55ef
+SHA256: c1e8f1423a2a8bc34adf0a5db42020abd3c98a316fa044968100b3c1652c0f8d
+Section: utils
+Priority: extra
+Description: Hyprland is a highly customizable dynamic tiling Wayland compositor that doesn't sacrifice on its looks.
+
 Package: hyprutils
 Version: 0.1.5
 Architecture: amd64

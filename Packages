@@ -68,9 +68,9 @@ Installed-Size: 182
 Depends: libc6 (>= 2.34), libgcc-s1 (>= 4.3), libpugixml1v5 (>= 1.4), libstdc++6 (>= 13.1)
 Filename: ./hyprwayland-scanner_0.3.10_amd64.deb
 Size: 61772
-MD5sum: b04175e624d7165c44099d39643d85d0
-SHA1: 5ae6ec89067c887dd9ac8a30d4483e06de8ceda3
-SHA256: 0c348803e2d1dbb1b518f522d7cd85534a72f02fb7bf48363ef5926175a7b4f2
+MD5sum: 2af306bee336af171c7068c520c2ee47
+SHA1: 9bf2996ae1cf99b13e544a8c5ff75c414bb7656f
+SHA256: dd7746c49c6903fa9467e26bf12188e6fac7f74916592357876ef2e1a2f169ea
 Section: utils
 Priority: extra
 Description: A Hyprland implementation of wayland-scanner, in and for C++.

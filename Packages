@@ -60,6 +60,21 @@ Section: utils
 Priority: extra
 Description: Hyprland is a highly customizable dynamic tiling Wayland compositor that doesn't sacrifice on its looks.
 
+Package: hyprutils
+Version: 0.1.5
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 117
+Depends: libc6 (>= 2.14), libgcc-s1 (>= 3.0), libpixman-1-0 (>= 0.25.2), libstdc++6 (>= 13)
+Filename: ./hyprutils_0.1.5_amd64.deb
+Size: 26412
+MD5sum: 06db8b193f51f30d9ae968f2467e322b
+SHA1: 4d7f0a57376c20f37579b11aabc9a76873d59bd9
+SHA256: c313f333c158845b57c7da68503341baf62ba621ebd1d036471d020901d6bb52
+Section: utils
+Priority: extra
+Description: Hyprutils is a small C++ library for utilities used across the Hypr* ecosystem.
+
 Package: hyprwayland-scanner
 Version: 0.3.10
 Architecture: amd64

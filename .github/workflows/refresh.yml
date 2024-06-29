@@ -29,6 +29,7 @@ jobs:
       - run: ./download-latest-deb.rb iliabylich/hyprcursor-deb
       - run: ./download-latest-deb.rb iliabylich/hyprland-deb
       - run: ./download-latest-deb.rb localsend/localsend
+      - run: ./download-latest-deb.rb iliabylich/hyprutils-deb
 
       - run: dpkg-scanpackages --multiversion . > Packages
       - run: gzip -k -f Packages

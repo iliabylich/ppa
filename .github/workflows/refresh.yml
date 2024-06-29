@@ -22,6 +22,7 @@ jobs:
       - name: show GPG keys
         run: gpg -K
 
+      - run: rm -f *.deb
       - run: ./download-latest-deb.rb iliabylich/hn-parser
       - run: ./download-latest-deb.rb iliabylich/commentary
       - run: ./download-latest-deb.rb iliabylich/obj-load

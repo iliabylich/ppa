@@ -1,3 +1,21 @@
+Package: blanket
+Version: 0.7.0
+Architecture: all
+Maintainer: Rafael Mardojai CM <email@rafaelmardojai.com>
+Installed-Size: 18030
+Depends: dconf-gsettings-backend | gsettings-backend, gir1.2-adw-1, gir1.2-gst-plugins-bad-1.0, python3
+Filename: ./blanket_0.7.0_amd64.deb
+Size: 17491196
+MD5sum: 762623782304c2ea1fb0b697ea851795
+SHA1: d4174eddd7f6beb2d121a5ffe1f7c95ce08d792f
+SHA256: 7e82824b9c9f5e061388242c80d9fe79d4f8ddde8454cff3249f2997e3cd6067
+Section: utils
+Priority: optional
+Homepage: https://github.com/rafaelmardojai/blanket
+Description: Listen to different sounds
+ Improve focus and increase your productivity by listening to different sounds.
+ Or allows you to fall asleep in a noisy environment.
+
 Package: commentary
 Version: 0.1.0-1719324731
 Architecture: amd64

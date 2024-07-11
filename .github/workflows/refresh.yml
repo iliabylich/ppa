@@ -27,6 +27,7 @@ jobs:
       - run: ./download-latest-deb.rb iliabylich/commentary
       - run: ./download-latest-deb.rb iliabylich/obj-load
       - run: ./download-latest-deb.rb localsend/localsend
+      - run: ./download-latest-deb.rb iliabylich/blanket-deb
 
       - run: dpkg-scanpackages --multiversion . > Packages
       - run: gzip -k -f Packages

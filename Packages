@@ -67,6 +67,21 @@ Homepage: https://localsend.org/
 Description: An open source cross-platform alternative to AirDrop
 Uploaders: TheGB0077 <gb.lima.dev@gmail.com>
 
+Package: metapackage
+Version: 0.0.1720741656
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 7
+Depends: gnome-core, google-perftools, bison, hugo, libjemalloc2, libjemalloc-dev, jq, jsonnet, nmap, ragel, yq, pipx, build-essential, cmake, gnupg2, just, git-delta, bat, rustfilt, apt-listbugs, net-tools, flatpak, blanket, localsend
+Filename: ./metapackage_0.0.1720741656_amd64.deb
+Size: 1196
+MD5sum: c1bf002364d8ab599bf77f4c2c0af352
+SHA1: 3b37de22e2604d42d62da756dce68602922231ab
+SHA256: f2dbcca3599d8cb755466762e48c3d9c385eacaec43a18dd3fd20d1904183f3c
+Section: utils
+Priority: extra
+Description: Meta-package that depends on all of packages that I use.
+
 Package: obj-down-up-load-server
 Version: 0.1.0-1716548595
 Architecture: amd64

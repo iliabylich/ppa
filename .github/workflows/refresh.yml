@@ -30,6 +30,8 @@ jobs:
       - run: ./download-latest-deb.rb iliabylich/blanket-deb
       - run: ./download-latest-deb.rb iliabylich/metapackage-deb
 
+      - run: ./download-everything-from-release.rb iliabylich/ppa comsic-de-debs
+
       - run: dpkg-scanpackages --multiversion . > Packages
       - run: gzip -k -f Packages
 

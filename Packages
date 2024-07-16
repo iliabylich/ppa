@@ -68,16 +68,16 @@ Description: An open source cross-platform alternative to AirDrop
 Uploaders: TheGB0077 <gb.lima.dev@gmail.com>
 
 Package: metapackage
-Version: 0.0.1721134716
+Version: 0.0.1721135708
 Architecture: amd64
 Maintainer: John Doe <john@doe.org>
 Installed-Size: 7
-Depends: gnome-core, google-perftools, valgrind, strace, bison, hugo, libjemalloc2, libjemalloc-dev, jq, jsonnet, nmap, ragel, yq, pipx, build-essential, cmake, gnupg2, just, git-delta, bat, rustfilt, apt-listbugs, net-tools, flatpak, wget, curl, sqlite3, meson, micro, fastfetch, nala, htop, imagemagick, blanket, localsend
-Filename: ./metapackage_0.0.1721134716_amd64.deb
-Size: 1260
-MD5sum: d428e1d2cc162166f2a5d25eaa6cc206
-SHA1: a33a14dcea6d76b5f2ec5392dd08724abad09a6e
-SHA256: f7126bbe649820cddaefa4ac90b734c5d6411f5369c0b0cef720efec80c55ba3
+Depends: gnome-core, google-perftools, valgrind, strace, bison, hugo, libjemalloc2, libjemalloc-dev, jq, jsonnet, nmap, ragel, yq, pipx, build-essential, cmake, gnupg2, just, git-delta, bat, rustfilt, apt-listbugs, net-tools, flatpak, wget, curl, sqlite3, meson, micro, fastfetch, nala, htop, nano, netselect-apt, imagemagick, blanket, localsend
+Filename: ./metapackage_0.0.1721135708_amd64.deb
+Size: 1276
+MD5sum: 694379b3bcb085b2566badcd02e9db8a
+SHA1: 717ff5f7512e08a7af78689f2ce5efc5b4f00cda
+SHA256: 90cc988e51a2255d5c4fd4c12a9a299c80b01fd0dbfd9164c5670e3ed15bd17b
 Section: utils
 Priority: extra
 Description: Meta-package that depends on all of packages that I use.

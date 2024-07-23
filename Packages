@@ -17,16 +17,16 @@ Description: Listen to different sounds
  Or allows you to fall asleep in a noisy environment.
 
 Package: commentary
-Version: 0.1.0-1719324731
+Version: 0.1.0-1721768528
 Architecture: amd64
 Maintainer: Commentary developer <ibylich@gmail.com>
-Installed-Size: 4074
+Installed-Size: 4115
 Depends: systemd
-Filename: ./commentary_0.1.0-1719324731_amd64.deb
-Size: 1750780
-MD5sum: 4c8005673e3491ef80f87a2a021b4fac
-SHA1: 2fdb67e9922377e3bf0f2a3d7ba7df26b9048628
-SHA256: 190670b234b4543d0081f593620f8ca0923f17f5af11d25a6465eea9f8737b76
+Filename: ./commentary_0.1.0-1721768528_amd64.deb
+Size: 1769004
+MD5sum: 13046e220945a964ed9beaa4ec3336b6
+SHA1: cda93e35cb384cc24ce107a9d4cf96e2dcb6dd7d
+SHA256: 3367e36ecf7ccb84179fcd0cd546ee6f77fdb8f11494eed237d6db7222578e45
 Section: admin
 Priority: optional
 Description: [generated from Rust crate commentary]

@@ -84,16 +84,16 @@ Description: An open source cross-platform alternative to AirDrop
 Uploaders: TheGB0077 <gb.lima.dev@gmail.com>
 
 Package: metapackage
-Version: 0.0.1721920866
+Version: 0.0.1722179251
 Architecture: amd64
 Maintainer: John Doe <john@doe.org>
 Installed-Size: 7
-Depends: gnome-session, nautilus, gnome-system-monitor, google-perftools, valgrind, strace, bison, hugo, libjemalloc2, libjemalloc-dev, jq, jsonnet, nmap, ragel, yq, pipx, build-essential, cmake, gnupg2, just, git-delta, bat, rustfilt, apt-listbugs, net-tools, flatpak, wget, curl, sqlite3, meson, micro, fastfetch, nala, htop, nano, netselect-apt, imagemagick, blanket, localsend
-Filename: ./metapackage_0.0.1721920866_amd64.deb
-Size: 1292
-MD5sum: 0679fd4c9d64259889fea045a0113191
-SHA1: 87bebab2959fe28ed871692a80239e418bde908d
-SHA256: 82e4dc5a75fc1561414a75c66b0347a3b177e202c6a60dd9c12b24cc8bc86f2b
+Depends: gnome-session, nautilus, gnome-system-monitor, google-perftools, valgrind, strace, bison, hugo, libjemalloc2, libjemalloc-dev, jq, jsonnet, nmap, ragel, yq, pipx, build-essential, cmake, gnupg2, just, git-delta, bat, rustfilt, apt-listbugs-rs, net-tools, flatpak, wget, curl, sqlite3, meson, micro, fastfetch, nala, htop, nano, netselect-apt, imagemagick, blanket, localsend
+Filename: ./metapackage_0.0.1722179251_amd64.deb
+Size: 1296
+MD5sum: bdd5a173f3961e7db5e682afb025ba2f
+SHA1: 09d9ab123d92133a5df2d2080586788e8116a3dd
+SHA256: dcd5aff03f052f3f890e1f2b446f2f085038c47ae892720b1834d1e06afdb641
 Section: utils
 Priority: extra
 Description: Meta-package that depends on all of packages that I use.

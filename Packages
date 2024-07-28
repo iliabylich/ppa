@@ -1,3 +1,19 @@
+Package: apt-listbugs-rs
+Version: 0.1.0-1722178859
+Architecture: amd64
+Maintainer: apt-listbugs-rs developer <ibylich@gmail.com>
+Installed-Size: 880
+Depends: libc6 (>= 2.34)
+Filename: ./apt-listbugs-rs_0.1.0-1722178859_amd64.deb
+Size: 342324
+MD5sum: 9f10f31489b48b67950e9c125ce4b23d
+SHA1: 22978393e02c0203dfc421a5d2d72af6842743b7
+SHA256: 61f823173d582ac9a142e85ae45d4c10b5866c50fd24e6ca083112a1a608cb05
+Section: admin
+Priority: optional
+Description: [generated from Rust crate apt-listbugs-rs]
+ Zero-dependency alternative to apt-listbugs.
+
 Package: blanket
 Version: 0.7.0
 Architecture: all

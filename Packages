@@ -65,18 +65,18 @@ Description: [generated from Rust crate hnparser]
  HN parser
 
 Package: localsend
-Version: 1.15.2+52
+Version: 1.15.3+53
 Architecture: amd64
 Essential: no
 Maintainer: Tienisto <dev.tien.donam@gmail.com>
 Installed-Size: 30600
 Pre-Depends: libc6 (>= 2.31)
 Depends: libappindicator3-1 | libayatana-appindicator3-1, gir1.2-appindicator3-0.1 | gir1.2-ayatanaappindicator3-0.1, libayatana-ido3-0.4-0, xdg-user-dirs
-Filename: ./LocalSend-1.15.2-linux-x86-64.deb
-Size: 9464956
-MD5sum: e286d40b496bcb9f69aacc5915fd544f
-SHA1: f6e89694d1902f58d604ddc175da38df88598d2d
-SHA256: 9fd9a85260ef7469f8f048a77fa84ef9a42c78351767f7ceec6eb3bc50a78999
+Filename: ./LocalSend-1.15.3-linux-x86-64.deb
+Size: 9461116
+MD5sum: 387430b93eb05667d68c9c4deb61785c
+SHA1: 9e675bdcef04859288457e084fe725f088e82f87
+SHA256: c66d3ea3f14bcb1774b796be92d6f8d98dd3702d02a8fee1da8a6cace83fcee1
 Section: x11
 Priority: optional
 Homepage: https://localsend.org/

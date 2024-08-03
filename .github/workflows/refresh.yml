@@ -30,6 +30,7 @@ jobs:
       - run: ./download-latest-deb.rb iliabylich/blanket-deb
       - run: ./download-latest-deb.rb iliabylich/metapackage-deb
       - run: ./download-latest-deb.rb iliabylich/apt-listbugs-rs
+      - run: ./download-latest-deb.rb iliabylich/onemorebeer-ui
 
       - run: dpkg-scanpackages --multiversion . > Packages
       - run: gzip -k -f Packages

@@ -31,6 +31,7 @@ jobs:
       - run: ./download-latest-deb.rb iliabylich/metapackage-deb
       - run: ./download-latest-deb.rb iliabylich/apt-listbugs-rs
       - run: ./download-latest-deb.rb iliabylich/onemorebeer-ui
+      - run: ./download-latest-deb.rb iliabylich/waybar-network-applet
 
       - run: dpkg-scanpackages --multiversion . > Packages
       - run: gzip -k -f Packages

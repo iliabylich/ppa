@@ -68,16 +68,16 @@ Description: An open source cross-platform alternative to AirDrop
 Uploaders: TheGB0077 <gb.lima.dev@gmail.com>
 
 Package: metapackage
-Version: 0.0.1722893798
+Version: 0.0.1723060103
 Architecture: amd64
 Maintainer: John Doe <john@doe.org>
 Installed-Size: 7
-Depends: gnome-session, nautilus, gnome-system-monitor, google-perftools, valgrind, strace, bison, hugo, libjemalloc2, libjemalloc-dev, jq, jsonnet, nmap, ragel, yq, pipx, build-essential, cmake, gnupg2, just, git-delta, bat, rustfilt, apt-listbugs, net-tools, flatpak, wget, curl, sqlite3, meson, micro, fastfetch, nala, htop, nano, netselect-apt, imagemagick, blanket, localsend
-Filename: ./metapackage_0.0.1722893798_amd64.deb
-Size: 1292
-MD5sum: f8bfd0f302f996fc7066eb06a283bc15
-SHA1: 87572d3c82c6c9fa5a4c7a18dd4bfb6f7db8c144
-SHA256: 357a594389ceb94de5fd4c1da039d608dc27c2af5d72594174c49e521d29a6c7
+Depends: gnome-session, nautilus, gnome-system-monitor, network-manager-gnome, google-perftools, valgrind, strace, bison, hugo, libjemalloc2, libjemalloc-dev, jq, jsonnet, nmap, ragel, yq, pipx, build-essential, cmake, gnupg2, just, git-delta, bat, rustfilt, apt-listbugs, net-tools, flatpak, wget, curl, sqlite3, meson, micro, fastfetch, nala, htop, nano, netselect-apt, imagemagick, blanket, localsend, wlogout, waybar, waybar-network-applet, tree, swaylock, slurp, grim, hyprland, hyprpaper, fonts-font-awesome, ffmpeg
+Filename: ./metapackage_0.0.1723060103_amd64.deb
+Size: 1368
+MD5sum: 2125c5d8c62db8d848e716566adc3ea9
+SHA1: 02ba6a0f5ddceb220ea799667146e87f4ffba0d0
+SHA256: 2eb07024a981c7570ff0b474111e381a47a4ce47a280d77ebb6ac3e46ed8731b
 Section: utils
 Priority: extra
 Description: Meta-package that depends on all of packages that I use.

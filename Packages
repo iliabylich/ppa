@@ -115,16 +115,16 @@ Description: [generated from Rust crate onemorebeer-ui]
  A simple frontend for a beer shop.
 
 Package: waybar-network-applet
-Version: 0.0.2
+Version: 0.0.3
 Architecture: amd64
 Maintainer: Ilya Bylich <ibylich@gmail.com>
 Installed-Size: 703
 Depends: libc6 (>= 2.34), libcairo2 (>= 1.2.4), libgcc-s1 (>= 4.2), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0t64 (>= 2.54.0), libgtk-4-1 (>= 4.0.0), libgtk4-layer-shell0 (>= 1.0.2), libpango-1.0-0 (>= 1.14.0)
-Filename: ./waybar-network-applet_0.0.2_amd64.deb
-Size: 238744
-MD5sum: e1a8cbc02bea0ae55e53b386c28a09a1
-SHA1: 8f526d44124c73b56f69b06050699c02f210cbe5
-SHA256: 4ebbadfc9ffc97f8769f54582cfd179244e292b6d9a0514945f737234fe0187f
+Filename: ./waybar-network-applet_0.0.3_amd64.deb
+Size: 238764
+MD5sum: c67da1b8d95b76533c80b1ef9d96f258
+SHA1: cbb0977c7d5b31a80dc55511863a5d375082892c
+SHA256: 38109abb5f2cf96d7038496135a2cb469e8d248e36569c8a3cf2028bb15beb9c
 Section: utils
 Priority: extra
 Description: Network widget for waybar

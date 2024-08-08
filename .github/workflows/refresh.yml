@@ -23,12 +23,11 @@ jobs:
         run: gpg -K
 
       - run: rm -f *.deb
+      - run: ./download-everything-from-release.rb iliabylich/build-deb-package latest
       - run: ./download-latest-deb.rb iliabylich/hn-parser
       - run: ./download-latest-deb.rb iliabylich/commentary
       - run: ./download-latest-deb.rb iliabylich/obj-load
       - run: ./download-latest-deb.rb localsend/localsend
-      - run: ./download-latest-deb.rb iliabylich/blanket-deb
-      - run: ./download-latest-deb.rb iliabylich/metapackage-deb
       - run: ./download-latest-deb.rb iliabylich/onemorebeer-ui
       - run: ./download-latest-deb.rb iliabylich/waybar-network-applet
 

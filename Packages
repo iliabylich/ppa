@@ -1,20 +1,32 @@
+Package: aquamarine
+Version: 0.3.0
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 1465
+Depends: hyprutils, libc6 (>= 2.38), libdisplay-info2 (>= 0.2.0), libdrm2 (>= 2.4.119), libegl1, libgbm1 (>= 21.3.0~rc1), libgcc-s1 (>= 4.3), libgles2, libinput10 (>= 1.26.0), libseat1 (>= 0.5.0), libstdc++6 (>= 13.1), libudev1 (>= 183), libwayland-client0 (>= 1.20.0)
+Filename: ./aquamarine_0.3.0_amd64.deb
+Size: 349416
+MD5sum: abce9fe1b1562a7ab989c35c0cab01cb
+SHA1: 8885c13184052c13cb54f1658f07ca4a8cce57ac
+SHA256: c9c03027a5dae6986048b8d77f501ed80cbdeee7a56dbc98cf6f6c301f01ef2d
+Section: utils
+Priority: extra
+Description: Aquamarine is a very light linux rendering backend library
+
 Package: blanket
 Version: 0.7.0
-Architecture: all
-Maintainer: Rafael Mardojai CM <email@rafaelmardojai.com>
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
 Installed-Size: 18030
 Depends: dconf-gsettings-backend | gsettings-backend, gir1.2-adw-1, gir1.2-gst-plugins-bad-1.0, python3
 Filename: ./blanket_0.7.0_amd64.deb
-Size: 17491196
-MD5sum: 762623782304c2ea1fb0b697ea851795
-SHA1: d4174eddd7f6beb2d121a5ffe1f7c95ce08d792f
-SHA256: 7e82824b9c9f5e061388242c80d9fe79d4f8ddde8454cff3249f2997e3cd6067
+Size: 17491096
+MD5sum: e5e4dd8ccbf1fc90c00dada94c1f425d
+SHA1: 6e3e29905281b3b6e0d37537477900c96ee33467
+SHA256: 8d6631ae3fd521d683fab8d124bea847381989431ea108df22661b2a6c918807
 Section: utils
-Priority: optional
-Homepage: https://github.com/rafaelmardojai/blanket
+Priority: extra
 Description: Listen to different sounds
- Improve focus and increase your productivity by listening to different sounds.
- Or allows you to fall asleep in a noisy environment.
 
 Package: commentary
 Version: 0.1.0-1721768528
@@ -48,6 +60,66 @@ Priority: optional
 Description: [generated from Rust crate hnparser]
  HN parser
 
+Package: hyprland
+Version: 0.42.0
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 58620
+Depends: aquamarine, hyprutils, libc6 (>= 2.38), libcairo2 (>= 1.2.4), libdrm2 (>= 2.4.113), libegl1, libgbm1 (>= 7.11~1), libgcc-s1 (>= 4.3), libgles2, libglib2.0-0t64 (>= 2.12.0), libhyprcursor0 (>= 0.1.9), libhyprlang2 (>= 0.5.2), libinput10 (>= 1.23.0), libpango-1.0-0 (>= 1.18.0), libpangocairo-1.0-0 (>= 1.14.0), libpixman-1-0 (>= 0.11.2), libstdc++6 (>= 13.1), libuuid1 (>= 2.16), libwayland-server0 (>= 1.17.93), libxcb-composite0, libxcb-errors0 (>= 1.0.1), libxcb-icccm4 (>= 0.4.1), libxcb-render0, libxcb-res0 (>= 1.10), libxcb-xfixes0, libxcb1, libxcursor1 (>> 1.1.2), libxkbcommon0 (>= 0.8.0)
+Filename: ./hyprland_0.42.0_amd64.deb
+Size: 48556448
+MD5sum: 9980b1492f62f6881f666e00f34b1616
+SHA1: 1af45cc6a474638bf9c4221fae70af640550825d
+SHA256: 2d6ced86e9f104bcd57f241acd52c1815efab4ce9765964763f175eb1fbbb4c5
+Section: utils
+Priority: extra
+Description: Hyprland is an independent, highly customizable, dynamic tiling Wayland compositor that doesn't sacrifice on its looks.
+
+Package: hyprlock
+Version: 0.4.1
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 678
+Depends: hyprutils, libc6 (>= 2.38), libcairo2 (>= 1.10.0), libdrm2 (>= 2.4.109), libegl1, libgbm1 (>= 21.3.0~rc1), libgcc-s1 (>= 4.3), libglib2.0-0t64 (>= 2.12.0), libhyprlang2 (>= 0.5.2), libjpeg62-turbo (>= 1.3.1), libmagic1t64 (>= 5.12), libopengl0, libpam0g (>= 0.99.7.1), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libstdc++6 (>= 13.1), libwayland-client0 (>= 1.20.0), libwayland-egl1 (>= 1.15.0), libwebp7 (>= 1.4.0), libxkbcommon0 (>= 0.5.0)
+Filename: ./hyprlock_0.4.1_amd64.deb
+Size: 225436
+MD5sum: 4ea21c4a7d61aeee9b94f3accbe59c28
+SHA1: 0b121c5fe412baa0b4d13b26e2ead8ba6d2834bd
+SHA256: 9da99fcbe463989c6f5adfccc303969c183e8c5740607ae3ad3f314e74b811bf
+Section: utils
+Priority: extra
+Description: Hyprland's GPU-accelerated screen locking utility
+
+Package: hyprutils
+Version: 0.2.1
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 149
+Depends: libc6 (>= 2.14), libgcc-s1 (>= 3.0), libpixman-1-0 (>= 0.25.2), libstdc++6 (>= 13)
+Filename: ./hyprutils_0.2.1_amd64.deb
+Size: 36716
+MD5sum: f661e9ee874209bd7f1177be1d5421ef
+SHA1: 5433c2618ed89373566f5dcbfae6ce19f3a85883
+SHA256: 9b92466ff9bece6ad73facb1df8daf963fb677d127e9ef4da63255ec8ff85de0
+Section: utils
+Priority: extra
+Description: Hyprland utilities library used across the ecosystem
+
+Package: hyprwayland-scanner
+Version: 0.4.0
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 206
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 4.3), libpugixml1v5 (>= 1.4), libstdc++6 (>= 13.1)
+Filename: ./hyprwayland-scanner_0.4.0_amd64.deb
+Size: 72372
+MD5sum: 50deff9344a529e84244845f0cc0ed8c
+SHA1: a9d17f0695a92c170af298f740810b259ca20a1b
+SHA256: bab4ac639d5012583a11b8fcc27318f9f13b8aa459b00956710d1f9b6b6e5405
+Section: utils
+Priority: extra
+Description: A Hyprland implementation of wayland-scanner, in and for C++.
+
 Package: localsend
 Version: 1.15.3+53
 Architecture: amd64
@@ -68,19 +140,19 @@ Description: An open source cross-platform alternative to AirDrop
 Uploaders: TheGB0077 <gb.lima.dev@gmail.com>
 
 Package: metapackage
-Version: 0.0.1723060230
+Version: 0.0.1723146330
 Architecture: amd64
 Maintainer: John Doe <john@doe.org>
 Installed-Size: 7
-Depends: gnome-session, nautilus, gnome-system-monitor, network-manager-gnome, google-perftools, valgrind, strace, bison, hugo, libjemalloc2, libjemalloc-dev, jq, jsonnet, nmap, ragel, yq, pipx, build-essential, cmake, gnupg2, just, git-delta, bat, rustfilt, apt-listbugs, net-tools, flatpak, wget, curl, sqlite3, meson, micro, fastfetch, nala, htop, nano, netselect-apt, imagemagick, blanket, localsend, wlogout, waybar, waybar-network-applet, tree, swaylock, slurp, grim, hyprland, hyprpaper, fonts-font-awesome, ffmpeg, wofi
-Filename: ./metapackage_0.0.1723060230_amd64.deb
-Size: 1364
-MD5sum: 4229871ea9d3ab1a74aa0ad96be9e2f2
-SHA1: 9b381acf7751b664cbc0f49f37ca97052c4726fe
-SHA256: e6f2a41b4904271be04d989cac66f4f08abc685d972c32185c99fc3f5d9899cb
+Depends: gnome-session, nautilus, gnome-system-monitor, gedit, network-manager-gnome, google-perftools, valgrind, strace, bison, hugo, libjemalloc2, libjemalloc-dev, jq, jsonnet, nmap, ragel, yq, pipx, build-essential, cmake, gnupg2, just, git-delta, bat, rustfilt, apt-listbugs, net-tools, flatpak, wget, curl, sqlite3, meson, micro, fastfetch, nala, htop, nano, netselect-apt, imagemagick, wlogout, waybar, tree, swaylock, slurp, grim, hyprpaper, fonts-font-awesome, ffmpeg, wofi, hyprland, hyprlock, waybar-network-applet, blanket, localsend
+Filename: ./metapackage_0.0.1723146330_amd64.deb
+Size: 1372
+MD5sum: a7336e03c809885a6f5004d2735cc595
+SHA1: 06c2f96ffdcd45d4cbd55249e993fc16767eb96f
+SHA256: 11410993215df4c0d8e91bff9738dfb349cf2789886c82083c0a4fafca9b8490
 Section: utils
 Priority: extra
-Description: Meta-package that depends on all of packages that I use.
+Description: Meta-package that depends on all packages that I use
 
 Package: obj-down-up-load-server
 Version: 0.1.0-1716548595

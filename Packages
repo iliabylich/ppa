@@ -140,16 +140,16 @@ Description: An open source cross-platform alternative to AirDrop
 Uploaders: TheGB0077 <gb.lima.dev@gmail.com>
 
 Package: metapackage
-Version: 0.0.1723294456
+Version: 0.0.1723299172
 Architecture: amd64
 Maintainer: John Doe <john@doe.org>
 Installed-Size: 7
-Depends: gnome-session, nautilus, gnome-system-monitor, gedit, network-manager-gnome, google-perftools, valgrind, strace, bison, hugo, libjemalloc2, libjemalloc-dev, jq, jsonnet, nmap, ragel, yq, pipx, build-essential, cmake, gnupg2, just, git-delta, bat, rustfilt, apt-listbugs, net-tools, flatpak, wget, curl, sqlite3, meson, micro, fastfetch, nala, htop, nano, netselect-apt, imagemagick, wlogout, waybar, tree, swaylock, slurp, grim, hyprpaper, fonts-font-awesome, ffmpeg, wofi, hyprland, hyprlock, waybar-network-applet, blanket, localsend
-Filename: ./metapackage_0.0.1723294456_amd64.deb
-Size: 1380
-MD5sum: 26cd26be7add2ce9780b749422a95555
-SHA1: fcc205e2e66b4c8bdd416720067862013c563a50
-SHA256: 42f60e5316fddf405c7b6b865512aa38a0d8542eb1016d54575096d56a0b954b
+Depends: gnome-session, nautilus, gnome-system-monitor, gedit, network-manager-gnome, google-perftools, valgrind, strace, bison, hugo, libjemalloc2, libjemalloc-dev, jq, jsonnet, nmap, ragel, yq, pipx, build-essential, cmake, gnupg2, just, git-delta, bat, rustfilt, apt-listbugs, net-tools, flatpak, wget, curl, sqlite3, meson, micro, fastfetch, nala, htop, nano, netselect-apt, imagemagick, wlogout, waybar, tree, swaylock, slurp, grim, hyprpaper, fonts-font-awesome, ffmpeg, wofi, wf-recorder, mpv, libnotify-bin, dunst, hyprland, hyprlock, waybar-network-applet, blanket, localsend
+Filename: ./metapackage_0.0.1723299172_amd64.deb
+Size: 1400
+MD5sum: d87e24c3ce3b6dfbe39dcd4858126e38
+SHA1: b313e18c273f3cb1abbbecd3d9b086e047268f0e
+SHA256: bc04ac111ca7dd50448ad8ff2189aab474f5e0c6975b9482634794f8d9f18a32
 Section: utils
 Priority: extra
 Description: Meta-package that depends on all packages that I use

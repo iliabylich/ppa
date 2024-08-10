@@ -1,3 +1,18 @@
+Package: ags
+Version: 1.8.2
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 61003
+Depends: libc6 (>= 2.4), libglib2.0-0t64 (>= 2.80.0), libpam0g (>= 0.99.7.1), libpulse-mainloop-glib0 (>= 0.99.1), libpulse0 (>= 0.99.1)
+Filename: ./ags_1.8.2_amd64.deb
+Size: 3476028
+MD5sum: 22d62b8c6c2fbb2dfdd2055d9572b73e
+SHA1: 4244efba2e43071b5f1770a3eaf9665efac93c1f
+SHA256: d37c2640c61ea32a841df8bec6cf4596f71a10500479d70b6cce76d131ecbc86
+Section: utils
+Priority: extra
+Description: A customizable and extensible shell
+
 Package: aquamarine
 Version: 0.3.1
 Architecture: amd64

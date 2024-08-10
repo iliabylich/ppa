@@ -1,0 +1,47 @@
+name: deploy
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ master ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: import GPG key
+        run: |
+          echo "${{ secrets.GPG_PRIVATE_KEY }}" > private.key
+          gpg --import --no-tty --batch private.key
+          rm -f private.key
+
+      - name: show GPG keys
+        run: gpg -K
+
+      - run: rm -f *.deb
+      - run: ./download-everything-from-release.rb iliabylich/build-deb-package full-hyprland
+      - run: ./download-everything-from-release.rb iliabylich/build-deb-package blanket
+      - run: ./download-everything-from-release.rb iliabylich/build-deb-package waybar-network-applet
+      - run: ./download-everything-from-release.rb iliabylich/build-deb-package metapackage
+      - run: ./download-latest-deb.rb iliabylich/hn-parser
+      - run: ./download-latest-deb.rb iliabylich/commentary
+      - run: ./download-latest-deb.rb iliabylich/obj-load
+      - run: ./download-latest-deb.rb localsend/localsend
+      - run: ./download-latest-deb.rb iliabylich/onemorebeer-ui
+
+      - run: dpkg-scanpackages --multiversion . > Packages
+      - run: gzip -k -f Packages
+
+      - run: apt-ftparchive release . > Release
+
+      - run: gpg --pinentry-mode loopback --passphrase="${{ secrets.GPG_PASSPHRASE }}" --batch --yes --default-key "ibylich@gmail.com" -abs -o - Release > Release.gpg
+      - run: gpg --pinentry-mode loopback --passphrase="${{ secrets.GPG_PASSPHRASE }}" --batch --yes --default-key "ibylich@gmail.com" --clearsign -o - Release > InRelease
+
+      - uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: "."
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'

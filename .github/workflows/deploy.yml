@@ -2,8 +2,12 @@ name: deploy
 
 on:
   workflow_dispatch:
-  push:
-    branches: [ master ]
+    inputs:
+      runName:
+        description: an ID that is displayed in the name of the run (used for GH CLI scripting)
+        required: true
+
+run-name: "${{ github.event.inputs.runName }}"
 
 jobs:
   deploy:

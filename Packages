@@ -140,16 +140,16 @@ Description: An open source cross-platform alternative to AirDrop
 Uploaders: TheGB0077 <gb.lima.dev@gmail.com>
 
 Package: metapackage
-Version: 0.0.1723304054
+Version: 0.0.1723304778
 Architecture: amd64
 Maintainer: John Doe <john@doe.org>
 Installed-Size: 7
 Depends: gnome-session, nautilus, gnome-system-monitor, gedit, network-manager-gnome, google-perftools, valgrind, strace, bison, hugo, libjemalloc2, libjemalloc-dev, jq, jsonnet, nmap, ragel, yq, pipx, build-essential, cmake, gnupg2, just, git-delta, bat, rustfilt, apt-listbugs, net-tools, flatpak, wget, curl, sqlite3, meson, micro, fastfetch, nala, htop, nano, netselect-apt, imagemagick, wlogout, waybar, tree, swaylock, slurp, grim, hyprpaper, fonts-font-awesome, ffmpeg, wofi, wf-recorder, mpv, libnotify-bin, dunst, hyprland, hyprlock, waybar-network-applet, blanket, localsend
-Filename: ./metapackage_0.0.1723304054_amd64.deb
+Filename: ./metapackage_0.0.1723304778_amd64.deb
 Size: 1400
-MD5sum: 16f7c106b05588184d816dd7bf3cb54b
-SHA1: 7e417033dcf570de294c8e333d1f9d2449d1eb45
-SHA256: 6218a324ee2c3c08df6682f05c8738aa3920ff07b7b031be419ccd0f87fe55a5
+MD5sum: 8f63dfa3afcbd48c3942079fb6c92e7d
+SHA1: 82d3d522bd526c081eb9b4805d48b26772b9b136
+SHA256: 87c4647f6b450069f4fda7d0b139fddf852b51f88be3114cc8762f12a86b63a0
 Section: utils
 Priority: extra
 Description: Meta-package that depends on all packages that I use

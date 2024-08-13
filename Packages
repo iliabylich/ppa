@@ -28,21 +28,6 @@ Section: utils
 Priority: extra
 Description: Aquamarine is a very light linux rendering backend library
 
-Package: blanket
-Version: 0.7.0
-Architecture: amd64
-Maintainer: John Doe <john@doe.org>
-Installed-Size: 18030
-Depends: dconf-gsettings-backend | gsettings-backend, gir1.2-adw-1, gir1.2-gst-plugins-bad-1.0, python3
-Filename: ./blanket_0.7.0_amd64.deb
-Size: 17491096
-MD5sum: e5e4dd8ccbf1fc90c00dada94c1f425d
-SHA1: 6e3e29905281b3b6e0d37537477900c96ee33467
-SHA256: 8d6631ae3fd521d683fab8d124bea847381989431ea108df22661b2a6c918807
-Section: utils
-Priority: extra
-Description: Listen to different sounds
-
 Package: commentary
 Version: 0.1.0-1721768528
 Architecture: amd64

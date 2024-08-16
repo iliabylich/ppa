@@ -26,7 +26,6 @@ jobs:
 
       - run: rm -f *.deb
       - run: ./download-everything-from-release.rb iliabylich/build-deb-package full-hyprland
-      - run: ./download-everything-from-release.rb iliabylich/build-deb-package waybar-network-applet
       - run: ./download-everything-from-release.rb iliabylich/build-deb-package metapackage
       - run: ./download-everything-from-release.rb iliabylich/build-deb-package ags
       - run: ./download-latest-deb.rb iliabylich/hn-parser

@@ -140,16 +140,16 @@ Description: An open source cross-platform alternative to AirDrop
 Uploaders: TheGB0077 <gb.lima.dev@gmail.com>
 
 Package: metapackage
-Version: 0.0.1724257843
+Version: 0.0.1724258258
 Architecture: amd64
 Maintainer: John Doe <john@doe.org>
 Installed-Size: 7
-Depends: gnome-session, nautilus, gnome-system-monitor, network-manager-gnome, gedit, loupe, flatpak, localsend, blanket, mpv, build-essential, cmake, meson, ragel, valgrind, google-perftools, bison, strace, rustfilt, sqlite3, gh, hugo, jq, jsonnet, nmap, yq, pipx, gnupg2, just, git-delta, bat, micro, fastfetch, htop, nano, imagemagick, tree, ffmpeg, libnotify-bin, stow, traceroute, hyprland, hyprlock, swaybg, gjs, dunst, fonts-font-awesome, wl-clipboard, wofi, wf-recorder, slurp, grim, cliphist, libjemalloc2, libjemalloc-dev, libgtk-4-dev, libgtk4-layer-shell-dev, libadwaita-1-dev, apt-listbugs, wireless-tools, apt-file, netselect-apt
-Filename: ./metapackage_0.0.1724257843_amd64.deb
-Size: 1432
-MD5sum: 58e8996c60fa6aeb9e7610c2c010d5bd
-SHA1: 5ea6a3b6e3fbc12d619206d07624058319a1d766
-SHA256: 9d92aeb94bc9f06021e6459ca49329d68092aa62640ec3978933c126cd68b247
+Depends: gnome-session, nautilus, gnome-system-monitor, network-manager-gnome, gedit, loupe, flatpak, localsend, blanket, mpv, build-essential, cmake, meson, ragel, valgrind, google-perftools, bison, strace, rustfilt, sqlite3, gh, hugo, jq, jsonnet, nmap, yq, pipx, gnupg2, just, git-delta, bat, micro, fastfetch, htop, nano, imagemagick, tree, ffmpeg, libnotify-bin, stow, traceroute, hyprland, hyprlock, swaybg, gjs, dunst, fonts-font-awesome, wl-clipboard, wofi, wf-recorder, slurp, grim, cliphist, libjemalloc2, libjemalloc-dev, libgtk-4-dev, libgtk4-layer-shell-dev, libadwaita-1-dev, apt-listbugs, apt-file, netselect-apt
+Filename: ./metapackage_0.0.1724258258_amd64.deb
+Size: 1424
+MD5sum: c0229ef03e2a404af85c8b976aee733a
+SHA1: 201d4a1c127e074aaa5f317684a55c06e9d29d0a
+SHA256: c15150946249c3446f4d5ea7dbd5f25722a5232801faf6a083ea883225b1e2b5
 Section: utils
 Priority: extra
 Description: Meta-package that depends on all packages that I use

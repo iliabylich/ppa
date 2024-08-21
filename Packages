@@ -140,16 +140,16 @@ Description: An open source cross-platform alternative to AirDrop
 Uploaders: TheGB0077 <gb.lima.dev@gmail.com>
 
 Package: metapackage
-Version: 0.0.1723830033
+Version: 0.0.1724255286
 Architecture: amd64
 Maintainer: John Doe <john@doe.org>
 Installed-Size: 7
-Depends: gnome-session, nautilus, gnome-system-monitor, gedit, network-manager-gnome, google-perftools, valgrind, strace, bison, hugo, libjemalloc2, libjemalloc-dev, jq, jsonnet, nmap, ragel, yq, pipx, build-essential, cmake, gnupg2, just, git-delta, bat, rustfilt, apt-listbugs, net-tools, flatpak, wget, curl, sqlite3, meson, micro, fastfetch, nala, htop, nano, netselect-apt, imagemagick, tree, swaylock, slurp, grim, fonts-font-awesome, ffmpeg, wofi, wf-recorder, mpv, libnotify-bin, dunst, stow, apt-file, libgtk-4-dev, libgtk4-layer-shell-dev, libadwaita-1-dev, hyprland, hyprlock, blanket, localsend
-Filename: ./metapackage_0.0.1723830033_amd64.deb
-Size: 1416
-MD5sum: fb73b3b5dd44831745ebd20ef7e08f51
-SHA1: 5d6b088d860b9e946eab60b7fb3e050aca09371d
-SHA256: 047dc6d45afe9a3ba0df2b02bbd024f3a7f2f75db78be9fa8b2918bd7f9d8b1a
+Depends: gnome-session, nautilus, gnome-system-monitor, network-manager-gnome, gedit, flatpak, localsend, blanket, mpv, build-essential, cmake, meson, ragel, valgrind, google-perftools, bison, strace, rustfilt, sqlite3, hugo, jq, jsonnet, nmap, yq, pipx, gnupg2, just, git-delta, bat, apt-listbugs, net-tools, wget, curl, micro, fastfetch, htop, nano, netselect-apt, imagemagick, tree, ffmpeg, libnotify-bin, stow, apt-file, traceroute, hyprland, hyprlock, swaybg, gjs, dunst, fonts-font-awesome, wl-clipboard, wofi, wf-recorder, slurp, grim, cliphist, libjemalloc2, libjemalloc-dev, libgtk-4-dev, libgtk4-layer-shell-dev, libadwaita-1-dev
+Filename: ./metapackage_0.0.1724255286_amd64.deb
+Size: 1432
+MD5sum: d6b1e59332140d75f80860ed48207c5e
+SHA1: 275899c60abe2ddcc180c46651ff27b6f623ceaf
+SHA256: a7d83db3aaafec23556f767755968f3c055fdc5fca4a1be5e9acc420cc9b6cfa
 Section: utils
 Priority: extra
 Description: Meta-package that depends on all packages that I use

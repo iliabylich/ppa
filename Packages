@@ -140,16 +140,16 @@ Description: An open source cross-platform alternative to AirDrop
 Uploaders: TheGB0077 <gb.lima.dev@gmail.com>
 
 Package: metapackage
-Version: 0.0.1724258258
+Version: 0.0.1724697145
 Architecture: amd64
 Maintainer: John Doe <john@doe.org>
 Installed-Size: 7
-Depends: gnome-session, nautilus, gnome-system-monitor, network-manager-gnome, gedit, loupe, flatpak, localsend, blanket, mpv, build-essential, cmake, meson, ragel, valgrind, google-perftools, bison, strace, rustfilt, sqlite3, gh, hugo, jq, jsonnet, nmap, yq, pipx, gnupg2, just, git-delta, bat, micro, fastfetch, htop, nano, imagemagick, tree, ffmpeg, libnotify-bin, stow, traceroute, hyprland, hyprlock, swaybg, gjs, dunst, fonts-font-awesome, wl-clipboard, wofi, wf-recorder, slurp, grim, cliphist, libjemalloc2, libjemalloc-dev, libgtk-4-dev, libgtk4-layer-shell-dev, libadwaita-1-dev, apt-listbugs, apt-file, netselect-apt
-Filename: ./metapackage_0.0.1724258258_amd64.deb
-Size: 1424
-MD5sum: c0229ef03e2a404af85c8b976aee733a
-SHA1: 201d4a1c127e074aaa5f317684a55c06e9d29d0a
-SHA256: c15150946249c3446f4d5ea7dbd5f25722a5232801faf6a083ea883225b1e2b5
+Depends: gnome-session, nautilus, gnome-system-monitor, network-manager-gnome, gedit, loupe, flatpak, localsend, blanket, mpv, pavucontrol, build-essential, cmake, meson, ragel, valgrind, google-perftools, bison, strace, rustfilt, sqlite3, gh, pkg-config, make, hugo, jq, jsonnet, nmap, yq, pipx, gnupg2, just, git-delta, bat, micro, fastfetch, htop, nano, imagemagick, tree, ffmpeg, libnotify-bin, stow, traceroute, wget, hyprland, hyprlock, swaybg, gjs, dunst, fonts-font-awesome, wl-clipboard, wofi, wf-recorder, slurp, grim, cliphist, libjemalloc2, libjemalloc-dev, libgtk-4-dev, libgtk4-layer-shell-dev, libadwaita-1-dev, libvte-2.91-gtk4-dev, blueprint-compiler, apt-listbugs, apt-file, netselect-apt
+Filename: ./metapackage_0.0.1724697145_amd64.deb
+Size: 1472
+MD5sum: 2270b9d4f09e18dbc9a87d3e6d0acb18
+SHA1: 6d694ef4d9707196a796c717ace96dd6e141dfcb
+SHA256: 0137b0e37506f52d081d77c5c2333255f9b2bfee84a3cf0348e65c177aff2892
 Section: utils
 Priority: extra
 Description: Meta-package that depends on all packages that I use

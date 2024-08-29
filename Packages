@@ -140,16 +140,16 @@ Description: An open source cross-platform alternative to AirDrop
 Uploaders: TheGB0077 <gb.lima.dev@gmail.com>
 
 Package: metapackage
-Version: 0.0.1724710102
+Version: 0.0.1724958939
 Architecture: amd64
 Maintainer: John Doe <john@doe.org>
 Installed-Size: 7
-Depends: gnome-session, nautilus, gnome-system-monitor, network-manager-gnome, flatpak, localsend, blanket, mpv, pavucontrol, transmission-gtk, amberol, loupe, gedit, baobab, d-spy, file-roller, gnote, obfuscate, zenity, build-essential, cmake, meson, ragel, valgrind, google-perftools, bison, strace, rustfilt, sqlite3, gh, pkg-config, make, hugo, jq, jsonnet, nmap, yq, pipx, gnupg2, just, git-delta, bat, micro, fastfetch, htop, nano, imagemagick, tree, ffmpeg, libnotify-bin, stow, traceroute, wget, hyprland, hyprlock, swaybg, gjs, dunst, fonts-font-awesome, wl-clipboard, wofi, wf-recorder, slurp, grim, cliphist, libjemalloc2, libjemalloc-dev, libgtk-4-dev, libgtk4-layer-shell-dev, libadwaita-1-dev, libvte-2.91-gtk4-dev, blueprint-compiler, apt-listbugs, apt-file, netselect-apt
-Filename: ./metapackage_0.0.1724710102_amd64.deb
-Size: 1512
-MD5sum: f63a39300ab50ca55354d8860425a9c3
-SHA1: c009f0642573f53d00aadf0d4fcc9b26c2f6bec6
-SHA256: fb6b38a103a5e1c4501688a89f02a7e41996e10989d6e45f15b3f17ad7234701
+Depends: nautilus, gnome-system-monitor, flatpak, localsend, blanket, mpv, pavucontrol, transmission-gtk, amberol, loupe, gedit, baobab, d-spy, file-roller, gnote, obfuscate, zenity, build-essential, cmake, meson, ragel, valgrind, google-perftools, bison, strace, rustfilt, sqlite3, gh, pkg-config, make, hugo, jq, jsonnet, nmap, yq, pipx, gnupg2, just, git-delta, bat, micro, fastfetch, htop, nano, imagemagick, tree, ffmpeg, libnotify-bin, stow, traceroute, wget, hyprland, hyprlock, swaybg, gjs, dunst, fonts-font-awesome, wl-clipboard, wofi, wf-recorder, slurp, grim, cliphist, libjemalloc2, libjemalloc-dev, libgtk-4-dev, libgtk4-layer-shell-dev, libadwaita-1-dev, libvte-2.91-gtk4-dev, blueprint-compiler, apt-listbugs, apt-file, netselect-apt
+Filename: ./metapackage_0.0.1724958939_amd64.deb
+Size: 1504
+MD5sum: 826802283e5aa31cd8291652adf750c7
+SHA1: 3a8f4f0ec4190fd03c3a2f1d3b50ec33b0906087
+SHA256: ddd5c8e7660a1fc57669e1ae0f357ebe955165ad7a0e9dcb884513758dec6c9e
 Section: utils
 Priority: extra
 Description: Meta-package that depends on all packages that I use

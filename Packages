@@ -120,6 +120,21 @@ Section: utils
 Priority: extra
 Description: A Hyprland implementation of wayland-scanner, in and for C++.
 
+Package: libgnome-volume-control
+Version: 0.0.1725126709
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 308
+Depends: libc6 (>= 2.4), libglib2.0-0t64 (>= 2.80.0), libpulse-mainloop-glib0 (>= 0.99.1), libpulse0 (>= 0.99.1)
+Filename: ./libgnome-volume-control_0.0.1725126709_amd64.deb
+Size: 49936
+MD5sum: 9f6513f0d9c9f0f4408b5d9dd93aa0f3
+SHA1: 9d778d10f00bb908795ee2401ea18ea1daef91b0
+SHA256: 4a7363ec9b7c70cf7a9919d876e21c84f8e806c22ab8721edc5ffdd025e0d74e
+Section: utils
+Priority: extra
+Description: A sound control library with gir bindings
+
 Package: localsend
 Version: 1.15.4+54
 Architecture: amd64

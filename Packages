@@ -154,6 +154,21 @@ Homepage: https://localsend.org/
 Description: An open source cross-platform alternative to AirDrop
 Uploaders: TheGB0077 <gb.lima.dev@gmail.com>
 
+Package: mangl
+Version: 1.1.5
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 448
+Depends: libbz2-1.0, libc6 (>= 2.38), libfreetype6 (>= 2.2.1), libgl1, libglfw3 (>= 3.4), zlib1g (>= 1:1.1.4)
+Filename: ./mangl_1.1.5_amd64.deb
+Size: 148584
+MD5sum: aaff7a4538179147a212ffd45ba689b9
+SHA1: 4511e7303af8d88b73aa5eac4be20b41f7657a63
+SHA256: 67d27985d5ac911c445740481c5b5a6042925fb0daa05a7f264ee394b606905b
+Section: utils
+Priority: extra
+Description: An enhanced man page viewer for linux and BSD systems based on OpenGL and mandoc libraries
+
 Package: metapackage
 Version: 0.0.1725127018
 Architecture: amd64

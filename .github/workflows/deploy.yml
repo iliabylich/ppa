@@ -28,6 +28,7 @@ jobs:
       - run: ./download-everything-from-release.rb iliabylich/build-deb-package full-hyprland
       - run: ./download-everything-from-release.rb iliabylich/build-deb-package metapackage
       - run: ./download-everything-from-release.rb iliabylich/build-deb-package ags
+      - run: ./download-everything-from-release.rb iliabylich/build-deb-package libgnome-volume-control
       - run: ./download-latest-deb.rb iliabylich/hn-parser
       - run: ./download-latest-deb.rb iliabylich/commentary
       - run: ./download-latest-deb.rb iliabylich/obj-load

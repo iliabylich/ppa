@@ -121,31 +121,31 @@ Priority: extra
 Description: A Hyprland implementation of wayland-scanner, in and for C++.
 
 Package: layer-shell
-Version: 0.0.1726694391
+Version: 0.0.1726695818
 Architecture: amd64
 Maintainer: John Doe <john@doe.org>
 Installed-Size: 4827
-Depends: libc6 (>= 2.34), libgcc-s1 (>= 4.2), libglib2.0-0t64 (>= 2.54.0), libgtk-4-1 (>= 4.12.0), libgtk4-layer-shell0 (>= 1.0.2), libvte-2.91-gtk4-0 (>= 0.47.90)
-Filename: ./layer-shell_0.0.1726694391_amd64.deb
-Size: 1460008
-MD5sum: 355e4b80d3e7f342f30c290ab40c4158
-SHA1: c9055c678562ca47c759ed6a7d1fab1bcc879a4b
-SHA256: 03d41be57c2a3116a6344742c83976d99c4d5e7eedcf999ebbcc9fe5fe68106d
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 4.2), libglib2.0-0t64 (>= 2.54.0), libgtk-4-1 (>= 4.12.0), libgtk4-layer-shell0 (>= 1.0.2), libvte-2.91-gtk4-0 (>= 0.47.90), libgnome-volume-control
+Filename: ./layer-shell_0.0.1726695818_amd64.deb
+Size: 1460024
+MD5sum: 591f72713d5406be147eede0f9601c32
+SHA1: 54307bec9044366aa340007e955bd610a913394b
+SHA256: 166714bb781d3235171ea981aafeaba3641103c1886db1a8ca03176bc1025c40
 Section: utils
 Priority: extra
 Description: A custom layer shell
 
 Package: libgnome-volume-control
-Version: 0.0.1726694369
+Version: 0.0.1726695796
 Architecture: amd64
 Maintainer: John Doe <john@doe.org>
 Installed-Size: 308
 Depends: libc6 (>= 2.4), libglib2.0-0t64 (>= 2.80.0), libpulse-mainloop-glib0 (>= 0.99.1), libpulse0 (>= 0.99.1)
-Filename: ./libgnome-volume-control_0.0.1726694369_amd64.deb
+Filename: ./libgnome-volume-control_0.0.1726695796_amd64.deb
 Size: 49868
-MD5sum: 1544ca78990caa55514a0ae81135772e
-SHA1: bbce06b08c7c2c4dac2b6af6dbb1403364765426
-SHA256: 7cd9b4e3b0df79ab8e34c9b6af9ce21e0c4f6bb40d00e9467cfea97163813954
+MD5sum: 3f4256fafa86b1277fccf92006f9ad86
+SHA1: dcc2944bd2f6ab1ff02e746c5e3fd4b6a7821081
+SHA256: 1499b497c7979d45e19e4dfc6a5cdcabddbdf7c9422b54bedb24f53da9c40528
 Section: utils
 Priority: extra
 Description: A sound control library with gir bindings

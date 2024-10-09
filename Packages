@@ -14,16 +14,16 @@ Priority: extra
 Description: A customizable and extensible shell
 
 Package: aquamarine
-Version: 0.4.1
+Version: 0.4.2
 Architecture: amd64
 Maintainer: John Doe <john@doe.org>
 Installed-Size: 1518
 Depends: hyprutils, libc6 (>= 2.38), libdisplay-info2 (>= 0.2.0), libdrm2 (>= 2.4.119), libegl1, libgbm1 (>= 21.3.0~rc1), libgcc-s1 (>= 4.3), libinput10 (>= 1.26.0), libopengl0, libseat1 (>= 0.5.0), libstdc++6 (>= 13.1), libudev1 (>= 183), libwayland-client0 (>= 1.20.0)
-Filename: ./aquamarine_0.4.1_amd64.deb
-Size: 367788
-MD5sum: 1fd2ab0418822efe83e187e9a11c75dd
-SHA1: 3924cb9804d1b96a57fd351b151f005bd6f8d8e6
-SHA256: 1ff9067da629b0f607d6cadd67f69b0e682ac366693a0680df0625b3fd25f7c2
+Filename: ./aquamarine_0.4.2_amd64.deb
+Size: 367268
+MD5sum: b6cbbd2a59bdd2584f77e43bebbfb5fa
+SHA1: a75e0390b667f79c242fec153e5f588f08612cdc
+SHA256: d340e71b2dd29f6f8af451f71e4b749f4413d025930de4c52dcfd83ef3f97183
 Section: utils
 Priority: extra
 Description: Aquamarine is a very light linux rendering backend library
@@ -61,16 +61,16 @@ Description: [generated from Rust crate hnparser]
  HN parser
 
 Package: hyprland
-Version: 0.44.0
+Version: 0.44.1
 Architecture: amd64
 Maintainer: John Doe <john@doe.org>
 Installed-Size: 59391
 Depends: aquamarine, hyprutils, libc6 (>= 2.38), libcairo2 (>= 1.2.4), libdrm2 (>= 2.4.113), libegl1, libgbm1 (>= 7.11~1), libgcc-s1 (>= 4.3), libgles2 (>= 1.0.0), libglib2.0-0t64 (>= 2.40.0), libhyprcursor0 (>= 0.1.9), libhyprlang2 (>= 0.5.2), libinput10 (>= 1.23.0), libpango-1.0-0 (>= 1.18.0), libpangocairo-1.0-0 (>= 1.14.0), libpixman-1-0 (>= 0.11.2), libstdc++6 (>= 14), libuuid1 (>= 2.16), libwayland-server0 (>= 1.23.0), libxcb-composite0, libxcb-errors0 (>= 1.0.1), libxcb-icccm4 (>= 0.4.1), libxcb-render0, libxcb-res0 (>= 1.10), libxcb-xfixes0, libxcb1, libxcursor1 (>> 1.1.2), libxkbcommon0 (>= 0.8.0)
-Filename: ./hyprland_0.44.0_amd64.deb
-Size: 48828300
-MD5sum: 15a29a622fda8115951674fc4df365cf
-SHA1: 434c04e7e577e9842d787151db82d98b555f8ad1
-SHA256: b1224215d39fe0ffaf41220d33c1990daa3aaa315d8266065934c724c729cdc6
+Filename: ./hyprland_0.44.1_amd64.deb
+Size: 48829456
+MD5sum: ac9c443b2627513e86202516b56bfb87
+SHA1: 192bcd1b9237ae7cfa3326db3a58188c28ce190d
+SHA256: 920feaf0454f897f52f9ebd9c4d821ec5a0e038615c268c9986dd0d08a4e144c
 Section: utils
 Priority: extra
 Description: Hyprland is an independent, highly customizable, dynamic tiling Wayland compositor that doesn't sacrifice on its looks.
@@ -82,10 +82,10 @@ Maintainer: John Doe <john@doe.org>
 Installed-Size: 682
 Depends: hyprutils, libc6 (>= 2.38), libcairo2 (>= 1.10.0), libdrm2 (>= 2.4.109), libegl1, libgbm1 (>= 21.3.0~rc1), libgcc-s1 (>= 4.3), libglib2.0-0t64 (>= 2.12.0), libhyprlang2 (>= 0.5.2), libjpeg62-turbo (>= 1.3.1), libmagic1t64 (>= 5.12), libopengl0, libpam0g (>= 0.99.7.1), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libstdc++6 (>= 13.1), libwayland-client0 (>= 1.20.0), libwayland-egl1 (>= 1.15.0), libwebp7 (>= 1.4.0), libxkbcommon0 (>= 0.5.0)
 Filename: ./hyprlock_0.4.1_amd64.deb
-Size: 226076
-MD5sum: 7dfe6a5536f7ac6ed5b772e2c5e327f3
-SHA1: d95753709d7877a4acae6d5c01ae9f81a375bf75
-SHA256: 84a56eb4ba82977067853f8e32441e58c1715d782c279194f1de3883a6248467
+Size: 226088
+MD5sum: 4a8e10a397619795e70212b0252a67cb
+SHA1: d4e5362405734c2f2b66b3ff60293cc7bb798acd
+SHA256: dea7a3117d3f094b56bbed5aa3acff6a0b8c10387a80ed7fd5a56dd46c2e71a0
 Section: utils
 Priority: extra
 Description: Hyprland's GPU-accelerated screen locking utility

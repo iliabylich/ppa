@@ -161,10 +161,10 @@ Maintainer: John Doe <john@doe.org>
 Installed-Size: 448
 Depends: libbz2-1.0, libc6 (>= 2.38), libfreetype6 (>= 2.2.1), libgl1, libglfw3 (>= 3.4), zlib1g (>= 1:1.1.4)
 Filename: ./mangl_1.1.5_amd64.deb
-Size: 148584
-MD5sum: aaff7a4538179147a212ffd45ba689b9
-SHA1: 4511e7303af8d88b73aa5eac4be20b41f7657a63
-SHA256: 67d27985d5ac911c445740481c5b5a6042925fb0daa05a7f264ee394b606905b
+Size: 148536
+MD5sum: c3e1c55c6942d8990ee2576cc1876284
+SHA1: ae2d720c0baf8bea8f4812c8cb7da452bc5aaf20
+SHA256: cf6087992ddf680b9a71c767fccdb6b3d0d23f2df1a9abcc69ebc5776b2f59af
 Section: utils
 Priority: extra
 Description: An enhanced man page viewer for linux and BSD systems based on OpenGL and mandoc libraries

@@ -136,18 +136,18 @@ Priority: extra
 Description: A custom layer shell
 
 Package: localsend
-Version: 1.15.4+54
+Version: 1.16.0+55
 Architecture: amd64
 Essential: no
 Maintainer: Tienisto <dev.tien.donam@gmail.com>
 Installed-Size: 30600
 Pre-Depends: libc6 (>= 2.31)
 Depends: libappindicator3-1 | libayatana-appindicator3-1, gir1.2-appindicator3-0.1 | gir1.2-ayatanaappindicator3-0.1, libayatana-ido3-0.4-0, xdg-user-dirs
-Filename: ./LocalSend-1.15.4-linux-x86-64.deb
-Size: 9458620
-MD5sum: f8ca14e681e4beb5d183b03c0e7d316e
-SHA1: 53bb6147ae62611ecf27a0998d898b7996b9863d
-SHA256: a6d1025bab78095ec2f3d16e468bd74624544636c6ac3083d987d43d336c878c
+Filename: ./LocalSend-1.16.0-linux-x86-64.deb
+Size: 11838828
+MD5sum: 03d6aa5fc9d71ccd1920d579d7484d3f
+SHA1: d22b5212268dc6b9aa19291ced81530007e62e15
+SHA256: 2fa24cce5d4c6ed6e37a14dd56def50d40cf919b9dccb270ecddfe58d0b135dc
 Section: x11
 Priority: optional
 Homepage: https://localsend.org/
@@ -170,16 +170,16 @@ Priority: extra
 Description: An enhanced man page viewer for linux and BSD systems based on OpenGL and mandoc libraries
 
 Package: metapackage
-Version: 0.0.1730307742
+Version: 0.0.1730740357
 Architecture: amd64
 Maintainer: John Doe <john@doe.org>
 Installed-Size: 7
-Depends: gnome-session, nautilus, gnome-system-monitor, gnome-icon-theme, gnome-terminal, flatpak, localsend, blanket, mpv, transmission-gtk, amberol, loupe, gedit, baobab, d-spy, file-roller, obfuscate, zenity, build-essential, cmake, meson, ragel, valgrind, google-perftools, bison, strace, rustfilt, sqlite3, gh, pkg-config, make, git, hugo, jq, jsonnet, nmap, yq, pipx, gnupg2, just, git-delta, bat, fastfetch, htop, nano, imagemagick, tree, ffmpeg, libnotify-bin, stow, traceroute, wget, curl, libjemalloc2, libjemalloc-dev, libgtk-4-dev, libgtk4-layer-shell-dev, libadwaita-1-dev, libvte-2.91-gtk4-dev, blueprint-compiler, apt-listbugs, apt-file, netselect-apt, hyprland, hyprlock, swaybg, dunst, wl-clipboard, wf-recorder, slurp, grim, cliphist, layer-shell, pavucontrol
-Filename: ./metapackage_0.0.1730307742_amd64.deb
-Size: 1496
-MD5sum: 75ee33d5a242ce3849697314ee729ba2
-SHA1: 543d8f89d46b1e5c201921d092ebf79f577adeb6
-SHA256: 3bf801a66ea1528b3217b34596329dabd401e0acb0a2d10c3b56376ad5e13078
+Depends: gnome-session, nautilus, gnome-system-monitor, gnome-icon-theme, gnome-terminal, flatpak, localsend, blanket, mpv, transmission-gtk, amberol, loupe, gedit, baobab, d-spy, file-roller, obfuscate, zenity, build-essential, cmake, meson, ragel, valgrind, google-perftools, bison, strace, rustfilt, sqlite3, gh, pkg-config, make, git, hugo, jq, jsonnet, nmap, yq, pipx, gnupg2, just, git-delta, bat, fastfetch, htop, nano, tree, ffmpeg, libnotify-bin, stow, traceroute, wget, curl, libjemalloc2, libjemalloc-dev, libgtk-4-dev, libgtk4-layer-shell-dev, libadwaita-1-dev, libvte-2.91-gtk4-dev, blueprint-compiler, apt-listbugs, apt-file, netselect-apt, hyprland, hyprlock, swaybg, dunst, wl-clipboard, wf-recorder, slurp, grim, cliphist, layer-shell, pavucontrol
+Filename: ./metapackage_0.0.1730740357_amd64.deb
+Size: 1488
+MD5sum: a915537217dcfd969cd7e99f55ead364
+SHA1: a979ab6b6e8c69f1756aa9a9d8b4a89ce098fcff
+SHA256: 3cf0dc13b4529f2126de92fa5e9c54494f00ed674d6331b3199eb61757fcee64
 Section: utils
 Priority: extra
 Description: Meta-package that depends on all packages that I use

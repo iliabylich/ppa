@@ -170,16 +170,16 @@ Priority: extra
 Description: An enhanced man page viewer for linux and BSD systems based on OpenGL and mandoc libraries
 
 Package: metapackage
-Version: 0.0.1730740357
+Version: 0.0.1730741357
 Architecture: amd64
 Maintainer: John Doe <john@doe.org>
 Installed-Size: 7
-Depends: gnome-session, nautilus, gnome-system-monitor, gnome-icon-theme, gnome-terminal, flatpak, localsend, blanket, mpv, transmission-gtk, amberol, loupe, gedit, baobab, d-spy, file-roller, obfuscate, zenity, build-essential, cmake, meson, ragel, valgrind, google-perftools, bison, strace, rustfilt, sqlite3, gh, pkg-config, make, git, hugo, jq, jsonnet, nmap, yq, pipx, gnupg2, just, git-delta, bat, fastfetch, htop, nano, tree, ffmpeg, libnotify-bin, stow, traceroute, wget, curl, libjemalloc2, libjemalloc-dev, libgtk-4-dev, libgtk4-layer-shell-dev, libadwaita-1-dev, libvte-2.91-gtk4-dev, blueprint-compiler, apt-listbugs, apt-file, netselect-apt, hyprland, hyprlock, swaybg, dunst, wl-clipboard, wf-recorder, slurp, grim, cliphist, layer-shell, pavucontrol
-Filename: ./metapackage_0.0.1730740357_amd64.deb
-Size: 1488
-MD5sum: a915537217dcfd969cd7e99f55ead364
-SHA1: a979ab6b6e8c69f1756aa9a9d8b4a89ce098fcff
-SHA256: 3cf0dc13b4529f2126de92fa5e9c54494f00ed674d6331b3199eb61757fcee64
+Depends: gnome-session, nautilus, gnome-system-monitor, gnome-icon-theme, gnome-terminal, gdm3, flatpak, localsend, blanket, mpv, transmission-gtk, amberol, loupe, gedit, baobab, d-spy, file-roller, obfuscate, zenity, build-essential, cmake, meson, ragel, valgrind, google-perftools, bison, strace, rustfilt, sqlite3, gh, pkg-config, make, git, hugo, jq, jsonnet, nmap, yq, pipx, gnupg2, just, git-delta, bat, fastfetch, htop, nano, tree, ffmpeg, libnotify-bin, stow, traceroute, wget, curl, libjemalloc2, libjemalloc-dev, libgtk-4-dev, libgtk4-layer-shell-dev, libadwaita-1-dev, libvte-2.91-gtk4-dev, blueprint-compiler, apt-listbugs, apt-file, netselect-apt, hyprland, hyprlock, swaybg, dunst, wl-clipboard, wf-recorder, slurp, grim, cliphist, layer-shell, pavucontrol
+Filename: ./metapackage_0.0.1730741357_amd64.deb
+Size: 1492
+MD5sum: 7b548cd6f34af40c9f357658267e3882
+SHA1: 0ceb3c0f68d511ad83fc31da327c6d438a415f8c
+SHA256: c67dd9e32ad3c7d46f7ea4a1d369d3e768d32fd906a5a6711176f6ff088541fb
 Section: utils
 Priority: extra
 Description: Meta-package that depends on all packages that I use

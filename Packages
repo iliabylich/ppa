@@ -136,18 +136,18 @@ Priority: extra
 Description: A custom layer shell
 
 Package: localsend
-Version: 1.16.0+55
+Version: 1.16.1+56
 Architecture: amd64
 Essential: no
 Maintainer: Tienisto <dev.tien.donam@gmail.com>
 Installed-Size: 30600
 Pre-Depends: libc6 (>= 2.31)
 Depends: libappindicator3-1 | libayatana-appindicator3-1, gir1.2-appindicator3-0.1 | gir1.2-ayatanaappindicator3-0.1, libayatana-ido3-0.4-0, xdg-user-dirs
-Filename: ./LocalSend-1.16.0-linux-x86-64.deb
-Size: 11838828
-MD5sum: 03d6aa5fc9d71ccd1920d579d7484d3f
-SHA1: d22b5212268dc6b9aa19291ced81530007e62e15
-SHA256: 2fa24cce5d4c6ed6e37a14dd56def50d40cf919b9dccb270ecddfe58d0b135dc
+Filename: ./LocalSend-1.16.1-linux-x86-64.deb
+Size: 11804928
+MD5sum: 4d7ae508411362e86a6929ee7cfbe8fe
+SHA1: c15a1b01b41b2968419666f6ad5d62c9d4fdb32a
+SHA256: f4d15526b8321761f3eb99ac6314c25ec79e1bb1397b329c40de05ef2bd4019a
 Section: x11
 Priority: optional
 Homepage: https://localsend.org/

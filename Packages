@@ -201,16 +201,16 @@ Description: [generated from Rust crate obj-down-up-load-server]
  A tiny personal service for file sharing.
 
 Package: onemorebeer-ui
-Version: 0.1.0-1725627800
+Version: 0.1.0-1731456386
 Architecture: amd64
 Maintainer: onemorebeer-ui developer <ibylich@gmail.com>
-Installed-Size: 4553
+Installed-Size: 4469
 Depends: systemd
-Filename: ./onemorebeer-ui_0.1.0-1725627800_amd64.deb
-Size: 1672812
-MD5sum: d32eba1c31ee71b9d4b2eba54402540c
-SHA1: 38bd108f1eb053490ddde8de0fad8b7cc9f092ea
-SHA256: 7e95f3b80f105f5f2b3aa4d3ad1e11b98bcfee91730fa36b764e770c3d820908
+Filename: ./onemorebeer-ui_0.1.0-1731456386_amd64.deb
+Size: 1644680
+MD5sum: 87f8d0264db70dd26389cfdea80433af
+SHA1: e565334537e22ee98c8159479b24d173f95daa0a
+SHA256: e087c3e07763f4d7a3cea708c7d4d92a03706c7bf80ba00c934376d761b743a1
 Section: admin
 Priority: optional
 Description: [generated from Rust crate onemorebeer-ui]

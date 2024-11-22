@@ -184,16 +184,16 @@ Description: [generated from Rust crate onemorebeer-ui]
  A simple frontend for a beer shop.
 
 Package: syshud
-Version: 0.0.1732279911
+Version: 0.0.1732280399
 Architecture: amd64
 Maintainer: John Doe <john@doe.org>
-Installed-Size: 117
+Installed-Size: 115
 Depends: libc6 (>= 2.38), libevdev2 (>= 0.9.1), libglib2.0-0t64 (>= 2.28.0), libglibmm-2.68-1t64 (>= 2.76), libgtk4-layer-shell0 (>= 1.0.2), libgtkmm-4.0-0 (>= 4.10.0), libsigc++-3.0-0 (>= 3.2.0), libstdc++6 (>= 13.1), libwireplumber-0.5-0 (>= 0.4.81)
-Filename: ./syshud_0.0.1732279911_amd64.deb
-Size: 27956
-MD5sum: a3fd3bb20017af92a01a1b78ba36573a
-SHA1: c20ee8454b2c54e8481916817da48a5486073e59
-SHA256: cd9b634283a168c31c2884c8d4cefba4c445ad21992e1d5b9c531a040f8c7ed4
+Filename: ./syshud_0.0.1732280399_amd64.deb
+Size: 27984
+MD5sum: 7f702117156fe784b01faaabfe6d5b19
+SHA1: b6f4c429f036c9aba22fdd65d99ef5a805eb1281
+SHA256: 75fff6bd306d082a4bb2832d89c2184fee510f7891f696b89440311971a8cab6
 Section: utils
 Priority: extra
 Description: Simple heads up display written in gtkmm 4

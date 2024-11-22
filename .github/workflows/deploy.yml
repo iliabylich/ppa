@@ -27,9 +27,9 @@ jobs:
       - run: rm -f *.deb
       - run: ./download-everything-from-release.rb iliabylich/build-deb-package full-hyprland
       - run: ./download-everything-from-release.rb iliabylich/build-deb-package metapackage
-      - run: ./download-everything-from-release.rb iliabylich/build-deb-package ags
       - run: ./download-everything-from-release.rb iliabylich/build-deb-package layer-shell
       - run: ./download-everything-from-release.rb iliabylich/build-deb-package mangl
+      - run: ./download-everything-from-release.rb iliabylich/build-deb-package fx
       - run: ./download-latest-deb.rb iliabylich/hn-parser
       - run: ./download-latest-deb.rb localsend/localsend
       - run: ./download-latest-deb.rb iliabylich/onemorebeer-ui

@@ -45,16 +45,16 @@ Description: [generated from Rust crate hnparser]
  HN parser
 
 Package: hyprland
-Version: 0.45.1
+Version: 0.45.2
 Architecture: amd64
 Maintainer: John Doe <john@doe.org>
 Installed-Size: 59666
 Depends: aquamarine, hyprutils, libc6 (>= 2.38), libcairo2 (>= 1.2.4), libdrm2 (>= 2.4.113), libegl1, libgbm1 (>= 7.11~1), libgcc-s1 (>= 4.3), libgles2 (>= 1.0.0), libglib2.0-0t64 (>= 2.40.0), libhyprcursor0 (>= 0.1.9), libhyprlang2 (>= 0.5.2), libinput10 (>= 1.23.0), libpango-1.0-0 (>= 1.18.0), libpangocairo-1.0-0 (>= 1.14.0), libpixman-1-0 (>= 0.11.2), libstdc++6 (>= 14), libuuid1 (>= 2.16), libwayland-server0 (>= 1.23.0), libxcb-composite0, libxcb-errors0 (>= 1.0.1), libxcb-icccm4 (>= 0.4.2), libxcb-render0, libxcb-res0 (>= 1.10), libxcb-xfixes0, libxcb1, libxcursor1 (>> 1.1.2), libxkbcommon0 (>= 0.8.0)
-Filename: ./hyprland_0.45.1_amd64.deb
-Size: 48895364
-MD5sum: 18a71ee24aeac7c4e482e5ab945ffba3
-SHA1: 086b119a549365c7bf2fe3199984afa33a57c1ca
-SHA256: 3ff9b2d13301e2b6e496f0f69ae3244c23afd34ed3034b2ba7570a9ce9b8c442
+Filename: ./hyprland_0.45.2_amd64.deb
+Size: 48895604
+MD5sum: b629e2b6659985e6ddddf256aff27cf9
+SHA1: cfe2d4a87febd501f1692fd5dbc43357f2cbd719
+SHA256: 9fc6736493809b73688d7ee7093447c6a4b754f28a322a414200ae804e89fe0f
 Section: utils
 Priority: extra
 Description: Hyprland is an independent, highly customizable, dynamic tiling Wayland compositor that doesn't sacrifice on its looks.

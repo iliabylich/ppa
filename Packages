@@ -184,16 +184,16 @@ Description: [generated from Rust crate onemorebeer-ui]
  A simple frontend for a beer shop.
 
 Package: syshud
-Version: 0.0.1732280399
+Version: 0.0.1732537236
 Architecture: amd64
 Maintainer: John Doe <john@doe.org>
 Installed-Size: 115
-Depends: libc6 (>= 2.38), libevdev2 (>= 0.9.1), libglib2.0-0t64 (>= 2.28.0), libglibmm-2.68-1t64 (>= 2.76), libgtk4-layer-shell0 (>= 1.0.2), libgtkmm-4.0-0 (>= 4.10.0), libsigc++-3.0-0 (>= 3.2.0), libstdc++6 (>= 13.1), libwireplumber-0.5-0 (>= 0.4.81)
-Filename: ./syshud_0.0.1732280399_amd64.deb
-Size: 27984
-MD5sum: 7f702117156fe784b01faaabfe6d5b19
-SHA1: b6f4c429f036c9aba22fdd65d99ef5a805eb1281
-SHA256: 75fff6bd306d082a4bb2832d89c2184fee510f7891f696b89440311971a8cab6
+Depends: libc6 (>= 2.38), libcairo-gobject2 (>= 1.10.0), libcairo2 (>= 1.2.4), libcairomm-1.16-1 (>= 1.16.2), libevdev2 (>= 0.9.1), libgcc-s1 (>= 3.0), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0t64 (>= 2.28.0), libglibmm-2.68-1t64 (>= 2.76), libgraphene-1.0-0 (>= 1.5.4), libgtk-4-1 (>= 4.0.0), libgtk4-layer-shell0 (>= 1.0.2), libgtkmm-4.0-0 (>= 4.10.0), libharfbuzz0b (>= 0.6.0), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libpangomm-2.48-1t64 (>= 2.50), libsigc++-3.0-0 (>= 3.2.0), libstdc++6 (>= 13.1), libvulkan1 (>= 1.2.131.2), libwireplumber-0.5-0 (>= 0.4.81)
+Filename: ./syshud_0.0.1732537236_amd64.deb
+Size: 28232
+MD5sum: acecb1b788f9ca7ef90c69fa81670f76
+SHA1: 5920ee65a1538589336875e8e4dfc9c9ce3afe6f
+SHA256: deab94e2eaec86baca5a345ca0af04d8567dd6f4dd060ad74ef8b38446560305
 Section: utils
 Priority: extra
 Description: Simple heads up display written in gtkmm 4

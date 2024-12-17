@@ -14,15 +14,15 @@ Priority: extra
 Description: Aquamarine is a very light linux rendering backend library
 
 Package: fx
-Version: 0.0.1732277985
+Version: 0.0.1734413924
 Architecture: amd64
 Maintainer: John Doe <john@doe.org>
 Installed-Size: 11295
-Filename: ./fx_0.0.1732277985_amd64.deb
-Size: 3018848
-MD5sum: 2d324f00514aaba80d1ab0d1147586f6
-SHA1: b3af5f6890d4d3aa6706c25e2572eed0b074172a
-SHA256: d7efc0fa1a184adfb7d086032cc2972ce32fec67c1a169b7ab4d136aa6021c7f
+Filename: ./fx_0.0.1734413924_amd64.deb
+Size: 3018844
+MD5sum: 3b328352da4c62fb05b641c3c2f47f01
+SHA1: 2bb9d545d753d1c0a8c422cd906b3a02510f98b3
+SHA256: 2e36245c79239e0da54e6e1d59164c5becfc646ec215b8837a5e614cdc412703
 Section: utils
 Priority: extra
 Description: Terminal JSON viewer & processor

@@ -168,16 +168,16 @@ Priority: extra
 Description: An enhanced man page viewer for linux and BSD systems based on OpenGL and mandoc libraries
 
 Package: metapackage
-Version: 0.0.1732888659
+Version: 0.0.1734497709
 Architecture: amd64
 Maintainer: John Doe <john@doe.org>
 Installed-Size: 7
 Depends: gnome-session, nautilus, gnome-system-monitor, gnome-icon-theme, gnome-terminal, gdm3, flatpak, localsend, blanket, mpv, transmission-gtk, amberol, loupe, gedit, baobab, d-spy, file-roller, obfuscate, zenity, build-essential, cmake, meson, ragel, valgrind, google-perftools, bison, strace, rustfilt, sqlite3, gh, pkg-config, make, git, llvm, lld, hugo, jq, jsonnet, nmap, yq, pipx, gnupg2, just, git-delta, bat, fastfetch, htop, nano, tree, ffmpeg, libnotify-bin, stow, traceroute, wget, curl, fx, libjemalloc2, libjemalloc-dev, libgtk-4-dev, libgtk4-layer-shell-dev, libadwaita-1-dev, libvte-2.91-gtk4-dev, blueprint-compiler, apt-listbugs, apt-file, netselect-apt, hyprland, hyprlock, swaybg, dunst, wl-clipboard, wf-recorder, slurp, grim, cliphist, layer-shell, pavucontrol, syshud
-Filename: ./metapackage_0.0.1732888659_amd64.deb
-Size: 1508
-MD5sum: 4874b85dc71e1f1ce8c17dde8a3791db
-SHA1: aa62c897d3572fa54758365db8c8c81b34cb6300
-SHA256: 7b2e65dfb7e52dd39d0cc681f1fd82209ff4f811403cd87b40e545f50a697440
+Filename: ./metapackage_0.0.1734497709_amd64.deb
+Size: 1504
+MD5sum: bfaccfa0ca0107369b7d73abd9273e2c
+SHA1: 67cf7660997fca0adf8a6f037663925b44c05865
+SHA256: fab333224024158730b3c664b3967a14dfee560ffc4c6d707c2d36ecaf72f91f
 Section: utils
 Priority: extra
 Description: Meta-package that depends on all packages that I use

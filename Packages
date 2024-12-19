@@ -59,31 +59,31 @@ Priority: extra
 Description: Hyprland graphics / resource utilities
 
 Package: hyprland
-Version: 0.46.1
+Version: 0.46.2
 Architecture: amd64
 Maintainer: John Doe <john@doe.org>
-Installed-Size: 58747
+Installed-Size: 58751
 Depends: aquamarine, hyprgraphics, hyprutils, libc6 (>= 2.38), libcairo2 (>= 1.2.4), libdrm2 (>= 2.4.113), libegl1, libgbm1 (>= 7.11~1), libgcc-s1 (>= 4.3), libgles2 (>= 1.0.0), libglib2.0-0t64 (>= 2.40.0), libhyprcursor0 (>= 0.1.9), libhyprlang2 (>= 0.5.2), libinput10 (>= 1.23.0), libpango-1.0-0 (>= 1.18.0), libpangocairo-1.0-0 (>= 1.14.0), libpixman-1-0 (>= 0.11.2), libre2-11-absl20230802, libstdc++6 (>= 14), libtomlplusplus3t64 (>= 3.2.0), libuuid1 (>= 2.16), libwayland-server0 (>= 1.23.0), libxcb-composite0, libxcb-errors0 (>= 1.0.1), libxcb-icccm4 (>= 0.4.2), libxcb-render0, libxcb-res0 (>= 1.10), libxcb-xfixes0, libxcb1, libxcursor1 (>> 1.1.2), libxkbcommon0 (>= 0.8.0)
-Filename: ./hyprland_0.46.1_amd64.deb
-Size: 48751804
-MD5sum: cced9f72d953e971c8869e1b2f5f6303
-SHA1: fdfa5d3735563d88582abe3221738ccbe2308125
-SHA256: 982bd37470dca02a1b7527e2b00f0266e63b5eea3d2bd1c269bc64b33fa4bf80
+Filename: ./hyprland_0.46.2_amd64.deb
+Size: 48753364
+MD5sum: 62ee3061e231db2a14446b7c2ab57c2c
+SHA1: c934cb66a814eaef0804b22b40469af4aa414a5c
+SHA256: 4fec149c3f16a47fdcbaf116dba332eedbe2ea095ab28096b92c86760dc8e4ae
 Section: utils
 Priority: extra
 Description: Hyprland is an independent, highly customizable, dynamic tiling Wayland compositor that doesn't sacrifice on its looks.
 
 Package: hyprlock
-Version: 0.5.0
+Version: 0.6.0
 Architecture: amd64
 Maintainer: John Doe <john@doe.org>
-Installed-Size: 706
-Depends: hyprutils, libc6 (>= 2.38), libcairo2 (>= 1.10.0), libdrm2 (>= 2.4.109), libegl1, libgbm1 (>= 21.3.0~rc1), libgcc-s1 (>= 4.3), libglib2.0-0t64 (>= 2.12.0), libhyprlang2 (>= 0.5.2), libjpeg62-turbo (>= 1.3.1), libmagic1t64 (>= 5.12), libopengl0, libpam0g (>= 0.99.7.1), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libsdbus-c++2 (>= 2.1.0), libstdc++6 (>= 13.1), libwayland-client0 (>= 1.20.0), libwayland-egl1 (>= 1.15.0), libwebp7 (>= 1.4.0), libxkbcommon0 (>= 0.5.0)
-Filename: ./hyprlock_0.5.0_amd64.deb
-Size: 232172
-MD5sum: 58e1ebfc98ed1f0a5b186ba2c225ce83
-SHA1: b55caf941e5e262ea96b4538e4701b95e1e6880f
-SHA256: d781ab95b1fc43a0dbc8cf88ab1a800d79bc1ee2a3a79740aaef4d874c046877
+Installed-Size: 782
+Depends: hyprgraphics, hyprutils, libc6 (>= 2.38), libcairo2 (>= 1.2.4), libdrm2 (>= 2.4.109), libegl1, libgbm1 (>= 21.3.0~rc1), libgcc-s1 (>= 4.3), libglib2.0-0t64 (>= 2.12.0), libhyprlang2 (>= 0.5.2), libopengl0, libpam0g (>= 0.99.7.1), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libsdbus-c++2 (>= 2.1.0), libstdc++6 (>= 13.1), libwayland-client0 (>= 1.20.0), libwayland-egl1 (>= 1.15.0), libxkbcommon0 (>= 0.5.0)
+Filename: ./hyprlock_0.6.0_amd64.deb
+Size: 257264
+MD5sum: e49d5756d1b208c7086d46c950a9354c
+SHA1: 24e154e2610766861da8a7427d44898f5ce5b874
+SHA256: 2a4edb8f3bb58a522a6d5d8f8cf1ca1bfe13f1e08db6cadd55a74eb0fcc0f4cc
 Section: utils
 Priority: extra
 Description: Hyprland's GPU-accelerated screen locking utility

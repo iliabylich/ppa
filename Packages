@@ -197,16 +197,16 @@ Priority: extra
 Description: An enhanced man page viewer for linux and BSD systems based on OpenGL and mandoc libraries
 
 Package: metapackage
-Version: 0.0.1734497709
+Version: 0.0.1734747870
 Architecture: amd64
 Maintainer: John Doe <john@doe.org>
 Installed-Size: 7
-Depends: gnome-session, nautilus, gnome-system-monitor, gnome-icon-theme, gnome-terminal, gdm3, flatpak, localsend, blanket, mpv, transmission-gtk, amberol, loupe, gedit, baobab, d-spy, file-roller, obfuscate, zenity, build-essential, cmake, meson, ragel, valgrind, google-perftools, bison, strace, rustfilt, sqlite3, gh, pkg-config, make, git, llvm, lld, hugo, jq, jsonnet, nmap, yq, pipx, gnupg2, just, git-delta, bat, fastfetch, htop, nano, tree, ffmpeg, libnotify-bin, stow, traceroute, wget, curl, fx, libjemalloc2, libjemalloc-dev, libgtk-4-dev, libgtk4-layer-shell-dev, libadwaita-1-dev, libvte-2.91-gtk4-dev, blueprint-compiler, apt-listbugs, apt-file, netselect-apt, hyprland, hyprlock, swaybg, dunst, wl-clipboard, wf-recorder, slurp, grim, cliphist, layer-shell, pavucontrol, syshud
-Filename: ./metapackage_0.0.1734497709_amd64.deb
-Size: 1504
-MD5sum: bfaccfa0ca0107369b7d73abd9273e2c
-SHA1: 67cf7660997fca0adf8a6f037663925b44c05865
-SHA256: fab333224024158730b3c664b3967a14dfee560ffc4c6d707c2d36ecaf72f91f
+Depends: gnome-session, nautilus, gnome-system-monitor, gnome-icon-theme, gnome-terminal, gdm3, flatpak, localsend, blanket, mpv, transmission-gtk, amberol, loupe, gedit, baobab, d-spy, file-roller, obfuscate, zenity, build-essential, cmake, meson, ragel, valgrind, google-perftools, bison, strace, rustfilt, sqlite3, gh, pkg-config, make, git, llvm, lld, hugo, jq, jsonnet, nmap, yq, pipx, gnupg2, just, git-delta, bat, fastfetch, htop, nano, tree, ffmpeg, libnotify-bin, stow, traceroute, wget, curl, fx, libjemalloc2, libjemalloc-dev, libgtk-4-dev, libgtk4-layer-shell-dev, libadwaita-1-dev, libvte-2.91-gtk4-dev, blueprint-compiler, apt-listbugs, apt-file, netselect-apt, hyprland, hyprlock, swaybg, dunst, wl-clipboard, wf-recorder, slurp, grim, cliphist, layer-shell, pavucontrol, syshud, hyprsunset, hyprland-qtutils
+Filename: ./metapackage_0.0.1734747870_amd64.deb
+Size: 1524
+MD5sum: dadc79368e60c8517ff802874bc62ce8
+SHA1: 6e0f688eadb3faf3394ca715fd7660cdf122dcfc
+SHA256: 43a2c9d052a9ee14285e709ed5110d7e2c811551c7784d9ac550ede204efb196
 Section: utils
 Priority: extra
 Description: Meta-package that depends on all packages that I use

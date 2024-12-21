@@ -65,10 +65,10 @@ Maintainer: John Doe <john@doe.org>
 Installed-Size: 58751
 Depends: aquamarine, hyprgraphics, hyprutils, libc6 (>= 2.38), libcairo2 (>= 1.2.4), libdrm2 (>= 2.4.113), libegl1, libgbm1 (>= 7.11~1), libgcc-s1 (>= 4.3), libgles2 (>= 1.0.0), libglib2.0-0t64 (>= 2.40.0), libhyprcursor0 (>= 0.1.9), libhyprlang2 (>= 0.5.2), libinput10 (>= 1.23.0), libpango-1.0-0 (>= 1.18.0), libpangocairo-1.0-0 (>= 1.14.0), libpixman-1-0 (>= 0.11.2), libre2-11-absl20230802, libstdc++6 (>= 14), libtomlplusplus3t64 (>= 3.2.0), libuuid1 (>= 2.16), libwayland-server0 (>= 1.23.0), libxcb-composite0, libxcb-errors0 (>= 1.0.1), libxcb-icccm4 (>= 0.4.2), libxcb-render0, libxcb-res0 (>= 1.10), libxcb-xfixes0, libxcb1, libxcursor1 (>> 1.1.2), libxkbcommon0 (>= 0.8.0)
 Filename: ./hyprland_0.46.2_amd64.deb
-Size: 48753484
-MD5sum: 7c7e778718f61d60bdf2db43560c9729
-SHA1: 99a539159a7266a7752a3d8dda9bfeb1fbaa064a
-SHA256: d735baa07baaaa9729fb07875ed3d6b46b575f2607205de3107c8b653294943e
+Size: 48753364
+MD5sum: 62ee3061e231db2a14446b7c2ab57c2c
+SHA1: c934cb66a814eaef0804b22b40469af4aa414a5c
+SHA256: 4fec149c3f16a47fdcbaf116dba332eedbe2ea095ab28096b92c86760dc8e4ae
 Section: utils
 Priority: extra
 Description: Hyprland is an independent, highly customizable, dynamic tiling Wayland compositor that doesn't sacrifice on its looks.
@@ -78,12 +78,12 @@ Version: 0.1.1
 Architecture: amd64
 Maintainer: John Doe <john@doe.org>
 Installed-Size: 403
-Depends: hyprutils, libc6 (>= 2.34), libgcc-s1 (>= 4.3), libqt6core6t64 (>= 6.7.2), libqt6gui6 (>= 6.1.2), libqt6qml6 (>= 6.6.0), libqt6quickcontrols2-6 (>= 6.6.0), libqt6widgets6 (>= 6.1.2), libstdc++6 (>= 13)
+Depends: hyprutils, libc6 (>= 2.34), libgcc-s1 (>= 4.3), libqt6core6t64 (>= 6.7.2), libqt6gui6 (>= 6.1.2), libqt6qml6 (>= 6.6.0), libqt6quickcontrols2-6 (>= 6.6.0), libqt6widgets6 (>= 6.1.2), libstdc++6 (>= 13), qml6-module-qtcore, qml6-module-qtqml-workerscript, qml6-module-qtqml-models, qml6-module-qtquick, qml6-module-qtquick-controls, qml6-module-qtquick-layouts, qml6-module-qtquick-templates, qml6-module-qtquick-window
 Filename: ./hyprland-qtutils_0.1.1_amd64.deb
-Size: 86512
-MD5sum: b9f93c293e78028e065b85eddbc21a8a
-SHA1: 29973556d9a9080198e55b11efa8e118b26dc687
-SHA256: c7e15b53cef5e15fc7756de8e560e6d6fd056d4fd07c5b0ff7df605c8f7349c4
+Size: 86576
+MD5sum: 3c8c6be55298eabc66c9ea0343b640dc
+SHA1: 269a1fde11edaa03600cb6317ea455b761150a07
+SHA256: 5efdb4c63a874515d1a3573d947d7f92456a5ff2bdd25718d341564a9a6b5b74
 Section: utils
 Priority: extra
 Description: Hyprland QT/qml utility apps

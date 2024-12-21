@@ -6,9 +6,9 @@ Installed-Size: 1549
 Depends: hyprutils, libc6 (>= 2.38), libdisplay-info2 (>= 0.2.0), libdrm2 (>= 2.4.119), libegl1, libgbm1 (>= 21.3.0~rc1), libgcc-s1 (>= 4.3), libinput10 (>= 1.26.0), libopengl0, libseat1 (>= 0.5.0), libstdc++6 (>= 13.1), libudev1 (>= 183), libwayland-client0 (>= 1.20.0)
 Filename: ./aquamarine_0.5.1_amd64.deb
 Size: 373776
-MD5sum: 99d4bedca30eb490d2d4f8a70d5810f3
-SHA1: 27f4112701123223c1cd6d637d3277c3f94e2a34
-SHA256: eab0926d63e202e73ba0ef1bf7fc5d2073e13cebde4bef3546bcacb5d99601f7
+MD5sum: eeeb5e72bcb8db964d80130249b3d125
+SHA1: 7f21e7ba65fd6332430b25edc2b62e643c1a9413
+SHA256: 18057f18a15b5b8be31b200af755643b297817b0751a73ccbf3a6266dc9ab61d
 Section: utils
 Priority: extra
 Description: Aquamarine is a very light linux rendering backend library
@@ -51,9 +51,9 @@ Installed-Size: 192
 Depends: hyprutils, libc6 (>= 2.29), libcairo2 (>= 1.10.0), libgcc-s1 (>= 4.3), libjpeg62-turbo (>= 1.3.1), libjxl0.9 (>= 0.7.0), libmagic1t64 (>= 5.12), libstdc++6 (>= 13), libwebp7 (>= 1.4.0)
 Filename: ./hyprgraphics_0.1.1_amd64.deb
 Size: 60696
-MD5sum: 8c743f7786030b7573b9e0e3dfb20a4a
-SHA1: a91ee0f8cdfb8fdd3c282b6793c0fe2c3d50986d
-SHA256: dc626b5e8f79218d6faacb33cdd54aade6e92d0b48a4a06f1fd168994386786f
+MD5sum: fc499dfb8416b758c6c007692bf7dbd5
+SHA1: aaad1beb1f56658ce601dec4a4f5b1e2712a50a6
+SHA256: 9867b45a7b2b71615f9d90b6f3a4754d969291f23e8acc4ef0b720e6531f3d39
 Section: utils
 Priority: extra
 Description: Hyprland graphics / resource utilities
@@ -65,13 +65,28 @@ Maintainer: John Doe <john@doe.org>
 Installed-Size: 58751
 Depends: aquamarine, hyprgraphics, hyprutils, libc6 (>= 2.38), libcairo2 (>= 1.2.4), libdrm2 (>= 2.4.113), libegl1, libgbm1 (>= 7.11~1), libgcc-s1 (>= 4.3), libgles2 (>= 1.0.0), libglib2.0-0t64 (>= 2.40.0), libhyprcursor0 (>= 0.1.9), libhyprlang2 (>= 0.5.2), libinput10 (>= 1.23.0), libpango-1.0-0 (>= 1.18.0), libpangocairo-1.0-0 (>= 1.14.0), libpixman-1-0 (>= 0.11.2), libre2-11-absl20230802, libstdc++6 (>= 14), libtomlplusplus3t64 (>= 3.2.0), libuuid1 (>= 2.16), libwayland-server0 (>= 1.23.0), libxcb-composite0, libxcb-errors0 (>= 1.0.1), libxcb-icccm4 (>= 0.4.2), libxcb-render0, libxcb-res0 (>= 1.10), libxcb-xfixes0, libxcb1, libxcursor1 (>> 1.1.2), libxkbcommon0 (>= 0.8.0)
 Filename: ./hyprland_0.46.2_amd64.deb
-Size: 48753364
-MD5sum: 62ee3061e231db2a14446b7c2ab57c2c
-SHA1: c934cb66a814eaef0804b22b40469af4aa414a5c
-SHA256: 4fec149c3f16a47fdcbaf116dba332eedbe2ea095ab28096b92c86760dc8e4ae
+Size: 48753484
+MD5sum: 7c7e778718f61d60bdf2db43560c9729
+SHA1: 99a539159a7266a7752a3d8dda9bfeb1fbaa064a
+SHA256: d735baa07baaaa9729fb07875ed3d6b46b575f2607205de3107c8b653294943e
 Section: utils
 Priority: extra
 Description: Hyprland is an independent, highly customizable, dynamic tiling Wayland compositor that doesn't sacrifice on its looks.
+
+Package: hyprland-qtutils
+Version: 0.1.1
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 403
+Depends: hyprutils, libc6 (>= 2.34), libgcc-s1 (>= 4.3), libqt6core6t64 (>= 6.7.2), libqt6gui6 (>= 6.1.2), libqt6qml6 (>= 6.6.0), libqt6quickcontrols2-6 (>= 6.6.0), libqt6widgets6 (>= 6.1.2), libstdc++6 (>= 13)
+Filename: ./hyprland-qtutils_0.1.1_amd64.deb
+Size: 86512
+MD5sum: b9f93c293e78028e065b85eddbc21a8a
+SHA1: 29973556d9a9080198e55b11efa8e118b26dc687
+SHA256: c7e15b53cef5e15fc7756de8e560e6d6fd056d4fd07c5b0ff7df605c8f7349c4
+Section: utils
+Priority: extra
+Description: Hyprland QT/qml utility apps
 
 Package: hyprlock
 Version: 0.6.0
@@ -88,6 +103,21 @@ Section: utils
 Priority: extra
 Description: Hyprland's GPU-accelerated screen locking utility
 
+Package: hyprsunset
+Version: 0.1.0
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 213
+Depends: hyprutils, libc6 (>= 2.38), libgcc-s1 (>= 4.3), libstdc++6 (>= 13.1), libwayland-client0 (>= 1.20.0)
+Filename: ./hyprsunset_0.1.0_amd64.deb
+Size: 60244
+MD5sum: 6c757a48cd47efad0d8098a5788fd8b8
+SHA1: ffb8a5f8c4090861ad82b2d496a87c8fb106ff1b
+SHA256: 6d0cd1fab4af4336458db583fd0159c9c189608896e246a3c6e850cd402ae092
+Section: utils
+Priority: extra
+Description: An application to enable a blue-light filter on Hyprland
+
 Package: hyprutils
 Version: 0.2.6
 Architecture: amd64
@@ -96,9 +126,9 @@ Installed-Size: 289
 Depends: libc6 (>= 2.14), libgcc-s1 (>= 4.3), libpixman-1-0 (>= 0.25.2), libstdc++6 (>= 13)
 Filename: ./hyprutils_0.2.6_amd64.deb
 Size: 85652
-MD5sum: edde91bd3c86ead5a4767009f4795839
-SHA1: 95ba62c238ebe10b460cb5cb5b8e64aeced10351
-SHA256: 007159bdec71501d44a831364910ffdcfd1882e3dd342e26399c0af6c01a647d
+MD5sum: d88faffdb62a4aa71c3457b9a9f9a48a
+SHA1: d5cbef63b6c8702633add72c9cccb982655052d4
+SHA256: 8a1352883151e179fc036fcdaa257d31cde712c0b2fd89899dfa2c586908dd83
 Section: utils
 Priority: extra
 Description: Hyprland utilities library used across the ecosystem

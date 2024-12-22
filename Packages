@@ -13,6 +13,389 @@ Section: utils
 Priority: extra
 Description: Aquamarine is a very light linux rendering backend library
 
+Package: cosmic-app-library
+Version: 1.0.0-alpha4
+Architecture: amd64
+Maintainer: Ashley Wulber <ashley@system76.com>
+Installed-Size: 29285
+Depends: libc6 (>= 2.38), libgcc-s1 (>= 4.2), libxkbcommon0 (>= 0.5.0)
+Filename: ./cosmic-app-library_1.0.0-alpha4_amd64.deb
+Size: 7717716
+MD5sum: 6b8667a9fbaab98c682ba381aa65ceaf
+SHA1: c29ce3a5d9471fb4fed9968ffaa89c2b3131a396
+SHA256: 752963f21b804b0b5011e154f15b18e21a9367b4492bf6bd314408d1110c5d5b
+Section: admin
+Priority: optional
+Homepage: https://github.com/pop-os/cosmic-app-library
+Description: Cosmic App Library
+
+Package: cosmic-applets
+Version: 1.0.0-alpha4
+Architecture: amd64
+Maintainer: system76 <info@system76.com>
+Installed-Size: 73177
+Depends: cosmic-icons, libc6 (>= 2.38), libdbus-1-3 (>= 1.10), libgcc-s1 (>= 4.2), libpulse0 (>= 0.99.4), libudev1 (>= 183), libxkbcommon0 (>= 0.5.0)
+Recommends: pipewire-pulse
+Provides: system76-power-applet-virtual
+Filename: ./cosmic-applets_1.0.0-alpha4_amd64.deb
+Size: 13115072
+MD5sum: 192c03a2b1c88b881bbf73139738687a
+SHA1: 20df5696de76e874aff4d94441b04547dad1c7d2
+SHA256: 01a70180d9e13a3129efa5d3f7eac26a6b337879916eb91c012e60390b010238
+Section: admin
+Priority: optional
+Homepage: https://github.com/pop-os/cosmic-applets
+Description: Cosmic Applets
+
+Package: cosmic-bg
+Version: 1.0.0-alpha4
+Architecture: amd64
+Maintainer: Ashley Wulber <ashley@system76.com>
+Installed-Size: 8548
+Depends: libc6 (>= 2.38), libgcc-s1 (>= 4.2), libxkbcommon0 (>= 0.5.0)
+Filename: ./cosmic-bg_1.0.0-alpha4_amd64.deb
+Size: 1850512
+MD5sum: 5a9bbe756847d63077bcc36dc6fcd9ac
+SHA1: dd4a6946cdebf48572b23c6b88866b8d224f5f49
+SHA256: 3c1f867efa5e68ee3f8af692e55a49d9a69e219f282906530451f4317cc1e9be
+Section: admin
+Priority: optional
+Homepage: https://github.com/pop-os/cosmic-bg
+Description: Cosmic Background
+
+Package: cosmic-comp
+Version: 1.0.0-alpha4
+Architecture: amd64
+Maintainer: Victoria Brekenfeld <victoria@system76.com>
+Installed-Size: 24560
+Depends: libc6 (>= 2.38), libgbm1 (>= 21.3.0~rc1), libgcc-s1 (>= 4.2), libinput10 (>= 1.19.1), libpixman-1-0 (>= 0.30.0), libseat1 (>= 0.5.0), libudev1 (>= 183), libxkbcommon0 (>= 0.5.0), libegl1, libwayland-server0
+Recommends: cosmic-session, libgl1-mesa-dri
+Filename: ./cosmic-comp_1.0.0-alpha4_amd64.deb
+Size: 7292276
+MD5sum: 900763f1a0327d51e555e247a46bd5c1
+SHA1: 23262359e5633bd26d41b826f09154edf14d986a
+SHA256: 6c2f77a0a59b41f9c724628457841cbf492ba05f7eeefc80b0950b2acdc29d89
+Section: x11
+Priority: optional
+Homepage: https://github.com/pop-os/cosmic-comp
+Description: Wayland compositor of pop-os cosmic shell
+
+Package: cosmic-edit
+Version: 1.0.0-alpha4
+Architecture: amd64
+Maintainer: Jeremy Soller <jeremy@system76.com>
+Installed-Size: 37116
+Depends: libc6 (>= 2.39), libgcc-s1 (>= 4.2), libxkbcommon0 (>= 0.5.0)
+Filename: ./cosmic-edit_1.0.0-alpha4_amd64.deb
+Size: 10218728
+MD5sum: a88070f6d3e7025a94bb641b019e6d3d
+SHA1: 10e7160ad3d4f21d547643256f79e197ba8158bb
+SHA256: 6fa5b41c0794624b338711052053eac262b5e48532d3ef5a83380aef4958e77f
+Section: admin
+Priority: optional
+Homepage: https://github.com/pop-os/cosmic-edit
+Description: Cosmic Text Editor
+
+Package: cosmic-files
+Version: 1.0.0-alpha4
+Architecture: amd64
+Maintainer: Jeremy Soller <jeremy@system76.com>
+Installed-Size: 65335
+Depends: libc6 (>= 2.39), libgcc-s1 (>= 4.2), libglib2.0-0t64 (>= 2.36.0), libxkbcommon0 (>= 0.5.0), xdg-utils
+Filename: ./cosmic-files_1.0.0-alpha4_amd64.deb
+Size: 17610272
+MD5sum: 68b74046232f5cdf1ce8b59686c285e4
+SHA1: a57180626d96948c9c47bebbae752cffca2bcdb0
+SHA256: 991012d0c344227d81539cad506f7960044b689de3a9b8fd6e53b7ef5cefe71d
+Section: admin
+Priority: optional
+Homepage: https://github.com/pop-os/cosmic-files
+Description: Cosmic File Manager
+
+Package: cosmic-greeter
+Version: 1.0.0-alpha4
+Architecture: amd64
+Maintainer: Jeremy Soller <jeremy@system76.com>
+Installed-Size: 17481
+Pre-Depends: greetd
+Depends: adduser, bash, cosmic-comp, cosmic-greeter-daemon, dbus, debconf (>= 0.5) | debconf-2.0, systemd | systemd-standalone-sysusers | systemd-sysusers, libc6 (>= 2.39), libgcc-s1 (>= 4.2), libpam0g (>= 0.99.7.1), libxkbcommon0 (>= 0.5.0)
+Suggests: libpam-fprintd
+Provides: x-display-manager
+Filename: ./cosmic-greeter_1.0.0-alpha4_amd64.deb
+Size: 4509664
+MD5sum: 24d5863236dee09218d37958f65e0931
+SHA1: 5d346d020491b57e3980d9b671a253e426fe3614
+SHA256: 7fdb149812cc13e5afb940f39cbddc11f79d68a857bbb6f75b802b2f8fb22b42
+Section: admin
+Priority: optional
+Homepage: https://github.com/pop-os/cosmic-greeter
+Description: Cosmic Greeter
+
+Package: cosmic-greeter-daemon
+Source: cosmic-greeter
+Version: 1.0.0-alpha4
+Architecture: amd64
+Maintainer: Jeremy Soller <jeremy@system76.com>
+Installed-Size: 5686
+Depends: libc6 (>= 2.39), libgcc-s1 (>= 4.2)
+Filename: ./cosmic-greeter-daemon_1.0.0-alpha4_amd64.deb
+Size: 1454432
+MD5sum: 593fcc602bcabeff028dc17cdb4c2711
+SHA1: 4a5a56de10df17d2f6e6741b4e7b77a1f2864e05
+SHA256: 10de2cfc9906e36236c0a8e5f885873d870f6e6b12e2b37f4a6056c611d89321
+Section: admin
+Priority: optional
+Homepage: https://github.com/pop-os/cosmic-greeter
+Description: Cosmic Greeter daemon
+
+Package: cosmic-icons
+Version: 1.0.0-alpha4
+Architecture: amd64
+Maintainer: Ashley Wulber <ashley@system76.com>
+Installed-Size: 986
+Depends: pop-icon-theme
+Filename: ./cosmic-icons_1.0.0-alpha4_amd64.deb
+Size: 163400
+MD5sum: 3eca12ea66bdfe9018fec4215656feb1
+SHA1: bb2b9b518e21b52e3550206a17cacbf1a9d51a05
+SHA256: 1360db716d776c2eaf889afbf82cf1a41ac8fbe884e883f7346aaaca8520eccd
+Section: admin
+Priority: optional
+Homepage: https://github.com/pop-os/cosmic-icons
+Description: Cosmic Icons
+
+Package: cosmic-idle
+Version: 1.0.0-alpha4
+Architecture: amd64
+Maintainer: System76 <info@system76.com>
+Installed-Size: 5446
+Depends: libc6 (>= 2.39), libgcc-s1 (>= 4.2), libxkbcommon0 (>= 0.5.0)
+Filename: ./cosmic-idle_1.0.0-alpha4_amd64.deb
+Size: 1465200
+MD5sum: d13633222f9c7e8f564840cba5fb16b2
+SHA1: da516ef7779b0f57745325442ce8cdca0d50291c
+SHA256: 939ede98649615a0e374b214d8a6d9128c7b1a694106272f393231b3dbfe31c3
+Section: admin
+Priority: optional
+Homepage: https://github.com/pop-os/cosmic-idle
+Description: Cosmic idle daemon
+
+Package: cosmic-launcher
+Version: 1.0.0-alpha4
+Architecture: amd64
+Maintainer: Ashley Wulber <ashley@system76.com>
+Installed-Size: 26291
+Depends: libc6 (>= 2.38), libgcc-s1 (>= 4.2), libxkbcommon0 (>= 0.5.0), pop-launcher
+Filename: ./cosmic-launcher_1.0.0-alpha4_amd64.deb
+Size: 6764160
+MD5sum: ae4fd62c92758942d164f29b0d132b36
+SHA1: 04ebd69d8ee1ff31e03c15802e7390a99a1f7daa
+SHA256: e7773f0cd9c579b67de56dff063828158e20386c3af8c71fbbb713168bf7a30d
+Section: admin
+Priority: optional
+Homepage: https://github.com/pop-os/cosmic-launcher
+Description: Cosmic Launcher
+
+Package: cosmic-notifications
+Version: 1.0.0-alpha4
+Architecture: amd64
+Maintainer: Ashley Wulber <ashley@system76.com>
+Installed-Size: 25902
+Depends: libc6 (>= 2.39), libgcc-s1 (>= 4.2), libxkbcommon0 (>= 0.5.0)
+Filename: ./cosmic-notifications_1.0.0-alpha4_amd64.deb
+Size: 6825208
+MD5sum: 7bda66a8a2145abbc219ddbe521ddcb4
+SHA1: 43534a7c164508e5e4bcd5383dcf0cb2f6030649
+SHA256: ff7a6911ac3531aea6f0fd793a28f1cf2bb1bfcff58ea6ce1156b51cdc9bb083
+Section: admin
+Priority: optional
+Homepage: https://github.com/pop-os/cosmic-notifications
+Description: Cosmic Notifications
+
+Package: cosmic-osd
+Version: 1.0.0-alpha4
+Architecture: amd64
+Maintainer: System76 <info@system76.com>
+Installed-Size: 20221
+Depends: libc6 (>= 2.39), libgcc-s1 (>= 4.2), libpulse0 (>= 0.99.4), libxkbcommon0 (>= 0.5.0)
+Provides: polkit-1-auth-agent
+Filename: ./cosmic-osd_1.0.0-alpha4_amd64.deb
+Size: 5473612
+MD5sum: 52e2691ec34f99f7f8ed045530205b2f
+SHA1: c0a41a3cae4bf3ffddf950d5d9f5996674bda3bf
+SHA256: ba66c1c320c9d10593734d7ca8b6488b4acd5770f7caf0b0a9a5e8267aa03cca
+Section: admin
+Priority: optional
+Homepage: https://github.com/pop-os/cosmic-osd
+Description: Cosmic OSD
+
+Package: cosmic-panel
+Version: 1.0.0-alpha4
+Architecture: amd64
+Maintainer: System76 <info@system76.com>
+Installed-Size: 19111
+Depends: libc6 (>= 2.39), libgcc-s1 (>= 4.2), libxkbcommon0 (>= 0.5.0)
+Filename: ./cosmic-panel_1.0.0-alpha4_amd64.deb
+Size: 5053068
+MD5sum: 67de922092dccdb1fc2c3dc952ec49b6
+SHA1: 28def7c93c6c1cc5289a961a53fac97fb0f869ab
+SHA256: f445e145d27ccf724be0a08dcfd43e79af4324f45ce660acba9ef1f6ea17452c
+Section: admin
+Priority: optional
+Homepage: https://github.com/pop-os/cosmic-panel
+Description: XDG Shell Wrapper Panel for COSMIC
+
+Package: cosmic-randr
+Version: 1.0.0-alpha4
+Architecture: amd64
+Maintainer: Michael Murphy <michael@mmurphy.dev>
+Installed-Size: 1399
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Filename: ./cosmic-randr_1.0.0-alpha4_amd64.deb
+Size: 475288
+MD5sum: 52203eac3cb97f3bae54fea0c3eb6583
+SHA1: 1e5286646a30b9b4b1877ba8b430e59da667c523
+SHA256: 420d792047401808da577ea8a2c251f149659bf4d034a279f43fe145c53ba3a3
+Section: utils
+Priority: optional
+Homepage: https://github.com/pop-os/cosmic-randr
+Description: Display and configure wayland display outputs
+ Display and configure wayland display outputs
+
+Package: cosmic-screenshot
+Version: 1.0.0-alpha4
+Architecture: amd64
+Maintainer: Jeremy Soller <jeremy@system76.com>
+Installed-Size: 4233
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Filename: ./cosmic-screenshot_1.0.0-alpha4_amd64.deb
+Size: 1142100
+MD5sum: 2d5fce1c4c5a1ea9bf46d2696f8d290c
+SHA1: f2da74ef3ea4fe0edd3b7d829fa124a6cbada2bb
+SHA256: b0a3193360f4fe2a835c7c467f78f40c6b207b91f0ef3ad46102201f187db8ea
+Section: admin
+Priority: optional
+Homepage: https://github.com/pop-os/cosmic-screenshot
+Description: Cosmic Screenshot Utility
+
+Package: cosmic-session
+Version: 1.0.0-alpha4
+Architecture: amd64
+Maintainer: System76 <info@system76.com>
+Installed-Size: 6467
+Depends: dconf-gsettings-backend | gsettings-backend, libc6 (>= 2.39), libgcc-s1 (>= 4.2), cosmic-app-library, cosmic-applets, cosmic-bg, cosmic-comp, cosmic-files, cosmic-greeter, cosmic-icons, cosmic-idle, cosmic-launcher, cosmic-notifications, cosmic-osd, cosmic-panel, cosmic-randr, cosmic-screenshot, cosmic-settings, cosmic-settings-daemon, cosmic-workspaces, pop-fonts, switcheroo-control, xdg-desktop-portal-cosmic, xwayland
+Recommends: cosmic-edit, cosmic-store, cosmic-term, cosmic-wallpapers, system-config-printer
+Filename: ./cosmic-session_1.0.0-alpha4_amd64.deb
+Size: 1603480
+MD5sum: 0549a11930698a387d25b67a3cdb9109
+SHA1: 48ee0f02d6e905d29dacd01b5e53c6de2742775c
+SHA256: 060fe3cdba3ae00aa0842f60675496233b92f0d0f36943efde6ed109b5b494f3
+Section: admin
+Priority: optional
+Homepage: https://github.com/pop-os/cosmic-session
+Description: The session for the COSMIC desktop
+
+Package: cosmic-settings
+Version: 1.0.0-alpha4
+Architecture: amd64
+Maintainer: Michael Murphy <mmstick@pm.me>
+Installed-Size: 79140
+Depends: libc6 (>= 2.39), libgcc-s1 (>= 4.2), libpipewire-0.3-0t64 (>= 0.3.1), libpulse0 (>= 0.99.4), libudev1 (>= 183), libxkbcommon0 (>= 0.5.0), accountsservice, cosmic-randr, gettext, iso-codes, network-manager-gnome, network-manager-openvpn, network-manager-openvpn-gnome, xkb-data
+Recommends: adw-gtk3
+Filename: ./cosmic-settings_1.0.0-alpha4_amd64.deb
+Size: 14318064
+MD5sum: 8578878be97e2100df507f7c0903e0cd
+SHA1: edd49d45a96183bee0d2b6feccc4839f055a2dc3
+SHA256: fe944517e02a950e639d0dc76a2e04ed166e42534c0f2350dc3fa974c1176a9b
+Section: utils
+Priority: optional
+Homepage: https://github.com/pop-os/cosmic-settings
+Description: Settings application for the COSMIC desktop environment
+ Settings application for the COSMIC desktop environment
+
+Package: cosmic-settings-daemon
+Version: 1.0.0-alpha4
+Architecture: amd64
+Maintainer: System76 <info@system76.com>
+Installed-Size: 5073
+Depends: acpid, adw-gtk3, pop-sound-theme, libc6 (>= 2.39), libgcc-s1 (>= 4.2), libudev1 (>= 183)
+Recommends: geoclue-2.0, playerctl
+Filename: ./cosmic-settings-daemon_1.0.0-alpha4_amd64.deb
+Size: 1326904
+MD5sum: 2a962879a37bd990fa8676a5bca6e7c1
+SHA1: a12d72180838ac6bc942b6cf8c7caab03eb31242
+SHA256: 76e31122355f4df2dcb2396e2bc576bd99e7bee99f3cdb1d4860a104a6223871
+Section: admin
+Priority: optional
+Homepage: https://github.com/pop-os/cosmic-settings-daemon
+Description: Cosmic settings daemon
+
+Package: cosmic-store
+Version: 1.0.0-alpha4
+Architecture: amd64
+Maintainer: Jeremy Soller <jeremy@system76.com>
+Installed-Size: 39292
+Depends: appstream-data-pop, apt-config-icons, apt-config-icons-hidpi, apt-config-icons-large, apt-config-icons-large-hidpi, cosmic-icons, libc6 (>= 2.39), libflatpak0 (>= 1.1.3), libgcc-s1 (>= 4.2), libglib2.0-0t64 (>= 2.32.0), libssl3t64 (>= 3.0.0), libxkbcommon0 (>= 0.5.0)
+Filename: ./cosmic-store_1.0.0-alpha4_amd64.deb
+Size: 9925420
+MD5sum: 23a9e49dc5ea11ddb55a906788daa7f6
+SHA1: da9fd4f2229d77eab84a89d896b379d7f50c8cff
+SHA256: 858eec0a23b9a0cd0d48e0e27d6a4a8477b24a0a89417d5ce54f41b47bc6e030
+Section: admin
+Priority: optional
+Homepage: https://github.com/pop-os/cosmic-store
+Description: COSMIC Store
+
+Package: cosmic-term
+Version: 1.0.0-alpha4
+Architecture: amd64
+Maintainer: Jeremy Soller <jeremy@system76.com>
+Installed-Size: 35244
+Depends: libc6 (>= 2.39), libgcc-s1 (>= 4.2), libxkbcommon0 (>= 0.5.0)
+Provides: x-terminal-emulator
+Filename: ./cosmic-term_1.0.0-alpha4_amd64.deb
+Size: 9091312
+MD5sum: 0fff1307fd2d635d35135279ecf69d7c
+SHA1: 8fc48310ce8a48e5ac75d6c400f3d99256cd4f09
+SHA256: 222030e619338bde5ce58693a8289265a3cf1d205db25e3979450ac9cef0354e
+Section: admin
+Priority: optional
+Homepage: https://github.com/pop-os/cosmic-term
+Description: COSMIC Terminal
+
+Package: cosmic-wallpapers
+Version: 1.0.0-alpha4
+Architecture: all
+Maintainer: Jeremy Soller <jeremy@system76.com>
+Installed-Size: 16
+Provides: ubuntu-wallpapers
+Filename: ./cosmic-wallpapers_1.0.0-alpha4_all.deb
+Size: 2160
+MD5sum: dd577ebee6baa75e986d21fe4d418e93
+SHA1: 4ceca1471e5917bbf5afa8d3d0af2c934c4f6601
+SHA256: d58f3437f835ac3d6d4dfcfe630bef2c0a67e955bb05c92bc5abee462a19e672
+Section: x11
+Priority: optional
+Homepage: https://github.com/pop-os/cosmic-wallpapers
+Description: COSMIC Wallpapers
+ A collection of wallpapers for the COSMIC Desktop Environment
+
+Package: cosmic-workspaces
+Version: 1.0.0-alpha4
+Architecture: amd64
+Maintainer: System76 <info@system76.com>
+Installed-Size: 23508
+Depends: libc6 (>= 2.39), libgbm1 (>= 21.1.0), libgcc-s1 (>= 4.2), libxkbcommon0 (>= 0.5.0)
+Filename: ./cosmic-workspaces_1.0.0-alpha4_amd64.deb
+Size: 5919264
+MD5sum: 586acf589ede1537031d4fdab5575b09
+SHA1: cd2e01d39ae87be68b619f190d3fc32f7fcb037e
+SHA256: 3db7713ab31604d2f1782d0b91626f3172c691e947f889dfe4b90db3855b7946
+Section: admin
+Priority: optional
+Homepage: https://github.com/pop-os/cosmic-workspaces-epoch
+Description: Cosmic workspaces
+
 Package: fx
 Version: 0.0.1734413924
 Architecture: amd64
@@ -227,6 +610,40 @@ Priority: optional
 Description: [generated from Rust crate onemorebeer-ui]
  A simple frontend for a beer shop.
 
+Package: pop-icon-theme
+Version: 3.5.1
+Architecture: all
+Maintainer: Jeremy Soller <jeremy@system76.com>
+Installed-Size: 69034
+Depends: adwaita-icon-theme-full, hicolor-icon-theme
+Suggests: pop-icon-theme-extra
+Conflicts: system76-pop-icon-theme
+Filename: ./pop-icon-theme_3.5.1_all.deb
+Size: 4498676
+MD5sum: 24a98ab918dda9c8c0b231e6f5daa50f
+SHA1: c5b205241fdd93af1ff78b0decfc6d6d3984e5e0
+SHA256: 147dffcc8f62b0d3961fec170d07cd035897f9ac51f53219fc0907e55353c4bf
+Section: gnome
+Priority: optional
+Homepage: https://github.com/pop-os/icon-theme
+Description: Pop Icons
+
+Package: pop-launcher
+Version: 1.2.4
+Architecture: amd64
+Maintainer: Michael Aaron Murphy <mmstick@pm.me>
+Installed-Size: 8717
+Depends: qalc, fd-find, libc6 (>= 2.39), libgcc-s1 (>= 4.2)
+Filename: ./pop-launcher_1.2.4_amd64.deb
+Size: 2623996
+MD5sum: 681a7c7e7b52e7ffcf365392cf4a8b80
+SHA1: db630712569f0c5ca5417905c764c34c3b2ea6c4
+SHA256: 366d1d9f43a243889e3d74065449dcbdd5b2a8c03bfd4db8bb6fa877fa968b47
+Section: utils
+Priority: optional
+Homepage: https://github.com/pop-os/launcher
+Description: Modular IPC-based desktop launcher service
+
 Package: syshud
 Version: 0.0.1732537236
 Architecture: amd64
@@ -241,4 +658,20 @@ SHA256: deab94e2eaec86baca5a345ca0af04d8567dd6f4dd060ad74ef8b38446560305
 Section: utils
 Priority: extra
 Description: Simple heads up display written in gtkmm 4
+
+Package: xdg-desktop-portal-cosmic
+Version: 1.0.0-alpha4
+Architecture: amd64
+Maintainer: System76 <info@system76.com>
+Installed-Size: 40462
+Depends: libc6 (>= 2.39), libgbm1 (>= 21.3.0~rc1), libgcc-s1 (>= 4.2), libglib2.0-0t64 (>= 2.36.0), libpipewire-0.3-0t64 (>= 0.3.1), libxkbcommon0 (>= 0.5.0)
+Filename: ./xdg-desktop-portal-cosmic_1.0.0-alpha4_amd64.deb
+Size: 10427464
+MD5sum: 696a42d36642d3ed8503b97774d1a5a9
+SHA1: 99083c0077900aeebba0c730725cfebebbb5a220
+SHA256: 1cd48c46006f56ac9fa731a7067b9693482b90fbd2164b15d88479172d49d4e8
+Section: admin
+Priority: optional
+Homepage: https://github.com/pop-os/xdg-desktop-portal-cosmic
+Description: Cosmic backend for xdg-desktop-portal
 

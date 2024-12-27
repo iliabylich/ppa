@@ -469,6 +469,21 @@ Section: utils
 Priority: extra
 Description: Terminal JSON viewer & processor
 
+Package: ghostty
+Version: 1.0.0
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 33447
+Depends: libadwaita-1-0 (>= 1.5~beta), libc6 (>= 2.38), libglib2.0-0t64 (>= 2.42.0), libgtk-4-1 (>= 4.3.1)
+Filename: ./ghostty_1.0.0_amd64.deb
+Size: 15253796
+MD5sum: aaa03d3df28a93ab75b27e53fc7bfe44
+SHA1: b3f2f9660e34ce62a5beb672bc3a88ef1b167d90
+SHA256: 4ad2e0702ab73e417e43381b51945b62b7be32d6d14dbc041b429e6e14f631dc
+Section: utils
+Priority: extra
+Description: Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration.
+
 Package: hnparser
 Version: 0.1.0-1732035913
 Architecture: amd64

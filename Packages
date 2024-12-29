@@ -473,13 +473,13 @@ Package: ghostty
 Version: 1.0.0
 Architecture: amd64
 Maintainer: John Doe <john@doe.org>
-Installed-Size: 32049
+Installed-Size: 33163
 Depends: libadwaita-1-0 (>= 1.5~beta), libc6 (>= 2.38), libfontconfig1 (>= 2.12.6), libglib2.0-0t64 (>= 2.42.0), libgtk-4-1 (>= 4.3.1)
 Filename: ./ghostty_1.0.0_amd64.deb
-Size: 14743268
-MD5sum: 3db9ccdd02eed8d2e6ff267b7407db80
-SHA1: 245af563734c847a07a2d3523436f42b9b06789f
-SHA256: 7e92c744f107bae51ad283874c851904e34d9455a8399f5d489943c143998ea7
+Size: 15182136
+MD5sum: 84f562848f24c2cf1c2d284f0f01f507
+SHA1: 2f7b3daf9b1b9f0ce72a11bf50d91f3a7b1070de
+SHA256: f8364ec48829b8018fbf90d3d9172b267dbb242550998301288c6c1faac2f5ea
 Section: utils
 Priority: extra
 Description: Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration.

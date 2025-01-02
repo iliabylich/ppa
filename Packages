@@ -470,31 +470,31 @@ Priority: extra
 Description: Terminal JSON viewer & processor
 
 Package: ghostty
-Version: 1.0.0
+Version: 1.0.1
 Architecture: amd64
 Maintainer: John Doe <john@doe.org>
-Installed-Size: 33163
-Depends: libadwaita-1-0 (>= 1.5~beta), libc6 (>= 2.38), libfontconfig1 (>= 2.12.6), libglib2.0-0t64 (>= 2.42.0), libgtk-4-1 (>= 4.3.1)
-Filename: ./ghostty_1.0.0_amd64.deb
-Size: 15182136
-MD5sum: 84f562848f24c2cf1c2d284f0f01f507
-SHA1: 2f7b3daf9b1b9f0ce72a11bf50d91f3a7b1070de
-SHA256: f8364ec48829b8018fbf90d3d9172b267dbb242550998301288c6c1faac2f5ea
+Installed-Size: 34112
+Depends: libadwaita-1-0 (>= 1.5~beta), libc6 (>= 2.38), libfontconfig1 (>= 2.12.6), libglib2.0-0t64 (>= 2.42.0), libgtk-4-1 (>= 4.3.1), libx11-6
+Filename: ./ghostty_1.0.1_amd64.deb
+Size: 16111580
+MD5sum: 1579e76601eead27385e0e4958c23836
+SHA1: 43c1a8c7d5522a386efaa496101c787540c82771
+SHA256: bd4ab38661380a31905e10f2634961dd28955f0900ea66fd57f7ee31b7f5fae2
 Section: utils
 Priority: extra
 Description: Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration.
 
 Package: hnparser
-Version: 0.1.0-1732035913
+Version: 0.1.0-1735812629
 Architecture: amd64
 Maintainer: HN parser developer <ibylich@gmail.com>
-Installed-Size: 4168
+Installed-Size: 4160
 Depends: systemd
-Filename: ./hnparser_0.1.0-1732035913_amd64.deb
-Size: 1547092
-MD5sum: 06f61ab6dee6cd1cf8985c76fcf2b0c2
-SHA1: 7df99d2ae958d32c829c49eed1f37a4ab576276b
-SHA256: 894c5fed056c7071a46ae3af9ec52ad2a68bb6d4437dc0a7121a6c8b840bf0e4
+Filename: ./hnparser_0.1.0-1735812629_amd64.deb
+Size: 1545724
+MD5sum: 2edf9f8fdafbb13445f3e09421034b17
+SHA1: 9058dcbca6be338ab986d1ea345e54e603a52d0a
+SHA256: 9fc4e1a6e9613df3b8c1daada2e1243dccdb637c3afb7c845aa0a12b177db629
 Section: admin
 Priority: optional
 Description: [generated from Rust crate hnparser]
@@ -669,16 +669,16 @@ Priority: extra
 Description: Meta-package that depends on all packages that I use
 
 Package: onemorebeer-ui
-Version: 0.1.0-1732035920
+Version: 0.1.0-1735812652
 Architecture: amd64
 Maintainer: onemorebeer-ui developer <ibylich@gmail.com>
-Installed-Size: 4465
+Installed-Size: 4477
 Depends: systemd
-Filename: ./onemorebeer-ui_0.1.0-1732035920_amd64.deb
-Size: 1644188
-MD5sum: d235846d007c5bd2a0977ea187beece6
-SHA1: c2d9843a48b9c255e8031945d0f36ef91d58b80e
-SHA256: cc6380eca9b28731ac41ede9dcd63a13d8e0209c65340152702fe92835f585d8
+Filename: ./onemorebeer-ui_0.1.0-1735812652_amd64.deb
+Size: 1648984
+MD5sum: a162960487cb44f988b6b51bc5eec5bd
+SHA1: 1f69743a78e2ce4d1f2da1c0b6c3d40cf15f492a
+SHA256: 0ebeebe8cfdb8f5cc0af9a5b9d155203cd5b16d32856e82b7190e8658af33893
 Section: admin
 Priority: optional
 Description: [generated from Rust crate onemorebeer-ui]

@@ -505,12 +505,12 @@ Version: 0.1.1
 Architecture: amd64
 Maintainer: John Doe <john@doe.org>
 Installed-Size: 192
-Depends: hyprutils, libc6 (>= 2.29), libcairo2 (>= 1.10.0), libgcc-s1 (>= 4.3), libjpeg62-turbo (>= 1.3.1), libjxl0.9 (>= 0.7.0), libmagic1t64 (>= 5.12), libstdc++6 (>= 13), libwebp7 (>= 1.4.0)
+Depends: hyprutils, libc6 (>= 2.29), libcairo2 (>= 1.10.0), libgcc-s1 (>= 4.3), libjpeg62-turbo (>= 1.3.1), libjxl0.10 (>= 0.7.0), libmagic1t64 (>= 5.12), libstdc++6 (>= 13), libwebp7 (>= 1.4.0)
 Filename: ./hyprgraphics_0.1.1_amd64.deb
-Size: 60696
-MD5sum: fc499dfb8416b758c6c007692bf7dbd5
-SHA1: aaad1beb1f56658ce601dec4a4f5b1e2712a50a6
-SHA256: 9867b45a7b2b71615f9d90b6f3a4754d969291f23e8acc4ef0b720e6531f3d39
+Size: 60572
+MD5sum: 1f9149deed561a9fdd40bad2b785fe48
+SHA1: 212410b44d5010596efde625f1c0cf36593acdd6
+SHA256: 37a4c5c8c9654e74af6749c6aa455ae096ba3981584bf95d135942b75bf02795
 Section: utils
 Priority: extra
 Description: Hyprland graphics / resource utilities
@@ -522,10 +522,10 @@ Maintainer: John Doe <john@doe.org>
 Installed-Size: 58751
 Depends: aquamarine, hyprgraphics, hyprutils, libc6 (>= 2.38), libcairo2 (>= 1.2.4), libdrm2 (>= 2.4.113), libegl1, libgbm1 (>= 7.11~1), libgcc-s1 (>= 4.3), libgles2 (>= 1.0.0), libglib2.0-0t64 (>= 2.40.0), libhyprcursor0 (>= 0.1.9), libhyprlang2 (>= 0.5.2), libinput10 (>= 1.23.0), libpango-1.0-0 (>= 1.18.0), libpangocairo-1.0-0 (>= 1.14.0), libpixman-1-0 (>= 0.11.2), libre2-11-absl20230802, libstdc++6 (>= 14), libtomlplusplus3t64 (>= 3.2.0), libuuid1 (>= 2.16), libwayland-server0 (>= 1.23.0), libxcb-composite0, libxcb-errors0 (>= 1.0.1), libxcb-icccm4 (>= 0.4.2), libxcb-render0, libxcb-res0 (>= 1.10), libxcb-xfixes0, libxcb1, libxcursor1 (>> 1.1.2), libxkbcommon0 (>= 0.8.0)
 Filename: ./hyprland_0.46.2_amd64.deb
-Size: 48753364
-MD5sum: 62ee3061e231db2a14446b7c2ab57c2c
-SHA1: c934cb66a814eaef0804b22b40469af4aa414a5c
-SHA256: 4fec149c3f16a47fdcbaf116dba332eedbe2ea095ab28096b92c86760dc8e4ae
+Size: 48753676
+MD5sum: 802ad9dad4911ca53e16e8df8679a820
+SHA1: b67a0378921e78267dc56c122e6baf72f4f0a61e
+SHA256: 1614c2328508f977957ea9e7ffc24ce727fc3e98207fae490632384197e95e6c
 Section: utils
 Priority: extra
 Description: Hyprland is an independent, highly customizable, dynamic tiling Wayland compositor that doesn't sacrifice on its looks.

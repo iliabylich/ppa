@@ -522,10 +522,10 @@ Maintainer: John Doe <john@doe.org>
 Installed-Size: 58751
 Depends: aquamarine, hyprgraphics, hyprutils, libc6 (>= 2.38), libcairo2 (>= 1.2.4), libdrm2 (>= 2.4.113), libegl1, libgbm1 (>= 7.11~1), libgcc-s1 (>= 4.3), libgles2 (>= 1.0.0), libglib2.0-0t64 (>= 2.40.0), libhyprcursor0 (>= 0.1.9), libhyprlang2 (>= 0.5.2), libinput10 (>= 1.23.0), libpango-1.0-0 (>= 1.18.0), libpangocairo-1.0-0 (>= 1.14.0), libpixman-1-0 (>= 0.11.2), libre2-11-absl20230802, libstdc++6 (>= 14), libtomlplusplus3t64 (>= 3.2.0), libuuid1 (>= 2.16), libwayland-server0 (>= 1.23.0), libxcb-composite0, libxcb-errors0 (>= 1.0.1), libxcb-icccm4 (>= 0.4.2), libxcb-render0, libxcb-res0 (>= 1.10), libxcb-xfixes0, libxcb1, libxcursor1 (>> 1.1.2), libxkbcommon0 (>= 0.8.0)
 Filename: ./hyprland_0.46.2_amd64.deb
-Size: 48753676
-MD5sum: 802ad9dad4911ca53e16e8df8679a820
-SHA1: b67a0378921e78267dc56c122e6baf72f4f0a61e
-SHA256: 1614c2328508f977957ea9e7ffc24ce727fc3e98207fae490632384197e95e6c
+Size: 48756336
+MD5sum: 0798d9625fe9c647a5eb869d0907f57f
+SHA1: 7bb64f39dc7b14fb8f062cc23510d70d15b554c6
+SHA256: 20c543175d1976ca13c69d1e3e0acd33e07b08f16246c8a379123e938d9c4da1
 Section: utils
 Priority: extra
 Description: Hyprland is an independent, highly customizable, dynamic tiling Wayland compositor that doesn't sacrifice on its looks.
@@ -560,6 +560,21 @@ Section: utils
 Priority: extra
 Description: Hyprland's GPU-accelerated screen locking utility
 
+Package: hyprpolkitagent
+Version: 0.1.1
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 212
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 4.3), libpolkit-qt6-1-1 (>= 0.200.0), libqt6core6t64 (>= 6.7.2), libqt6gui6 (>= 6.1.2), libqt6qml6 (>= 6.6.0), libqt6quickcontrols2-6 (>= 6.6.0), libqt6widgets6 (>= 6.1.2), libstdc++6 (>= 13)
+Filename: ./hyprpolkitagent_0.1.1_amd64.deb
+Size: 65156
+MD5sum: c566a6c7c15418f7e796642083fc1cd3
+SHA1: 120ff9a93d6520e9a31ff6998cd0a09e20837164
+SHA256: 6fe2f0cff3a70d4622b0c80d1dadeaddfe50fb3d9b46e025724047c3d76a1480
+Section: utils
+Priority: extra
+Description: A polkit authentication agent written in QT/QML
+
 Package: hyprsunset
 Version: 0.1.0
 Architecture: amd64
@@ -574,6 +589,21 @@ SHA256: 6d0cd1fab4af4336458db583fd0159c9c189608896e246a3c6e850cd402ae092
 Section: utils
 Priority: extra
 Description: An application to enable a blue-light filter on Hyprland
+
+Package: hyprsysteminfo
+Version: 0.1.2
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 244
+Depends: hyprutils, libc6 (>= 2.38), libgcc-s1 (>= 4.3), libqt6core6t64 (>= 6.7.2), libqt6gui6 (>= 6.1.2), libqt6qml6 (>= 6.6.0), libqt6quick6 (>= 6.6.0), libqt6quickcontrols2-6 (>= 6.6.0), libqt6waylandclient6 (>= 6.6.0), libqt6widgets6 (>= 6.1.2), libstdc++6 (>= 13), qt6-waylandclient-private-abi (= 6.7.2)
+Filename: ./hyprsysteminfo_0.1.2_amd64.deb
+Size: 77948
+MD5sum: 81e80c8a5fd32976920c54fd22495172
+SHA1: 04c46ffb19c5d572ce8095bb3ca444aa0149ce8b
+SHA256: 254a1e9cc060868477d1f36659404f050646b1e1598d4759afea1b4f0e7d24d1
+Section: utils
+Priority: extra
+Description: A tiny qt6/qml application to display information about the running system
 
 Package: hyprutils
 Version: 0.2.6

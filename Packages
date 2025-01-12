@@ -684,16 +684,16 @@ Priority: extra
 Description: An enhanced man page viewer for linux and BSD systems based on OpenGL and mandoc libraries
 
 Package: metapackage
-Version: 0.0.1736369815
+Version: 0.0.1736662703
 Architecture: amd64
 Maintainer: John Doe <john@doe.org>
 Installed-Size: 7
-Depends: nautilus, gnome-system-monitor, gnome-terminal, tuigreet, greetd, localsend, loupe, d-spy, firefox, ghostty, fonts-inter-variable, build-essential, cmake, meson, ragel, valgrind, google-perftools, bison, strace, rustfilt, sqlite3, gh, pkg-config, make, git, gitk, llvm, clang, lld, hugo, jq, jsonnet, nmap, yq, pipx, gnupg2, just, git-delta, bat, fastfetch, htop, nano, tree, ffmpeg, libnotify-bin, stow, traceroute, wget, curl, fx, starship, libjemalloc2, libjemalloc-dev, libgtk-4-dev, libgtk4-layer-shell-dev, libadwaita-1-dev, libvte-2.91-gtk4-dev, libpipewire-0.3-dev, libdbus-1-dev, libssl-dev, apt-listbugs, apt-file, netselect-apt, hyprland, hyprlock, swaybg, dunst, wl-clipboard, wf-recorder, slurp, grim, cliphist, layer-shell, pavucontrol, syshud, hyprsunset, hyprland-qtutils, hyprsysteminfo, hyprpolkitagent
-Filename: ./metapackage_0.0.1736369815_amd64.deb
-Size: 1520
-MD5sum: c4f9410a0439c439e69ae7de94eae185
-SHA1: d1718c2e1789ec41247d1c01ea004f671b9e6349
-SHA256: cad2598c6ea06356bb7d0bfc332520a3f339127018b07f0df5ed6300df2137ba
+Depends: nautilus, gnome-system-monitor, gnome-terminal, tuigreet, greetd, localsend, loupe, d-spy, firefox, ghostty, spot, fonts-inter-variable, build-essential, cmake, meson, ragel, valgrind, google-perftools, bison, strace, rustfilt, sqlite3, gh, pkg-config, make, git, gitk, llvm, clang, lld, clangd, hugo, jq, jsonnet, nmap, yq, pipx, gnupg2, just, git-delta, bat, fastfetch, htop, nano, tree, ffmpeg, libnotify-bin, stow, traceroute, wget, curl, fx, starship, du-dust, libjemalloc2, libjemalloc-dev, libgtk-4-dev, libgtk4-layer-shell-dev, libadwaita-1-dev, libvte-2.91-gtk4-dev, libpipewire-0.3-dev, libdbus-1-dev, libssl-dev, apt-listbugs, apt-file, netselect-apt, hyprland, hyprlock, swaybg, dunst, wl-clipboard, wf-recorder, slurp, grim, cliphist, layer-shell, pavucontrol, syshud, hyprsunset, hyprland-qtutils, hyprsysteminfo, hyprpolkitagent
+Filename: ./metapackage_0.0.1736662703_amd64.deb
+Size: 1532
+MD5sum: 004a742e9586d39a87e884062d697570
+SHA1: 3173aaece95e802c0d647eaf6070e500fca01095
+SHA256: 4d82184efe689c46261ebde399ac5592f0506e2d74108fbbcb4ec9930808f23d
 Section: utils
 Priority: extra
 Description: Meta-package that depends on all packages that I use

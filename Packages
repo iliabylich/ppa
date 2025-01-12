@@ -830,13 +830,13 @@ Package: spot
 Version: 0.5.0
 Architecture: amd64
 Maintainer: John Doe <john@doe.org>
-Installed-Size: 24405
+Installed-Size: 24402
 Depends: libadwaita-1-0 (>= 1.2~alpha), libasound2t64 (>= 1.0.29), libc6 (>= 2.39), libcairo2 (>= 1.2.4), libgcc-s1 (>= 4.2), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0t64 (>= 2.54.0), libgstreamer-plugins-base1.0-0 (>= 1.0.0), libgstreamer1.0-0 (>= 1.4.0), libgtk-4-1 (>= 4.0.0), libpango-1.0-0 (>= 1.14.0), libpulse0 (>= 0.99.1), libssl3t64 (>= 3.2.0), zlib1g (>= 1:1.1.4)
 Filename: ./spot_0.5.0_amd64.deb
-Size: 6080460
-MD5sum: 7792b46e022010c5ada23f980890a005
-SHA1: 6a0d58c6d7ac2b000cd22ed836cf79671f5551c4
-SHA256: f7bac0693ebd7b33e51cbe785b873ea4f8a08c875c72e293b4984f3414c16209
+Size: 6082100
+MD5sum: 2a2293e46cb7f5ec1e2a16ed8c73d736
+SHA1: 77f16a228f698ab926f645316603fad1e3d5e50a
+SHA256: baa3ba28107f71dbaa8a6798f4643069ca38fbc4f8c977bffdc5c45b6d1f92da
 Section: utils
 Priority: extra
 Description: Native Spotify client for the GNOME desktop

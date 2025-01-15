@@ -856,6 +856,21 @@ Section: utils
 Priority: extra
 Description: Simple heads up display written in gtkmm 4
 
+Package: timeshift-autosnap-apt
+Version: 0.0.1736968137
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 18
+Depends: timeshift
+Filename: ./timeshift-autosnap-apt_0.0.1736968137_amd64.deb
+Size: 2912
+MD5sum: 7955fffcbe47691cb77a8b4759451631
+SHA1: e0d3c64f3640b019c033858a0b81ac6184c0316b
+SHA256: dd0ddd4bcdaf2136355d2cc29bc4683b630c57af21cad641c5feb337c8ba5edb
+Section: utils
+Priority: extra
+Description: Timeshift auto-snapshot script for Ubuntu and Debian based systems which creates snapshots of your system with timeshift before a package install, remove or upgrade using DPkg::Pre-Invoke hook in apt. Fork of timeshift-autosnap from AUR.
+
 Package: xdg-desktop-portal-cosmic
 Version: 1.0.0-alpha4
 Architecture: amd64

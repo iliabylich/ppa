@@ -635,16 +635,16 @@ Priority: extra
 Description: A Hyprland implementation of wayland-scanner, in and for C++.
 
 Package: layer-shell
-Version: 0.0.1737659003
+Version: 0.0.1737675789
 Architecture: amd64
 Maintainer: John Doe <john@doe.org>
-Installed-Size: 4033
-Depends: libc6 (>= 2.39), libcairo-gobject2 (>= 1.10.0), libcairo2 (>= 1.2.4), libdbus-1-3 (>= 1.10), libgcc-s1 (>= 4.2), libgdk-pixbuf-2.0-0 (>= 2.31.1), libglib2.0-0t64 (>= 2.78.0), libgraphene-1.0-0 (>= 1.5.4), libgtk-4-1 (>= 4.12.0), libgtk4-layer-shell0 (>= 1.0.2), libharfbuzz0b (>= 0.6.0), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libpipewire-0.3-0t64 (>= 0.3.1), libvte-2.91-gtk4-0 (>= 0.47.90), libvulkan1 (>= 1.2.131.2), fonts-inter-variable
-Filename: ./layer-shell_0.0.1737659003_amd64.deb
-Size: 1635228
-MD5sum: fe72ae623ea1b0b6601ffd115bcf838e
-SHA1: 7e52280bacd9fc2179f541709c5821fb52918f53
-SHA256: 7dfd7f36d59fba364a92c5288cb3d666612e7cda9d76b41baf821fbbc21f77ac
+Installed-Size: 2033
+Depends: libc6 (>= 2.39), libcairo-gobject2 (>= 1.10.0), libcairo2 (>= 1.2.4), libdbus-1-3 (>= 1.10), libgcc-s1 (>= 4.2), libgdk-pixbuf-2.0-0 (>= 2.31.1), libglib2.0-0t64 (>= 2.78.0), libgraphene-1.0-0 (>= 1.5.4), libgtk-4-1 (>= 4.12.0), libgtk4-layer-shell0 (>= 1.0.2), libharfbuzz0b (>= 0.6.0), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libpipewire-0.3-0t64 (>= 0.3.1), libssl3t64 (>= 3.0.0), libvte-2.91-gtk4-0 (>= 0.47.90), libvulkan1 (>= 1.2.131.2), fonts-inter-variable
+Filename: ./layer-shell_0.0.1737675789_amd64.deb
+Size: 811732
+MD5sum: 562b0b8e6681685d7ef1ab3ed7187f32
+SHA1: 3eb9fe506fb069fd24973c6880a9b45794144dfb
+SHA256: 31a20de878290fe8b3c4366f854e584af982de9a1d06bb901c9fafe3ae7ba039
 Section: utils
 Priority: extra
 Description: A custom layer shell

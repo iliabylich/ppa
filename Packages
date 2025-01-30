@@ -303,16 +303,16 @@ Priority: extra
 Description: An enhanced man page viewer for linux and BSD systems based on OpenGL and mandoc libraries
 
 Package: metapackage
-Version: 0.0.1738255853
+Version: 0.0.1738256608
 Architecture: amd64
 Maintainer: John Doe <john@doe.org>
 Installed-Size: 7
-Depends: nautilus, gnome-system-monitor, gnome-terminal, tuigreet, greetd, localsend, loupe, d-spy, firefox, ghostty, spot, timeshift, build-essential, cmake, meson, ragel, valgrind, google-perftools, bison, strace, rustfilt, sqlite3, gh, pkg-config, make, git, gitk, llvm, clang, lld, clangd, hugo, jq, jsonnet, nmap, yq, pipx, gnupg2, just, git-delta, bat, fastfetch, htop, nano, tree, ffmpeg, libnotify-bin, stow, traceroute, wget, curl, fx, starship, du-dust, gaskpass, libjemalloc2, libjemalloc-dev, libgtk-4-dev, libgtk4-layer-shell-dev, libadwaita-1-dev, libvte-2.91-gtk4-dev, libpipewire-0.3-dev, libdbus-1-dev, libssl-dev, apt-file, timeshift-autosnap-apt, hyprland, hyprlock, swaybg, dunst, wl-clipboard, wf-recorder, slurp, grim, cliphist, layer-shell, pavucontrol, syshud, hyprsunset, hyprland-qtutils, hyprsysteminfo, hyprpolkitagent, hyprland-qt-support
-Filename: ./metapackage_0.0.1738255853_amd64.deb
-Size: 1532
-MD5sum: c10d38e5137e4fc905bb448fe53627b2
-SHA1: f374b052e001311cd352c56c1fec295b8ac7d811
-SHA256: 43fa720a8dc749ca505b7bd21b7be2e525aabdb0ba6537808e0e8b7d875273e8
+Depends: nautilus, gnome-system-monitor, gnome-terminal, tuigreet, greetd, localsend, loupe, d-spy, firefox, ghostty, spot, timeshift, build-essential, cmake, meson, ragel, valgrind, google-perftools, bison, strace, rustfilt, sqlite3, gh, pkg-config, make, git, gitk, llvm, clang, lld, clangd, hugo, jq, jsonnet, nmap, yq, pipx, gnupg2, just, git-delta, bat, fastfetch, htop, nano, tree, ffmpeg, libnotify-bin, stow, traceroute, wget, curl, fx, starship, du-dust, gaskpass, xremap, libjemalloc2, libjemalloc-dev, libgtk-4-dev, libgtk4-layer-shell-dev, libadwaita-1-dev, libvte-2.91-gtk4-dev, libpipewire-0.3-dev, libdbus-1-dev, libssl-dev, apt-file, timeshift-autosnap-apt, hyprland, hyprlock, swaybg, dunst, wl-clipboard, wf-recorder, slurp, grim, cliphist, layer-shell, pavucontrol, syshud, hyprsunset, hyprland-qtutils, hyprsysteminfo, hyprpolkitagent, hyprland-qt-support
+Filename: ./metapackage_0.0.1738256608_amd64.deb
+Size: 1540
+MD5sum: 507e7a8fddabec3e1ce7fab88092b920
+SHA1: 05804477241c33ebd35cda11a87f59b92d20db2d
+SHA256: 0b167c1238a5b470c21207f1a7bcd2b024bd30b97abc7fdcae23f80afffce0a5
 Section: utils
 Priority: extra
 Description: Meta-package that depends on all packages that I use
@@ -377,4 +377,19 @@ SHA256: dd0ddd4bcdaf2136355d2cc29bc4683b630c57af21cad641c5feb337c8ba5edb
 Section: utils
 Priority: extra
 Description: Timeshift auto-snapshot script for Ubuntu and Debian based systems which creates snapshots of your system with timeshift before a package install, remove or upgrade using DPkg::Pre-Invoke hook in apt. Fork of timeshift-autosnap from AUR.
+
+Package: xremap
+Version: 0.10.4
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 4315
+Depends: libc6 (>= 2.39), libgcc-s1 (>= 4.2)
+Filename: ./xremap_0.10.4_amd64.deb
+Size: 1208484
+MD5sum: 2c4739312e09b18d8ec74064358dcbaa
+SHA1: 02b911644154236c245c85e8214932df40598c88
+SHA256: e192d1bb0dd7c38cd90299b42cff93d846ac113ec2eb1a21730567e96bfcc275
+Section: utils
+Priority: extra
+Description: Key remapper for X11 and Wayland
 

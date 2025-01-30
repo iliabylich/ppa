@@ -36,6 +36,7 @@ jobs:
       - run: ./download-everything-from-release.rb iliabylich/build-deb-package spot
       - run: ./download-everything-from-release.rb iliabylich/build-deb-package timeshift-autosnap-apt
       - run: ./download-everything-from-release.rb iliabylich/build-deb-package gaskpass
+      - run: ./download-everything-from-release.rb iliabylich/build-deb-package xremap
       - run: ./download-latest-deb.rb iliabylich/hn-parser
       - run: ./download-latest-deb.rb localsend/localsend
       - run: ./download-latest-deb.rb iliabylich/onemorebeer-ui

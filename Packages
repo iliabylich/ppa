@@ -27,6 +27,21 @@ Section: utils
 Priority: extra
 Description: Terminal JSON viewer & processor
 
+Package: gaskpass
+Version: 1.0.0
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 23
+Depends: libc6 (>= 2.34), libglib2.0-0t64 (>= 2.32.0), libgtk-4-1 (>= 4.0.0)
+Filename: ./gaskpass_1.0.0_amd64.deb
+Size: 3812
+MD5sum: 6897d7026fe4e7a9e3ef8106253793f8
+SHA1: c1d8268990128d78ddc1a7036c09cc68eb9af513
+SHA256: 99c1552ba4befaf153c811395ba0ac2d8045f3b6a896df42c74dae8f15d1780e
+Section: utils
+Priority: extra
+Description: a micro tool written in GTK4 to be used as SUDO_ASKPASS
+
 Package: ghostty
 Version: 1.0.1
 Architecture: amd64

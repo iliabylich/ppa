@@ -254,16 +254,16 @@ Priority: extra
 Description: A Hyprland implementation of wayland-scanner, in and for C++.
 
 Package: layer-shell
-Version: 0.0.1738547372
+Version: 0.0.1738571221
 Architecture: amd64
 Maintainer: John Doe <john@doe.org>
-Installed-Size: 1453
-Depends: libc6 (>= 2.34), libcairo-gobject2 (>= 1.10.0), libcairo2 (>= 1.2.4), libdbus-1-3 (>= 1.10), libgcc-s1 (>= 4.2), libgdk-pixbuf-2.0-0 (>= 2.31.1), libglib2.0-0t64 (>= 2.78.0), libgraphene-1.0-0 (>= 1.5.4), libgtk-4-1 (>= 4.12.0), libgtk4-layer-shell0 (>= 1.0.2), libharfbuzz0b (>= 0.6.0), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libssl3t64 (>= 3.0.0), libvte-2.91-gtk4-0 (>= 0.47.90), libvulkan1 (>= 1.2.131.2), fonts-inter-variable
-Filename: ./layer-shell_0.0.1738547372_amd64.deb
-Size: 626280
-MD5sum: e7711c0cc4fcacdffc0776aa290d1d09
-SHA1: 0fed066337b84510baced2fdbb3ab7ec4db67b2c
-SHA256: 852d3140c1a893edde2b44f6c065231fc142b65dc94b5c98c08880af841b7d45
+Installed-Size: 1449
+Depends: libc6 (>= 2.34), libdbus-1-3 (>= 1.10), libgcc-s1 (>= 4.2), libgdk-pixbuf-2.0-0 (>= 2.31.1), libglib2.0-0t64 (>= 2.78.0), libgtk-4-1 (>= 4.12.0), libgtk4-layer-shell0 (>= 1.0.2), libssl3t64 (>= 3.0.0), libvte-2.91-gtk4-0 (>= 0.47.90), fonts-inter-variable
+Filename: ./layer-shell_0.0.1738571221_amd64.deb
+Size: 624924
+MD5sum: fad9dd4af90b392b3071e34ed4d97bc1
+SHA1: f49dd8f6dbd8d3a05cffdeead89956375111aee7
+SHA256: 05a71634358b000b0bdeb37d9dafb27c3da93fb81d68924a0fbb5f83ef9c4a22
 Section: utils
 Priority: extra
 Description: A custom layer shell

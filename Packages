@@ -303,16 +303,16 @@ Priority: extra
 Description: An enhanced man page viewer for linux and BSD systems based on OpenGL and mandoc libraries
 
 Package: metapackage
-Version: 0.0.1738256608
+Version: 0.0.1738547712
 Architecture: amd64
 Maintainer: John Doe <john@doe.org>
 Installed-Size: 7
-Depends: nautilus, gnome-system-monitor, gnome-terminal, tuigreet, greetd, localsend, loupe, d-spy, firefox, ghostty, spot, timeshift, build-essential, cmake, meson, ragel, valgrind, google-perftools, bison, strace, rustfilt, sqlite3, gh, pkg-config, make, git, gitk, llvm, clang, lld, clangd, hugo, jq, jsonnet, nmap, yq, pipx, gnupg2, just, git-delta, bat, fastfetch, htop, nano, tree, ffmpeg, libnotify-bin, stow, traceroute, wget, curl, fx, starship, du-dust, gaskpass, xremap, libjemalloc2, libjemalloc-dev, libgtk-4-dev, libgtk4-layer-shell-dev, libadwaita-1-dev, libvte-2.91-gtk4-dev, libpipewire-0.3-dev, libdbus-1-dev, libssl-dev, apt-file, timeshift-autosnap-apt, hyprland, hyprlock, swaybg, dunst, wl-clipboard, wf-recorder, slurp, grim, cliphist, layer-shell, pavucontrol, syshud, hyprsunset, hyprland-qtutils, hyprsysteminfo, hyprpolkitagent, hyprland-qt-support
-Filename: ./metapackage_0.0.1738256608_amd64.deb
+Depends: nautilus, gnome-system-monitor, gnome-terminal, tuigreet, greetd, localsend, loupe, d-spy, firefox, ghostty, spot, timeshift, build-essential, cmake, meson, ragel, valgrind, google-perftools, bison, strace, rustfilt, sqlite3, gh, pkg-config, make, git, gitk, llvm, clang, lld, clangd, hugo, jq, jsonnet, nmap, yq, pipx, gnupg2, just, git-delta, bat, fastfetch, htop, nano, tree, ffmpeg, libnotify-bin, stow, traceroute, wget, curl, fx, starship, du-dust, gaskpass, xremap, pipewire-dbus, libjemalloc2, libjemalloc-dev, libgtk-4-dev, libgtk4-layer-shell-dev, libadwaita-1-dev, libvte-2.91-gtk4-dev, libpipewire-0.3-dev, libdbus-1-dev, libssl-dev, apt-file, timeshift-autosnap-apt, hyprland, hyprlock, swaybg, dunst, wl-clipboard, wf-recorder, slurp, grim, cliphist, layer-shell, pavucontrol, syshud, hyprsunset, hyprland-qtutils, hyprsysteminfo, hyprpolkitagent, hyprland-qt-support
+Filename: ./metapackage_0.0.1738547712_amd64.deb
 Size: 1540
-MD5sum: 507e7a8fddabec3e1ce7fab88092b920
-SHA1: 05804477241c33ebd35cda11a87f59b92d20db2d
-SHA256: 0b167c1238a5b470c21207f1a7bcd2b024bd30b97abc7fdcae23f80afffce0a5
+MD5sum: 1fa827a3e49d7f77faf9cad3ddf9b40b
+SHA1: 2737a611d23b555f0d1b66da876602a5a7aad1e1
+SHA256: a3e9ceadf4eed7de77ef35a51d19f155a67be1d826a53d06385c5fb0e013413a
 Section: utils
 Priority: extra
 Description: Meta-package that depends on all packages that I use

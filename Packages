@@ -254,16 +254,16 @@ Priority: extra
 Description: A Hyprland implementation of wayland-scanner, in and for C++.
 
 Package: layer-shell
-Version: 0.0.1739466968
+Version: 0.0.1739525814
 Architecture: amd64
 Maintainer: John Doe <john@doe.org>
-Installed-Size: 2091
+Installed-Size: 2095
 Depends: libc6 (>= 2.34), libdbus-1-3 (>= 1.10), libgcc-s1 (>= 4.2), libgdk-pixbuf-2.0-0 (>= 2.31.1), libglib2.0-0t64 (>= 2.38.0), libglibmm-2.68-1t64 (>= 2.76), libgtk-4-1 (>= 4.0.0), libgtk4-layer-shell0 (>= 1.0.2), libgtkmm-4.0-0 (>= 4.15.0), libsigc++-3.0-0 (>= 2.6.1), libstdc++6 (>= 13.1), libvte-2.91-gtk4-0 (>= 0.47.90), fonts-inter-variable
-Filename: ./layer-shell_0.0.1739466968_amd64.deb
-Size: 723508
-MD5sum: a23e5b088bc1ef9c25392757cbc866d3
-SHA1: b0a815457adbd9dcdb16421a43d20bc6a3b68558
-SHA256: 81c7cf3f014bfdd1aae15ca9899ee00220e6566344bccafd0a0a54770cc7529a
+Filename: ./layer-shell_0.0.1739525814_amd64.deb
+Size: 726608
+MD5sum: a9553ae122ab8a805dccfe71f0358dc1
+SHA1: e1585c391e53572b4779f9713a2f2547cfa078c6
+SHA256: bb81a2d3fa5cf166cf0f71a801eb8554054c789206c89cf2c5542e7c320eee43
 Section: utils
 Priority: extra
 Description: A custom layer shell

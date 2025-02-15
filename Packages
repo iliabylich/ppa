@@ -303,16 +303,16 @@ Priority: extra
 Description: An enhanced man page viewer for linux and BSD systems based on OpenGL and mandoc libraries
 
 Package: metapackage
-Version: 0.0.1738547712
+Version: 0.0.1739619466
 Architecture: amd64
 Maintainer: John Doe <john@doe.org>
 Installed-Size: 7
-Depends: nautilus, gnome-system-monitor, gnome-terminal, tuigreet, greetd, localsend, loupe, d-spy, firefox, ghostty, spot, timeshift, build-essential, cmake, meson, ragel, valgrind, google-perftools, bison, strace, rustfilt, sqlite3, gh, pkg-config, make, git, gitk, llvm, clang, lld, clangd, hugo, jq, jsonnet, nmap, yq, pipx, gnupg2, just, git-delta, bat, fastfetch, htop, nano, tree, ffmpeg, libnotify-bin, stow, traceroute, wget, curl, fx, starship, du-dust, gaskpass, xremap, pipewire-dbus, libjemalloc2, libjemalloc-dev, libgtk-4-dev, libgtk4-layer-shell-dev, libadwaita-1-dev, libvte-2.91-gtk4-dev, libpipewire-0.3-dev, libdbus-1-dev, libssl-dev, apt-file, timeshift-autosnap-apt, hyprland, hyprlock, swaybg, dunst, wl-clipboard, wf-recorder, slurp, grim, cliphist, layer-shell, pavucontrol, syshud, hyprsunset, hyprland-qtutils, hyprsysteminfo, hyprpolkitagent, hyprland-qt-support
-Filename: ./metapackage_0.0.1738547712_amd64.deb
-Size: 1540
-MD5sum: 1fa827a3e49d7f77faf9cad3ddf9b40b
-SHA1: 2737a611d23b555f0d1b66da876602a5a7aad1e1
-SHA256: a3e9ceadf4eed7de77ef35a51d19f155a67be1d826a53d06385c5fb0e013413a
+Depends: nautilus, gnome-system-monitor, gnome-terminal, tuigreet, greetd, localsend, loupe, d-spy, firefox, ghostty, spot, timeshift, build-essential, cmake, meson, ragel, valgrind, google-perftools, bison, strace, rustfilt, sqlite3, gh, pkg-config, make, git, gitk, llvm, clang, lld, clangd, linux-perf, hugo, jq, jsonnet, nmap, yq, pipx, gnupg2, just, git-delta, bat, fastfetch, htop, nano, tree, ffmpeg, libnotify-bin, stow, traceroute, wget, curl, fx, starship, du-dust, gaskpass, xremap, pipewire-dbus, libjemalloc2, libjemalloc-dev, libgtk-4-dev, libgtk4-layer-shell-dev, libadwaita-1-dev, libvte-2.91-gtk4-dev, libpipewire-0.3-dev, libdbus-1-dev, libssl-dev, libgtkmm-4.0-dev, apt-file, timeshift-autosnap-apt, hyprland, hyprlock, swaybg, dunst, wl-clipboard, wf-recorder, slurp, grim, swappy, cliphist, layer-shell, pavucontrol, syshud, hyprsunset, hyprland-qtutils, hyprsysteminfo, hyprpolkitagent, hyprland-qt-support
+Filename: ./metapackage_0.0.1739619466_amd64.deb
+Size: 1556
+MD5sum: cb52996ff21ca90b2d20c1a7a1c9cd16
+SHA1: 945277b164b8676b2e03c2186ad622e745707298
+SHA256: c962373306dd305dacca23a6c4bdad7233222a31a9caedd254f3c8a2ba23aaa5
 Section: utils
 Priority: extra
 Description: Meta-package that depends on all packages that I use

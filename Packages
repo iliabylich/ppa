@@ -287,6 +287,21 @@ Homepage: https://localsend.org/
 Description: An open source cross-platform alternative to AirDrop
 Uploaders: TheGB0077 <gb.lima.dev@gmail.com>
 
+Package: make-btrfs-snapshot
+Version: 1.0.0
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 947
+Depends: timeshift
+Filename: ./make-btrfs-snapshot_1.0.0_amd64.deb
+Size: 317824
+MD5sum: 84e0025eb0307720882f3b55d1025bb0
+SHA1: 6f3cdb3faf4da5d7c340ecbe0dddf50c285a55fa
+SHA256: d5178a03938e2cae885859b146794bfdd85f91be65e38b3e6edce064e453deda
+Section: utils
+Priority: extra
+Description: a set of tools to automatically create btrfs snapshots and update grub on any dpkg operations
+
 Package: mangl
 Version: 1.1.5
 Architecture: amd64
@@ -303,16 +318,16 @@ Priority: extra
 Description: An enhanced man page viewer for linux and BSD systems based on OpenGL and mandoc libraries
 
 Package: metapackage
-Version: 0.0.1739621255
+Version: 0.0.1739644542
 Architecture: amd64
 Maintainer: John Doe <john@doe.org>
 Installed-Size: 7
-Depends: nautilus, gnome-system-monitor, gnome-terminal, tuigreet, greetd, localsend, loupe, d-spy, firefox, ghostty, spot, timeshift, build-essential, cmake, meson, ragel, valgrind, google-perftools, bison, strace, rustfilt, sqlite3, gh, pkg-config, make, git, gitk, llvm, clang, lld, clangd, linux-perf, hugo, jq, jsonnet, nmap, yq, pipx, gnupg2, just, git-delta, bat, fastfetch, htop, nano, tree, ffmpeg, libnotify-bin, stow, traceroute, wget, curl, fx, starship, du-dust, gaskpass, xremap, pipewire-dbus, libjemalloc2, libjemalloc-dev, libgtk-4-dev, libgtk4-layer-shell-dev, libadwaita-1-dev, libvte-2.91-gtk4-dev, libpipewire-0.3-dev, libdbus-1-dev, libssl-dev, libgtkmm-4.0-dev, apt-file, timeshift-autosnap-apt, hyprland, hyprlock, swaybg, dunst, wl-clipboard, wf-recorder, slurp, grim, swappy, cliphist, layer-shell, pavucontrol, swayosd, hyprsunset, hyprland-qtutils, hyprsysteminfo, hyprpolkitagent, hyprland-qt-support
-Filename: ./metapackage_0.0.1739621255_amd64.deb
-Size: 1552
-MD5sum: b4c865df43def0c7a63a927a38ee2398
-SHA1: d8123ab3ac244fb6fa4139e37cdc03984702ff70
-SHA256: 880eef5df4379788a6ac6512a8283e8260512b8289c45ec498afa00e0bc47743
+Depends: nautilus, gnome-system-monitor, gnome-terminal, tuigreet, greetd, localsend, loupe, d-spy, firefox, ghostty, spot, timeshift, build-essential, cmake, meson, ragel, valgrind, google-perftools, bison, strace, rustfilt, sqlite3, gh, pkg-config, make, git, gitk, llvm, clang, lld, clangd, linux-perf, hugo, jq, jsonnet, nmap, yq, pipx, gnupg2, just, git-delta, bat, fastfetch, htop, nano, tree, ffmpeg, libnotify-bin, stow, traceroute, wget, curl, fx, starship, du-dust, gaskpass, xremap, pipewire-dbus, libjemalloc2, libjemalloc-dev, libgtk-4-dev, libgtk4-layer-shell-dev, libadwaita-1-dev, libvte-2.91-gtk4-dev, libpipewire-0.3-dev, libdbus-1-dev, libssl-dev, libgtkmm-4.0-dev, apt-file, make-btrfs-snapshot, hyprland, hyprlock, swaybg, dunst, wl-clipboard, wf-recorder, slurp, grim, swappy, cliphist, layer-shell, pavucontrol, swayosd, hyprsunset, hyprland-qtutils, hyprsysteminfo, hyprpolkitagent, hyprland-qt-support
+Filename: ./metapackage_0.0.1739644542_amd64.deb
+Size: 1556
+MD5sum: b00b48deec332437b7db15809cadd9ba
+SHA1: 72bf965d38639b96d4a8bc4ee2af0af578bb7587
+SHA256: 5b5ddd56b824165efa3f6c9f08a4856f7997c380fd160a02ba25a9a426ed9373
 Section: utils
 Priority: extra
 Description: Meta-package that depends on all packages that I use
@@ -362,36 +377,6 @@ SHA256: baa3ba28107f71dbaa8a6798f4643069ca38fbc4f8c977bffdc5c45b6d1f92da
 Section: utils
 Priority: extra
 Description: Native Spotify client for the GNOME desktop
-
-Package: syshud
-Version: 0.0.1732537236
-Architecture: amd64
-Maintainer: John Doe <john@doe.org>
-Installed-Size: 115
-Depends: libc6 (>= 2.38), libcairo-gobject2 (>= 1.10.0), libcairo2 (>= 1.2.4), libcairomm-1.16-1 (>= 1.16.2), libevdev2 (>= 0.9.1), libgcc-s1 (>= 3.0), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0t64 (>= 2.28.0), libglibmm-2.68-1t64 (>= 2.76), libgraphene-1.0-0 (>= 1.5.4), libgtk-4-1 (>= 4.0.0), libgtk4-layer-shell0 (>= 1.0.2), libgtkmm-4.0-0 (>= 4.10.0), libharfbuzz0b (>= 0.6.0), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libpangomm-2.48-1t64 (>= 2.50), libsigc++-3.0-0 (>= 3.2.0), libstdc++6 (>= 13.1), libvulkan1 (>= 1.2.131.2), libwireplumber-0.5-0 (>= 0.4.81)
-Filename: ./syshud_0.0.1732537236_amd64.deb
-Size: 28232
-MD5sum: acecb1b788f9ca7ef90c69fa81670f76
-SHA1: 5920ee65a1538589336875e8e4dfc9c9ce3afe6f
-SHA256: deab94e2eaec86baca5a345ca0af04d8567dd6f4dd060ad74ef8b38446560305
-Section: utils
-Priority: extra
-Description: Simple heads up display written in gtkmm 4
-
-Package: timeshift-autosnap-apt
-Version: 0.0.1736968137
-Architecture: amd64
-Maintainer: John Doe <john@doe.org>
-Installed-Size: 18
-Depends: timeshift
-Filename: ./timeshift-autosnap-apt_0.0.1736968137_amd64.deb
-Size: 2912
-MD5sum: 7955fffcbe47691cb77a8b4759451631
-SHA1: e0d3c64f3640b019c033858a0b81ac6184c0316b
-SHA256: dd0ddd4bcdaf2136355d2cc29bc4683b630c57af21cad641c5feb337c8ba5edb
-Section: utils
-Priority: extra
-Description: Timeshift auto-snapshot script for Ubuntu and Debian based systems which creates snapshots of your system with timeshift before a package install, remove or upgrade using DPkg::Pre-Invoke hook in apt. Fork of timeshift-autosnap from AUR.
 
 Package: xremap
 Version: 0.10.4

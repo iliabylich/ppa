@@ -31,10 +31,9 @@ jobs:
       - run: ./download-everything-from-release.rb iliabylich/build-deb-package layer-shell
       - run: ./download-everything-from-release.rb iliabylich/build-deb-package mangl
       - run: ./download-everything-from-release.rb iliabylich/build-deb-package fx
-      - run: ./download-everything-from-release.rb iliabylich/build-deb-package syshud
       - run: ./download-everything-from-release.rb iliabylich/build-deb-package ghostty
       - run: ./download-everything-from-release.rb iliabylich/build-deb-package spot
-      - run: ./download-everything-from-release.rb iliabylich/build-deb-package timeshift-autosnap-apt
+      - run: ./download-everything-from-release.rb iliabylich/build-deb-package make-btrfs-snapshot
       - run: ./download-everything-from-release.rb iliabylich/build-deb-package gaskpass
       - run: ./download-everything-from-release.rb iliabylich/build-deb-package xremap
       - run: ./download-everything-from-release.rb iliabylich/build-deb-package pipewire-dbus

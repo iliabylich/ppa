@@ -5,10 +5,10 @@ Maintainer: John Doe <john@doe.org>
 Installed-Size: 1561
 Depends: hyprutils, libc6 (>= 2.38), libdisplay-info2 (>= 0.2.0), libdrm2 (>= 2.4.119), libegl1, libgbm1 (>= 21.3.0~rc1), libgcc-s1 (>= 4.3), libinput10 (>= 1.26.0), libopengl0, libseat1 (>= 0.5.0), libstdc++6 (>= 13.1), libudev1 (>= 183), libwayland-client0 (>= 1.20.0)
 Filename: ./aquamarine_0.7.1_amd64.deb
-Size: 375268
-MD5sum: aac92d38775b252ff081d93d6813a954
-SHA1: 569166ed21ebdd4fac584117546dd48a36a4ae04
-SHA256: da462b0f439326d2c278bedd44e925e8ff77a0b0c85e391334f36141e0d1c118
+Size: 377308
+MD5sum: 9d38568bedccfcbd5e24d413be36b13d
+SHA1: fa610d95e26fcb5288b67b61b7384f0b59b2b49d
+SHA256: 7350ab28c3ce86a0222f7951cac64ff2ade9ba8799b0bb7a098927dc5f075a2a
 Section: utils
 Priority: extra
 Description: Aquamarine is a very light linux rendering backend library
@@ -77,13 +77,13 @@ Package: hyprcursor
 Version: 0.1.11
 Architecture: amd64
 Maintainer: John Doe <john@doe.org>
-Installed-Size: 719
+Installed-Size: 715
 Depends: hyprlang, libc6 (>= 2.38), libcairo2 (>= 1.2.4), libgcc-s1 (>= 4.3), librsvg2-2 (>= 2.46.0), libstdc++6 (>= 13.1), libtomlplusplus3t64 (>= 3.2.0), libzip5 (>= 1.0)
 Filename: ./hyprcursor_0.1.11_amd64.deb
-Size: 191544
-MD5sum: 1d4cbadf22f962d93c33da863dbf4dcc
-SHA1: d382988345e673eef7925a26dd60964a1b284f17
-SHA256: 3409c09ed79761fc143eedf0a02d3701ddd2f872f16b2dc8d864562fc5499c00
+Size: 191032
+MD5sum: 74fd842ff4cb37dffd51fe97fa411b75
+SHA1: f993bcf40dec52718e567ecefc75ede52fe63b14
+SHA256: 7aab1107cc48e2eaad1e8679f1e3b7c445a1810ad84773cb7e06b03f6b1724a9
 Section: utils
 Priority: extra
 Description: The hyprland cursor format, library and utilities.
@@ -104,16 +104,16 @@ Priority: extra
 Description: Hyprland graphics / resource utilities
 
 Package: hyprland
-Version: 0.47.0
+Version: 0.47.0-1
 Architecture: amd64
 Maintainer: John Doe <john@doe.org>
 Installed-Size: 61908
 Depends: aquamarine, hyprcursor, hyprgraphics, hyprlang, hyprutils, libc6 (>= 2.38), libcairo2 (>= 1.2.4), libdrm2 (>= 2.4.113), libegl1, libgbm1 (>= 7.11~1), libgcc-s1 (>= 4.3), libgles2 (>= 1.0.0), libglib2.0-0t64 (>= 2.40.0), libinput10 (>= 1.23.0), libpango-1.0-0 (>= 1.18.0), libpangocairo-1.0-0 (>= 1.14.0), libpixman-1-0 (>= 0.11.2), libre2-11-absl20230802, libstdc++6 (>= 14), libtomlplusplus3t64 (>= 3.2.0), libuuid1 (>= 2.16), libwayland-server0 (>= 1.23.0), libxcb-composite0, libxcb-errors0 (>= 1.0.1), libxcb-icccm4 (>= 0.4.2), libxcb-render0, libxcb-res0 (>= 1.10), libxcb-xfixes0, libxcb1, libxcursor1 (>> 1.1.2), libxkbcommon0 (>= 0.8.0)
-Filename: ./hyprland_0.47.0_amd64.deb
-Size: 49253200
-MD5sum: 723436fb3f2bdd18a7b00851eaf6ce0c
-SHA1: 4b0404ef4c7cc35fc86d6d00559e1e809b9a0f61
-SHA256: 448fa3128e548e6e680fed54b4cdf04676b5495953a5c43b662f89813e81555b
+Filename: ./hyprland_0.47.0-1_amd64.deb
+Size: 49253492
+MD5sum: 8c9ee37fd1ce4a5463392334af96ae2a
+SHA1: c20986ab13016822bdbea0afaeea4825ff30a6f9
+SHA256: 23ca8aa9aeb7a82eed76c6e954f055a904dac7696015f0ad45214d573675890c
 Section: utils
 Priority: extra
 Description: Hyprland is an independent, highly customizable, dynamic tiling Wayland compositor that doesn't sacrifice on its looks.
@@ -170,10 +170,10 @@ Maintainer: John Doe <john@doe.org>
 Installed-Size: 1020
 Depends: hyprgraphics, hyprlang, hyprutils, libc6 (>= 2.38), libcairo2 (>= 1.2.4), libdrm2 (>= 2.4.109), libegl1, libgbm1 (>= 21.3.0~rc1), libgcc-s1 (>= 4.3), libglib2.0-0t64 (>= 2.12.0), libopengl0, libpam0g (>= 0.99.7.1), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libsdbus-c++2 (>= 2.1.0), libstdc++6 (>= 13), libwayland-client0 (>= 1.20.0), libwayland-egl1 (>= 1.15.0), libxkbcommon0 (>= 0.5.0)
 Filename: ./hyprlock_0.6.2_amd64.deb
-Size: 297304
-MD5sum: d8a3c11cfc4e072168d8218310404399
-SHA1: aec4372d2662ea4c65502c56703d82e52d459794
-SHA256: c3b63f6cec20f378b39ebc87a734ff14a6033d4d1c191c80f28acb9ee55cb27e
+Size: 297532
+MD5sum: 60bdeef18c605a5317989f3623b076af
+SHA1: 8450b906a41294d899c1d8b74b6fd22dcbf7d7a0
+SHA256: bfb43a05ba2542331fb5d4eb05e1d344ea81ba796ba69437321f7462be4800b3
 Section: utils
 Priority: extra
 Description: Hyprland's GPU-accelerated screen locking utility
@@ -185,10 +185,10 @@ Maintainer: John Doe <john@doe.org>
 Installed-Size: 213
 Depends: libc6 (>= 2.34), libgcc-s1 (>= 4.3), libpolkit-qt6-1-1 (>= 0.200.0), libqt6core6t64 (>= 6.7.2), libqt6gui6 (>= 6.1.2), libqt6qml6 (>= 6.6.0), libqt6quickcontrols2-6 (>= 6.6.0), libqt6widgets6 (>= 6.1.2), libstdc++6 (>= 13)
 Filename: ./hyprpolkitagent_0.1.2_amd64.deb
-Size: 65684
-MD5sum: 55bf955e5e7ea6268147b80d6773d622
-SHA1: 0b89c10e3b4082c118bca9a7a1f744e2022baa00
-SHA256: 88f4e97f108ea601a622479991abd4b86483252ca30e2c586756e9bfca6db5ae
+Size: 65692
+MD5sum: f15e5a0003697f7930e43dd68ba60c37
+SHA1: a4fdc1aaaefc308a1e98eda144c1f51eabd9a2c2
+SHA256: e9de4eaee965ad8e92e3eb9062c40b31368748fc822ade1221c4181895ad4400
 Section: utils
 Priority: extra
 Description: A polkit authentication agent written in QT/QML

@@ -269,33 +269,33 @@ Priority: extra
 Description: A Hyprland implementation of wayland-scanner, in and for C++.
 
 Package: layer-shell
-Version: 0.0.1739878108
+Version: 0.0.1740066373
 Architecture: amd64
 Maintainer: John Doe <john@doe.org>
-Installed-Size: 2127
+Installed-Size: 2135
 Depends: libc6 (>= 2.34), libdbus-1-3 (>= 1.10), libgcc-s1 (>= 4.2), libgdk-pixbuf-2.0-0 (>= 2.31.1), libglib2.0-0t64 (>= 2.38.0), libglibmm-2.68-1t64 (>= 2.76), libgtk-4-1 (>= 4.0.0), libgtk4-layer-shell0 (>= 1.0.2), libgtkmm-4.0-0 (>= 4.15.0), libsigc++-3.0-0 (>= 2.6.1), libstdc++6 (>= 13.1), libvte-2.91-gtk4-0 (>= 0.47.90), fonts-inter-variable
-Filename: ./layer-shell_0.0.1739878108_amd64.deb
-Size: 731964
-MD5sum: 362e15c143fd02077f4f2b9786733189
-SHA1: 608ecd1c8ee3355d01da10fd64827f568bade13e
-SHA256: 8fde5892d128ac98aaab794d2566c88c4b4b4db61de1b781897807d64ebcfca0
+Filename: ./layer-shell_0.0.1740066373_amd64.deb
+Size: 735312
+MD5sum: e0dc75d2c9f88663155f4aa1ac13cb31
+SHA1: 380c975a4f0bb79c8ec46d762408ec0bd0e67649
+SHA256: 394074c5b8aeb9f463e046370ffeda5523e57a16a6383fb45a4b81df089fbcb1
 Section: utils
 Priority: extra
 Description: A custom layer shell
 
 Package: localsend
-Version: 1.16.1+56
+Version: 1.17.0+58
 Architecture: amd64
 Essential: no
 Maintainer: Tienisto <dev.tien.donam@gmail.com>
 Installed-Size: 30600
 Pre-Depends: libc6 (>= 2.31)
 Depends: libappindicator3-1 | libayatana-appindicator3-1, gir1.2-appindicator3-0.1 | gir1.2-ayatanaappindicator3-0.1, libayatana-ido3-0.4-0, xdg-user-dirs
-Filename: ./LocalSend-1.16.1-linux-x86-64.deb
-Size: 11804928
-MD5sum: 4d7ae508411362e86a6929ee7cfbe8fe
-SHA1: c15a1b01b41b2968419666f6ad5d62c9d4fdb32a
-SHA256: f4d15526b8321761f3eb99ac6314c25ec79e1bb1397b329c40de05ef2bd4019a
+Filename: ./LocalSend-1.17.0-linux-x86-64.deb
+Size: 11709940
+MD5sum: 59e559f84fe892f067c232c5c2b9b075
+SHA1: eba64eb18930d0a832bea05b33f5263762e5647a
+SHA256: b0244b2c3eacb2a81d61b2662534d6036ab37ace10d6782da36b630c222fa04c
 Section: x11
 Priority: optional
 Homepage: https://localsend.org/

@@ -318,16 +318,16 @@ Description: An open source cross-platform alternative to AirDrop
 Uploaders: TheGB0077 <gb.lima.dev@gmail.com>
 
 Package: make-btrfs-snapshot
-Version: 1.0.0
+Version: 1.0.1
 Architecture: amd64
 Maintainer: John Doe <john@doe.org>
 Installed-Size: 947
 Depends: timeshift
-Filename: ./make-btrfs-snapshot_1.0.0_amd64.deb
-Size: 317824
-MD5sum: 84e0025eb0307720882f3b55d1025bb0
-SHA1: 6f3cdb3faf4da5d7c340ecbe0dddf50c285a55fa
-SHA256: d5178a03938e2cae885859b146794bfdd85f91be65e38b3e6edce064e453deda
+Filename: ./make-btrfs-snapshot_1.0.1_amd64.deb
+Size: 319308
+MD5sum: 7500c589c4a4ec4049f7f1378e4496ad
+SHA1: 7aa0d6c52eebff3b778570bedb29f85e2ac7607b
+SHA256: a092994723206242f21c5cecf2b50e61eca94cb0d293813477081535ecc5ea28
 Section: utils
 Priority: extra
 Description: a set of tools to automatically create btrfs snapshots and update grub on any dpkg operations

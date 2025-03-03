@@ -348,16 +348,16 @@ Priority: extra
 Description: An enhanced man page viewer for linux and BSD systems based on OpenGL and mandoc libraries
 
 Package: metapackage
-Version: 0.0.1740750748
+Version: 0.0.1741006901
 Architecture: amd64
 Maintainer: John Doe <john@doe.org>
 Installed-Size: 7
-Depends: nautilus, gnome-system-monitor, gnome-terminal, tuigreet, greetd, localsend, loupe, d-spy, firefox, ghostty, spot, timeshift, gcc, build-essential, cmake, meson, ragel, valgrind, google-perftools, bison, strace, rustfilt, sqlite3, gh, pkg-config, make, git, gitk, llvm, clang, lld, clangd, linux-perf, gdb, sassc, hugo, jq, jsonnet, nmap, yq, pipx, gnupg2, just, git-delta, bat, fastfetch, htop, nano, tree, ffmpeg, libnotify-bin, stow, traceroute, wget, curl, fx, starship, du-dust, gaskpass, xremap, pipewire-dbus, apache2-utils, wireplumber, delta, libjemalloc2, libjemalloc-dev, libgtk-4-dev, libgtk4-layer-shell-dev, libadwaita-1-dev, libvte-2.91-gtk4-dev, libpipewire-0.3-dev, libdbus-1-dev, libssl-dev, libgtkmm-4.0-dev, apt-file, make-btrfs-snapshot, xwayland, autoconf, automake, bash-completion, btrfs-progs, file, less, fakeroot, man-db, manpages, sudo, upower, vim-tiny, grub-common, grub2-common, apparmor, busybox, discover, efibootmgr, iproute2, iputils-ping, isc-dhcp-client, lsb-release, locales, ncurses-term, network-manager, openssh-client, polkitd, usbutils, util-linux-locales, wireless-tools, zlib1g, bind9-dnsutils, bind9-host, hyprland, hyprlock, swaybg, dunst, wl-clipboard, wf-recorder, slurp, grim, swappy, cliphist, layer-shell, pavucontrol, swayosd, hyprsunset, hyprland-qtutils, hyprsysteminfo, hyprpolkitagent, hyprland-qt-support, xdg-desktop-portal-hyprland, hyprspace
-Filename: ./metapackage_0.0.1740750748_amd64.deb
-Size: 1808
-MD5sum: df64398a32f26cc97b15bea1748a11cc
-SHA1: 9ee4c1162663f909a08990ee953598ef8fde19ce
-SHA256: 79d57b58ba56882e656fd2346903e1049d2bc7fc27d0370a07efab22df969139
+Depends: nautilus, gnome-system-monitor, gnome-terminal, tuigreet, greetd, localsend, loupe, d-spy, ghostty, spot, timeshift, gcc, build-essential, cmake, meson, ragel, valgrind, google-perftools, bison, strace, rustfilt, sqlite3, gh, pkg-config, make, git, gitk, llvm, clang, lld, clangd, linux-perf, gdb, sassc, autoconf, automake, hugo, jq, jsonnet, nmap, yq, pipx, gnupg2, just, git-delta, bat, fastfetch, htop, nano, tree, ffmpeg, libnotify-bin, stow, traceroute, wget, curl, fx, starship, du-dust, gaskpass, xremap, pipewire-dbus, apache2-utils, wireplumber, delta, bash-completion, file, less, sudo, fakeroot, openssh-client, zip, unzip, pkexec, logrotate, libjemalloc2, libjemalloc-dev, libgtk-4-dev, libgtk4-layer-shell-dev, libadwaita-1-dev, libvte-2.91-gtk4-dev, libpipewire-0.3-dev, libdbus-1-dev, libssl-dev, libgtkmm-4.0-dev, apt-file, make-btrfs-snapshot, xwayland, hyprland, hyprlock, swaybg, dunst, wl-clipboard, wf-recorder, slurp, grim, swappy, cliphist, layer-shell, pavucontrol, swayosd, hyprsunset, hyprland-qtutils, hyprsysteminfo, hyprpolkitagent, hyprland-qt-support, xdg-desktop-portal-hyprland, hyprspace
+Filename: ./metapackage_0.0.1741006901_amd64.deb
+Size: 1660
+MD5sum: 8d47b5a2f6c553a42fb559a9e7e84293
+SHA1: 0f1757e4386fbc4a6c91ea6090012550983c92d3
+SHA256: f81d0ef4a2b49373f0f11e637aef1ab9dbfaaaef41970306597828d62b00b47a
 Section: utils
 Priority: extra
 Description: Meta-package that depends on all packages that I use

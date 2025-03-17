@@ -379,16 +379,16 @@ Priority: extra
 Description: Native Spotify client for the GNOME desktop
 
 Package: wezterm
-Version: 0.0.1-20240317
+Version: 0.0.1-20240318
 Architecture: amd64
 Maintainer: John Doe <john@doe.org>
-Installed-Size: 101956
+Installed-Size: 129676
 Depends: libc6 (>= 2.39), libfontconfig1 (>= 2.12.6), libgcc-s1 (>= 4.2), libssl3t64 (>= 3.0.0), libwayland-client0 (>= 1.11.0), libwayland-egl1 (>= 1.15.0), libx11-6, libx11-xcb1, libxcb-image0 (>= 0.2.1), libxcb-util1 (>= 0.4.0), libxcb1 (>= 1.11.1), libxkbcommon-x11-0 (>= 0.5.0), libxkbcommon0 (>= 0.6.1), zlib1g (>= 1:1.1.4)
-Filename: ./wezterm_0.0.1-20240317_amd64.deb
-Size: 25154088
-MD5sum: 1be6633eb4fdf8f2ecf373bd29e6e3d3
-SHA1: e0ed44b7691c26f10e5145e84551e17bbb5cec50
-SHA256: fde1b82d8cde7da23829acea05e086790f9ea15537235e92ea00f52650be704b
+Filename: ./wezterm_0.0.1-20240318_amd64.deb
+Size: 32409488
+MD5sum: 20e90fbaa805f087aa86bdbfab5b1fee
+SHA1: f968a0254bc275658fbd1a6a7a9bb48ff06b853e
+SHA256: 15cd1144ca89dd2f1729663e2cfb430a8eab197fd5edf12b1970ea06194dd42d
 Section: utils
 Priority: extra
 Description: A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust

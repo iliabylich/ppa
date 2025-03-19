@@ -363,6 +363,21 @@ Section: utils
 Priority: extra
 Description: A daemon service that triggers Pipewire volume events over DBus
 
+Package: satty
+Version: 0.16.0
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 4218
+Depends: libadwaita-1-0 (>= 1.0.1), libc6 (>= 2.39), libcairo-gobject2 (>= 1.10.0), libcairo2 (>= 1.2.4), libfontconfig1 (>= 2.12.6), libgcc-s1 (>= 4.2), libgdk-pixbuf-2.0-0 (>= 2.31.1), libglib2.0-0t64 (>= 2.54.0), libgtk-4-1 (>= 4.6.0), libpango-1.0-0 (>= 1.14.0)
+Filename: ./satty_0.16.0_amd64.deb
+Size: 1272532
+MD5sum: dd061950a5c43020cf99899ad149d80f
+SHA1: 20b74701761becddf83f2b73b697b91e5034fa9c
+SHA256: c941cba343ed6b395d47c738190f17a3418303472e91874bbc6f59a06efe8ab6
+Section: utils
+Priority: extra
+Description: Satty - Modern Screenshot Annotation. A tool inspired by Swappy and Flameshot.
+
 Package: spot
 Version: 0.5.0
 Architecture: amd64

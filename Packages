@@ -268,6 +268,21 @@ Section: utils
 Priority: extra
 Description: A custom layer shell
 
+Package: libinput-gestures
+Version: 2.79.0
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 39
+Depends: libinput-tools, python3
+Filename: ./libinput-gestures_2.79.0_amd64.deb
+Size: 9956
+MD5sum: de4abb768a065702d3a990df63de3d88
+SHA1: 3537a969eeee83dfbc7648c72c44b80142ab8554
+SHA256: 3d4411b06bab5300302eb89d821ba4c183a01c5c5ea813a73cb12a62a455ab4e
+Section: utils
+Priority: extra
+Description: Actions gestures on your touchpad using libinput
+
 Package: localsend
 Version: 1.17.0+58
 Architecture: amd64

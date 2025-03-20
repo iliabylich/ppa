@@ -317,6 +317,21 @@ Section: utils
 Priority: extra
 Description: An enhanced man page viewer for linux and BSD systems based on OpenGL and mandoc libraries
 
+Package: matugen
+Version: 2.4.1
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 5607
+Depends: libc6 (>= 2.39), libgcc-s1 (>= 4.2)
+Filename: ./matugen_2.4.1_amd64.deb
+Size: 1738144
+MD5sum: 98456686a9a6da18bedec3026d51fd5e
+SHA1: 2507d84f4b50aebe1ebce7c9a839e6abbe9291f2
+SHA256: 63f74d411f2fd7c901823eb00f641c38e2d74bdea69bc13ef72c985308782413
+Section: utils
+Priority: extra
+Description: A material you color generation tool
+
 Package: metapackage
 Version: 0.0.1742391626
 Architecture: amd64
@@ -392,6 +407,21 @@ SHA256: baa3ba28107f71dbaa8a6798f4643069ca38fbc4f8c977bffdc5c45b6d1f92da
 Section: utils
 Priority: extra
 Description: Native Spotify client for the GNOME desktop
+
+Package: unsplash-wallpaper
+Version: 1.0.0
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 3960
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Filename: ./unsplash-wallpaper_1.0.0_amd64.deb
+Size: 1410084
+MD5sum: 2e53acb7225d656a2becfed71d1e77b4
+SHA1: 9354e2efd3fb183404c81c3497f31d888fbb6c50
+SHA256: 4364343daeb56f0525f87ed7193ce538c77f626768db77a93b7054a0cfdae898
+Section: utils
+Priority: extra
+Description: A tiny tool to download multiple images from Unsplash API in parallel
 
 Package: wezterm
 Version: 0.0.1-20240318

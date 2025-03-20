@@ -348,16 +348,16 @@ Priority: extra
 Description: A material you color generation tool
 
 Package: metapackage
-Version: 0.0.1742391626
+Version: 0.0.1742477102
 Architecture: amd64
 Maintainer: John Doe <john@doe.org>
 Installed-Size: 7
-Depends: nautilus, gnome-system-monitor, tuigreet, greetd, localsend, loupe, d-spy, timeshift, wezterm, gcc, build-essential, cmake, meson, ragel, valgrind, google-perftools, bison, strace, rustfilt, sqlite3, gh, pkg-config, make, git, gitk, llvm, clang, lld, clangd, linux-perf, gdb, sassc, autoconf, automake, hugo, jq, jsonnet, nmap, yq, pipx, gnupg2, just, git-delta, bat, fastfetch, htop, nano, tree, ffmpeg, libnotify-bin, stow, traceroute, wget, curl, fx, starship, du-dust, gaskpass, xremap, pipewire-dbus, apache2-utils, wireplumber, delta, bash-completion, file, less, sudo, fakeroot, openssh-client, zip, unzip, pkexec, logrotate, lsd, libjemalloc2, libjemalloc-dev, libgtk-4-dev, libgtk4-layer-shell-dev, libadwaita-1-dev, libvte-2.91-gtk4-dev, libpipewire-0.3-dev, libdbus-1-dev, libssl-dev, libgtkmm-4.0-dev, apt-file, make-btrfs-snapshot, xwayland, hyprland, hyprlock, swaybg, dunst, wl-clipboard, wf-recorder, slurp, grim, satty, cliphist, layer-shell, pavucontrol, swayosd, hyprsunset, hyprland-qtutils, hyprsysteminfo, hyprpolkitagent, hyprland-qt-support, xdg-desktop-portal-hyprland
-Filename: ./metapackage_0.0.1742391626_amd64.deb
-Size: 1652
-MD5sum: bfc06f0f2f05584a1670f65647212610
-SHA1: c7219bc0e5bf227089f8ac51f5dbbdddc7e31c66
-SHA256: 24060883de75a9418d29df48121e8252ca335edc54350df16f59090fe45c7106
+Depends: nautilus, gnome-system-monitor, tuigreet, greetd, localsend, loupe, d-spy, timeshift, wezterm, gcc, build-essential, cmake, meson, ragel, valgrind, google-perftools, bison, strace, rustfilt, sqlite3, gh, pkg-config, make, git, gitk, llvm, clang, lld, clangd, linux-perf, gdb, sassc, autoconf, automake, hugo, jq, jsonnet, nmap, yq, pipx, gnupg2, just, git-delta, bat, fastfetch, htop, nano, tree, ffmpeg, libnotify-bin, stow, traceroute, wget, curl, fx, starship, du-dust, gaskpass, xremap, pipewire-dbus, apache2-utils, wireplumber, delta, bash-completion, file, less, sudo, fakeroot, openssh-client, zip, unzip, pkexec, logrotate, lsd, libjemalloc2, libjemalloc-dev, libgtk-4-dev, libgtk4-layer-shell-dev, libadwaita-1-dev, libvte-2.91-gtk4-dev, libpipewire-0.3-dev, libdbus-1-dev, libssl-dev, libgtkmm-4.0-dev, apt-file, make-btrfs-snapshot, xwayland, hyprland, hyprlock, swaybg, dunst, wl-clipboard, wf-recorder, slurp, grim, satty, cliphist, layer-shell, pavucontrol, swayosd, hyprsunset, hyprland-qtutils, hyprsysteminfo, hyprpolkitagent, hyprland-qt-support, xdg-desktop-portal-hyprland, unsplash-wallpaper, matugen, libinput-gestures
+Filename: ./metapackage_0.0.1742477102_amd64.deb
+Size: 1676
+MD5sum: 9d314f30579ec745c29510e19104981f
+SHA1: 35af811f4e1ea9f08b26c29d1a40d958899f007c
+SHA256: d8115e314c7ff8f9719f64e60f6c03ec5e2ff1df5a554f6f81431241a308b5cb
 Section: utils
 Priority: extra
 Description: Meta-package that depends on all packages that I use

@@ -25,8 +25,8 @@ jobs:
         run: gpg -K
 
       - run: rm -f *.deb
-      - run: ./download-everything-from-release.rb iliabylich/build-deb-package hypr/full
-      # - run: ./download-everything-from-release.rb iliabylich/build-deb-package cosmic/full
+      - run: ./download-everything-from-release.rb iliabylich/build-deb-package hypr-full
+      # - run: ./download-everything-from-release.rb iliabylich/build-deb-package cosmic-full
       - run: ./download-everything-from-release.rb iliabylich/build-deb-package metapackage
       - run: ./download-everything-from-release.rb iliabylich/build-deb-package layer-shell
       - run: ./download-everything-from-release.rb iliabylich/build-deb-package mangl

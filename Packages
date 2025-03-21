@@ -88,6 +88,21 @@ Section: utils
 Priority: extra
 Description: The hyprland cursor format, library and utilities.
 
+Package: hyprexpo
+Version: 0.47.0
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 5263
+Depends: libc6 (>= 2.17), libgcc-s1 (>= 3.0), libstdc++6 (>= 13.1)
+Filename: ./hyprexpo_0.47.0_amd64.deb
+Size: 1038612
+MD5sum: 88610958a094c9aeac437a6a4a4b0275
+SHA1: 34d1bf2d2e2eca1821b19d503e8da9cf7ec2cfd6
+SHA256: 2dc02541adf7b0515a78c5a33f21f4e3c81c7d10c785b39154168b6f066c7f58
+Section: utils
+Priority: extra
+Description: Hyprland overview plugin like gnome kde or wf.
+
 Package: hyprgraphics
 Version: 0.1.2
 Architecture: amd64
@@ -110,10 +125,10 @@ Maintainer: John Doe <john@doe.org>
 Installed-Size: 61924
 Depends: aquamarine, hyprcursor, hyprgraphics, hyprlang, hyprutils, libc6 (>= 2.38), libcairo2 (>= 1.2.4), libdrm2 (>= 2.4.113), libegl1, libgbm1 (>= 7.11~1), libgcc-s1 (>= 4.3), libgles2 (>= 1.0.0), libglib2.0-0t64 (>= 2.40.0), libinput10 (>= 1.23.0), libpango-1.0-0 (>= 1.18.0), libpangocairo-1.0-0 (>= 1.14.0), libpixman-1-0 (>= 0.11.2), libre2-11-absl20240722, libstdc++6 (>= 14), libtomlplusplus3t64 (>= 3.2.0), libuuid1 (>= 2.16), libwayland-server0 (>= 1.23.0), libxcb-composite0, libxcb-errors0 (>= 1.0.1), libxcb-icccm4 (>= 0.4.2), libxcb-render0, libxcb-res0 (>= 1.10), libxcb-xfixes0, libxcb1, libxcursor1 (>> 1.1.2), libxkbcommon0 (>= 0.8.0)
 Filename: ./hyprland_0.47.2_amd64.deb
-Size: 49258168
-MD5sum: ccc99941651a790fd5e1f9ee489a1fc5
-SHA1: 7cd87105a01b3c903a4f2d6f8429c6109194d6b5
-SHA256: 5fd2457e77986db5e738add3cf8f5f725e46251f1032ba6e125f9a30304a049d
+Size: 49259388
+MD5sum: 8142dc152e18ca2acc2c1c52d46b200e
+SHA1: 2d06693ff084ba443652b6e17c61c5972bcea867
+SHA256: eca50c02eb57b900a5041ca79f9ef0493ee49956056ee8aa09408a1290f4feeb
 Section: utils
 Priority: extra
 Description: Hyprland is an independent, highly customizable, dynamic tiling Wayland compositor that doesn't sacrifice on its looks.
@@ -192,6 +207,21 @@ SHA256: 0ec1c2e86629c9e7c7fdf0c48b83fb7ddc7204d75cf42540afd15281213906a0
 Section: utils
 Priority: extra
 Description: A polkit authentication agent written in QT/QML
+
+Package: hyprspace
+Version: 0-0-stamp
+Architecture: amd64
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 9915
+Depends: libc6 (>= 2.32), libgcc-s1 (>= 4.3), libstdc++6 (>= 13.1)
+Filename: ./hyprspace_0-0-stamp_amd64.deb
+Size: 2289016
+MD5sum: 20a0618ab94db1cc67a1810c5739b9c4
+SHA1: 6651373e0178c4cf92c63e0831a671503262d31c
+SHA256: 28bc6fbb67efb07a34ba7741a45b03fbe6bc65c7bd3e68d5072d75345a70cdc5
+Section: utils
+Priority: extra
+Description: Workspace overview plugin for Hyprland
 
 Package: hyprsunset
 Version: 0.1.0-2

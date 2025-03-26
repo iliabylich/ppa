@@ -298,16 +298,16 @@ Priority: extra
 Description: A Hyprland implementation of wayland-scanner, in and for C++.
 
 Package: layer-shell
-Version: 0.0.1742549809
+Version: 0.0.1743013048
 Architecture: amd64
 Maintainer: John Doe <john@doe.org>
-Installed-Size: 2183
-Depends: libc6 (>= 2.34), libdbus-1-3 (>= 1.10), libgcc-s1 (>= 4.2), libgdk-pixbuf-2.0-0 (>= 2.31.1), libglib2.0-0t64 (>= 2.38.0), libglibmm-2.68-1t64 (>= 2.76), libgtk-4-1 (>= 4.0.0), libgtk4-layer-shell0 (>= 1.0.2), libgtkmm-4.0-0 (>= 4.15.0), libsigc++-3.0-0 (>= 2.2.0), libstdc++6 (>= 13.1), libvte-2.91-gtk4-0 (>= 0.47.90), fonts-inter-variable
-Filename: ./layer-shell_0.0.1742549809_amd64.deb
-Size: 753276
-MD5sum: 8d5ff00b0fff5a0fe7fd43e908d022cf
-SHA1: 7758d98f9d1ccaaf2b5d0857eaee7a308a368d55
-SHA256: abe5a58340b506543ade7b8418d2c0d40d17ab5d4ff8e3501074ef0dc70909c9
+Installed-Size: 2185
+Depends: libc6 (>= 2.34), libdbus-1-3 (>= 1.10), libgcc-s1 (>= 4.3), libgdk-pixbuf-2.0-0 (>= 2.31.1), libglib2.0-0t64 (>= 2.38.0), libglibmm-2.68-1t64 (>= 2.76), libgtk-4-1 (>= 4.0.0), libgtk4-layer-shell0 (>= 1.0.2), libgtkmm-4.0-0 (>= 4.15.0), libsigc++-3.0-0 (>= 2.2.0), libstdc++6 (>= 13.1), libvte-2.91-gtk4-0 (>= 0.47.90), fonts-inter-variable
+Filename: ./layer-shell_0.0.1743013048_amd64.deb
+Size: 765524
+MD5sum: f2fb48c76efc75773633028ddaad182c
+SHA1: 5240a77b61af6cafe287589418fe55a6799f3480
+SHA256: 57a3479fb82186c766624a8d00946840ce36a9256577d24a73dbbb605c1f361c
 Section: utils
 Priority: extra
 Description: A custom layer shell

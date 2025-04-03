@@ -392,16 +392,16 @@ Priority: extra
 Description: A material you color generation tool
 
 Package: metapackage
-Version: 0.0.1743612201
+Version: 0.0.1743686203
 Architecture: amd64
 Maintainer: John Doe <john@doe.org>
 Installed-Size: 7
-Depends: nautilus, gnome-system-monitor, tuigreet, greetd, localsend, loupe, d-spy, timeshift, wezterm, gcc, build-essential, cmake, meson, ragel, valgrind, google-perftools, bison, strace, rustfilt, sqlite3, gh, pkg-config, make, git, gitk, llvm, clang, lld, clangd, linux-perf, gdb, sassc, autoconf, automake, xxd, cbindgen, clang-tidy, hugo, jq, jsonnet, nmap, yq, pipx, gnupg2, just, git-delta, bat, fastfetch, htop, nano, tree, ffmpeg, libnotify-bin, stow, traceroute, wget, curl, fx, starship, du-dust, gaskpass, xremap, pipewire-dbus, apache2-utils, wireplumber, delta, bash-completion, file, less, sudo, fakeroot, openssh-client, zip, unzip, pkexec, logrotate, lsd, iotop, powertop, shellcheck, iputils-ping, lsb-release, network-manager, libjemalloc2, libjemalloc-dev, libgtk-4-dev, libgtk4-layer-shell-dev, libadwaita-1-dev, libvte-2.91-gtk4-dev, libpipewire-0.3-dev, libdbus-1-dev, libssl-dev, libgtkmm-4.0-dev, apt-file, make-btrfs-snapshot, xwayland, hyprland, hyprlock, swaybg, dunst, wl-clipboard, wf-recorder, slurp, grim, satty, cliphist, layer-shell, pavucontrol, swayosd, hyprsunset, hyprland-qtutils, hyprsysteminfo, hyprpolkitagent, hyprland-qt-support, xdg-desktop-portal-hyprland, unsplash-wallpaper, matugen, libinput-gestures, bluez
-Filename: ./metapackage_0.0.1743612201_amd64.deb
-Size: 1744
-MD5sum: dc465bc2eeefa7e6319f55b1d1089fec
-SHA1: f5f2c53555e6e29cced1431d6e9ed8f1b97f29c0
-SHA256: b6c500f8a1abf84d83fd92e30629d72ef6be15d4b662c306b8e9050a236ec8c0
+Depends: nautilus, gnome-system-monitor, tuigreet, greetd, localsend, loupe, d-spy, timeshift, wezterm, gcc, build-essential, cmake, meson, ragel, valgrind, google-perftools, bison, strace, rustfilt, sqlite3, gh, pkg-config, make, git, gitk, llvm, clang, lld, clangd, linux-perf, gdb, sassc, autoconf, automake, xxd, clang-tidy, hugo, jq, jsonnet, nmap, yq, pipx, gnupg2, just, git-delta, bat, fastfetch, htop, nano, tree, ffmpeg, libnotify-bin, stow, traceroute, wget, curl, fx, starship, du-dust, gaskpass, xremap, pipewire-dbus, apache2-utils, wireplumber, delta, bash-completion, file, less, sudo, fakeroot, openssh-client, zip, unzip, pkexec, logrotate, lsd, iotop, powertop, shellcheck, iputils-ping, lsb-release, network-manager, libjemalloc2, libjemalloc-dev, libgtk-4-dev, libgtk4-layer-shell-dev, libadwaita-1-dev, libvte-2.91-gtk4-dev, libpipewire-0.3-dev, libdbus-1-dev, libssl-dev, libgtkmm-4.0-dev, apt-file, make-btrfs-snapshot, xwayland, hyprland, hyprlock, swaybg, dunst, wl-clipboard, wf-recorder, slurp, grim, satty, cliphist, layer-shell, pavucontrol, swayosd, hyprsunset, hyprland-qtutils, hyprsysteminfo, hyprpolkitagent, hyprland-qt-support, xdg-desktop-portal-hyprland, unsplash-wallpaper, matugen, libinput-gestures, bluez
+Filename: ./metapackage_0.0.1743686203_amd64.deb
+Size: 1736
+MD5sum: 45626e248ae7d7e551be9b07f4b48bbe
+SHA1: ca10827f42d46fb373c7417fea6aa1a100f735fc
+SHA256: 817cb278296cad9b54e313e19817fb548f9d10635247a50fc45e3bc68faf84aa
 Section: utils
 Priority: extra
 Description: Meta-package that depends on all packages that I use

@@ -298,16 +298,16 @@ Priority: extra
 Description: A Hyprland implementation of wayland-scanner, in and for C++.
 
 Package: layer-shell
-Version: 0.0.1744892767
+Version: 0.0.1745839999
 Architecture: amd64
 Maintainer: John Doe <john@doe.org>
 Installed-Size: 1822
 Depends: libc6 (>= 2.34), libdbus-1-3 (>= 1.10), libgcc-s1 (>= 4.2), fonts-inter-variable, python3, python3-setproctitle, python3-gi, libgtk-4-1, libgtk4-layer-shell0, libvte-2.91-gtk4-0
-Filename: ./layer-shell_0.0.1744892767_amd64.deb
-Size: 694908
-MD5sum: 5e0384a81d177edeec50ed3dfcb8a03f
-SHA1: cc5da1f47bc3196f045c9348cb54e26eb29ffcd0
-SHA256: e5af77bdd4df8c8cf09d1f8ebc781238e155a0b9272c7db6e20e28eb5bdec467
+Filename: ./layer-shell_0.0.1745839999_amd64.deb
+Size: 694896
+MD5sum: b872a49a1031d97b0c29f739acc38d8e
+SHA1: 122ae346f2edd567a30abdf9c027dac35126e83f
+SHA256: 10d5d73c9cdb1e0802b80f3d99cc52b42b9e3e4254591798aa2c7564f6217059
 Section: utils
 Priority: extra
 Description: A custom layer shell
@@ -407,16 +407,16 @@ Priority: extra
 Description: Meta-package that depends on all packages that I use
 
 Package: onemorebeer-ui
-Version: 0.1.0-1742186986
+Version: 0.1.0-1745777867
 Architecture: amd64
 Maintainer: onemorebeer-ui developer <ibylich@gmail.com>
-Installed-Size: 4537
+Installed-Size: 4595
 Depends: systemd
-Filename: ./onemorebeer-ui_0.1.0-1742186986_amd64.deb
-Size: 1666676
-MD5sum: 110f87ae024f2f2c781cf759f8c7a73f
-SHA1: 4b8688c49119897e6e65c3b1382b0a14811eef71
-SHA256: 6a6f53435128716a5bf3134608f6e5b5e8a4d25fa94ea3b97ab00dd23d674eb9
+Filename: ./onemorebeer-ui_0.1.0-1745777867_amd64.deb
+Size: 1682616
+MD5sum: adcde385c411ed1d597de84a71670793
+SHA1: e1854251ab4ea43a67520a8f23647c708776ef97
+SHA256: 4ac5cae5fec7b8b8f21be5012829828d2470f3f3d0f40489062e1aeb14fc7d01
 Section: admin
 Priority: optional
 Description: [generated from Rust crate onemorebeer-ui]

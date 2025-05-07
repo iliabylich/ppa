@@ -58,16 +58,16 @@ Priority: extra
 Description: Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration.
 
 Package: hnparser
-Version: 0.1.0-1746007491
+Version: 0.1.0-1746659427
 Architecture: amd64
 Maintainer: HN parser developer <ibylich@gmail.com>
-Installed-Size: 4290
+Installed-Size: 4294
 Depends: systemd
-Filename: ./hnparser_0.1.0-1746007491_amd64.deb
-Size: 1582756
-MD5sum: 9f6c988404faead6c70cf63f2b0edbaa
-SHA1: 66d9f65a2dcb80699d64713fa13ccadf96585b3e
-SHA256: b17e36d11f14468681e06db4d6e7387e74614f1dd15702f7d083386c5ebe1029
+Filename: ./hnparser_0.1.0-1746659427_amd64.deb
+Size: 1583688
+MD5sum: 86789c042984d04efb7fb132b390b431
+SHA1: 59bd7fb36b8b40578e2c92f9a9de96df01904683
+SHA256: 5ad7db6176a1011cbaed944d47f5032a6361aea87f6472c0d45a8cc0f0f6511d
 Section: admin
 Priority: optional
 Description: [generated from Rust crate hnparser]

@@ -43,16 +43,16 @@ Priority: extra
 Description: a micro tool written in GTK4 to be used as SUDO_ASKPASS
 
 Package: ghostty
-Version: 1.0.1
+Version: 1.1.3
 Architecture: amd64
 Maintainer: John Doe <john@doe.org>
-Installed-Size: 34111
-Depends: libadwaita-1-0 (>= 1.5~beta), libc6 (>= 2.38), libfontconfig1 (>= 2.12.6), libglib2.0-0t64 (>= 2.42.0), libgtk-4-1 (>= 4.3.1), libx11-6
-Filename: ./ghostty_1.0.1_amd64.deb
-Size: 16111948
-MD5sum: 095d8d7cd27fda5758a414565e93499f
-SHA1: 3e79722508869aa3801f67dc1e28b66c0854d059
-SHA256: d2e31b9a0050abaffcf2ec8ad5558d90a0dde16b6816ff88bccf9659cdc0e4d6
+Installed-Size: 34056
+Depends: libadwaita-1-0 (>= 1.5~beta), libc6 (>= 2.38), libfontconfig1 (>= 2.12.6), libglib2.0-0t64 (>= 2.42.0), libgtk-4-1 (>= 4.12.0), libwayland-client0 (>= 1.9.91), libx11-6
+Filename: ./ghostty_1.1.3_amd64.deb
+Size: 16068216
+MD5sum: 0aecfa32859f371f436e4d45b736b6e2
+SHA1: b345045a010beeaf2bf95e7157e6074e3d24c1f1
+SHA256: dcc86dc1d5ef6482eaa51985e20cbec54f1cbed77384b3e0264b2d234722e61b
 Section: utils
 Priority: extra
 Description: Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration.
@@ -298,16 +298,16 @@ Priority: extra
 Description: A custom layer shell
 
 Package: libinput-gestures
-Version: 2.79.0
+Version: 2.80.0
 Architecture: amd64
 Maintainer: John Doe <john@doe.org>
-Installed-Size: 39
+Installed-Size: 40
 Depends: libinput-tools, python3
-Filename: ./libinput-gestures_2.79.0_amd64.deb
-Size: 9956
-MD5sum: de4abb768a065702d3a990df63de3d88
-SHA1: 3537a969eeee83dfbc7648c72c44b80142ab8554
-SHA256: 3d4411b06bab5300302eb89d821ba4c183a01c5c5ea813a73cb12a62a455ab4e
+Filename: ./libinput-gestures_2.80.0_amd64.deb
+Size: 10308
+MD5sum: fada9e78fdd5ba425765f9563efc9eff
+SHA1: 3f80520f79e0623d9a8315deb0b39330eec6af91
+SHA256: 87fabf247eb9767f2edf172ae6f6e1b2231865762786d220e346f174205b2d65
 Section: utils
 Priority: extra
 Description: Actions gestures on your touchpad using libinput
@@ -423,16 +423,16 @@ Priority: extra
 Description: A daemon service that triggers Pipewire volume events over DBus
 
 Package: satty
-Version: 0.16.0
+Version: 0.18.0
 Architecture: amd64
 Maintainer: John Doe <john@doe.org>
-Installed-Size: 4220
+Installed-Size: 4316
 Depends: libadwaita-1-0 (>= 1.0.1), libc6 (>= 2.39), libcairo-gobject2 (>= 1.10.0), libcairo2 (>= 1.2.4), libfontconfig1 (>= 2.12.6), libgcc-s1 (>= 4.2), libgdk-pixbuf-2.0-0 (>= 2.31.1), libglib2.0-0t64 (>= 2.54.0), libgtk-4-1 (>= 4.6.0), libpango-1.0-0 (>= 1.14.0)
-Filename: ./satty_0.16.0_amd64.deb
-Size: 1275900
-MD5sum: 460556361178e593a061b296e156e55b
-SHA1: dfb626dcda069133986436bcf7007da0601d3d4e
-SHA256: e666fc03b942bda94b630b63888e440b51bd12e0980bd7d2fce103eb29e0180d
+Filename: ./satty_0.18.0_amd64.deb
+Size: 1298168
+MD5sum: 2fd5b24ec9c8b5dca053146b17bcdf5c
+SHA1: d52a307d7dda518c0222b030e2891ebb84b79448
+SHA256: 341703cbfca8c6383f725bea699b6b1fb538632d2c749637c27bf8acbfaa3673
 Section: utils
 Priority: extra
 Description: Satty - Modern Screenshot Annotation. A tool inspired by Swappy and Flameshot.
@@ -498,16 +498,16 @@ Priority: extra
 Description: xdg-desktop-portal backend for Hyprland
 
 Package: xremap
-Version: 0.10.4
+Version: 0.10.11
 Architecture: amd64
 Maintainer: John Doe <john@doe.org>
-Installed-Size: 4281
+Installed-Size: 3525
 Depends: libc6 (>= 2.39), libgcc-s1 (>= 4.2)
-Filename: ./xremap_0.10.4_amd64.deb
-Size: 1206120
-MD5sum: 5d337d209a2a84014b4cad97d8f7163e
-SHA1: 110657beb429c99a9ee5ccd67da8b43719f7ab51
-SHA256: 3874864a88cc24eec90f473076753fc315aba514983c9a39dc1380aadd5d6107
+Filename: ./xremap_0.10.11_amd64.deb
+Size: 1098156
+MD5sum: eb61f126949b3b8c6a99d51a7a7890f6
+SHA1: 01f4e2d52a53308552b17500fb89ac6915a638de
+SHA256: 48f19556ce48912d16a20cb4d518010b791155c3b98aaa7f3a3cdf94c7114a1e
 Section: utils
 Priority: extra
 Description: Key remapper for X11 and Wayland

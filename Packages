@@ -49,10 +49,10 @@ Maintainer: John Doe <john@doe.org>
 Installed-Size: 34111
 Depends: libadwaita-1-0 (>= 1.5~beta), libc6 (>= 2.38), libfontconfig1 (>= 2.12.6), libglib2.0-0t64 (>= 2.42.0), libgtk-4-1 (>= 4.3.1), libx11-6
 Filename: ./ghostty_1.0.1_amd64.deb
-Size: 16112204
-MD5sum: 869ead0c3a08f8d403bbdd2e867dceaf
-SHA1: bde7c60481bb7d6df4ba26ee222a53e191bd11a7
-SHA256: 4d28e4dbca030510f9659b4ba3e0e5cf114c0438402ca574fad5ec234ebda32f
+Size: 16111948
+MD5sum: 095d8d7cd27fda5758a414565e93499f
+SHA1: 3e79722508869aa3801f67dc1e28b66c0854d059
+SHA256: d2e31b9a0050abaffcf2ec8ad5558d90a0dde16b6816ff88bccf9659cdc0e4d6
 Section: utils
 Priority: extra
 Description: Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration.
@@ -426,13 +426,13 @@ Package: satty
 Version: 0.16.0
 Architecture: amd64
 Maintainer: John Doe <john@doe.org>
-Installed-Size: 4218
+Installed-Size: 4220
 Depends: libadwaita-1-0 (>= 1.0.1), libc6 (>= 2.39), libcairo-gobject2 (>= 1.10.0), libcairo2 (>= 1.2.4), libfontconfig1 (>= 2.12.6), libgcc-s1 (>= 4.2), libgdk-pixbuf-2.0-0 (>= 2.31.1), libglib2.0-0t64 (>= 2.54.0), libgtk-4-1 (>= 4.6.0), libpango-1.0-0 (>= 1.14.0)
 Filename: ./satty_0.16.0_amd64.deb
-Size: 1272532
-MD5sum: dd061950a5c43020cf99899ad149d80f
-SHA1: 20b74701761becddf83f2b73b697b91e5034fa9c
-SHA256: c941cba343ed6b395d47c738190f17a3418303472e91874bbc6f59a06efe8ab6
+Size: 1275900
+MD5sum: 460556361178e593a061b296e156e55b
+SHA1: dfb626dcda069133986436bcf7007da0601d3d4e
+SHA256: e666fc03b942bda94b630b63888e440b51bd12e0980bd7d2fce103eb29e0180d
 Section: utils
 Priority: extra
 Description: Satty - Modern Screenshot Annotation. A tool inspired by Swappy and Flameshot.
@@ -501,13 +501,13 @@ Package: xremap
 Version: 0.10.4
 Architecture: amd64
 Maintainer: John Doe <john@doe.org>
-Installed-Size: 4315
+Installed-Size: 4281
 Depends: libc6 (>= 2.39), libgcc-s1 (>= 4.2)
 Filename: ./xremap_0.10.4_amd64.deb
-Size: 1208484
-MD5sum: 2c4739312e09b18d8ec74064358dcbaa
-SHA1: 02b911644154236c245c85e8214932df40598c88
-SHA256: e192d1bb0dd7c38cd90299b42cff93d846ac113ec2eb1a21730567e96bfcc275
+Size: 1206120
+MD5sum: 5d337d209a2a84014b4cad97d8f7163e
+SHA1: 110657beb429c99a9ee5ccd67da8b43719f7ab51
+SHA256: 3874864a88cc24eec90f473076753fc315aba514983c9a39dc1380aadd5d6107
 Section: utils
 Priority: extra
 Description: Key remapper for X11 and Wayland

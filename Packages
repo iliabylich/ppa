@@ -283,16 +283,16 @@ Priority: extra
 Description: A Hyprland implementation of wayland-scanner, in and for C++.
 
 Package: layer-shell
-Version: 0.0.1747146896
+Version: 0.0.1747176638
 Architecture: amd64
 Maintainer: John Doe <john@doe.org>
-Installed-Size: 1607
-Depends: libc6 (>= 2.34), libdbus-1-3 (>= 1.10), libgcc-s1 (>= 4.2), libgdk-pixbuf-2.0-0 (>= 2.31.1), libglib2.0-0t64 (>= 2.80.0), libgtk-4-1 (>= 4.12.0), libgtk4-layer-shell0 (>= 1.0.2), libvte-2.91-gtk4-0 (>= 0.47.90), fonts-inter-variable
-Filename: ./layer-shell_0.0.1747146896_amd64.deb
-Size: 650416
-MD5sum: e602bcaf8174e2b711c9c0969971ee7c
-SHA1: c93d0bef58192c77bb650c31100adc81bc601504
-SHA256: c1894775d0cb5654b0cf4dc67391674890c30aa3d5bcb2cdd08f8e6c41400e6a
+Installed-Size: 2346
+Depends: libc6 (>= 2.39), libdbus-1-3 (>= 1.10), libgcc-s1 (>= 4.2), libgdk-pixbuf-2.0-0 (>= 2.31.1), libglib2.0-0t64 (>= 2.80.0), libgtk-4-1 (>= 4.12.0), libgtk4-layer-shell0 (>= 1.0.2), libvte-2.91-gtk4-0 (>= 0.47.90), fonts-inter-variable
+Filename: ./layer-shell_0.0.1747176638_amd64.deb
+Size: 863924
+MD5sum: 0d6e87caab11564a3e099adcc8a3ad3f
+SHA1: 1acf639685aa8fee4ad3c20c8a5f43e8f2c3fb6f
+SHA256: 32c427bbfece90f85aff223f91fbcec29d73ad61f083f7b9df564299212abe1a
 Section: utils
 Priority: extra
 Description: A custom layer shell

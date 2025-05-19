@@ -28,6 +28,20 @@ Section: utils
 Priority: extra
 Description: Launcher-driven Wi-Fi manager for Linux
 
+Package: fonts-adwaita-mono-nerd
+Version: 3.4.0
+Architecture: all
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 46482
+Filename: ./fonts-adwaita-mono-nerd_3.4.0_all.deb
+Size: 7914812
+MD5sum: 67fa86031d4509f73786d76ef4b2397e
+SHA1: c0bd10b763131f0001da4d38e8fc513178afc9dd
+SHA256: d2eca9fd9ad82aec15c60a8ca7b3d429f61e62eb452f311705c26d668d9a28a2
+Section: utils
+Priority: extra
+Description: The Adwaita Mono font family (patched with NerdFont)
+
 Package: fonts-inter-variable-nerd
 Version: 4.1
 Architecture: all

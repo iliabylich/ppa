@@ -13,6 +13,20 @@ Section: utils
 Priority: extra
 Description: Aquamarine is a very light linux rendering backend library
 
+Package: fonts-inter-variable-nerd
+Version: 4.1
+Architecture: all
+Maintainer: John Doe <john@doe.org>
+Installed-Size: 94016
+Filename: ./fonts-inter-variable-nerd_4.1_all.deb
+Size: 10603004
+MD5sum: 25b87153d2d02c26013af301634ae27e
+SHA1: e4fa2572847bfa1d6c6474b6389b9f673779e33a
+SHA256: aa3c7d42bbe2416f118c3bc1218965454e45196c8135c26e0813d5bcea04b2fe
+Section: utils
+Priority: extra
+Description: The Inter font family (patched with NerdFont)
+
 Package: fx
 Version: 0.0.1734413924
 Architecture: amd64
@@ -377,16 +391,16 @@ Priority: extra
 Description: A material you color generation tool
 
 Package: metapackage
-Version: 0.0.1747592485
+Version: 0.0.1747669582
 Architecture: amd64
 Maintainer: John Doe <john@doe.org>
 Installed-Size: 7
 Depends: nautilus, gnome-system-monitor, tuigreet, greetd, localsend, loupe, d-spy, wezterm, gcc, build-essential, cmake, meson, ragel, valgrind, google-perftools, bison, strace, rustfilt, sqlite3, gh, pkg-config, make, git, llvm, clang, lld, clangd, linux-perf, gdb, sassc, autoconf, automake, xxd, clang-tidy, blueprint-compiler, hugo, jq, nmap, yq, pipx, gnupg2, just, git-delta, bat, fastfetch, htop, nano, tree, ffmpeg, libnotify-bin, stow, traceroute, wget, curl, fx, starship, du-dust, gaskpass, xremap, pipewire-dbus, apache2-utils, wireplumber, bash-completion, file, less, sudo, fakeroot, openssh-client, zip, unzip, pkexec, logrotate, lsd, iotop, powertop, shellcheck, iputils-ping, lsb-release, network-manager, x11-utils, libjemalloc-dev, libgtk-4-dev, libgtk4-layer-shell-dev, libvte-2.91-gtk4-dev, libpipewire-0.3-dev, libdbus-1-dev, libssl-dev, libclang-rt-dev, apt-file, make-btrfs-snapshot, xwayland, hyprland, hyprlock, swaybg, dunst, wl-clipboard, wf-recorder, slurp, grim, satty, cliphist, layer-shell, pavucontrol, swayosd, hyprsunset, hyprland-qtutils, hyprsysteminfo, hyprpolkitagent, hyprland-qt-support, xdg-desktop-portal-hyprland, unsplash-wallpaper, matugen, hyprspace, bluez
-Filename: ./metapackage_0.0.1747592485_amd64.deb
-Size: 1720
-MD5sum: 1fd4a626930a08cdc4e8625200310194
-SHA1: 94e07648443d16cb1c090a57c59ebbe97d391d71
-SHA256: 96ab3ed65247fd9a86521b4dc732d366e78de7b9b8661e5fb1141bc2693f5ea2
+Filename: ./metapackage_0.0.1747669582_amd64.deb
+Size: 1724
+MD5sum: 83cb1d00d590dc5665ef88852de3352c
+SHA1: 1ab1853ded177243ec6a99a02e6182878b18cf3b
+SHA256: 424a47e098a3a05d8d75dd31d8457798f4fe8a8fcba5b52d6584b61fd7630e2e
 Section: utils
 Priority: extra
 Description: Meta-package that depends on all packages that I use

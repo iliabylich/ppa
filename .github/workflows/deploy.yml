@@ -43,6 +43,7 @@ jobs:
       - run: ./download-everything-from-release.rb iliabylich/build-deb-package matugen
       - run: ./download-everything-from-release.rb iliabylich/build-deb-package libinput-gestures
       - run: ./download-everything-from-release.rb iliabylich/build-deb-package fonts-fonts-inter-variable-nerd
+      - run: ./download-everything-from-release.rb iliabylich/build-deb-package iwmenu
       - run: ./download-latest-deb.rb iliabylich/hn-parser
       - run: ./download-latest-deb.rb localsend/localsend
       - run: ./download-latest-deb.rb iliabylich/onemorebeer-ui

@@ -495,6 +495,34 @@ Section: utils
 Priority: extra
 Description: Satty - Modern Screenshot Annotation. A tool inspired by Swappy and Flameshot.
 
+Package: shared-clipboard-server
+Version: 0.1.0-1748001283
+Architecture: amd64
+Maintainer: Ilya Bylich
+Installed-Size: 2322
+Depends: libc6 (>= 2.34), libssl3t64 (>= 3.0.0)
+Filename: ./shared-clipboard-server_0.1.0-1748001283_amd64.deb
+Size: 770172
+MD5sum: 0ae34733ae39f26e6249cc76d49fc754
+SHA1: 218d1fb1a75ccc52dae1cddbaa68d80f5794fe32
+SHA256: 7ab488c04e34b33eb6bf04c1502f0f7aab1f463ca6852b10600424da96cfd41b
+Priority: optional
+Description: [generated from Rust crate shared-clipboard-server]
+
+Package: shared-clipboard-test-client
+Version: 0.1.0-1748001345
+Architecture: amd64
+Maintainer: Ilya Bylich
+Installed-Size: 2352
+Depends: libc6 (>= 2.34), libssl3t64 (>= 3.0.0)
+Filename: ./shared-clipboard-test-client_0.1.0-1748001345_amd64.deb
+Size: 771492
+MD5sum: 1bcca66f2bb997bbad7192fd6be52690
+SHA1: 8af1f3bfaaa3adfdac4f3a9cf905571ac62ed0ee
+SHA256: 9a74e8adae354c4a687adafcae3948ea6495804ae825126d08bab1d42ee810d0
+Priority: optional
+Description: [generated from Rust crate shared-clipboard-test-client]
+
 Package: spot
 Version: 0.5.0
 Architecture: amd64

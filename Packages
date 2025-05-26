@@ -496,28 +496,28 @@ Priority: extra
 Description: Satty - Modern Screenshot Annotation. A tool inspired by Swappy and Flameshot.
 
 Package: shared-clipboard-server
-Version: 0.1.0-1748003357
+Version: 0.1.0-1748283374
 Architecture: amd64
 Maintainer: Ilya Bylich
-Installed-Size: 2518
-Filename: ./shared-clipboard-server_0.1.0-1748003357_amd64.deb
-Size: 844612
-MD5sum: 62a43983b2562774905ea7d616e92f8b
-SHA1: bc1ed86310cdabe03dd5f75dfcde3fa4319c1d59
-SHA256: 967e4db29ca28d7a2dac1eb9948050b7ce930aca931fe5a4fa2e84ee0132ff6d
+Installed-Size: 2454
+Filename: ./shared-clipboard-server_0.1.0-1748283374_amd64.deb
+Size: 834152
+MD5sum: de6a92a5496bd7e00089e52aa9e9b273
+SHA1: 73f81af7cf8aa1539c505e195ba57f026cdc405c
+SHA256: ce154ee39d6885f521fafa5661ee674e8fb9c79f9c4208168f2415b9048e4ab1
 Priority: optional
 Description: [generated from Rust crate shared-clipboard-server]
 
 Package: shared-clipboard-test-client
-Version: 0.1.0-1748003357
+Version: 0.1.0-1748283374
 Architecture: amd64
 Maintainer: Ilya Bylich
 Installed-Size: 4260
-Filename: ./shared-clipboard-test-client_0.1.0-1748003357_amd64.deb
-Size: 1449924
-MD5sum: 7ec0c04559c6b2bde8412241b57ec1e6
-SHA1: 534440bc91d8b801a0a7d15616b3232c3ce0b867
-SHA256: 9965a747b47694e5a543438f397002c6e366378a1d4256cdb7ea639e624b1f2b
+Filename: ./shared-clipboard-test-client_0.1.0-1748283374_amd64.deb
+Size: 1449940
+MD5sum: fd74140f2da77bf4a90effb619fd9f19
+SHA1: bc9de5c6b7d076584ebfb58d02464c3d273581a5
+SHA256: 379b5ac974990730c3416624afe93a825644840929a465f51b982661336aa640
 Priority: optional
 Description: [generated from Rust crate shared-clipboard-test-client]
 

@@ -49,7 +49,7 @@ jobs:
       - run: ./download-latest-deb.rb iliabylich/hn-parser
       - run: ./download-latest-deb.rb localsend/localsend
       - run: ./download-latest-deb.rb iliabylich/onemorebeer-ui
-      - run: ./download-everything-from-release.rb iliabylich/shared-clipboard-server latest
+      - run: ./download-latest-deb.rb mpclipboard/server
 
       - run: dpkg-scanpackages --multiversion . > Packages
       - run: gzip -k -f Packages

@@ -449,6 +449,19 @@ Section: utils
 Priority: extra
 Description: Meta-package that depends on all packages that I use
 
+Package: mpclipboard-server
+Version: 0.1.0-1749149744
+Architecture: amd64
+Maintainer: Ilya Bylich
+Installed-Size: 2686
+Filename: ./mpclipboard-server_0.1.0-1749149744_amd64.deb
+Size: 911536
+MD5sum: 4c5826a76e0bab46f8356adc19d811fb
+SHA1: f6320ebb792fe798d569c64b66391dd271458854
+SHA256: d86d1ac832bcae9fc71dfa1421dbef0fcc289f7df0c44f79856c988d25bbe81a
+Priority: optional
+Description: [generated from Rust crate mpclipboard-server]
+
 Package: onemorebeer-ui
 Version: 0.1.0-1746008215
 Architecture: amd64
@@ -494,32 +507,6 @@ SHA256: 341703cbfca8c6383f725bea699b6b1fb538632d2c749637c27bf8acbfaa3673
 Section: utils
 Priority: extra
 Description: Satty - Modern Screenshot Annotation. A tool inspired by Swappy and Flameshot.
-
-Package: shared-clipboard-server
-Version: 0.1.0-1748448525
-Architecture: amd64
-Maintainer: Ilya Bylich
-Installed-Size: 2806
-Filename: ./shared-clipboard-server_0.1.0-1748448525_amd64.deb
-Size: 949396
-MD5sum: 8e83c48de9fd4471deb3f44e59e8dafc
-SHA1: c53d7627644b2e1f11e16e368c5e3f881eb8410c
-SHA256: 4ee729ed9914713d690c6575117a4997ad88c2158e19b5be0258355892ba58f0
-Priority: optional
-Description: [generated from Rust crate shared-clipboard-server]
-
-Package: shared-clipboard-test-client
-Version: 0.1.0-1748448525
-Architecture: amd64
-Maintainer: Ilya Bylich
-Installed-Size: 4260
-Filename: ./shared-clipboard-test-client_0.1.0-1748448525_amd64.deb
-Size: 1452016
-MD5sum: ea1197dede5df4554eac7e66e6ab1324
-SHA1: b12027a52a9a65a54900d7aca2f41741401e06e3
-SHA256: 63698b7e17b76c6fbe5542290fe4302a12016307a8632664d6be292cbfc497c0
-Priority: optional
-Description: [generated from Rust crate shared-clipboard-test-client]
 
 Package: spot
 Version: 0.5.0

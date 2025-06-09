@@ -450,15 +450,15 @@ Priority: extra
 Description: Meta-package that depends on all packages that I use
 
 Package: mpclipboard-server
-Version: 0.1.0-1749149744
+Version: 0.1.0-1749470373
 Architecture: amd64
 Maintainer: Ilya Bylich
-Installed-Size: 2686
-Filename: ./mpclipboard-server_0.1.0-1749149744_amd64.deb
-Size: 911536
-MD5sum: 4c5826a76e0bab46f8356adc19d811fb
-SHA1: f6320ebb792fe798d569c64b66391dd271458854
-SHA256: d86d1ac832bcae9fc71dfa1421dbef0fcc289f7df0c44f79856c988d25bbe81a
+Installed-Size: 2586
+Filename: ./mpclipboard-server_0.1.0-1749470373_amd64.deb
+Size: 876044
+MD5sum: b4a9078078dab434d93b1bbe5f1aa9f7
+SHA1: 36d91c05a799e90ef72577024824c9ede124058e
+SHA256: 09b0b37602371b6f3dc66c09aec5c119957e6cabeeb6f09014d4c554b9fc981c
 Priority: optional
 Description: [generated from Rust crate mpclipboard-server]
 

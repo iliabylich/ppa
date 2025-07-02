@@ -41,6 +41,7 @@ deploy config_path:
     notify-send "{{config_path}} has been built"
     @just upload {{config_path}}
     notify-send "{{config_path}} has been uploaded"
+    @just clean
     git checkout packages
     just deploy
     git checkout master

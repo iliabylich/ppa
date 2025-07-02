@@ -19,9 +19,9 @@ dependencies = ["${shlibs:Depends}"]
 "%" = ["dh $@"]
 override_dh_auto_build = ["cargo build --release"]
 override_dh_auto_install = [
-    "install -Dm0755 target/release/wezterm-mux-server debian/wezterm/usr/bin/wezterm-mux-server",
-    "install -Dm0755 target/release/wezterm-gui debian/wezterm/usr/bin/wezterm-gui",
-    "install -Dm0755 target/release/wezterm debian/wezterm/usr/bin/wezterm",
+    # "install -Dm0755 target/release/wezterm-mux-server debian/wezterm/usr/bin/wezterm-mux-server",
+    "install -Dm0755 target/release/wezterm-gui debian/wezterm/usr/bin/wezterm",
+    # "install -Dm0755 target/release/wezterm debian/wezterm/usr/bin/wezterm",
     "install -Dm0755 assets/open-wezterm-here debian/wezterm/usr/bin/open-wezterm-here",
     "install -Dm0755 target/release/strip-ansi-escapes debian/wezterm/usr/bin/strip-ansi-escapes",
 

@@ -1,0 +1,26 @@
+version = "0-0-stamp"
+dependencies = ["musl", "musl-dev"]
+arch = "amd64"
+
+[source.git-clone]
+url = "https://github.com/mpclipboard/server.git"
+branch_or_tag = "master"
+
+[debian]
+changelog = true
+compat = 10
+
+[debian.control]
+description = "MPClipboard server"
+dependencies = ["${shlibs:Depends}"]
+
+[debian.rules]
+"%" = ["dh $@"]
+override_dh_auto_build = [
+    "rustup target add x86_64-unknown-linux-musl",
+    "cargo build --release --target=x86_64-unknown-linux-musl",
+]
+override_dh_auto_install = [
+    "install -Dm0755 target/x86_64-unknown-linux-musl/release/mpclipboard-server debian/mpclipboard-server/usr/bin/mpclipboard-server",
+    "install -Dm0644 debian/mpclipboard-server.service debian/mpclipboard-server/usr/lib/systemd/system/mpclipboard-server.service",
+]

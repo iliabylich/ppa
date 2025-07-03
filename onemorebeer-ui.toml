@@ -1,0 +1,26 @@
+version = "0-0-stamp"
+dependencies = ["just", "musl", "musl-dev"]
+arch = "amd64"
+
+[source.git-clone]
+url = "https://github.com/iliabylich/onemorebeer-ui.git"
+branch_or_tag = "master"
+
+[debian]
+changelog = true
+compat = 10
+
+[debian.control]
+description = "onemorebeer ui"
+dependencies = ["${shlibs:Depends}"]
+
+[debian.rules]
+"%" = ["dh $@"]
+override_dh_auto_build = [
+    "rustup target add x86_64-unknown-linux-musl",
+    "cargo build --release --target=x86_64-unknown-linux-musl",
+]
+override_dh_auto_install = [
+    "install -Dm0755 target/x86_64-unknown-linux-musl/release/onemorebeer-ui debian/onemorebeer-ui/usr/bin/onemorebeer-ui",
+    "install -Dm0644 debian/onemorebeer-ui.service debian/onemorebeer-ui/usr/lib/systemd/system/onemorebeer-ui.service",
+]

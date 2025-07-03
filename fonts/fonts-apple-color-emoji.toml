@@ -1,0 +1,23 @@
+version = { specific = "18.4" }
+dependencies = ["wget"]
+arch = "all"
+
+source = "none"
+
+[debian]
+changelog = true
+compat = 10
+
+[debian.control]
+description = "Apple Color Emoji font"
+dependencies = []
+
+[debian.rules]
+"%" = ["dh $@"]
+override_dh_auto_build = [
+    "wget -q https://github.com/samuelngs/apple-emoji-linux/releases/download/v18.4/AppleColorEmoji.ttf",
+]
+override_dh_auto_install = [
+    "mkdir -p debian/fonts-apple-color-emoji/usr/share/fonts/apple-color-emoji",
+    "install -m644 *.ttf debian/fonts-apple-color-emoji/usr/share/fonts/apple-color-emoji/",
+]

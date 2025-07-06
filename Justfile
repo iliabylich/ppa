@@ -32,19 +32,11 @@ parse config_path:
 explain config_path:
     @just container-run explain {{config_path}}
 
-upload config_path:
-    ./scripts/upload.sh {{config_path}}
+gh-upload *args:
+    ./scripts/gh-upload.sh {{args}}
 
-deploy config_path:
-    @just clean
-    @just build {{config_path}}
-    notify-send "{{config_path}} has been built"
-    @just upload {{config_path}}
-    notify-send "{{config_path}} has been uploaded"
-    @just clean
-    git checkout packages
-    just deploy
-    git checkout master
+deploy *args:
+    ./scripts/deploy.sh {{args}}
 
 unpack debfile:
     mkdir -p tmp

@@ -5,7 +5,6 @@ dependencies = [
     "libvte-2.91-gtk4-dev",
     "sassc",
     "xxd",
-    "blueprint-compiler",
     "meson",
 ]
 arch = "amd64"
@@ -24,7 +23,7 @@ compat = 10
 
 [debian.control]
 description = "A custom layer shell"
-dependencies = ["${shlibs:Depends}", "fonts-inter-variable"]
+dependencies = ["${shlibs:Depends}", "fonts-inter-variable-nerd"]
 
 [debian.rules]
 "%" = ["dh $@"]

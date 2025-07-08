@@ -1,0 +1,22 @@
+version = { specific = "0.23.0" }
+dependencies = ["meson", "dh-python", "python3-xdg", "python3-dbus", "scdoc"]
+arch = "all"
+
+[source.git-clone]
+url = "https://github.com/Vladimir-csp/uwsm.git"
+branch_or_tag = "v0.23.0"
+
+[debian]
+changelog = true
+compat = 10
+
+[debian.control]
+description = "Universal Wayland Session Manager"
+dependencies = [
+    "systemd",
+    "util-linux-extra",
+    "bash",
+    "python3",
+    "python3-xdg",
+    "python3-dbus",
+]

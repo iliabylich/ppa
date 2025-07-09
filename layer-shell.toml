@@ -27,8 +27,4 @@ dependencies = ["${shlibs:Depends}", "fonts-inter-variable-nerd"]
 
 [debian.rules]
 "%" = ["dh $@"]
-override_dh_auto_configure = [
-    "meson setup builddir --buildtype=release --prefix=$$PWD/debian/layer-shell",
-]
-override_dh_auto_build = ["meson compile -C builddir"]
-override_dh_auto_install = ["meson install -C builddir"]
+override_dh_auto_configure = ["dh_auto_configure -- --buildtype=release"]

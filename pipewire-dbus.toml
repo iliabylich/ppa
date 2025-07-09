@@ -1,10 +1,10 @@
-version = { specific = "2.0.0" }
-dependencies = ["libpipewire-0.3-dev", "libclang1", "clang"]
+version = { specific = "3.0.0" }
+dependencies = ["libpipewire-0.3-dev", "libclang1", "clang", "meson"]
 arch = "amd64"
 
 [source.git-clone]
 url = "https://github.com/iliabylich/pipewire-dbus.git"
-branch_or_tag = "v2.0.0"
+branch_or_tag = "v3.0.0"
 
 [debian]
 changelog = true
@@ -16,7 +16,4 @@ dependencies = ["${shlibs:Depends}"]
 
 [debian.rules]
 "%" = ["dh $@"]
-override_dh_auto_build = ["CARGO_TERM_COLOR=always cargo build --release"]
-override_dh_auto_install = [
-    "install -Dm0755 target/release/pipewire-dbus debian/pipewire-dbus/usr/bin/pipewire-dbus",
-]
+override_dh_auto_configure = ["dh_auto_configure -- --buildtype=release"]

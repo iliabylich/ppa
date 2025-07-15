@@ -150,7 +150,6 @@ dependencies = [
     "cliphist",
     "layer-shell",
     "pavucontrol",
-    "swayosd",
     "hyprsunset",
     "hyprland-qtutils",
     "hyprsysteminfo",

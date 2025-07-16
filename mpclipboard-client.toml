@@ -1,0 +1,19 @@
+version = { specific = "1.0.0" }
+dependencies = ["meson"]
+arch = "amd64"
+
+[source.git-clone]
+url = "https://github.com/mpclipboard/linux.git"
+branch_or_tag = "v1.0.0"
+
+[debian]
+changelog = true
+compat = 10
+
+[debian.control]
+description = "Linux client for MPClipboard"
+dependencies = ["${shlibs:Depends}"]
+
+[debian.rules]
+"%" = ["dh $@"]
+override_dh_auto_configure = ["dh_auto_configure -- --buildtype=release"]

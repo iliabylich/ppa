@@ -136,6 +136,7 @@ dependencies = [
     "fonts-inter-variable-nerd",
     "fonts-adwaita-mono-nerd",
     "fonts-apple-color-emoji",
+    "mpclipboard-client",
 
     # Hyprland
     "hyprland",

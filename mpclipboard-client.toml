@@ -1,10 +1,10 @@
-version = { specific = "1.0.0" }
+version = { specific = "1.0.1" }
 dependencies = ["meson"]
 arch = "amd64"
 
 [source.git-clone]
 url = "https://github.com/mpclipboard/linux.git"
-branch_or_tag = "v1.0.0"
+branch_or_tag = "v1.0.1"
 
 [debian]
 changelog = true

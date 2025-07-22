@@ -30,8 +30,7 @@ impl Strategist {
     pub(crate) fn make_plan(config: Config) -> Result<Plan> {
         let Config {
             package_name,
-            config_dir: _config_dir,
-            config_path: _config_path,
+            absolute_config_path: _absolute_config_path,
             version,
             dependencies,
             source,

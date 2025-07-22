@@ -2,15 +2,14 @@ use crate::colors::{GREEN, RESET, YELLOW};
 use anyhow::{Context as _, Result};
 use serde::Deserialize;
 use std::{collections::HashMap, path::Path};
+use toml_edit::DocumentMut;
 
 #[derive(Deserialize, Debug)]
 pub(crate) struct Config {
     #[serde(skip)]
     pub(crate) package_name: String,
     #[serde(skip)]
-    pub(crate) config_dir: String,
-    #[serde(skip)]
-    pub(crate) config_path: String,
+    pub(crate) absolute_config_path: String,
 
     pub(crate) version: Version,
     pub(crate) dependencies: Vec<String>,
@@ -29,21 +28,25 @@ pub(crate) struct Config {
 
 impl Config {
     pub(crate) fn new(dir: &str, path: &str) -> Result<Self> {
-        let absolute_path = format!("{dir}/{path}");
+        let absolute_config_path = format!("{dir}/{path}");
 
-        let content = std::fs::read_to_string(&absolute_path)
-            .with_context(|| format!("failed to read {absolute_path}"))?;
+        let content = std::fs::read_to_string(&absolute_config_path)
+            .with_context(|| format!("failed to read {absolute_config_path}"))?;
 
-        let mut config: Config =
-            toml::from_str(&content).with_context(|| format!("failed to parse {absolute_path}"))?;
+        let mut config: Config = toml::from_str(&content)
+            .with_context(|| format!("failed to parse {absolute_config_path}"))?;
 
-        config.config_dir = dir.to_string();
-        config.config_path = path.to_string();
+        config.absolute_config_path = absolute_config_path;
 
-        config.package_name = Path::new(&absolute_path)
+        config.package_name = Path::new(&config.absolute_config_path)
             .with_extension("")
             .file_name()
-            .with_context(|| format!("failed to get base filename from {absolute_path}"))?
+            .with_context(|| {
+                format!(
+                    "failed to get base filename from {}",
+                    config.absolute_config_path
+                )
+            })?
             .to_str()
             .context("not a UTF-8 path")?
             .to_string();
@@ -52,38 +55,40 @@ impl Config {
     }
 
     pub(crate) fn bump_version_trailer(self) -> Result<()> {
-        let dir = self.config_dir;
-        let path = self.config_path;
+        let path = self.absolute_config_path;
 
-        let absolute_path = format!("{dir}/{path}");
-        let content = std::fs::read_to_string(&absolute_path)
-            .with_context(|| format!("failed to read {absolute_path}",))?;
+        let toml =
+            std::fs::read_to_string(&path).with_context(|| format!("failed to read {path}"))?;
+        let mut doc = toml
+            .parse::<DocumentMut>()
+            .with_context(|| format!("failed to parse {path}"))?;
 
-        if content.contains("0-0-stamp") {
+        let version = doc.get("version").context("no 'version' field")?;
+        let Some(version) = version.get("specific") else {
             println!("[{path}] {YELLOW}Skipping, it has monotonically incrementing version{RESET}");
             return Ok(());
-        }
-
-        const VERSION_PREFIX: &str = "version = { specific = \"";
-        let (pre, post) = content
-            .split_once(VERSION_PREFIX)
-            .with_context(|| format!("failed to find version prefix in {absolute_path}"))?;
-        let (version, post) = post
-            .split_once('"')
-            .with_context(|| format!("no version terminator in {path}"))?;
-        let new_version = if let Some((base, trailer)) = version.split_once('-') {
-            let trailer = trailer
-                .parse::<u32>()
-                .with_context(|| format!("non-numeric version trailer in {path}"))?;
-            format!("{base}-{}", trailer + 1)
-        } else {
-            format!("{version}-1")
         };
+        let version = version
+            .as_str()
+            .context("version is provided but it's not a string")?;
+
+        let (base, trailer) = match version.split_once('-') {
+            Some((base, trailer)) => {
+                let trailer = trailer
+                    .parse::<u32>()
+                    .with_context(|| format!("non-numeric version trailer in {path}"))?;
+                (base, Some(trailer))
+            }
+            None => (version, None),
+        };
+        let new_trailer = trailer.map(|v| v + 1).unwrap_or(1);
+        let new_version = format!("{base}-{new_trailer}");
+
         println!("[{path}] {GREEN}Bumping {version} -> {new_version}{RESET}");
 
-        let new_config = format!("{pre}{VERSION_PREFIX}{new_version}\"{post}");
+        doc["version"]["specific"] = toml_edit::value(new_version);
 
-        std::fs::write(absolute_path, new_config)
+        std::fs::write(&path, doc.to_string())
             .with_context(|| format!("failed to update {path}"))?;
 
         Ok(())

@@ -1,7 +1,27 @@
-use crate::{num_cpus::num_cpus, plan::Plan};
-use anyhow::Result;
+use crate::{
+    colors::{GREEN, RESET},
+    plan::Plan,
+};
+use anyhow::{Context as _, Result};
+use std::process::Command;
 
 pub(crate) fn parallelize_build(plan: &mut Plan) -> Result<()> {
-    plan.add_env("DEB_BUILD_OPTIONS", format!("parallel={}", num_cpus()?));
+    let num_cpus = num_cpus()?;
+    println!("{GREEN}Number of CPUs: {num_cpus}{RESET}");
+
+    plan.add_env("DEB_BUILD_OPTIONS", format!("parallel={}", num_cpus));
     Ok(())
+}
+
+fn num_cpus() -> Result<u8> {
+    let stdout = Command::new("nproc")
+        .output()
+        .context("failed to call nproc")?
+        .stdout;
+
+    String::from_utf8(stdout)
+        .context("non-utf-8 output of nproc")?
+        .trim()
+        .parse()
+        .context("non-numeric output of nproc")
 }

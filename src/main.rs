@@ -12,7 +12,6 @@ mod colors;
 mod config;
 mod input;
 mod list;
-mod num_cpus;
 mod plan;
 mod strategist;
 mod templates;

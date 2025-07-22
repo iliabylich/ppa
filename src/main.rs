@@ -29,9 +29,11 @@ fn main() -> Result<()> {
             println!("{:#?}", list);
         }
 
-        (Args::Explain, Input::Singular(config)) => {
-            let plan = Strategist::make_plan(config)?;
-            plan.explain();
+        (Args::Explain, input) => {
+            for config in input.expand_into_config_list()? {
+                let plan = Strategist::make_plan(config)?;
+                plan.explain();
+            }
         }
 
         (Args::Build, input) => {

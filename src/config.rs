@@ -23,7 +23,8 @@ pub(crate) struct Config {
     pub(crate) env: HashMap<String, String>,
     #[serde(default)]
     pub(crate) path: Vec<String>,
-    pub(crate) additionally_produced_packages: Option<Vec<String>>,
+    #[serde(default)]
+    pub(crate) additionally_produced_packages: Vec<String>,
 }
 
 impl Config {

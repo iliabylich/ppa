@@ -74,10 +74,8 @@ impl Strategist {
         build_deb_package(&mut plan, &build_dir);
         copy_deb(&mut plan, &package_name, &version, &arch);
 
-        if let Some(package_names) = additionally_produced_packages {
-            for package_name in package_names {
-                copy_deb(&mut plan, &package_name, &version, &arch);
-            }
+        for package_name in additionally_produced_packages {
+            copy_deb(&mut plan, &package_name, &version, &arch);
         }
 
         Ok(plan)

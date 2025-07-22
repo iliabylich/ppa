@@ -1,14 +1,15 @@
-version = { specific = "0.49.0" }
+version = { specific = "0.50.1" }
 dependencies = [
-    "ninja-build",
-    "libgles2-mesa-dev",
-
     "/shared/deb-latest/hyprutils.deb",
     "/shared/deb-latest/aquamarine.deb",
     "/shared/deb-latest/hyprlang.deb",
     "/shared/deb-latest/hyprcursor.deb",
     "/shared/deb-latest/hyprgraphics.deb",
     "/shared/deb-latest/hyprwayland-scanner.deb",
+    "/shared/deb-latest/hyprland-protocols.deb",
+
+    "ninja-build",
+    "libgles2-mesa-dev",
 
     "libxkbcommon-dev",
     "uuid-dev",
@@ -32,12 +33,14 @@ dependencies = [
 
     "libtomlplusplus-dev",
     "libpugixml-dev",
+    "libudis86-dev",
+    "libglaze-dev",
 ]
 arch = "amd64"
 
 [source.git-clone]
 url = "https://github.com/hyprwm/hyprland.git"
-branch_or_tag = "v0.49.0"
+branch_or_tag = "v0.50.1"
 
 [debian]
 changelog = true
@@ -48,13 +51,15 @@ description = "Hyprland is an independent, highly customizable, dynamic tiling W
 dependencies = ["${shlibs:Depends}"]
 
 [debian.rules]
-override_dh_auto_configure = ["echo skip"]
-override_dh_auto_build = [
+"%" = ["dh $@"]
+override_dh_auto_configure = [
     "cmake --no-warn-unused-cli -DCMAKE_BUILD_TYPE:STRING=Release -DCMAKE_INSTALL_PREFIX:STRING=/usr -S . -B ./build",
+]
+override_dh_auto_build = [
     "cmake --build ./build --config Release --target all -j`nproc`",
 ]
 override_dh_auto_install = [
     "cmake --install build --prefix debian/hyprland/usr",
     "rm debian/hyprland/usr/share/hypr/wall*.png",
 ]
-override_dh_usrlocal = ["echo skip"]
+override_dh_usrlocal = ["true"]

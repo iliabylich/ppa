@@ -1,4 +1,4 @@
-version = { specific = "0.6.4" }
+version = { specific = "0.6.4-1" }
 dependencies = ["meson"]
 arch = "amd64"
 
@@ -15,9 +15,10 @@ description = "Wayland protocol extensions for Hyprland"
 dependencies = ["${shlibs:Depends}"]
 
 [debian.rules]
-override_dh_auto_configure = ["echo skip"]
-override_dh_auto_build = ["meson setup build"]
+"%" = ["dh $@"]
+override_dh_auto_configure = ["meson setup build"]
+override_dh_auto_build = ["true"]
 override_dh_auto_install = [
     "meson install -C build --destdir=$$PWD/debian/hyprland-protocols",
 ]
-override_dh_usrlocal = ["echo skip"]
+override_dh_usrlocal = ["true"]

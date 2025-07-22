@@ -1,10 +1,10 @@
-version = { specific = "0.4.4-2" }
+version = { specific = "0.4.5" }
 dependencies = ["libpugixml-dev"]
 arch = "amd64"
 
 [source.git-clone]
 url = "https://github.com/hyprwm/hyprwayland-scanner.git"
-branch_or_tag = "v0.4.4"
+branch_or_tag = "v0.4.5"
 
 [debian]
 changelog = true
@@ -15,11 +15,9 @@ description = "A Hyprland implementation of wayland-scanner, in and for C++."
 dependencies = ["${shlibs:Depends}"]
 
 [debian.rules]
-override_dh_auto_configure = ["echo skip"]
-override_dh_auto_build = [
-    "cmake -DCMAKE_INSTALL_PREFIX=/usr -B build",
-    "cmake --build build -j `nproc`",
-]
+"%" = ["dh $@"]
+override_dh_auto_configure = ["cmake -DCMAKE_INSTALL_PREFIX=/usr -B build"]
+override_dh_auto_build = ["cmake --build build -j `nproc`"]
 override_dh_auto_install = [
     "cmake --install build --prefix debian/hyprwayland-scanner/usr",
 ]

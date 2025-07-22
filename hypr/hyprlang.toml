@@ -1,4 +1,4 @@
-version = { specific = "0.6.3" }
+version = { specific = "0.6.3-1" }
 dependencies = ["/shared/deb-latest/hyprutils.deb"]
 arch = "amd64"
 
@@ -15,9 +15,11 @@ description = "The official implementation library for the hypr config language.
 dependencies = ["${shlibs:Depends}"]
 
 [debian.rules]
-override_dh_auto_configure = ["echo skip"]
-override_dh_auto_build = [
+"%" = ["dh $@"]
+override_dh_auto_configure = [
     "cmake --no-warn-unused-cli -DCMAKE_BUILD_TYPE:STRING=Release -DCMAKE_INSTALL_PREFIX:PATH=/usr -S . -B ./build",
+]
+override_dh_auto_build = [
     "cmake --build ./build --config Release --target hyprlang -j`nproc`",
 ]
 override_dh_auto_install = [

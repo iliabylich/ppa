@@ -1,4 +1,4 @@
-version = { specific = "0.1.0-3" }
+version = { specific = "0.1.0-4" }
 dependencies = [
     "/shared/deb-latest/hyprutils.deb",
     "/shared/deb-latest/hyprlang.deb",

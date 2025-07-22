@@ -6,6 +6,7 @@ use list::List;
 use strategist::Strategist;
 use templates::Templates;
 
+mod action;
 mod args;
 mod colors;
 mod config;

@@ -100,15 +100,6 @@ pub(crate) enum Version {
     Specific(String),
 }
 
-impl Version {
-    pub(crate) fn resolve(&self) -> String {
-        match self {
-            Self::ZeroZeroTimestamp => format!("0.0.{}", chrono::Utc::now().timestamp()),
-            Self::Specific(version) => version.clone(),
-        }
-    }
-}
-
 #[derive(Deserialize, Debug)]
 pub(crate) enum Source {
     #[serde(rename = "none")]

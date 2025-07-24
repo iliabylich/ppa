@@ -2,7 +2,7 @@ use crate::commands::Command;
 use std::path::PathBuf;
 
 fn print_usage_and_exit() -> ! {
-    const USAGE: &str = r#"Usage: build-deb-package <COMMAND> <CONFIG_PATH>
+    const USAGE: &str = r#"Usage: build-deb-package <COMMAND> <CONFIG_PATH{S}>...
 
 Commands:
   parse
@@ -17,18 +17,13 @@ Commands:
     std::process::exit(1);
 }
 
-pub(crate) fn parse() -> (Command, PathBuf) {
+pub(crate) fn parse() -> (Command, Vec<PathBuf>) {
     let mut args = std::env::args();
     args.next();
 
-    let Some(arg1) = args.next() else {
-        print_usage_and_exit();
-    };
-    let cmd = Command::parse(&arg1).unwrap_or_else(|| print_usage_and_exit());
+    let cmd = args.next().unwrap_or_else(|| print_usage_and_exit());
+    let cmd = Command::parse(&cmd).unwrap_or_else(|| print_usage_and_exit());
 
-    let Some(arg2) = args.next() else {
-        print_usage_and_exit();
-    };
     let dir = if std::env::var("DOCKER").is_ok() {
         PathBuf::from("/shared")
     } else {
@@ -37,7 +32,12 @@ pub(crate) fn parse() -> (Command, PathBuf) {
             std::process::exit(1);
         })
     };
-    let path = dir.join(arg2);
 
-    (cmd, path)
+    let paths = args
+        .filter(|filename| !filename.ends_with("Cargo.toml"))
+        .filter(|filename| !filename.ends_with("config.toml"))
+        .map(|filename| dir.join(filename))
+        .collect::<Vec<_>>();
+
+    (cmd, paths)
 }

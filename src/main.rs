@@ -16,12 +16,14 @@ mod strategist;
 mod templates;
 
 fn main() -> Result<()> {
-    let (cmd, path) = args::parse();
-    let configs = parse_input(path)?;
+    let (cmd, paths) = args::parse();
 
-    for config in configs {
-        cmd.exec(config)?;
+    let mut configs = vec![];
+    for path in paths {
+        configs.append(&mut parse_input(path)?);
     }
+
+    cmd.exec_each(configs)?;
 
     Ok(())
 }

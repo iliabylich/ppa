@@ -48,3 +48,6 @@ shellcheck:
 
 bump config:
     @just run-locally bump-version-trailer {{config}}
+
+check-updates:
+    @just run-locally check-updates $(find . -name '*.toml')

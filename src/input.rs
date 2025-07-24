@@ -1,47 +1,42 @@
-use crate::{Config, List};
+use crate::Config;
 use anyhow::{Context as _, Result, bail};
+use std::path::PathBuf;
 
-#[expect(clippy::large_enum_variant)]
-#[derive(Debug)]
-pub(crate) enum Input {
-    Plural(List),
-    Singular(Config),
-}
+pub(crate) fn parse_input(path: PathBuf) -> Result<Vec<Config>> {
+    let ext = path
+        .extension()
+        .context("failed to get extension of the input file")?
+        .to_str()
+        .context("non-utf8 input file extension")?;
 
-impl Input {
-    pub(crate) fn from_env() -> Result<Self> {
-        let dir = std::env::var("BASE_CONFIGS_DIR").context("BASE_CONFIGS_DIR is not set")?;
-
-        let path = std::env::var("CONFIG_PATH").context("CONFIG_PATH is not set")?;
-
-        if path.ends_with(".list") {
-            let list = List::new(&dir, &path)?;
-            Ok(Self::Plural(list))
-        } else if path.ends_with(".toml") {
-            let config = Config::new(&dir, &path)?;
-            Ok(Self::Singular(config))
-        } else {
-            bail!("given config ({path}) is neither .list nor .toml")
-        }
-    }
-
-    pub(crate) fn expand_into_config_list(self) -> Result<Vec<Config>> {
-        match self {
-            Input::Plural(list) => list.configs(),
-            Input::Singular(config) => Ok(vec![config]),
-        }
+    match ext {
+        "list" => parse_list(path),
+        "toml" => parse_toml(path),
+        _ => bail!("input file ({path:?}) is neither .list nor .toml"),
     }
 }
 
-impl std::fmt::Display for Input {
-    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
-        write!(
-            f,
-            "{}",
-            match self {
-                Self::Plural(_) => ".list file",
-                Self::Singular(_) => ".toml file",
-            }
-        )
+fn parse_list(path: PathBuf) -> Result<Vec<Config>> {
+    let content =
+        std::fs::read_to_string(&path).with_context(|| format!("failed to open {:?}", path))?;
+
+    let mut configs = vec![];
+    for line in content.lines() {
+        let line = line.trim();
+        if line.is_empty() || line.starts_with('#') {
+            continue;
+        }
+        let path = path
+            .parent()
+            .with_context(|| format!("failed to get parent of {path:?}"))?
+            .join(line);
+        let config = Config::new(path)?;
+        configs.push(config);
     }
+
+    Ok(configs)
+}
+
+fn parse_toml(path: PathBuf) -> Result<Vec<Config>> {
+    Ok(vec![Config::new(path)?])
 }

@@ -1,8 +1,7 @@
-use anyhow::{Result, bail};
-use args::Args;
+use anyhow::Result;
+use args::Command;
 use config::Config;
-use input::Input;
-use list::List;
+use input::parse_input;
 use strategist::Strategist;
 use templates::Templates;
 
@@ -11,56 +10,43 @@ mod args;
 mod colors;
 mod config;
 mod input;
-mod list;
 mod plan;
 mod strategist;
 mod templates;
 
 fn main() -> Result<()> {
-    let args = Args::parse();
-    let input = Input::from_env()?;
+    let (cmd, path) = args::parse();
+    let configs = parse_input(path)?;
 
-    match (args, input) {
-        (Args::Parse, Input::Singular(config)) => {
-            println!("{:#?}", config);
-        }
+    for config in configs {
+        match cmd {
+            Command::Parse => {
+                println!("{:#?}", config);
+            }
 
-        (Args::Parse, Input::Plural(list)) => {
-            println!("{:#?}", list);
-        }
-
-        (Args::Explain, input) => {
-            for config in input.expand_into_config_list()? {
+            Command::Explain => {
                 let plan = Strategist::make_plan(config)?;
                 plan.explain();
             }
-        }
 
-        (Args::Build, input) => {
-            for config in input.expand_into_config_list()? {
+            Command::Build => {
                 let plan = Strategist::make_plan(config)?;
                 plan.run()?;
             }
-        }
 
-        (Args::PrintGitUrl, Input::Singular(config)) => {
-            let git_url = config.source.git_url().unwrap_or("none");
-            println!("{git_url}");
-        }
+            Command::PrintGitUrl => {
+                let git_url = config.source.git_url().unwrap_or("none");
+                println!("{git_url}");
+            }
 
-        (Args::PrintGitTagOrBranch, Input::Singular(config)) => {
-            let git_branch = config.source.git_branch_or_tag().unwrap_or("none");
-            println!("{git_branch}");
-        }
+            Command::PrintGitTagOrBranch => {
+                let git_branch = config.source.git_branch_or_tag().unwrap_or("none");
+                println!("{git_branch}");
+            }
 
-        (Args::BumpVersionTrailer, input) => {
-            for config in input.expand_into_config_list()? {
+            Command::BumpVersionTrailer => {
                 config.bump_version_trailer()?;
             }
-        }
-
-        (args, input) => {
-            bail!("can't run {args:?} on '{input}'")
         }
     }
 

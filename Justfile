@@ -13,24 +13,25 @@ container-rebuild:
 container-sh:
     podman run --rm -it -v $PWD:/shared --entrypoint bash ppa-builder
 
-container-run command config_path:
+run-in-container *command:
     podman run --rm \
-        -e BASE_CONFIGS_DIR="/shared" \
-        -e CONFIG_PATH="{{ config_path }}" \
         -t \
         -v "$PWD:/shared" \
         --entrypoint "/bin/build-deb-package" \
         ppa-builder \
         {{command}}
 
-build config_path:
-    @just container-run build {{config_path}}
+run-locally *command:
+    cargo run -- {{command}}
 
-parse config_path:
-    @just container-run parse {{config_path}}
+build config:
+    @just run-in-container build {{config}}
 
-explain config_path:
-    @just container-run explain {{config_path}}
+parse config:
+    @just run-in-container parse {{config}}
+
+explain config:
+    @just run-in-container explain {{config}}
 
 gh-upload *args:
     ./scripts/gh-upload.sh {{args}}
@@ -45,5 +46,5 @@ unpack debfile:
 shellcheck:
     shellcheck -x **/*.sh
 
-bump config_path:
-    BASE_CONFIGS_DIR=$PWD CONFIG_PATH={{config_path}} cargo run -- bump-version-trailer
+bump config:
+    @just run-locally bump-version-trailer {{config}}

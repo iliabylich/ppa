@@ -1,33 +1,5 @@
-use anyhow::bail;
-use std::{path::PathBuf, str::FromStr};
-
-#[derive(Debug)]
-pub(crate) enum Command {
-    Parse,
-    Explain,
-    Build,
-
-    PrintGitUrl,
-    PrintGitTagOrBranch,
-
-    BumpVersionTrailer,
-}
-
-impl FromStr for Command {
-    type Err = anyhow::Error;
-
-    fn from_str(s: &str) -> Result<Self, Self::Err> {
-        Ok(match s {
-            "parse" => Self::Parse,
-            "explain" => Self::Explain,
-            "build" => Self::Build,
-            "print-git-url" => Self::PrintGitUrl,
-            "print-git-tag-or-branch" => Self::PrintGitTagOrBranch,
-            "bump-version-trailer" => Self::BumpVersionTrailer,
-            other => bail!("unknown command {other:?}"),
-        })
-    }
-}
+use crate::commands::Command;
+use std::path::PathBuf;
 
 fn print_usage_and_exit() -> ! {
     const USAGE: &str = r#"Usage: build-deb-package <COMMAND> <CONFIG_PATH>
@@ -52,10 +24,7 @@ pub(crate) fn parse() -> (Command, PathBuf) {
     let Some(arg1) = args.next() else {
         print_usage_and_exit();
     };
-    let cmd = Command::from_str(&arg1).unwrap_or_else(|err| {
-        eprintln!("{err:?}");
-        print_usage_and_exit()
-    });
+    let cmd = Command::parse(&arg1).unwrap_or_else(|| print_usage_and_exit());
 
     let Some(arg2) = args.next() else {
         print_usage_and_exit();

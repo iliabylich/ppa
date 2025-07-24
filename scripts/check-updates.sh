@@ -41,14 +41,14 @@ get_latest_remote_tag() {
 
 for dir in . hypr; do
     for config_path in "$dir"/*.toml; do
-        if [[ "$config_path" == "./Cargo.toml" ]]; then
+        if [[ "$config_path" == "./Cargo.toml" ]] || [[ "$config_path" == "./config.toml" ]]; then
             continue
         fi
 
         echo
 
-        git_url="$(BASE_CONFIGS_DIR="$PWD" CONFIG_PATH=$config_path $EXE print-git-url)"
-        git_tag_or_branch="$(BASE_CONFIGS_DIR="$PWD" CONFIG_PATH=$config_path $EXE print-git-tag-or-branch)"
+        git_url="$($EXE print-git-url $config_path)"
+        git_tag_or_branch="$($EXE print-git-tag-or-branch $config_path)"
 
         if [[ "$git_url" == "none" ]]; then
             info "skipping, no git url"

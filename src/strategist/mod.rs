@@ -44,7 +44,7 @@ impl Strategist {
 
         let mut plan = Plan::new(env, path);
 
-        let version = resolve_version(version);
+        let version = resolve_version(version)?;
         let build_dir = format!("/build/{}-{}", package_name, version);
         let templates = Templates::new()?;
 

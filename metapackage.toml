@@ -109,6 +109,7 @@ dependencies = [
     "iputils-ping",
     "x11-utils",
     "parallel",
+    "fzf",
 
     # Libs
     "libjemalloc-dev",

@@ -5,9 +5,12 @@ edition = "2024"
 
 [dependencies]
 serde = { version = "1", features = ["derive"] }
-toml = { version = "0.8", default-features = false, features = ["parse"] }
+toml = { version = "0.9", default-features = false, features = [
+    "parse",
+    "serde",
+] }
 anstyle = "1.0"
-upon = { version = "0.9", default-features = false, features = ["serde"] }
+upon = { version = "0.10", default-features = false, features = ["serde"] }
 anyhow = "1"
 toml_edit = "0.23"
-rayon = "1.10.0"
+rayon = "1.10"

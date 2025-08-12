@@ -5,7 +5,7 @@ set -eux
 apt update
 
 apt install --no-install-recommends -y nala
-nala install --assume-yes wget curl git debhelper cmake pkg-config jq g++ ca-certificates
+nala install --assume-yes wget curl git debhelper cmake pkg-config jq g++ ca-certificates meson
 update-ca-certificates
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | bash -s -- --profile minimal -y

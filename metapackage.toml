@@ -16,7 +16,7 @@ dependencies = [
     "gnome-system-monitor",
 
     # UI apps
-    # "flatpak",
+    "flatpak",
     "localsend",
     # "blanket",
     # "mpv",
@@ -29,7 +29,7 @@ dependencies = [
     # "file-roller",
     # "obfuscate",
     # "zenity",
-    # "ghostty",
+    "ghostty",
     # "spot",
     "wezterm",
 
@@ -138,6 +138,7 @@ dependencies = [
     "fonts-adwaita-mono-nerd",
     "fonts-apple-color-emoji",
     "mpclipboard-client",
+    "libinput-tools",
 
     # Hyprland
     "hyprland",
@@ -160,11 +161,12 @@ dependencies = [
     "xdg-desktop-portal-hyprland",
     "unsplash-wallpaper",
     "matugen",
-    "hyprspace",
+    "hyprland-plugins",
     "bluez",
     "fuzzel",
     "iwmenu",
     "bzmenu",
+    "waybar",
 ]
 
 [debian.rules]

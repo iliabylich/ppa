@@ -73,7 +73,10 @@ impl Templates {
         }
 
         out.push("override_dh_auto_test:".to_string());
-        out.push("\techo \"skip\"".to_string());
+        out.push("\t@true".to_string());
+
+        out.push("override_dh_strip:".to_string());
+        out.push("\t@true".to_string());
 
         for (target, lines) in targets {
             out.push(format!("{target}:"));

@@ -1,4 +1,4 @@
-version = { specific = "0.6.4-1" }
+version = { specific = "0.6.4-2" }
 dependencies = ["meson"]
 arch = "amd64"
 
@@ -17,8 +17,8 @@ dependencies = ["${shlibs:Depends}"]
 [debian.rules]
 "%" = ["dh $@"]
 override_dh_auto_configure = ["meson setup build"]
-override_dh_auto_build = ["true"]
+override_dh_auto_build = ["@true"]
 override_dh_auto_install = [
     "meson install -C build --destdir=$$PWD/debian/hyprland-protocols",
 ]
-override_dh_usrlocal = ["true"]
+override_dh_usrlocal = ["@true"]

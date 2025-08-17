@@ -1,8 +1,9 @@
-version = { specific = "1.3.9-4" }
+version = { specific = "1.3.10" }
 dependencies = [
     "/shared/deb-latest/hyprutils.deb",
     "/shared/deb-latest/hyprlang.deb",
     "/shared/deb-latest/hyprwayland-scanner.deb",
+    "/shared/deb-latest/hyprland-protocols.deb",
 
     "qt6-base-dev",
     "libwayland-dev",
@@ -18,7 +19,7 @@ arch = "amd64"
 
 [source.git-clone]
 url = "https://github.com/hyprwm/xdg-desktop-portal-hyprland.git"
-branch_or_tag = "v1.3.9"
+branch_or_tag = "v1.3.10"
 
 [debian]
 changelog = true
@@ -29,11 +30,10 @@ description = "xdg-desktop-portal backend for Hyprland"
 dependencies = ["${shlibs:Depends}"]
 
 [debian.rules]
-override_dh_auto_configure = ["echo skip"]
-override_dh_auto_build = [
+override_dh_auto_configure = [
     "cmake -DCMAKE_INSTALL_LIBEXECDIR=/usr/lib -DCMAKE_INSTALL_PREFIX=/usr -B build",
-    "cmake --build build -j `nproc`",
 ]
+override_dh_auto_build = ["cmake --build build -j `nproc`"]
 override_dh_auto_install = [
     "DESTDIR=debian/xdg-desktop-portal-hyprland cmake --install build",
 ]

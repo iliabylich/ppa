@@ -1,4 +1,4 @@
-version = { specific = "0.50.1" }
+version = { specific = "0.50.1-1" }
 dependencies = [
     "/shared/deb-latest/hyprutils.deb",
     "/shared/deb-latest/aquamarine.deb",
@@ -62,4 +62,4 @@ override_dh_auto_install = [
     "cmake --install build --prefix debian/hyprland/usr",
     "rm debian/hyprland/usr/share/hypr/wall*.png",
 ]
-override_dh_usrlocal = ["true"]
+override_dh_usrlocal = ["@true"]

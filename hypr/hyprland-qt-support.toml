@@ -1,4 +1,4 @@
-version = { specific = "0.1.0-4" }
+version = { specific = "0.1.0-5" }
 dependencies = [
     "/shared/deb-latest/hyprutils.deb",
     "/shared/deb-latest/hyprlang.deb",
@@ -22,9 +22,10 @@ description = "A qml style provider for hypr* qt apps"
 dependencies = ["${shlibs:Depends}"]
 
 [debian.rules]
-override_dh_auto_configure = ["echo skip"]
-override_dh_auto_build = [
+override_dh_auto_configure = [
     "cmake --no-warn-unused-cli -DCMAKE_BUILD_TYPE:STRING=Release -DCMAKE_INSTALL_PREFIX:PATH=/usr -DINSTALL_QML_PREFIX=/lib/qt6/qml -S . -B ./build",
+]
+override_dh_auto_build = [
     "cmake --build ./build --config Release --target all -j`nproc`",
 ]
 override_dh_auto_install = [

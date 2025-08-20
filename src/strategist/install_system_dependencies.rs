@@ -1,18 +1,11 @@
-use crate::{action::Action, plan::Plan};
+use crate::{action::macros::cmd, plan::Plan};
 
 pub(crate) fn install_system_dependencies(plan: &mut Plan, dependencies: Vec<String>) {
     if dependencies.is_empty() {
         return;
     }
 
-    plan.push(Action::cmd().exe("apt").arg("update").finish());
+    plan.push(cmd!("apt", "update"));
 
-    plan.push(
-        Action::cmd()
-            .exe("apt")
-            .arg("install")
-            .arg("-y")
-            .args(dependencies)
-            .finish(),
-    );
+    plan.push(cmd!("apt", "install", "-y", dependencies));
 }

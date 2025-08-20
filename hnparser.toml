@@ -4,7 +4,7 @@ arch = "amd64"
 
 [source.git-clone]
 url = "https://github.com/iliabylich/hn-parser.git"
-branch_or_tag = "master"
+branch-or-tag = "master"
 
 [debian]
 changelog = true

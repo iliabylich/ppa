@@ -1,10 +1,10 @@
-version = { specific = "0.4.5-1" }
+version = "0.4.5-1"
 dependencies = ["libpugixml-dev"]
 arch = "amd64"
 
 [source.git-clone]
 url = "https://github.com/hyprwm/hyprwayland-scanner.git"
-branch_or_tag = "v0.4.5"
+branch-or-tag = "v0.4.5"
 
 [debian]
 changelog = true

@@ -1,10 +1,10 @@
-version = { specific = "2.80.0" }
+version = "2.80.0"
 dependencies = []
 arch = "amd64"
 
 [source.git-clone]
 url = "https://github.com/bulletmark/libinput-gestures.git"
-branch_or_tag = "2.80"
+branch-or-tag = "2.80"
 
 [debian]
 changelog = true

@@ -1,4 +1,4 @@
-version = { specific = "18.4" }
+version = "18.4"
 dependencies = ["wget"]
 arch = "all"
 

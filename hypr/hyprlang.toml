@@ -1,10 +1,10 @@
-version = { specific = "0.6.4" }
+version = "0.6.4"
 dependencies = ["/shared/deb-latest/hyprutils.deb"]
 arch = "amd64"
 
 [source.git-clone]
 url = "https://github.com/hyprwm/hyprlang.git"
-branch_or_tag = "v0.6.4"
+branch-or-tag = "v0.6.4"
 
 [debian]
 changelog = true

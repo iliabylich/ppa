@@ -1,27 +1,18 @@
-use crate::{action::Action, plan::Plan, templates::Templates};
-use anyhow::Result;
+use crate::{
+    action::macros::{cmd, write_file},
+    plan::Plan,
+};
 
-pub(crate) fn write_changelog(
-    plan: &mut Plan,
-    build_dir: &str,
-    package_name: &str,
-    version: &str,
-    templates: &Templates,
-) -> Result<()> {
-    plan.push(
-        Action::cmd()
-            .exe("mkdir")
-            .arg("-p")
-            .arg(format!("{build_dir}/debian"))
-            .finish(),
-    );
+pub(crate) fn write_changelog(plan: &mut Plan, build_dir: &str, package_name: &str, version: &str) {
+    plan.push(cmd!("mkdir", "-p", format!("{build_dir}/debian")));
 
-    let contents = templates.changelog(package_name, version)?;
-    plan.push(
-        Action::write()
-            .path(format!("{build_dir}/debian/changelog"))
-            .contents(contents),
-    );
+    plan.push(write_file!(
+        format!("{build_dir}/debian/changelog"),
+        "{package_name} ({version}) unstable; urgency=low
 
-    Ok(())
+  * Release
+
+ -- John Doe <john@doe.org>  Wed, 22 May 2024 17:54:24 +0000
+"
+    ));
 }

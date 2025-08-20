@@ -1,4 +1,4 @@
-version = { specific = "1.1.5" }
+version = "1.1.5"
 dependencies = [
     "libz-dev",
     "libgl-dev",
@@ -10,7 +10,7 @@ arch = "amd64"
 
 [source.git-clone]
 url = "https://github.com/zigalenarcic/mangl.git"
-branch_or_tag = "v1.1.5"
+branch-or-tag = "v1.1.5"
 
 [debian]
 changelog = true

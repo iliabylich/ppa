@@ -1,8 +1,3 @@
-use crate::{
-    action::Exec,
-    colors::{GREEN, NC},
-};
-use anyhow::{Context as _, Result, bail};
 use std::{
     collections::HashMap,
     io::{BufRead as _, BufReader},
@@ -11,18 +6,12 @@ use std::{
 
 #[derive(Debug)]
 pub(crate) struct Cmd {
-    exe: String,
-    args: Vec<String>,
+    pub(crate) exe: String,
+    pub(crate) args: Vec<String>,
 }
 
 impl Cmd {
-    pub(crate) fn new(exe: String, args: Vec<String>) -> Self {
-        Self { exe, args }
-    }
-}
-
-impl Exec for Cmd {
-    fn exec(&self, env: &HashMap<String, String>, path: &[String]) -> Result<()> {
+    pub(crate) fn exec(&self, env: &HashMap<String, String>, path: &[String]) {
         let mut command = std::process::Command::new(&self.exe);
 
         let mut new_path = std::env::var("PATH").unwrap();
@@ -58,10 +47,12 @@ impl Exec for Cmd {
             }
         });
 
-        let status = child.wait().context("failed to wait on child")?;
+        let status = child
+            .wait()
+            .unwrap_or_else(|err| error!(err = err, "failed to wait on child"));
 
         if !status.success() {
-            bail!(
+            error!(
                 "failed to execute {} {:?}\nstatus code: {:?}",
                 self.exe,
                 self.args,
@@ -71,11 +62,9 @@ impl Exec for Cmd {
 
         stdout_thread.join().unwrap();
         stderr_thread.join().unwrap();
-
-        Ok(())
     }
 
-    fn explanation(&self) -> String {
-        format!("{GREEN}{} {}{NC}", self.exe, self.args.join(" "))
+    pub(crate) fn explain(&self) {
+        green!("{} {}", self.exe, self.args.join(" "))
     }
 }

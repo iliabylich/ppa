@@ -1,10 +1,10 @@
-version = { specific = "1.0.2" }
+version = "1.0.2"
 dependencies = ["libgtk-4-dev", "meson"]
 arch = "amd64"
 
 [source.git-clone]
 url = "https://github.com/iliabylich/gaskpass.git"
-branch_or_tag = "v1.0.2"
+branch-or-tag = "v1.0.2"
 
 [debian]
 changelog = true

@@ -1,4 +1,4 @@
-version = { specific = "0.5.0" }
+version = "0.5.0"
 dependencies = [
     "libgtk-4-dev",
     "libadwaita-1-dev",
@@ -17,7 +17,7 @@ arch = "amd64"
 
 [source.git-clone]
 url = "https://github.com/xou816/spot.git"
-branch_or_tag = "0.5.0"
+branch-or-tag = "0.5.0"
 
 [debian]
 changelog = true

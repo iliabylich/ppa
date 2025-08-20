@@ -1,4 +1,4 @@
-version = { specific = "0.9.2-1" }
+version = "0.9.2-1"
 dependencies = [
     "/shared/deb-latest/hyprwayland-scanner.deb",
     "/shared/deb-latest/hyprutils.deb",
@@ -21,7 +21,7 @@ arch = "amd64"
 
 [source.git-clone]
 url = "https://github.com/hyprwm/aquamarine.git"
-branch_or_tag = "v0.9.2"
+branch-or-tag = "v0.9.2"
 
 [debian]
 changelog = true

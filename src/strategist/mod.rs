@@ -1,12 +1,10 @@
-use crate::{Config, Templates, plan::Plan};
-use anyhow::Result;
+use crate::{config::Config, plan::Plan};
 use build_deb_package::build_deb_package;
 use copy_deb::copy_deb;
 use fetch_source::fetch_source;
 use install_binstall_dependencies::install_binstall_dependencies;
 use install_system_dependencies::install_system_dependencies;
 use parallelize_build::parallelize_build;
-use resolve_version::resolve_version;
 use write_changelog::write_changelog;
 use write_compat::write_compat;
 use write_control::write_control;
@@ -18,16 +16,15 @@ mod fetch_source;
 mod install_binstall_dependencies;
 mod install_system_dependencies;
 mod parallelize_build;
-mod resolve_version;
 mod write_changelog;
 mod write_compat;
 mod write_control;
 mod write_rules;
 
-pub(crate) struct Strategist;
+pub struct Strategist;
 
 impl Strategist {
-    pub(crate) fn make_plan(config: Config) -> Result<Plan> {
+    pub fn make_plan(config: Config) -> Plan {
         let Config {
             package_name,
             filepath: _filepath,
@@ -44,33 +41,17 @@ impl Strategist {
 
         let mut plan = Plan::new(env, path);
 
-        let version = resolve_version(version)?;
+        let version = version.resolve();
         let build_dir = format!("/build/{}-{}", package_name, version);
-        let templates = Templates::new()?;
 
-        parallelize_build(&mut plan)?;
+        parallelize_build(&mut plan);
         install_system_dependencies(&mut plan, dependencies);
         install_binstall_dependencies(&mut plan, binstall);
         fetch_source(&mut plan, source, &build_dir);
-        if debian.changelog {
-            write_changelog(&mut plan, &build_dir, &package_name, &version, &templates)?;
-        }
-        if let Some(compat) = debian.compat {
-            write_compat(&mut plan, &build_dir, compat, &templates)?;
-        }
-        if let Some(control) = debian.control {
-            write_control(
-                &mut plan,
-                &build_dir,
-                &package_name,
-                &arch,
-                control,
-                &templates,
-            )?;
-        }
-        if let Some(targets) = debian.rules {
-            write_rules(&mut plan, &build_dir, targets, &templates)?;
-        }
+        write_changelog(&mut plan, &build_dir, &package_name, &version);
+        write_compat(&mut plan, &build_dir);
+        write_control(&mut plan, &build_dir, &package_name, &arch, debian.control);
+        write_rules(&mut plan, &build_dir, debian.rules);
         build_deb_package(&mut plan, &build_dir);
         copy_deb(&mut plan, &package_name, &version, &arch);
 
@@ -78,6 +59,6 @@ impl Strategist {
             copy_deb(&mut plan, &package_name, &version, &arch);
         }
 
-        Ok(plan)
+        plan
     }
 }

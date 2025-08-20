@@ -11,8 +11,8 @@ arch = "amd64"
 
 [source.git-clone]
 url = "https://github.com/iliabylich/layer-shell.git"
-branch_or_tag = "master"
-post_clone_scripts = [
+branch-or-tag = "master"
+post-clone-scripts = [
     "wget https://github.com/mozilla/cbindgen/releases/download/0.28.0/cbindgen -O /bin/cbindgen",
     "chmod +x /bin/cbindgen",
 ]

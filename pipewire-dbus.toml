@@ -1,10 +1,10 @@
-version = { specific = "3.0.1" }
+version = "3.0.1"
 dependencies = ["libpipewire-0.3-dev", "libclang1", "clang", "meson"]
 arch = "amd64"
 
 [source.git-clone]
 url = "https://github.com/iliabylich/pipewire-dbus.git"
-branch_or_tag = "v3.0.1"
+branch-or-tag = "v3.0.1"
 
 [debian]
 changelog = true

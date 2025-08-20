@@ -1,10 +1,10 @@
-version = { specific = "0.23.0" }
+version = "0.23.0"
 dependencies = ["meson", "dh-python", "python3-xdg", "python3-dbus", "scdoc"]
 arch = "all"
 
 [source.git-clone]
 url = "https://github.com/Vladimir-csp/uwsm.git"
-branch_or_tag = "v0.23.0"
+branch-or-tag = "v0.23.0"
 
 [debian]
 changelog = true

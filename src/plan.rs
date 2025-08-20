@@ -1,12 +1,8 @@
-use crate::{
-    action::{Action, Exec},
-    colors::{GREEN, NC, YELLOW},
-};
-use anyhow::Result;
+use crate::{action::Action, green, yellow};
 use std::collections::HashMap;
 
 #[derive(Debug)]
-pub(crate) struct Plan {
+pub struct Plan {
     actions: Vec<Action>,
     env: HashMap<String, String>,
     path: Vec<String>,
@@ -29,32 +25,32 @@ impl Plan {
         self.actions.push(action);
     }
 
-    pub(crate) fn explain(self) {
+    pub fn explain(self) {
         if !self.env.is_empty() {
-            println!("{GREEN}ENV:{NC}");
+            green!("ENV:");
             for (key, val) in self.env {
-                println!("{YELLOW}{key}={val}{NC}");
+                yellow!("{key}={val}");
             }
-            println!();
+            eprintln!();
         }
 
         if !self.path.is_empty() {
-            println!("{GREEN}PATH (additional):{NC}");
+            green!("PATH (additional):");
             for path in self.path {
-                println!("{YELLOW}{path}{NC}");
+                yellow!("{path}");
             }
-            println!();
+            eprintln!();
         }
 
         for action in self.actions {
-            println!("{}\n", action.explanation());
+            action.explain();
         }
     }
 
-    pub(crate) fn run(self) -> Result<()> {
-        for script in self.actions {
-            script.exec(&self.env, &self.path)?;
+    pub fn run(self) {
+        for action in self.actions {
+            action.explain();
+            action.exec(&self.env, &self.path);
         }
-        Ok(())
     }
 }

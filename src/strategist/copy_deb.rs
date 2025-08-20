@@ -1,28 +1,18 @@
-use crate::{action::Action, plan::Plan};
+use crate::{action::macros::cmd, plan::Plan};
 
 pub(crate) fn copy_deb(plan: &mut Plan, package_name: &str, version: &str, arch: &str) {
     let filename = format!("{package_name}_{version}_{arch}.deb");
 
-    plan.push(
-        Action::cmd()
-            .exe("cp")
-            .arg(format!("/build/{filename}"))
-            .arg(format!("/shared/{filename}"))
-            .finish(),
-    );
+    plan.push(cmd!(
+        "cp",
+        format!("/build/{filename}"),
+        format!("/shared/{filename}")
+    ));
 
-    plan.push(
-        Action::cmd()
-            .exe("mkdir")
-            .arg("-p")
-            .arg("/shared/deb-latest")
-            .finish(),
-    );
-    plan.push(
-        Action::cmd()
-            .exe("cp")
-            .arg(format!("/build/{filename}"))
-            .arg(format!("/shared/deb-latest/{package_name}.deb"))
-            .finish(),
-    );
+    plan.push(cmd!("mkdir", "-p", "/shared/deb-latest"));
+    plan.push(cmd!(
+        "cp",
+        format!("/build/{filename}"),
+        format!("/shared/deb-latest/{package_name}.deb")
+    ));
 }

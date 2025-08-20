@@ -1,4 +1,4 @@
-version = { specific = "4.0.0" }
+version = "4.0.0"
 dependencies = [
     "meson",
     "ninja-build",
@@ -13,7 +13,7 @@ arch = "amd64"
 
 [source.git-clone]
 url = "https://gitlab.gnome.org/GNOME/gnome-terminal.git"
-branch_or_tag = "master"
+branch-or-tag = "master"
 
 [debian]
 changelog = true

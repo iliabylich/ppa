@@ -1,5 +1,8 @@
-use crate::{action::Action, config::Control, plan::Plan, templates::Templates};
-use anyhow::Result;
+use crate::{
+    action::macros::{cmd, write_file},
+    config::Control,
+    plan::Plan,
+};
 
 pub(crate) fn write_control(
     plan: &mut Plan,
@@ -7,27 +10,26 @@ pub(crate) fn write_control(
     package_name: &str,
     arch: &str,
     control: Control,
-    templates: &Templates,
-) -> Result<()> {
-    plan.push(
-        Action::cmd()
-            .exe("mkdir")
-            .arg("-p")
-            .arg(format!("{build_dir}/debian"))
-            .finish(),
-    );
+) {
+    plan.push(cmd!("mkdir", "-p", format!("{build_dir}/debian")));
 
-    let contents = templates.control(
-        package_name,
-        arch,
-        &control.dependencies,
-        &control.description,
-    )?;
-    plan.push(
-        Action::write()
-            .path(format!("{build_dir}/debian/control"))
-            .contents(contents),
-    );
+    let dependencies = control.dependencies.join(", ");
+    let description = &control.description;
 
-    Ok(())
+    plan.push(write_file!(
+        format!("{build_dir}/debian/control"),
+        "Source: {package_name}
+Section: utils
+Priority: extra
+Maintainer: John Doe <john@doe.org>
+Standards-Version: 4.6.2
+
+Package: {package_name}
+Section: utils
+Priority: extra
+Architecture: {arch}
+Depends: {dependencies}
+Description: {description}
+",
+    ));
 }

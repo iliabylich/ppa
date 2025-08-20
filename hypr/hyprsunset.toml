@@ -1,4 +1,4 @@
-version = { specific = "0.3.2" }
+version = "0.3.2"
 dependencies = [
     "/shared/deb-latest/hyprlang.deb",
     "/shared/deb-latest/hyprutils.deb",
@@ -12,7 +12,7 @@ arch = "amd64"
 
 [source.git-clone]
 url = "https://github.com/hyprwm/hyprsunset.git"
-branch_or_tag = "v0.3.2"
+branch-or-tag = "v0.3.2"
 
 [debian]
 changelog = true

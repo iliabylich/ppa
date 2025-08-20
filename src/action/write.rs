@@ -1,6 +1,6 @@
 use crate::{
     action::Exec,
-    colors::{RESET, YELLOW},
+    colors::{NC, YELLOW},
 };
 use anyhow::{Context as _, Result};
 use std::collections::HashMap;
@@ -24,9 +24,6 @@ impl Exec for Write {
     }
 
     fn explanation(&self) -> String {
-        format!(
-            "{YELLOW}Writing to {}:{RESET}\n{}",
-            self.path, self.contents
-        )
+        format!("{YELLOW}Writing to {}:{NC}\n{}", self.path, self.contents)
     }
 }

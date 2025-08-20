@@ -1,6 +1,6 @@
 use crate::{
     action::{Action, Exec},
-    colors::{GREEN, RESET, YELLOW},
+    colors::{GREEN, NC, YELLOW},
 };
 use anyhow::Result;
 use std::collections::HashMap;
@@ -31,17 +31,17 @@ impl Plan {
 
     pub(crate) fn explain(self) {
         if !self.env.is_empty() {
-            println!("{GREEN}ENV:{RESET}");
+            println!("{GREEN}ENV:{NC}");
             for (key, val) in self.env {
-                println!("{YELLOW}{key}={val}{RESET}");
+                println!("{YELLOW}{key}={val}{NC}");
             }
             println!();
         }
 
         if !self.path.is_empty() {
-            println!("{GREEN}PATH (additional):{RESET}");
+            println!("{GREEN}PATH (additional):{NC}");
             for path in self.path {
-                println!("{YELLOW}{path}{RESET}");
+                println!("{YELLOW}{path}{NC}");
             }
             println!();
         }

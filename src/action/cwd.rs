@@ -1,6 +1,6 @@
 use crate::{
     action::Exec,
-    colors::{GREEN, RESET},
+    colors::{GREEN, NC},
 };
 use anyhow::{Context as _, Result};
 use std::collections::HashMap;
@@ -23,6 +23,6 @@ impl Exec for Cwd {
     }
 
     fn explanation(&self) -> String {
-        format!("{GREEN}cwd {}{RESET}", self.dir)
+        format!("{GREEN}cwd {}{NC}", self.dir)
     }
 }

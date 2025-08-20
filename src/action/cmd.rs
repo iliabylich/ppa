@@ -1,6 +1,6 @@
 use crate::{
     action::Exec,
-    colors::{GREEN, RESET},
+    colors::{GREEN, NC},
 };
 use anyhow::{Context as _, Result, bail};
 use std::{
@@ -76,6 +76,6 @@ impl Exec for Cmd {
     }
 
     fn explanation(&self) -> String {
-        format!("{GREEN}{} {}{RESET}", self.exe, self.args.join(" "))
+        format!("{GREEN}{} {}{NC}", self.exe, self.args.join(" "))
     }
 }

@@ -1,10 +1,4 @@
-pub(crate) const RESET: anstyle::Reset = anstyle::Reset;
-pub(crate) const GREEN: anstyle::Style = anstyle::Style::new()
-    .bold()
-    .fg_color(Some(anstyle::Color::Ansi(anstyle::AnsiColor::Green)));
-pub(crate) const YELLOW: anstyle::Style = anstyle::Style::new()
-    .bold()
-    .fg_color(Some(anstyle::Color::Ansi(anstyle::AnsiColor::Yellow)));
-pub(crate) const RED: anstyle::Style = anstyle::Style::new()
-    .bold()
-    .fg_color(Some(anstyle::Color::Ansi(anstyle::AnsiColor::Red)));
+pub const NC: &str = "\x1b[0m";
+pub const GREEN: &str = "\x1b[0;32m";
+pub const YELLOW: &str = "\x1b[0;33m";
+pub const RED: &str = "\x1b[0;31m";

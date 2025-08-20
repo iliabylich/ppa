@@ -1,5 +1,5 @@
 use crate::{
-    colors::{GREEN, RED, RESET, YELLOW},
+    colors::{GREEN, RED, NC, YELLOW},
     commands::CommandExec,
     config::{Config, Source},
 };
@@ -38,15 +38,15 @@ fn exec(config: &Config) -> Vec<String> {
     } = &config.source
     else {
         out.push(format!(
-            "[{package}] {GREEN}skipping, not a git source{RESET}"
+            "[{package}] {GREEN}skipping, not a git source{NC}"
         ));
         return out;
     };
 
-    out.push(format!("[{package}] {YELLOW}GitHub: {url}{RESET}"));
+    out.push(format!("[{package}] {YELLOW}GitHub: {url}{NC}"));
     if !branch_or_tag.bytes().any(|b| b.is_ascii_digit()) {
         out.push(format!(
-            "[{package}] {GREEN}skipping, non-numeric version {branch_or_tag}{RESET}"
+            "[{package}] {GREEN}skipping, non-numeric version {branch_or_tag}{NC}"
         ));
         return out;
     }
@@ -57,7 +57,7 @@ fn exec(config: &Config) -> Vec<String> {
             Ok(version) => version,
             Err(err2) => {
                 out.push(format!(
-                    "[{package}] {RED}failed to retrieve version{RESET}"
+                    "[{package}] {RED}failed to retrieve version{NC}"
                 ));
                 out.push(format!("[{package}] Release check error: {err1:?}"));
                 out.push(format!("[{package}] Tag check error: {err2:?}"));
@@ -67,14 +67,14 @@ fn exec(config: &Config) -> Vec<String> {
     };
 
     out.push(format!(
-        "[{package}] {YELLOW}Latest remote tag: {remote_version}{RESET}"
+        "[{package}] {YELLOW}Latest remote tag: {remote_version}{NC}"
     ));
 
     if &remote_version == branch_or_tag {
-        out.push(format!("[{package}] {GREEN}NO UPDATES{RESET}"));
+        out.push(format!("[{package}] {GREEN}NO UPDATES{NC}"));
     } else {
         out.push(format!(
-            "[{package}] {RED}UPDATE AVAILABLE {branch_or_tag} -> {remote_version}{RESET}"
+            "[{package}] {RED}UPDATE AVAILABLE {branch_or_tag} -> {remote_version}{NC}"
         ));
     }
 

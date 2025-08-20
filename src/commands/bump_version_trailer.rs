@@ -1,5 +1,5 @@
 use crate::{
-    colors::{GREEN, RESET, YELLOW},
+    colors::{GREEN, NC, YELLOW},
     commands::CommandExec,
     config::{Config, Version},
 };
@@ -16,7 +16,7 @@ impl CommandExec for BumpVersionTrailer {
 
         let Version::Specific(version) = config.version else {
             println!(
-                "[{package}] {YELLOW}Skipping, it has monotonically incrementing version{RESET}"
+                "[{package}] {YELLOW}Skipping, it has monotonically incrementing version{NC}"
             );
             return Ok(());
         };
@@ -32,7 +32,7 @@ impl CommandExec for BumpVersionTrailer {
             .parse::<DocumentMut>()
             .with_context(|| format!("failed to parse {path:?}"))?;
 
-        println!("[{package}] {GREEN}Bumping {version} -> {new_version}{RESET}");
+        println!("[{package}] {GREEN}Bumping {version} -> {new_version}{NC}");
 
         doc["version"]["specific"] = toml_edit::value(new_version);
 

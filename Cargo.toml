@@ -9,7 +9,6 @@ toml = { version = "0.9", default-features = false, features = [
     "parse",
     "serde",
 ] }
-anstyle = "1.0"
 upon = { version = "0.10", default-features = false, features = ["serde"] }
 anyhow = "1"
 toml_edit = "0.23"

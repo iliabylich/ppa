@@ -90,6 +90,25 @@ impl Config {
 
         Self::from_toml(&toml, package_name, path)
     }
+
+    pub fn into_git_repo_and_version(self) -> Option<(String, String)> {
+        let Source::GitClone(GitClone {
+            url, branch_or_tag, ..
+        }) = self.source
+        else {
+            return None;
+        };
+
+        let repo = url
+            .strip_prefix("https://github.com/")?
+            .strip_suffix(".git")?;
+
+        if branch_or_tag.bytes().all(|byte| !byte.is_ascii_digit()) {
+            return None;
+        }
+
+        Some((repo.to_string(), branch_or_tag))
+    }
 }
 
 #[derive(Debug)]

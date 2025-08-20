@@ -8,4 +8,5 @@ pub mod strategist;
 pub mod macros;
 
 mod action;
+mod list;
 mod toml;

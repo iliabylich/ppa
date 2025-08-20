@@ -1,4 +1,4 @@
-use crate::error;
+use crate::{error, list::List};
 use std::path::PathBuf;
 
 fn dir_from_env() -> PathBuf {
@@ -14,13 +14,33 @@ fn dir_from_env() -> PathBuf {
 
 pub fn paths_from_args() -> Vec<PathBuf> {
     let dir = dir_from_env();
+    let mut paths = vec![];
 
-    let paths = std::env::args()
-        .skip(1)
-        .filter(|filename| !filename.ends_with("Cargo.toml"))
-        .filter(|filename| !filename.ends_with("config.toml"))
-        .map(|filename| dir.join(filename))
-        .collect::<Vec<_>>();
+    for filename in std::env::args().skip(1) {
+        let path = dir.join(filename);
+
+        if path.ends_with("Cargo.toml") || path.ends_with("config.toml") {
+            continue;
+        }
+
+        let ext = path
+            .extension()
+            .unwrap_or_else(|| error!("failed to determine extension of {path:?}"))
+            .to_str()
+            .unwrap_or_else(|| error!("non-utf8 extension of {path:?}"))
+            .to_string();
+
+        match ext.as_str() {
+            "toml" => paths.push(path),
+            "list" => {
+                println!("reading list");
+                for inner in List::read(path) {
+                    paths.push(inner);
+                }
+            }
+            _ => error!("unsupported input file extension {ext}"),
+        }
+    }
 
     if paths.is_empty() {
         error!("No paths given, exiting");

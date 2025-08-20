@@ -1,7 +1,7 @@
 use crate::{error, toml::TomlValueWithPath};
 
 #[derive(Debug)]
-pub(crate) enum Version {
+pub enum Version {
     ZeroZeroTimestamp,
     Specific(String),
 }

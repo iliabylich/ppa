@@ -5,10 +5,8 @@ fn dir_from_env() -> PathBuf {
     if std::env::var("DOCKER").is_ok() {
         PathBuf::from("/shared")
     } else {
-        std::env::current_dir().unwrap_or_else(|err| {
-            eprintln!("{err:?}");
-            std::process::exit(1);
-        })
+        std::env::current_dir()
+            .unwrap_or_else(|err| error!(err = err, "failed to get working directory"))
     }
 }
 

@@ -12,14 +12,14 @@ pub(crate) use control::Control;
 pub(crate) use rules::Rules;
 pub(crate) use source::{GitClone, Source};
 use std::{collections::HashMap, path::PathBuf};
-pub(crate) use version::Version;
+pub use version::Version;
 
 #[derive(Debug)]
 pub struct Config {
-    pub(crate) package_name: String,
-    pub(crate) filepath: PathBuf,
+    pub package_name: String,
+    pub filepath: PathBuf,
 
-    pub(crate) version: Version,
+    pub version: Version,
     pub(crate) dependencies: Vec<String>,
     pub(crate) source: Source,
     pub(crate) debian: Debian,

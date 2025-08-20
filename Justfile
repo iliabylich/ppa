@@ -13,16 +13,13 @@ container-rebuild:
 container-sh:
     podman run --rm -it -v $PWD:/shared --entrypoint bash ppa-builder
 
-run-in-container *command:
+run-in-container exe *command:
     podman run --rm \
         -t \
         -v "$PWD:/shared" \
-        --entrypoint "/bin/build-deb-package" \
+        --entrypoint "/bin/{{exe}}" \
         ppa-builder \
         {{command}}
-
-run-locally *command:
-    cargo run -- {{command}}
 
 build config:
     @just run-in-container build {{config}}
@@ -47,7 +44,7 @@ shellcheck:
     shellcheck -x **/*.sh
 
 bump config:
-    @just run-locally bump-version-trailer {{config}}
+    cargo run --bin bump -- {{config}}
 
 check-updates:
-    @just run-locally check-updates $(find . -name '*.toml')
+    cargo run --bin check-updates -- $(find . -name '*.toml')

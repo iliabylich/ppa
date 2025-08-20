@@ -7,8 +7,10 @@ ENV CC=gcc-15
 ENV CXX=g++-15
 
 COPY --chmod=777 container-bootstrap.sh /bin/container-bootstrap.sh
-COPY --chmod=777 target/release/build-deb-package /bin/build-deb-package
+COPY --chmod=777 target/release/bump /bin/bump
+COPY --chmod=777 target/release/check-updates /bin/check-updates
+COPY --chmod=777 target/release/explain /bin/explain
+COPY --chmod=777 target/release/parse /bin/parse
+COPY --chmod=777 target/release/run /bin/build
 
 RUN /bin/container-bootstrap.sh
-
-ENTRYPOINT ["/bin/build-deb-package", "run"]

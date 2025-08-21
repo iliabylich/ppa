@@ -5,12 +5,12 @@ use std::{
 };
 
 #[derive(Debug)]
-pub(crate) struct Cmd {
+pub(crate) struct Bash {
     pub(crate) exe: String,
     pub(crate) args: Vec<String>,
 }
 
-impl Cmd {
+impl Bash {
     pub(crate) fn exec(&self, env: &HashMap<String, String>, path: &[String]) {
         let mut command = std::process::Command::new(&self.exe);
 
@@ -66,5 +66,51 @@ impl Cmd {
 
     pub(crate) fn explain(&self) {
         green!("{} {}", self.exe, self.args.join(" "))
+    }
+}
+
+pub(crate) trait BashAddArg<T> {
+    fn add_arg(&mut self, data: T);
+}
+
+impl BashAddArg<String> for Bash {
+    fn add_arg(&mut self, s: String) {
+        self.args.push(s);
+    }
+}
+
+impl BashAddArg<&String> for Bash {
+    fn add_arg(&mut self, s: &String) {
+        self.add_arg(s.clone());
+    }
+}
+
+impl BashAddArg<Vec<String>> for Bash {
+    fn add_arg(&mut self, strings: Vec<String>) {
+        for s in strings {
+            self.add_arg(s);
+        }
+    }
+}
+
+impl BashAddArg<&str> for Bash {
+    fn add_arg(&mut self, s: &str) {
+        self.add_arg(s.to_string());
+    }
+}
+
+impl BashAddArg<Vec<&str>> for Bash {
+    fn add_arg(&mut self, strings: Vec<&str>) {
+        for s in strings {
+            self.add_arg(s);
+        }
+    }
+}
+
+impl BashAddArg<&[&str]> for Bash {
+    fn add_arg(&mut self, strings: &[&str]) {
+        for s in strings {
+            self.add_arg(*s);
+        }
     }
 }

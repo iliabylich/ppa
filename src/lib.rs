@@ -10,4 +10,5 @@ pub mod macros;
 
 mod action;
 mod list;
+mod nproc;
 mod toml;

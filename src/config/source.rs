@@ -26,7 +26,7 @@ impl Source {
 pub(crate) struct GitClone {
     pub(crate) url: String,
     pub(crate) branch_or_tag: String,
-    pub(crate) post_clone_scripts: Vec<String>,
+    pub(crate) post_clone_scripts: Vec<PostCloneScript>,
 }
 
 impl GitClone {
@@ -43,6 +43,7 @@ impl GitClone {
             .unwrap_or_default()
             .into_iter()
             .map(|item| item.into_string())
+            .map(PostCloneScript::parse)
             .collect::<Vec<_>>();
 
         Self {
@@ -50,5 +51,24 @@ impl GitClone {
             branch_or_tag,
             post_clone_scripts,
         }
+    }
+}
+
+#[derive(Debug)]
+pub(crate) struct PostCloneScript {
+    pub(crate) exe: String,
+    pub(crate) args: Vec<String>,
+}
+
+impl PostCloneScript {
+    fn parse(line: String) -> Self {
+        let mut parts = line.split(" ");
+        let exe = parts
+            .next()
+            .unwrap_or_else(|| error!("script can't be empty"))
+            .to_string();
+        let args = parts.map(|part| part.to_string()).collect::<Vec<_>>();
+
+        Self { exe, args }
     }
 }

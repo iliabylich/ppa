@@ -1,3 +1,4 @@
+mod changelog;
 mod control;
 mod rules;
 mod source;
@@ -8,6 +9,7 @@ use crate::{
     toml::{TomlPath, TomlTableWithPath, TomlValueWithPath},
 };
 use boml::table::TomlTable;
+pub(crate) use changelog::Changelog;
 pub(crate) use control::Control;
 pub(crate) use rules::Rules;
 pub(crate) use source::{GitClone, Source};
@@ -119,7 +121,7 @@ impl Config {
 #[derive(Debug)]
 pub(crate) struct Debian {
     pub(crate) control: Control,
-    pub(crate) rules: Rules,
+    pub(crate) rules: Option<Rules>,
 }
 
 impl Debian {
@@ -127,7 +129,7 @@ impl Debian {
         let table = toml.into_table();
 
         let control = Control::from_toml(table.enter("control"));
-        let rules = Rules::from_toml(table.try_enter("rules"));
+        let rules = table.try_enter("rules").map(Rules::from_toml);
 
         Self { control, rules }
     }

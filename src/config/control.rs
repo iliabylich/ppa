@@ -18,4 +18,24 @@ impl Control {
             description,
         }
     }
+
+    pub(crate) fn render(&self, package_name: &str, arch: &str) -> String {
+        format!(
+            "Source: {package_name}
+Section: utils
+Priority: extra
+Maintainer: John Doe <john@doe.org>
+Standards-Version: 4.6.2
+
+Package: {package_name}
+Section: utils
+Priority: extra
+Architecture: {arch}
+Depends: {dependencies}
+Description: {description}
+",
+            dependencies = self.dependencies.join(", "),
+            description = self.description,
+        )
+    }
 }

@@ -1,9 +1,9 @@
 #[derive(Debug)]
-pub(crate) struct Cwd {
+pub(crate) struct Cd {
     pub(crate) dir: String,
 }
 
-impl Cwd {
+impl Cd {
     pub(crate) fn exec(&self) {
         std::env::set_current_dir(&self.dir).unwrap_or_else(|err| {
             error!(
@@ -14,6 +14,6 @@ impl Cwd {
     }
 
     pub(crate) fn explain(&self) {
-        green!("cwd {}", self.dir)
+        green!("cd {}", self.dir)
     }
 }

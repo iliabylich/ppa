@@ -1,10 +1,10 @@
-version = "0.1.1"
+version = "0.1.2"
 dependencies = ["musl", "musl-dev"]
 arch = "amd64"
 
 [source.git-clone]
 url = "https://github.com/mpclipboard/server.git"
-branch-or-tag = "v0.1.1"
+branch-or-tag = "v0.1.2"
 
 [debian]
 changelog = true

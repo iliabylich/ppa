@@ -1,59 +1,64 @@
-use build_deb_package::{args::paths_from_args, config::Config, green, red};
+use build_deb_package::{args::paths_from_args, config::Config, github::GitHub, green, red};
 use std::{collections::VecDeque, sync::Mutex};
 
 fn main() {
     let sources = paths_from_args()
         .into_iter()
         .map(Config::read)
-        .filter_map(|config| config.into_git_repo_and_version())
-        .map(|(repo, version)| GitSource { repo, version })
+        .filter_map(|config| config.git_user_and_repo().zip(config.git_branch_or_tag()))
+        .map(|((user, repo), branch_or_tag)| GitSource {
+            user,
+            repo,
+            branch_or_tag,
+        })
         .collect::<VecDeque<_>>();
 
     let queue = Mutex::new(sources);
+    let outputs = Mutex::new(vec![]);
 
     std::thread::scope(|s| {
         for _ in 0..10 {
-            s.spawn(|| worker(&queue));
+            s.spawn(|| {
+                loop {
+                    let source = {
+                        let mut queue = queue.lock().unwrap();
+                        queue.pop_front()
+                    };
+                    let Some(source) = source else {
+                        break;
+                    };
+
+                    let output = source.check();
+                    {
+                        let mut outputs = outputs.lock().unwrap();
+                        outputs.push(output);
+                    }
+                }
+            });
         }
-    })
+    });
+
+    let mut outputs = outputs.into_inner().unwrap();
+    outputs.sort_unstable_by_key(|result| result.user_slash_repo());
+    for output in outputs {
+        output.print();
+    }
 }
 
 #[derive(Debug)]
 struct GitSource {
+    user: String,
     repo: String,
-    version: String,
+    branch_or_tag: String,
 }
 
 impl GitSource {
-    fn latest_tag(&self) -> Result<String, String> {
-        let stdout = Self::gh([
-            "api",
-            "-H",
-            "Accept: application/vnd.github+json",
-            "-H",
-            "X-GitHub-Api-Version: 2022-11-28",
-            &format!("/repos/{}/tags", self.repo),
-            "--jq",
-            ".[] | .name ",
-        ])?;
-
-        stdout
-            .lines()
-            .max()
-            .map(|v| v.to_string())
-            .ok_or_else(|| "no tags".to_string())
-    }
-
-    fn latest_release(&self) -> Result<String, String> {
-        Self::gh([
-            "release", "view", "-R", &self.repo, "--json", "tagName", "--jq", ".tagName",
-        ])
-    }
-
     fn latest_remote_version(&self) -> Result<String, String> {
-        match self.latest_release() {
+        let github = GitHub::new(format!("{}/{}", self.user, self.repo));
+
+        match github.latest_release() {
             Ok(release) => Ok(release),
-            Err(release_check_err) => match self.latest_tag() {
+            Err(release_check_err) => match github.latest_tag() {
                 Ok(tag) => Ok(tag),
                 Err(tag_check_err) => Err(format!(
                     "release check failed: {release_check_err}\ntag check failed: {tag_check_err}"
@@ -62,66 +67,49 @@ impl GitSource {
         }
     }
 
-    fn check(self) -> CheckResult {
+    fn check(self) -> Output {
         let up_to_date = self
             .latest_remote_version()
-            .map(|remote_version| (remote_version == self.version, remote_version));
+            .map(|remote_version| (remote_version == self.branch_or_tag, remote_version));
 
-        CheckResult {
+        Output {
+            user: self.user,
             repo: self.repo,
-            local_version: self.version,
+            local_version: self.branch_or_tag,
             up_to_date,
         }
     }
-
-    fn gh(args: impl IntoIterator<Item = impl Into<String>>) -> Result<String, String> {
-        let args: Vec<String> = args.into_iter().map(|e| e.into()).collect();
-        let output = std::process::Command::new("gh")
-            .args(&args)
-            .output()
-            .map_err(|err| format!("failed to exec gh {args:?}: {err:?}"))?;
-
-        if !output.status.success() {
-            let stderr = String::from_utf8_lossy(&output.stderr);
-            return Err(format!("gh returned an error:\n{}", stderr.trim()));
-        }
-
-        let stdout = String::from_utf8(output.stdout)
-            .map_err(|err| format!("non-utf8 output from gh: {err:?}"))?;
-
-        Ok(stdout.trim().to_string())
-    }
 }
 
-struct CheckResult {
+struct Output {
+    user: String,
     repo: String,
     local_version: String,
     up_to_date: Result<(bool, String), String>,
 }
 
-fn worker(queue: &Mutex<VecDeque<GitSource>>) {
-    loop {
-        let mut guard = queue.lock().unwrap();
-        let Some(source) = guard.pop_front() else {
-            break;
-        };
-        drop(guard);
+impl Output {
+    fn user_slash_repo(&self) -> String {
+        format!("{}/{}", self.user, self.repo)
+    }
 
-        let CheckResult {
+    fn print(self) {
+        let Self {
+            user,
             repo,
             local_version,
             up_to_date,
-        } = source.check();
+        } = self;
 
         match up_to_date {
             Ok((true, remote_version)) => {
-                green!("[{repo}] up to date: {local_version} vs {remote_version}")
+                green!("[{user}/{repo}] up to date: {local_version} vs {remote_version}")
             }
             Ok((false, remote_version)) => {
-                red!("[{repo}] outdated: {local_version} vs {remote_version}")
+                red!("[{user}/{repo}] outdated: {local_version} vs {remote_version}")
             }
             Err(err) => {
-                red!("[{repo}] failed to load info:\n{err}")
+                red!("[{user}/{repo}] failed to load info:\n{err}")
             }
         }
     }

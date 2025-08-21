@@ -91,23 +91,28 @@ impl Config {
         Self::from_toml(&toml, package_name, path)
     }
 
-    pub fn into_git_repo_and_version(self) -> Option<(String, String)> {
-        let Source::GitClone(GitClone {
-            url, branch_or_tag, ..
-        }) = self.source
-        else {
+    pub fn git_user_and_repo(&self) -> Option<(String, String)> {
+        let Source::GitClone(GitClone { url, .. }) = &self.source else {
             return None;
         };
 
-        let repo = url
+        let (user, repo) = url
             .strip_prefix("https://github.com/")?
-            .strip_suffix(".git")?;
+            .strip_suffix(".git")?
+            .split_once('/')?;
+        Some((user.to_string(), repo.to_string()))
+    }
+
+    pub fn git_branch_or_tag(self) -> Option<String> {
+        let Source::GitClone(GitClone { branch_or_tag, .. }) = self.source else {
+            return None;
+        };
 
         if branch_or_tag.bytes().all(|byte| !byte.is_ascii_digit()) {
             return None;
         }
 
-        Some((repo.to_string(), branch_or_tag))
+        Some(branch_or_tag)
     }
 }
 

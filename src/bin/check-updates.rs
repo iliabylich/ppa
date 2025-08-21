@@ -54,7 +54,7 @@ struct GitSource {
 
 impl GitSource {
     fn latest_remote_version(&self) -> Result<String, String> {
-        let github = GitHub::new(format!("{}/{}", self.user, self.repo));
+        let github = GitHub::new(&self.user, &self.repo);
 
         match github.latest_release() {
             Ok(release) => Ok(release),

@@ -1,11 +1,15 @@
+use crate::error;
+
 pub struct GitHub {
-    owner_slash_repo: String,
+    user: String,
+    repo: String,
 }
 
 impl GitHub {
-    pub fn new(owner_slash_repo: impl Into<String>) -> Self {
+    pub fn new(user: impl Into<String>, repo: impl Into<String>) -> Self {
         Self {
-            owner_slash_repo: owner_slash_repo.into(),
+            user: user.into(),
+            repo: repo.into(),
         }
     }
 
@@ -32,7 +36,7 @@ impl GitHub {
             "release",
             "view",
             "-R",
-            &self.owner_slash_repo,
+            &format!("{}/{}", self.user, self.repo),
             "--json",
             "tagName",
             "--jq",
@@ -47,7 +51,7 @@ impl GitHub {
             "Accept: application/vnd.github+json",
             "-H",
             "X-GitHub-Api-Version: 2022-11-28",
-            &format!("/repos/{}/tags", self.owner_slash_repo),
+            &format!("/repos/{}/{}/tags", self.user, self.repo),
             "--jq",
             ".[] | .name ",
         ])?;
@@ -59,10 +63,73 @@ impl GitHub {
             .ok_or_else(|| "no tags".to_string())
     }
 
-    pub fn list_assets(&self, release_name: impl AsRef<str>) -> Result<Vec<String>, String> {
-        const PREFIX: &str = "asset:  ";
-        let stdout = Self::call(["release", "view", release_name.as_ref()])?;
-        println!("{stdout}");
-        todo!()
+    pub fn list_assets(&self, release_name: impl AsRef<str>) -> Result<Vec<GitHubAsset>, String> {
+        let release_name = release_name.as_ref();
+        const PREFIX: &str = "asset:\t";
+        let stdout = Self::call(["release", "view", release_name])?;
+        let assets = stdout
+            .lines()
+            .filter_map(|line| line.strip_prefix(PREFIX))
+            .map(GitHubAsset::new)
+            .collect::<Vec<_>>();
+        Ok(assets)
+    }
+
+    pub fn delete_asset(
+        &self,
+        release_name: impl AsRef<str>,
+        asset: &GitHubAsset,
+    ) -> Result<String, String> {
+        Self::call([
+            "release",
+            "delete-asset",
+            release_name.as_ref(),
+            asset.filename.as_str(),
+            "--yes",
+        ])
+    }
+
+    pub fn upload_asset(
+        &self,
+        release_name: impl AsRef<str>,
+        asset: &GitHubAsset,
+    ) -> Result<String, String> {
+        Self::call([
+            "release",
+            "upload",
+            release_name.as_ref(),
+            asset.filename.as_str(),
+        ])
+    }
+}
+
+#[derive(Clone)]
+pub struct GitHubAsset {
+    pub filename: String,
+    pub package_name: String,
+}
+
+impl GitHubAsset {
+    pub fn new(filename: impl Into<String>) -> Self {
+        let filename = filename.into();
+        let package_name = filename
+            .split_once('_')
+            .unwrap_or_else(|| {
+                const HINT: &str = "must have a format <name>_<version>_<arch>.deb";
+                error!("filename {filename:?} is not a valid debian package filename; {HINT}")
+            })
+            .0
+            .to_string();
+
+        Self {
+            filename,
+            package_name,
+        }
+    }
+}
+
+impl std::fmt::Display for GitHubAsset {
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        write!(f, "{} ({})", self.filename, self.package_name)
     }
 }

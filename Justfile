@@ -31,7 +31,7 @@ explain config:
     @just run-in-container explain {{config}}
 
 gh-upload *args:
-    ./scripts/gh-upload.sh {{args}}
+    cargo run --bin gh-upload -- {{args}}
 
 deploy *args:
     ./scripts/deploy.sh {{args}}

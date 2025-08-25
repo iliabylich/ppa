@@ -22,4 +22,4 @@ dependencies = ["${shlibs:Depends}"]
 
 [debian.rules]
 "%" = ["dh $@"]
-override_dh_usrlocal = ["echo skip"]
+override_dh_usrlocal = ["@true"]

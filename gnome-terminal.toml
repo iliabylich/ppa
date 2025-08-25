@@ -32,4 +32,4 @@ override_dh_auto_build = ["ninja -C _build"]
 override_dh_auto_install = [
     "DESTDIR=$$PWD/debian/gnome-terminal ninja -C _build install",
 ]
-override_dh_usrlocal = ["echo skip"]
+override_dh_usrlocal = ["@true"]

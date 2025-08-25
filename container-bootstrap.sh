@@ -10,7 +10,6 @@ update-ca-certificates
 
 apt install -y wget curl git debhelper pkg-config jq
 apt install -y g++ meson cmake
-apt install -y libgtk-4-dev libgtk4-layer-shell-dev
 apt install -y musl musl-dev
 apt install -y gcc-15 g++-15
 

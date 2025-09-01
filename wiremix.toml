@@ -1,0 +1,22 @@
+version = "0.7.0"
+dependencies = ["libpipewire-0.3-dev", "libspa-0.2-dev", "libclang1", "clang"]
+arch = "amd64"
+
+[source.git-clone]
+url = "https://github.com/tsowell/wiremix.git"
+branch-or-tag = "v0.7.0"
+
+[debian]
+changelog = true
+compat = 10
+
+[debian.control]
+description = "A simple TUI audio mixer for PipeWire"
+dependencies = ["${shlibs:Depends}"]
+
+[debian.rules]
+"%" = ["dh $@"]
+override_dh_auto_build = ["cargo build --release"]
+override_dh_auto_install = [
+    "install -Dm0755 target/release/wiremix debian/wiremix/usr/bin/wiremix",
+]

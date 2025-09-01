@@ -110,6 +110,8 @@ dependencies = [
     "x11-utils",
     "parallel",
     "fzf",
+    "wiremix",
+    "ripgrep",
 
     # Libs
     "libjemalloc-dev",

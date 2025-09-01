@@ -23,7 +23,11 @@ compat = 10
 
 [debian.control]
 description = "A custom layer shell"
-dependencies = ["${shlibs:Depends}", "fonts-inter-variable-nerd"]
+dependencies = [
+    "${shlibs:Depends}",
+    "fonts-inter-variable-nerd",
+    "fonts-adwaita-mono-nerd",
+]
 
 [debian.rules]
 "%" = ["dh $@"]

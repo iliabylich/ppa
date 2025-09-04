@@ -11,7 +11,6 @@ update-ca-certificates
 apt install -y wget curl git debhelper pkg-config jq
 apt install -y g++ meson cmake
 apt install -y musl musl-dev
-apt install -y gcc-15 g++-15
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | bash -s -- --profile minimal -y
 

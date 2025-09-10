@@ -65,7 +65,7 @@ impl Strategist {
         }
 
         header!("setup source directory");
-        bash!("mkdir", "/build");
+        bash!("mkdir", "-p", "/build");
         let version = version.resolve();
         let build_dir = format!("/build/{}-{}", package_name, version);
 

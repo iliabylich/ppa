@@ -163,7 +163,6 @@ dependencies = [
     "xdg-desktop-portal-hyprland",
     "unsplash-wallpaper",
     "matugen",
-    "hyprland-plugins",
     "bluez",
     "fuzzel",
     "iwmenu",

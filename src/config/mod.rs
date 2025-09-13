@@ -105,8 +105,8 @@ impl Config {
         Some((user.to_string(), repo.to_string()))
     }
 
-    pub fn git_branch_or_tag(self) -> Option<String> {
-        let Source::GitClone(GitClone { branch_or_tag, .. }) = self.source else {
+    pub fn git_branch_or_tag(&self) -> Option<String> {
+        let Source::GitClone(GitClone { branch_or_tag, .. }) = &self.source else {
             return None;
         };
 
@@ -114,7 +114,19 @@ impl Config {
             return None;
         }
 
-        Some(branch_or_tag)
+        Some(branch_or_tag.clone())
+    }
+
+    pub fn relative_file_path(&self) -> String {
+        let dir = std::env::current_dir()
+            .unwrap_or_else(|err| error!("failed to get working directory: {err:?}"));
+        let path = self
+            .filepath
+            .strip_prefix(dir)
+            .unwrap_or_else(|err| error!("failed to string directory prefix: {err:?}"));
+        path.to_str()
+            .unwrap_or_else(|| error!("non-utf8 filepath {path:?}"))
+            .to_string()
     }
 }
 

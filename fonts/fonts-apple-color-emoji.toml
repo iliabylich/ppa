@@ -2,7 +2,9 @@ version = "18.4"
 dependencies = ["wget"]
 arch = "all"
 
-source = "none"
+[source.git-clone]
+url = "https://github.com/samuelngs/apple-emoji-linux.git"
+branch-or-tag = "v18.4"
 
 [debian]
 changelog = true

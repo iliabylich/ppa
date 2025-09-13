@@ -1,12 +1,26 @@
-use build_deb_package::{args::paths_from_args, config::Config, github::GitHub, green, red};
+use build_deb_package::{
+    args::paths_from_args, config::Config, github::GitHub, green, red, yellow,
+};
 use std::{collections::VecDeque, sync::Mutex};
 
 fn main() {
     let sources = paths_from_args()
         .into_iter()
         .map(Config::read)
-        .filter_map(|config| config.git_user_and_repo().zip(config.git_branch_or_tag()))
-        .map(|((user, repo), branch_or_tag)| GitSource {
+        .filter_map(|config| {
+            let config_path = config.relative_file_path();
+            let Some((user, repo)) = config.git_user_and_repo() else {
+                yellow!("[{config_path}] skipping (not git user/repo)");
+                return None;
+            };
+            let Some(branch_or_tag) = config.git_branch_or_tag() else {
+                yellow!("[{config_path}] skipping (not git branch_or_tag)");
+                return None;
+            };
+            Some((config_path, user, repo, branch_or_tag))
+        })
+        .map(|(config_path, user, repo, branch_or_tag)| GitSource {
+            config_path,
             user,
             repo,
             branch_or_tag,
@@ -47,6 +61,7 @@ fn main() {
 
 #[derive(Debug)]
 struct GitSource {
+    config_path: String,
     user: String,
     repo: String,
     branch_or_tag: String,
@@ -73,6 +88,7 @@ impl GitSource {
             .map(|remote_version| (remote_version == self.branch_or_tag, remote_version));
 
         Output {
+            config_path: self.config_path,
             user: self.user,
             repo: self.repo,
             local_version: self.branch_or_tag,
@@ -82,6 +98,7 @@ impl GitSource {
 }
 
 struct Output {
+    config_path: String,
     user: String,
     repo: String,
     local_version: String,
@@ -95,21 +112,21 @@ impl Output {
 
     fn print(self) {
         let Self {
-            user,
-            repo,
+            config_path,
             local_version,
             up_to_date,
+            ..
         } = self;
 
         match up_to_date {
             Ok((true, remote_version)) => {
-                green!("[{user}/{repo}] up to date: {local_version} vs {remote_version}")
+                green!("[{config_path}] up to date: {local_version} vs {remote_version}")
             }
             Ok((false, remote_version)) => {
-                red!("[{user}/{repo}] outdated: {local_version} vs {remote_version}")
+                red!("[{config_path}] outdated: {local_version} vs {remote_version}")
             }
             Err(err) => {
-                red!("[{user}/{repo}] failed to load info:\n{err}")
+                red!("[{config_path}] failed to load info:\n{err}")
             }
         }
     }

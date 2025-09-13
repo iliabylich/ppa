@@ -2,7 +2,9 @@ version = "3.4.0"
 dependencies = ["wget", "unzip"]
 arch = "all"
 
-source = "none"
+[source.git-clone]
+url = "https://github.com/ryanoasis/nerd-fonts.git"
+branch-or-tag = "v3.4.0"
 
 [debian]
 changelog = true

@@ -31,7 +31,6 @@ dependencies = [
     # "zenity",
     "ghostty",
     # "spot",
-    "wezterm",
 
     # Dev tools
     "gcc",

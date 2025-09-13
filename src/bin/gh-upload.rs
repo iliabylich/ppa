@@ -38,7 +38,7 @@ fn main() {
     }
 
     if !assets_to_remove.is_empty() {
-        yellow!("About to removing assets:");
+        yellow!("About to remove assets:");
         for asset in assets_to_remove.iter() {
             yellow!("  - {asset}")
         }

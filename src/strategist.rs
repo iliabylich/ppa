@@ -52,6 +52,7 @@ impl Strategist {
         }
 
         plan.add_env("DEB_BUILD_OPTIONS", format!("parallel={}", num_cpus()));
+        plan.add_env("CARGO_TERM_COLOR", "always");
 
         header!("install system dependencies");
         if !dependencies.is_empty() {

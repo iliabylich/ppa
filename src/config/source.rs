@@ -38,7 +38,7 @@ impl GitClone {
         let branch_or_tag = table.enter("branch-or-tag").into_string();
 
         let post_clone_scripts = table
-            .try_enter("post-clone-scripts")
+            .try_enter("post_clone_scripts")
             .map(|v| v.into_array())
             .unwrap_or_default()
             .into_iter()

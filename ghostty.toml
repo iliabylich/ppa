@@ -1,15 +1,21 @@
-version = "1.1.3"
-dependencies = ["libgtk-4-dev", "libadwaita-1-dev", "git"]
+version = "1.2.0"
+dependencies = [
+    "libgtk-4-dev",
+    "libadwaita-1-dev",
+    "git",
+    "blueprint-compiler",
+    "libgtk4-layer-shell-dev",
+]
 arch = "amd64"
-path = ["/root/zig-linux-x86_64-0.13.0"]
+path = ["/root/zig-linux-x86_64-0.14.0"]
 
 [source.git-clone]
 url = "https://github.com/ghostty-org/ghostty.git"
-branch-or-tag = "v1.1.3"
+branch-or-tag = "v1.2.0"
 post_clone_scripts = [
-    "wget -q https://ziglang.org/download/0.13.0/zig-linux-x86_64-0.13.0.tar.xz -O /root/zig-linux-x86_64-0.13.0.tar.xz",
-    "tar xf /root/zig-linux-x86_64-0.13.0.tar.xz -C /root",
-    "ls -l /root/zig-linux-x86_64-0.13.0",
+    "wget -q https://ziglang.org/download/0.14.0/zig-linux-x86_64-0.14.0.tar.xz -O /root/zig-linux-x86_64-0.14.0.tar.xz",
+    "tar xf /root/zig-linux-x86_64-0.14.0.tar.xz -C /root",
+    "ls -l /root/zig-linux-x86_64-0.14.0",
 ]
 
 [debian]
@@ -26,6 +32,6 @@ override_dh_auto_configure = ["@true"]
 override_dh_auto_build = ["@true"]
 override_dh_auto_install = [
     "zig version",
-    "zig build -p debian/ghostty/usr -Doptimize=ReleaseFast -fsys=fontconfig",
+    "DESTDIR=$$PWD/debian/ghostty zig build --prefix /usr -Doptimize=ReleaseFast -fsys=fontconfig",
     "rm -f debian/ghostty/usr/share/terminfo/g/ghostty",
 ]

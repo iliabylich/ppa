@@ -53,7 +53,7 @@ fn main() {
     });
 
     let mut outputs = outputs.into_inner().unwrap();
-    outputs.sort_unstable_by_key(|result| result.user_slash_repo());
+    outputs.sort_unstable_by_key(|result| result.config_path.clone());
     for output in outputs {
         output.print();
     }
@@ -89,8 +89,6 @@ impl GitSource {
 
         Output {
             config_path: self.config_path,
-            user: self.user,
-            repo: self.repo,
             local_version: self.branch_or_tag,
             up_to_date,
         }
@@ -99,23 +97,16 @@ impl GitSource {
 
 struct Output {
     config_path: String,
-    user: String,
-    repo: String,
     local_version: String,
     up_to_date: Result<(bool, String), String>,
 }
 
 impl Output {
-    fn user_slash_repo(&self) -> String {
-        format!("{}/{}", self.user, self.repo)
-    }
-
     fn print(self) {
         let Self {
             config_path,
             local_version,
             up_to_date,
-            ..
         } = self;
 
         match up_to_date {

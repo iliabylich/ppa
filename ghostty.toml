@@ -12,7 +12,7 @@ path = ["/root/zig-linux-x86_64-0.14.0"]
 [source.git-clone]
 url = "https://github.com/ghostty-org/ghostty.git"
 branch-or-tag = "v1.2.0"
-post_clone_scripts = [
+post-clone-scripts = [
     "wget -q https://ziglang.org/download/0.14.0/zig-linux-x86_64-0.14.0.tar.xz -O /root/zig-linux-x86_64-0.14.0.tar.xz",
     "tar xf /root/zig-linux-x86_64-0.14.0.tar.xz -C /root",
     "ls -l /root/zig-linux-x86_64-0.14.0",

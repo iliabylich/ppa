@@ -1,0 +1,12 @@
+[Unit]
+AssertPathExists=/usr/bin/goatcounter
+
+[Service]
+WorkingDirectory=~
+ExecStart=/usr/bin/goatcounter serve -listen localhost:3010 -tls proxy
+Restart=always
+PrivateTmp=false
+NoNewPrivileges=true
+
+[Install]
+WantedBy=default.target

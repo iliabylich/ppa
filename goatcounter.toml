@@ -1,0 +1,29 @@
+version = "2.6.0"
+dependencies = []
+arch = "amd64"
+
+[source.git-clone]
+url = "https://github.com/arp242/goatcounter.git"
+branch-or-tag = "v2.6.0"
+
+[debian]
+changelog = true
+compat = 10
+
+[debian.control]
+description = "Easy web analytics. No tracking of personal data."
+dependencies = ["${shlibs:Depends}"]
+
+[debian.rules]
+"%" = ["dh $@"]
+override_dh_auto_configure = ["@true"]
+override_dh_auto_build = [
+    "wget https://github.com/arp242/goatcounter/releases/download/v2.6.0/goatcounter-v2.6.0-linux-amd64.gz",
+    "gunzip goatcounter-v2.6.0-linux-amd64.gz",
+]
+override_dh_auto_install = [
+    "mkdir -p debian/goatcounter/usr/bin",
+    "install -m755 goatcounter-v2.6.0-linux-amd64 debian/goatcounter/usr/bin/goatcounter",
+    "mkdir -p debian/goatcounter/usr/lib/systemd/system",
+    "install -m755 /shared/files/goatcounter.service debian/goatcounter/usr/lib/systemd/system/goatcounter.service",
+]

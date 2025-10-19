@@ -1,4 +1,4 @@
-version = "0.6.4-2"
+version = "0.6.4-3"
 dependencies = ["/shared/deb-latest/hyprutils.deb"]
 arch = "amd64"
 

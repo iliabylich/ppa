@@ -1,4 +1,4 @@
-version = "0.1.5-1"
+version = "0.1.5-2"
 dependencies = [
     "/shared/deb-latest/hyprutils.deb",
 

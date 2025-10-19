@@ -1,4 +1,4 @@
-version = "1.3.10-2"
+version = "1.3.11"
 dependencies = [
     "/shared/deb-latest/hyprutils.deb",
     "/shared/deb-latest/hyprlang.deb",
@@ -19,7 +19,7 @@ arch = "amd64"
 
 [source.git-clone]
 url = "https://github.com/hyprwm/xdg-desktop-portal-hyprland.git"
-branch-or-tag = "v1.3.10"
+branch-or-tag = "v1.3.11"
 
 [debian]
 changelog = true

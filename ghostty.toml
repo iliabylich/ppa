@@ -1,4 +1,4 @@
-version = "1.2.2"
+version = "1.2.3"
 dependencies = [
     "libgtk-4-dev",
     "libadwaita-1-dev",
@@ -11,7 +11,7 @@ path = ["/root/zig-linux-x86_64-0.14.0"]
 
 [source.git-clone]
 url = "https://github.com/ghostty-org/ghostty.git"
-branch-or-tag = "v1.2.2"
+branch-or-tag = "v1.2.3"
 post-clone-scripts = [
     "wget -q https://ziglang.org/download/0.14.0/zig-linux-x86_64-0.14.0.tar.xz -O /root/zig-linux-x86_64-0.14.0.tar.xz",
     "tar xf /root/zig-linux-x86_64-0.14.0.tar.xz -C /root",

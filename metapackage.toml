@@ -17,21 +17,20 @@ dependencies = [
 
     # UI apps
     "flatpak",
-    "localsend",
+    # "localsend",
     # "blanket",
     # "mpv",
     # "transmission-gtk",
     # "amberol",
-    "loupe",
+    # "loupe",
     # "gedit",
     # "baobab",
-    "d-spy",
+    # "d-spy",
     # "file-roller",
     # "obfuscate",
     # "zenity",
     "ghostty",
     # "spot",
-    "blueman",
 
     # Dev tools
     "gcc",

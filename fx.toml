@@ -1,10 +1,10 @@
-version = "39.1.0"
+version = "39.2.0"
 dependencies = []
 arch = "amd64"
 
 [source.git-clone]
 url = "https://github.com/antonmedv/fx.git"
-branch-or-tag = "39.1.0"
+branch-or-tag = "39.2.0"
 
 [debian]
 changelog = true
@@ -17,6 +17,6 @@ dependencies = ["${shlibs:Depends}"]
 [debian.rules]
 "%" = ["dh $@"]
 override_dh_auto_build = [
-    "wget https://github.com/antonmedv/fx/releases/download/39.1.0/fx_linux_amd64 -O fx",
+    "wget https://github.com/antonmedv/fx/releases/download/39.2.0/fx_linux_amd64 -O fx",
 ]
 override_dh_auto_install = ["install -Dm0755 fx debian/fx/usr/bin/fx"]

@@ -1,7 +1,7 @@
-version = "0.1.0-8"
+version = "0.1.0-9"
 dependencies = [
-    "/shared/deb-latest/hyprutils.deb",
-    "/shared/deb-latest/hyprlang.deb",
+    "/shared/deb-latest/x-hyprutils.deb",
+    "/shared/deb-latest/x-hyprlang.deb",
 
     "qt6-base-dev",
     "qt6-declarative-dev",
@@ -29,7 +29,7 @@ override_dh_auto_build = [
     "cmake --build ./build --config Release --target all -j`nproc`",
 ]
 override_dh_auto_install = [
-    "cmake --install build --prefix debian/hyprland-qt-support/usr",
-    "mkdir -p debian/hyprland-qt-support/usr/lib/x86_64-linux-gnu/qt6/qml/org",
-    "cp -r /lib/qt6/qml/org/hyprland debian/hyprland-qt-support/usr/lib/x86_64-linux-gnu/qt6/qml/org/hyprland",
+    "cmake --install build --prefix debian/x-hyprland-qt-support/usr",
+    "mkdir -p debian/x-hyprland-qt-support/usr/lib/x86_64-linux-gnu/qt6/qml/org",
+    "cp -r /lib/qt6/qml/org/hyprland debian/x-hyprland-qt-support/usr/lib/x86_64-linux-gnu/qt6/qml/org/hyprland",
 ]

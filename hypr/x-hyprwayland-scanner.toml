@@ -1,4 +1,4 @@
-version = "0.4.5-4"
+version = "0.4.5-5"
 dependencies = ["libpugixml-dev"]
 arch = "amd64"
 
@@ -19,5 +19,5 @@ dependencies = ["${shlibs:Depends}"]
 override_dh_auto_configure = ["cmake -DCMAKE_INSTALL_PREFIX=/usr -B build"]
 override_dh_auto_build = ["cmake --build build -j `nproc`"]
 override_dh_auto_install = [
-    "cmake --install build --prefix debian/hyprwayland-scanner/usr",
+    "cmake --install build --prefix debian/x-hyprwayland-scanner/usr",
 ]

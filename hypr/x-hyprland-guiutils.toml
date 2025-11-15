@@ -1,0 +1,37 @@
+version = "0.1.0"
+dependencies = [
+    "/shared/deb-latest/x-hyprutils.deb",
+    "/shared/deb-latest/x-hyprlang.deb",
+    "/shared/deb-latest/x-hyprtoolkit.deb",
+    "/shared/deb-latest/x-aquamarine.deb",
+    "/shared/deb-latest/x-hyprgraphics.deb",
+
+    "libpixman-1-dev",
+    "libdrm-dev",
+    "libcairo2-dev",
+]
+arch = "amd64"
+
+[source.git-clone]
+url = "https://github.com/hyprwm/hyprland-guiutils.git"
+branch-or-tag = "v0.1.0"
+
+[debian]
+changelog = true
+compat = 10
+
+[debian.control]
+description = "Hyprland GUI utilities (successor to hyprland-qtutils)"
+dependencies = ["${shlibs:Depends}"]
+
+[debian.rules]
+"%" = ["dh $@"]
+override_dh_auto_configure = [
+    "cmake --no-warn-unused-cli -DCMAKE_BUILD_TYPE:STRING=Release -DCMAKE_INSTALL_PREFIX:PATH=/usr -S . -B ./build",
+]
+override_dh_auto_build = [
+    "cmake --build ./build --config Release --target all -j`nproc`",
+]
+override_dh_auto_install = [
+    "cmake --install build --prefix debian/x-hyprland-guiutils/usr",
+]

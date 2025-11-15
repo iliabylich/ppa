@@ -1,7 +1,7 @@
-version = "0.9.5"
+version = "0.9.5-1"
 dependencies = [
-    "/shared/deb-latest/hyprwayland-scanner.deb",
-    "/shared/deb-latest/hyprutils.deb",
+    "/shared/deb-latest/x-hyprwayland-scanner.deb",
+    "/shared/deb-latest/x-hyprutils.deb",
 
     "libgles2-mesa-dev",
 
@@ -15,7 +15,7 @@ dependencies = [
     "libudev-dev",
     "libdisplay-info-dev",
     "hwdata",
-    "libpugixml-dev",
+    # "libpugixml-dev",
 ]
 arch = "amd64"
 
@@ -40,5 +40,5 @@ override_dh_auto_configure = [
     "cmake --no-warn-unused-cli -DCMAKE_BUILD_TYPE:STRING=Release -DCMAKE_INSTALL_PREFIX:PATH=/usr -S . -B ./build",
 ]
 override_dh_auto_install = [
-    "cmake --install build --prefix debian/aquamarine/usr",
+    "cmake --install build --prefix debian/x-aquamarine/usr",
 ]

@@ -5,7 +5,7 @@ set -eux
 apt update
 apt -y upgrade
 
-apt install -y wget curl git debhelper pkg-config jq g++ meson cmake musl musl-dev
+apt install -y wget curl git debhelper pkg-config jq g++ meson cmake musl musl-dev libgtest-dev
 apt autoremove -y
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | bash -s -- --profile minimal -y

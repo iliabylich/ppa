@@ -1,23 +1,22 @@
-version = "0.9.2-2"
+version = "0.9.2-3"
 dependencies = [
-    "/shared/deb-latest/hyprutils.deb",
-    "/shared/deb-latest/hyprlang.deb",
-    "/shared/deb-latest/hyprgraphics.deb",
-    "/shared/deb-latest/hyprwayland-scanner.deb",
+    "/shared/deb-latest/x-hyprutils.deb",
+    "/shared/deb-latest/x-hyprlang.deb",
+    "/shared/deb-latest/x-hyprgraphics.deb",
+    "/shared/deb-latest/x-hyprwayland-scanner.deb",
+
+    "libgles2-mesa-dev",
+
     "libwayland-dev",
     "wayland-protocols",
-    "mesa-common-dev",
-    "libgl1-mesa-dev",
     "libxkbcommon-dev",
-    "libjpeg-dev",
-    "libwebp-dev",
-    "libmagic-dev",
     "libcairo2-dev",
     "libpango1.0-dev",
+    "libdrm-dev",
     "libgbm-dev",
-    "libpam0g-dev",
     "libsdbus-c++-dev",
-    "libaudit-dev",
+
+    "libpam0g-dev",
 ]
 arch = "amd64"
 
@@ -41,5 +40,5 @@ override_dh_auto_build = [
     "cmake --build ./build --config Release --target hyprlock -j`nproc`",
 ]
 override_dh_auto_install = [
-    "cmake --install build --prefix debian/hyprlock/usr",
+    "cmake --install build --prefix debian/x-hyprlock/usr",
 ]

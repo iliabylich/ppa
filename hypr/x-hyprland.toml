@@ -1,14 +1,13 @@
-version = "0.51.1-1"
+version = "0.52.1"
 dependencies = [
-    "/shared/deb-latest/hyprutils.deb",
-    "/shared/deb-latest/aquamarine.deb",
-    "/shared/deb-latest/hyprlang.deb",
-    "/shared/deb-latest/hyprcursor.deb",
-    "/shared/deb-latest/hyprgraphics.deb",
-    "/shared/deb-latest/hyprwayland-scanner.deb",
-    "/shared/deb-latest/hyprland-protocols.deb",
+    "/shared/deb-latest/x-hyprutils.deb",
+    "/shared/deb-latest/x-aquamarine.deb",
+    "/shared/deb-latest/x-hyprlang.deb",
+    "/shared/deb-latest/x-hyprcursor.deb",
+    "/shared/deb-latest/x-hyprgraphics.deb",
+    "/shared/deb-latest/x-hyprwayland-scanner.deb",
+    "/shared/deb-latest/x-hyprland-protocols.deb",
 
-    "ninja-build",
     "libgles2-mesa-dev",
 
     "libxkbcommon-dev",
@@ -22,6 +21,7 @@ dependencies = [
     "libdrm-dev",
     "libinput-dev",
     "libgbm-dev",
+    "libgio-2.0-dev",
     "libre2-dev",
 
     # for XWayland (see NO_XWAYLAND)
@@ -32,15 +32,12 @@ dependencies = [
     "libxcb-errors-dev",
 
     "libtomlplusplus-dev",
-    "libpugixml-dev",
-    "libudis86-dev",
-    "libglaze-dev",
 ]
 arch = "amd64"
 
 [source.git-clone]
 url = "https://github.com/hyprwm/hyprland.git"
-branch-or-tag = "v0.51.1"
+branch-or-tag = "v0.52.1"
 
 [debian]
 changelog = true
@@ -59,7 +56,7 @@ override_dh_auto_build = [
     "cmake --build ./build --config Release --target all -j`nproc`",
 ]
 override_dh_auto_install = [
-    "cmake --install build --prefix debian/hyprland/usr",
-    "rm debian/hyprland/usr/share/hypr/wall*.png",
+    "cmake --install build --prefix debian/x-hyprland/usr",
+    "rm debian/x-hyprland/usr/share/hypr/wall*.png",
 ]
 override_dh_usrlocal = ["@true"]

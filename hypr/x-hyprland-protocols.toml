@@ -1,4 +1,4 @@
-version = "0.7.0"
+version = "0.7.0-1"
 dependencies = ["meson"]
 arch = "amd64"
 
@@ -19,6 +19,6 @@ dependencies = ["${shlibs:Depends}"]
 override_dh_auto_configure = ["meson setup build"]
 override_dh_auto_build = ["@true"]
 override_dh_auto_install = [
-    "meson install -C build --destdir=$$PWD/debian/hyprland-protocols",
+    "meson install -C build --destdir=$$PWD/debian/x-hyprland-protocols",
 ]
 override_dh_usrlocal = ["@true"]

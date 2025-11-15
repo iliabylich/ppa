@@ -1,29 +1,29 @@
-version = "0.1.3-3"
+version = "0.1.13-4"
 dependencies = [
-    "/shared/deb-latest/hyprutils.deb",
+    "/shared/deb-latest/x-hyprutils.deb",
+    "/shared/deb-latest/x-hyprlang.deb",
 
-    "libpolkit-agent-1-dev",
-    "libpolkit-qt6-1-dev",
-
-    "qt6-base-dev",
-    "qt6-declarative-dev",
-    "qt6-declarative-private-dev",
+    "libzip-dev",
+    "libcairo2-dev",
+    "librsvg2-dev",
+    "libtomlplusplus-dev",
 ]
 arch = "amd64"
 
 [source.git-clone]
-url = "https://github.com/hyprwm/hyprpolkitagent.git"
-branch-or-tag = "v0.1.3"
+url = "https://github.com/hyprwm/hyprcursor.git"
+branch-or-tag = "v0.1.13"
 
 [debian]
 changelog = true
 compat = 10
 
 [debian.control]
-description = "A polkit authentication agent written in QT/QML"
+description = "The hyprland cursor format, library and utilities."
 dependencies = ["${shlibs:Depends}"]
 
 [debian.rules]
+"%" = ["dh $@"]
 override_dh_auto_configure = [
     "cmake --no-warn-unused-cli -DCMAKE_BUILD_TYPE:STRING=Release -DCMAKE_INSTALL_PREFIX:PATH=/usr -S . -B ./build",
 ]
@@ -31,5 +31,5 @@ override_dh_auto_build = [
     "cmake --build ./build --config Release --target all -j`nproc`",
 ]
 override_dh_auto_install = [
-    "cmake --install build --prefix debian/hyprpolkitagent/usr",
+    "cmake --install build --prefix debian/x-hyprcursor/usr",
 ]

@@ -1,10 +1,10 @@
-version = "0.10.0"
+version = "0.10.2"
 dependencies = ["libpixman-1-dev"]
 arch = "amd64"
 
 [source.git-clone]
 url = "https://github.com/hyprwm/hyprutils.git"
-branch-or-tag = "v0.10.0"
+branch-or-tag = "v0.10.2"
 
 [debian]
 changelog = true
@@ -23,5 +23,5 @@ override_dh_auto_build = [
     "cmake --build ./build --config Release --target all -j`nproc`",
 ]
 override_dh_auto_install = [
-    "cmake --install build --prefix debian/hyprutils/usr",
+    "cmake --install build --prefix debian/x-hyprutils/usr",
 ]

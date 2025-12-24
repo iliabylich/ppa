@@ -1,10 +1,10 @@
-version = "0.14.3"
+version = "0.14.7"
 dependencies = []
 arch = "amd64"
 
 [source.git-clone]
 url = "https://github.com/xremap/xremap.git"
-branch-or-tag = "v0.14.3"
+branch-or-tag = "v0.14.7"
 
 [debian]
 changelog = true

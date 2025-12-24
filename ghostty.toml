@@ -1,4 +1,4 @@
-version = "1.2.3"
+version = "1.2.3.tip20251224"
 dependencies = [
     "libgtk-4-dev",
     "libadwaita-1-dev",
@@ -7,15 +7,15 @@ dependencies = [
     "libgtk4-layer-shell-dev",
 ]
 arch = "amd64"
-path = ["/root/zig-linux-x86_64-0.14.0"]
+path = ["/root/zig-x86_64-linux-0.15.2"]
 
 [source.git-clone]
 url = "https://github.com/ghostty-org/ghostty.git"
-branch-or-tag = "v1.2.3"
+branch-or-tag = "tip"
 post-clone-scripts = [
-    "wget -q https://ziglang.org/download/0.14.0/zig-linux-x86_64-0.14.0.tar.xz -O /root/zig-linux-x86_64-0.14.0.tar.xz",
-    "tar xf /root/zig-linux-x86_64-0.14.0.tar.xz -C /root",
-    "ls -l /root/zig-linux-x86_64-0.14.0",
+    "wget -q https://ziglang.org/download/0.15.2/zig-x86_64-linux-0.15.2.tar.xz -O /root/zig-x86_64-linux-0.15.2.tar.xz",
+    "tar xf /root/zig-x86_64-linux-0.15.2.tar.xz -C /root",
+    "ls -l /root/zig-x86_64-linux-0.15.2",
 ]
 
 [debian]

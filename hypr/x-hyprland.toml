@@ -1,4 +1,4 @@
-version = "0.52.1"
+version = "0.52.2"
 dependencies = [
     "/shared/deb-latest/x-hyprutils.deb",
     "/shared/deb-latest/x-aquamarine.deb",
@@ -37,7 +37,7 @@ arch = "amd64"
 
 [source.git-clone]
 url = "https://github.com/hyprwm/hyprland.git"
-branch-or-tag = "v0.52.1"
+branch-or-tag = "v0.52.2"
 
 [debian]
 changelog = true

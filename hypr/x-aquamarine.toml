@@ -1,4 +1,4 @@
-version = "0.9.5-1"
+version = "0.10.0"
 dependencies = [
     "/shared/deb-latest/x-hyprwayland-scanner.deb",
     "/shared/deb-latest/x-hyprutils.deb",
@@ -21,7 +21,7 @@ arch = "amd64"
 
 [source.git-clone]
 url = "https://github.com/hyprwm/aquamarine.git"
-branch-or-tag = "v0.9.5"
+branch-or-tag = "v0.10.0"
 
 [debian]
 changelog = true

@@ -1,4 +1,4 @@
-version = "0.1.0"
+version = "0.2.0"
 dependencies = [
     "/shared/deb-latest/x-hyprutils.deb",
     "/shared/deb-latest/x-hyprlang.deb",
@@ -14,7 +14,7 @@ arch = "amd64"
 
 [source.git-clone]
 url = "https://github.com/hyprwm/hyprland-guiutils.git"
-branch-or-tag = "v0.1.0"
+branch-or-tag = "v0.2.0"
 
 [debian]
 changelog = true

@@ -1,10 +1,10 @@
-version = "3.0.0"
+version = "3.1.0"
 dependencies = []
 arch = "amd64"
 
 [source.git-clone]
 url = "https://github.com/InioX/matugen.git"
-branch-or-tag = "v3.0.0"
+branch-or-tag = "v3.1.0"
 
 [debian]
 changelog = true

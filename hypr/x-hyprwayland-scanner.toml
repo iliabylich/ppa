@@ -1,4 +1,4 @@
-version = "0.4.5-6"
+version = "0.4.5-7"
 dependencies = ["libpugixml-dev"]
 arch = "amd64"
 

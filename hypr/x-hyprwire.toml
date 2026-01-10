@@ -1,31 +1,22 @@
-version = "0.5.0"
+version = "0.2.1"
 dependencies = [
     "/shared/deb-latest/x-hyprutils.deb",
-    "libpixman-1-dev",
-    "libcairo2-dev",
-    "libjpeg-dev",
-    "libwebp-dev",
-    "libmagic-dev",
-    "libspng-dev",
-    "libpango1.0-dev",
-    "librsvg2-dev",
 
-    # opt
-    "libjxl-dev",
-    "libheif-dev",
+    "libpugixml-dev",
+    "libffi-dev",
 ]
 arch = "amd64"
 
 [source.git-clone]
-url = "https://github.com/hyprwm/hyprgraphics.git"
-branch-or-tag = "v0.5.0"
+url = "https://github.com/hyprwm/hyprwire.git"
+branch-or-tag = "v0.2.1"
 
 [debian]
 changelog = true
 compat = 10
 
 [debian.control]
-description = "Hyprland graphics / resource utilities"
+description = "A fast and consistent wire protocol for IPC"
 dependencies = ["${shlibs:Depends}"]
 
 [debian.rules]
@@ -37,5 +28,5 @@ override_dh_auto_build = [
     "cmake --build ./build --config Release --target all -j`nproc`",
 ]
 override_dh_auto_install = [
-    "cmake --install build --prefix debian/x-hyprgraphics/usr",
+    "cmake --install build --prefix debian/x-hyprwire/usr",
 ]

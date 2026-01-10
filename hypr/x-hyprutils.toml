@@ -1,4 +1,4 @@
-version = "0.11.0"
+version = "0.11.0-1"
 dependencies = ["libpixman-1-dev"]
 arch = "amd64"
 

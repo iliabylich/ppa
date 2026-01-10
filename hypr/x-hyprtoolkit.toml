@@ -1,4 +1,4 @@
-version = "0.4.1"
+version = "0.5.2"
 dependencies = [
     "/shared/deb-latest/x-hyprwayland-scanner.deb",
     "/shared/deb-latest/x-hyprutils.deb",
@@ -22,7 +22,7 @@ arch = "amd64"
 
 [source.git-clone]
 url = "https://github.com/hyprwm/hyprtoolkit.git"
-branch-or-tag = "v0.4.1"
+branch-or-tag = "v0.5.2"
 
 [debian]
 changelog = true

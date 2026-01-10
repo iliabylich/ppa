@@ -1,13 +1,15 @@
 x-hyprutils.toml
+x-hyprwire.toml
 x-hyprland-protocols.toml
 x-hyprlang.toml
 x-hyprcursor.toml
 x-hyprwayland-scanner.toml
 x-hyprgraphics.toml
 x-aquamarine.toml
+x-hyprland.toml
+
 x-hyprtoolkit.toml
 x-hyprland-guiutils.toml
-x-hyprland.toml
 x-hyprlock.toml
 x-hyprsunset.toml
 x-hyprpolkitagent.toml

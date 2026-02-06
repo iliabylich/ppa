@@ -1,10 +1,10 @@
-version = "0.14.8"
+version = "0.14.12"
 dependencies = []
 arch = "amd64"
 
 [source.git-clone]
 url = "https://github.com/xremap/xremap.git"
-branch-or-tag = "v0.14.8"
+branch-or-tag = "v0.14.12"
 
 [debian]
 changelog = true
@@ -16,9 +16,7 @@ dependencies = ["${shlibs:Depends}"]
 
 [debian.rules]
 "%" = ["dh $@"]
-override_dh_auto_build = [
-    "CARGO_TERM_COLOR=always cargo build --release --features hypr",
-]
+override_dh_auto_build = ["cargo build --release --features hypr"]
 override_dh_auto_install = [
     "install -Dm0755 target/release/xremap debian/xremap/usr/bin/xremap",
 ]

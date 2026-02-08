@@ -6,6 +6,7 @@ dependencies = [
     "sassc",
     "xxd",
     "meson",
+    "liburing-dev",
 ]
 arch = "amd64"
 

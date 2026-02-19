@@ -1,0 +1,22 @@
+version = "0.4.0"
+dependencies = []
+arch = "amd64"
+
+[source.git-clone]
+url = "https://github.com/mgdm/htmlq.git"
+branch-or-tag = "v0.4.0"
+
+[debian]
+changelog = true
+compat = 10
+
+[debian.control]
+description = "Like jq, but for HTML."
+dependencies = ["${shlibs:Depends}"]
+
+[debian.rules]
+"%" = ["dh $@"]
+override_dh_auto_build = ["CARGO_TERM_COLOR=always cargo build --release"]
+override_dh_auto_install = [
+    "install -Dm0755 target/release/htmlq debian/htmlq/usr/bin/htmlq",
+]

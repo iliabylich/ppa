@@ -8,6 +8,7 @@ dependencies = [
     "meson",
     "liburing-dev",
     "libssl-dev",
+    "blueprint-compiler",
 ]
 arch = "amd64"
 

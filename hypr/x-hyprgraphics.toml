@@ -1,4 +1,4 @@
-version = "0.5.0"
+version = "0.5.0-1"
 dependencies = [
     "/shared/deb-latest/x-hyprutils.deb",
     "libpixman-1-dev",

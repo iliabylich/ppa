@@ -1,4 +1,4 @@
-version = "0.53.1"
+version = "0.53.3"
 dependencies = [
     "/shared/deb-latest/x-hyprutils.deb",
     "/shared/deb-latest/x-aquamarine.deb",
@@ -34,12 +34,13 @@ dependencies = [
 
     "libtomlplusplus-dev",
     "libmuparser-dev",
+    "libglaze-dev",
 ]
 arch = "amd64"
 
 [source.git-clone]
 url = "https://github.com/hyprwm/hyprland.git"
-branch-or-tag = "v0.53.1"
+branch-or-tag = "v0.53.3"
 
 [debian]
 changelog = true

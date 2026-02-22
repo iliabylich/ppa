@@ -1,4 +1,4 @@
-version = "0.2.1"
+version = "0.2.1-1"
 dependencies = [
     "/shared/deb-latest/x-hyprutils.deb",
     "/shared/deb-latest/x-hyprlang.deb",

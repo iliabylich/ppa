@@ -1,4 +1,4 @@
-version = "0.2.1"
+version = "0.3.0"
 dependencies = [
     "/shared/deb-latest/x-hyprutils.deb",
 
@@ -9,7 +9,7 @@ arch = "amd64"
 
 [source.git-clone]
 url = "https://github.com/hyprwm/hyprwire.git"
-branch-or-tag = "v0.2.1"
+branch-or-tag = "v0.3.0"
 
 [debian]
 changelog = true

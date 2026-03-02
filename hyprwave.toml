@@ -1,0 +1,26 @@
+version = "1.0.0"
+dependencies = [
+    "libgtk-4-dev",
+    "libgtk4-layer-shell-dev",
+    "libgdk-pixbuf-2.0-dev",
+    "libpulse-dev",
+]
+arch = "amd64"
+
+[source.git-clone]
+url = "https://github.com/shantanubaddar/hyprwave.git"
+branch-or-tag = "v1.0"
+
+[debian]
+changelog = true
+compat = 10
+
+[debian.control]
+description = "A music control bar for hyprland"
+dependencies = ["${shlibs:Depends}"]
+
+[debian.rules]
+"%" = ["dh $@"]
+override_dh_auto_configure = ["@true"]
+override_dh_auto_build = ["make hyprwave"]
+override_dh_auto_install = ["PREFIX=debian/hyprwave/usr make install"]

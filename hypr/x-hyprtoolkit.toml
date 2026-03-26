@@ -1,4 +1,4 @@
-version = "0.5.3-1"
+version = "0.5.3-2"
 dependencies = [
     "/shared/deb-latest/x-hyprwayland-scanner.deb",
     "/shared/deb-latest/x-hyprutils.deb",

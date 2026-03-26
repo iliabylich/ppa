@@ -52,6 +52,7 @@ dependencies = [
     "clang",
     "lld",
     "clangd",
+    "clang-format",
     "linux-perf",
     "gdb",
     "sassc",
@@ -62,12 +63,14 @@ dependencies = [
     "blueprint-compiler",
     "podman",
     "musl",
+    "musl-tools",
 
     # CLI
     "hugo",
     "jq",
     "nmap",
     "yq",
+    "htmlq",
     "pipx",
     "gnupg2",
     "just",

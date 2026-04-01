@@ -38,7 +38,7 @@ impl<'a> TomlValueWithPath<'a> {
 
     pub(crate) fn into_array(self) -> Vec<TomlValueWithPath<'a>> {
         let array = match self.value {
-            TomlValue::Array(array, _) => array,
+            TomlValue::Array(array) => array,
             _ => error!("{} must be an array", self.path),
         };
 

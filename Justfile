@@ -36,6 +36,10 @@ gh-upload *args:
 deploy *args:
     ./scripts/deploy.sh {{args}}
 
+push *args:
+    @just gh-upload {{args}}
+    @just deploy {{args}}
+
 unpack debfile:
     mkdir -p tmp
     dpkg-deb -R {{debfile}} tmp

@@ -1,0 +1,37 @@
+version = "26.04"
+dependencies = [
+    "libgio-2.0-dev",
+    "libudev-dev",
+    "libseat-dev",
+    "libpango1.0-dev",
+    "libpipewire-0.3-dev",
+    "clang",
+    "libdisplay-info-dev",
+    "libinput-dev",
+    "libxkbcommon-dev",
+    "libgbm-dev",
+]
+arch = "amd64"
+
+[source.git-clone]
+url = "https://github.com/niri-wm/niri.git"
+branch-or-tag = "v26.04"
+
+[debian]
+changelog = true
+compat = 10
+
+[debian.control]
+description = "A scrollable-tiling Wayland compositor."
+dependencies = ["${shlibs:Depends}", "libwayland-server0"]
+
+[debian.rules]
+"%" = ["dh $@"]
+override_dh_auto_build = [
+    "CARGO_TERM_COLOR=always cargo build --release",
+    "target/release/niri completions bash > resources/niri.bash",
+]
+override_dh_auto_install = [
+    "install -Dm0755 target/release/niri debian/niri/usr/bin/niri",
+    "install -Dm0644 resources/niri.bash debian/niri/usr/share/bash-completion/completions/niri",
+]

@@ -1,0 +1,19 @@
+version = "1.0.0"
+dependencies = ["libxkbcommon-dev", "meson"]
+arch = "amd64"
+
+[source.git-clone]
+url = "https://github.com/iliabylich/caps-lock-daemon.git"
+branch-or-tag = "v1.0.0"
+
+[debian]
+changelog = true
+compat = 10
+
+[debian.control]
+description = "Tiny Linux daemon that watches system input devices and exposes Caps Lock state changes over a UNIX socket"
+dependencies = ["${shlibs:Depends}"]
+
+[debian.rules]
+"%" = ["dh $@"]
+override_dh_auto_configure = ["dh_auto_configure -- --buildtype=release"]

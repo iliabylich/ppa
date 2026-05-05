@@ -1,10 +1,10 @@
-version = "1.0.0"
-dependencies = ["libxkbcommon-dev", "meson"]
+version = "1.0.1"
+dependencies = ["libxkbcommon-dev"]
 arch = "amd64"
 
 [source.git-clone]
 url = "https://github.com/iliabylich/caps-lock-daemon.git"
-branch-or-tag = "v1.0.0"
+branch-or-tag = "v1.0.1"
 
 [debian]
 changelog = true
@@ -16,4 +16,8 @@ dependencies = ["${shlibs:Depends}"]
 
 [debian.rules]
 "%" = ["dh $@"]
-override_dh_auto_configure = ["dh_auto_configure -- --buildtype=release"]
+override_dh_auto_build = ["cargo build --release"]
+override_dh_auto_install = [
+    "install -Dm0755 target/release/caps-lock-daemon debian/caps-lock-daemon/usr/bin/caps-lock-daemon",
+    "install -Dm0755 systemd/caps-lock-daemon.service debian/caps-lock-daemon/usr/lib/systemd/system/caps-lock-daemon.service",
+]

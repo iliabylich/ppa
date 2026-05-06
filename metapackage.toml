@@ -157,6 +157,7 @@ dependencies = [
     # Niri
     "niri",
     "swaybg",
+    "hyprlock",
     "dunst",
     "wl-clipboard",
     "wf-recorder",

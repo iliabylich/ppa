@@ -34,4 +34,9 @@ override_dh_auto_build = [
 override_dh_auto_install = [
     "install -Dm0755 target/release/niri debian/niri/usr/bin/niri",
     "install -Dm0644 resources/niri.bash debian/niri/usr/share/bash-completion/completions/niri",
+    "install -Dm0644 resources/niri-session debian/niri/usr/bin/niri-session",
+    "install -Dm0644 resources/niri.desktop debian/niri/usr/share/wayland-sessions/niri.desktop",
+    "install -Dm0644 resources/niri-portals.conf debian/niri/usr/share/xdg-desktop-portal/niri-portals.conf",
+    "install -Dm0644 resources/niri.service debian/niri/usr/lib/systemd/user/niri.service",
+    "install -Dm0644 resources/niri-shutdown.target debian/niri/usr/lib/systemd/user/niri-shutdown.target",
 ]

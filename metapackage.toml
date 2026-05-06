@@ -115,6 +115,10 @@ dependencies = [
     "wiremix",
     "ripgrep",
     "bear",
+    "imagemagick",
+    "fdisk",
+    "evtest",
+    "dconf-cli",
 
     # Libs
     "libjemalloc-dev",
@@ -143,13 +147,15 @@ dependencies = [
     "fonts-inter-variable-nerd",
     "fonts-adwaita-mono-nerd",
     "fonts-apple-color-emoji",
-    "mpclipboard-client",
     "libinput-tools",
     "fwupd",
+    "ca-certificates",
+    "wine",
+    "winetricks",
+    "fonts-wine",
 
-    # Hyprland
-    "x-hyprland",
-    "x-hyprlock",
+    # Niri
+    "niri",
     "swaybg",
     "dunst",
     "wl-clipboard",
@@ -160,18 +166,15 @@ dependencies = [
     "cliphist",
     "layer-shell",
     "pavucontrol",
-    "x-hyprsunset",
-    "x-hyprland-guiutils",
-    "x-hyprpolkitagent",
-    "x-hyprland-qt-support",
-    "x-xdg-desktop-portal-hyprland",
-    "unsplash-wallpaper",
     "matugen",
     "bluez",
     "fuzzel",
     "iwmenu",
     "bzmenu",
     "waybar",
+    "xdg-desktop-portal-wlr",
+    "caps-lock-daemon",
+    "mpclipboard-client",
 ]
 
 [debian.rules]

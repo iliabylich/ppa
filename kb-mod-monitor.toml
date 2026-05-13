@@ -1,0 +1,23 @@
+version = "2.0.0"
+dependencies = ["libxkbcommon-dev"]
+arch = "amd64"
+
+[source.git-clone]
+url = "https://github.com/iliabylich/kb-mod-monitor.git"
+branch-or-tag = "v2.0.0"
+
+[debian]
+changelog = true
+compat = 10
+
+[debian.control]
+description = "Tiny Linux daemon that watches system input devices and exposes {Caps,Num} Lock state changes over a UNIX socket"
+dependencies = ["${shlibs:Depends}"]
+
+[debian.rules]
+"%" = ["dh $@"]
+override_dh_auto_build = ["cargo build --release"]
+override_dh_auto_install = [
+    "install -Dm0755 target/release/kb-mod-monitor debian/kb-mod-monitor/usr/bin/kb-mod-monitor",
+    "install -Dm0755 systemd/kb-mod-monitor.service debian/kb-mod-monitor/usr/lib/systemd/system/kb-mod-monitor.service",
+]

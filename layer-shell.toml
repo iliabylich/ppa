@@ -1,14 +1,13 @@
 version = "0-0-stamp"
 dependencies = [
-    "libgtk-4-dev",
-    "libgtk4-layer-shell-dev",
-    "libvte-2.91-gtk4-dev",
+    "qt6-base-dev",
+    "liblayershellqtinterface-dev",
+    "libqtermwidget-dev",
     "sassc",
     "xxd",
     "meson",
     "liburing-dev",
     "libssl-dev",
-    "blueprint-compiler",
 ]
 arch = "amd64"
 

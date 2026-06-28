@@ -1,10 +1,10 @@
-version = "2.0.0"
+version = "3.0.0"
 dependencies = ["libxkbcommon-dev"]
 arch = "amd64"
 
 [source.git-clone]
 url = "https://github.com/iliabylich/kb-mod-monitor.git"
-branch-or-tag = "v2.0.0"
+branch-or-tag = "v3.0.0"
 
 [debian]
 changelog = true
@@ -19,5 +19,6 @@ dependencies = ["${shlibs:Depends}"]
 override_dh_auto_build = ["cargo build --release"]
 override_dh_auto_install = [
     "install -Dm0755 target/release/kb-mod-monitor debian/kb-mod-monitor/usr/bin/kb-mod-monitor",
-    "install -Dm0755 systemd/kb-mod-monitor.service debian/kb-mod-monitor/usr/lib/systemd/system/kb-mod-monitor.service",
+    "install -Dm0644 systemd/kb-mod-monitor.service debian/kb-mod-monitor/usr/lib/systemd/system/kb-mod-monitor.service",
+    "install -Dm0644 systemd/kb-mod-monitor.socket debian/kb-mod-monitor/usr/lib/systemd/system/kb-mod-monitor.socket",
 ]

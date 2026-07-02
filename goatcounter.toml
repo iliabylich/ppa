@@ -22,8 +22,6 @@ override_dh_auto_build = [
     "gunzip goatcounter-v2.7.0-linux-amd64.gz",
 ]
 override_dh_auto_install = [
-    "mkdir -p debian/goatcounter/usr/bin",
-    "install -m755 goatcounter-v2.7.0-linux-amd64 debian/goatcounter/usr/bin/goatcounter",
-    "mkdir -p debian/goatcounter/usr/lib/systemd/system",
-    "install -m755 /shared/files/goatcounter.service debian/goatcounter/usr/lib/systemd/system/goatcounter.service",
+    "install -Dm0755 goatcounter-v2.7.0-linux-amd64 debian/goatcounter/usr/bin/goatcounter",
+    "install -Dm0644 /shared/files/goatcounter.service debian/goatcounter/usr/lib/systemd/system/goatcounter.service",
 ]

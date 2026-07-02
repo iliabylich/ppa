@@ -30,7 +30,6 @@ dependencies = [
     # "obfuscate",
     # "zenity",
     "ghostty",
-    # "spot",
 
     # Dev tools
     "gcc",
@@ -89,7 +88,6 @@ dependencies = [
     "fx",
     "starship",
     "du-dust",
-    "gaskpass",
     "xremap",
     "pipewire-dbus",
     "apache2-utils",
@@ -112,7 +110,6 @@ dependencies = [
     "x11-utils",
     "parallel",
     "fzf",
-    "wiremix",
     "ripgrep",
     "bear",
     "imagemagick",

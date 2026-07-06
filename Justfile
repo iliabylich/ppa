@@ -28,15 +28,8 @@ test:
     #!/usr/bin/env bash
     diff test/output.sh <(just render test/input.jsonnet)
 
-gh-upload *args:
-    cargo run --bin gh-upload -- {{args}}
-
-deploy *args:
-    ./scripts/deploy.sh {{args}}
-
 push *args:
-    @just gh-upload {{args}}
-    @just deploy {{args}}
+    ./scripts/deploy.sh {{args}}
 
 unpack debfile:
     mkdir -p tmp

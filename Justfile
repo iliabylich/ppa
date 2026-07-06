@@ -6,29 +6,27 @@ clean:
     rm -rf deb-latest
 
 container-rebuild:
-    cargo build --release
     podman image rm -f ppa-builder
     podman build . --file Dockerfile --tag ppa-builder:latest --squash-all
 
 container-sh:
     podman run --rm -it -v $PWD:/shared --entrypoint bash ppa-builder
 
-run-in-container exe *command:
-    podman run --rm \
-        -t \
-        -v "$PWD:/shared" \
-        --entrypoint "/bin/{{exe}}" \
-        ppa-builder \
-        {{command}}
+_jsonnet config action:
+    jsonnet {{config}} --ext-str timestamp=$(date +%s) --tla-str action={{action}} -S
 
 build config:
-    @just run-in-container build {{config}}
+    podman run --rm -t -v "$PWD:/shared" --entrypoint bash ppa-builder -c "$(just render {{config}}) | bash"
 
-parse config:
-    @just run-in-container parse {{config}}
+render config:
+    @just _jsonnet {{config}} render
 
-explain config:
-    @just run-in-container explain {{config}}
+dump config:
+    @just _jsonnet {{config}} dump
+
+test:
+    #!/usr/bin/env bash
+    diff test/output.sh <(just render test/input.jsonnet)
 
 gh-upload *args:
     cargo run --bin gh-upload -- {{args}}
@@ -47,8 +45,18 @@ unpack debfile:
 shellcheck:
     shellcheck -x **/*.sh
 
-bump config:
-    cargo run --bin bump -- {{config}}
-
 check-updates:
-    cargo run --bin check-updates -- $(find . -name '*.toml')
+    #!/usr/bin/env bash
+    set -euo pipefail
+
+    find . \
+        -path ./scripts -prune -o \
+        -path ./test -prune -o \
+        -type f \
+        -name '*.jsonnet' \
+        -print0 |
+        xargs -0 -n 1 -P 8 bash -c '
+            set -euo pipefail
+
+            jsonnet "$1" --ext-str timestamp="$(date +%s)" --tla-str action=check-updates -S | bash
+        ' _

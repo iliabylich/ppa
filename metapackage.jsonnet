@@ -11,7 +11,6 @@ configure(
   scripts=[],
   dependencies=[
     // Gnome
-    'nautilus',
     'gnome-system-monitor',
 
     // UI apps

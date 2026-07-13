@@ -1,0 +1,8 @@
+[Unit]
+Description=SwayBG
+
+[Service]
+ExecStart=swaybg --mode stretch --image .local/share/backgrounds/current.jpeg
+WorkingDirectory=%h
+Restart=on-failure
+RestartSec=5s

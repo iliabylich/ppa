@@ -14,7 +14,6 @@ configure(
     'xxd',
     'meson',
     'liburing-dev',
-    'libssl-dev',
   ],
   source={
     type: 'git',

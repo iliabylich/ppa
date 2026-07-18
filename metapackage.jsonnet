@@ -87,7 +87,6 @@ configure(
     'starship',
     'du-dust',
     'xremap',
-    'pipewire-dbus',
     'apache2-utils',
     'wireplumber',
     'bash-completion',
@@ -152,6 +151,7 @@ configure(
     // Niri
     'niri',
     'swaybg',
+    'swaybg-systemd',
     'hyprlock',
     'dunst',
     'wl-clipboard',
@@ -169,8 +169,12 @@ configure(
     'bzmenu',
     'waybar',
     'xdg-desktop-portal-wlr',
+    'pipewire-mon',
     'kb-mod-monitor',
+    'nm-mon',
+    'weather-mon',
     'mpclipboard-client',
+    'tray-mon',
   ],
   rules={
     '%': ['dh $@'],

@@ -24,6 +24,6 @@ function(file, name, version, arch='amd64', url)
     else if action == 'render' then
       download(name, version, url)
     else if action == 'check-updates' then
-      'echo "Skipping ' + file + '"'
+      'echo -e "' + file + ': \\e[0;33mskipping (direct)\\e[0m"'
     else
       error 'unknown action ' + action

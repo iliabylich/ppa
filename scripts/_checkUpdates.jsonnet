@@ -61,7 +61,7 @@ local render = function(file, dataOrErr)
     |||
       #!/usr/bin/env bash
 
-      set -euo pipefail
+      # set -eu
 
       RED='\x1b[0;31m'
       GREEN='\x1b[0;32m'
@@ -79,7 +79,10 @@ local render = function(file, dataOrErr)
         'OWNER_SLASH_REPO="' + ownerSlashRepo + '"',
         'REV="' + rev + '"',
         |||
-          LATEST=$(gh release view -R "$OWNER_SLASH_REPO" --json tagName --jq .tagName)
+          LATEST=$(gh release view -R "$OWNER_SLASH_REPO" --json tagName --jq .tagName 2>/dev/null)
+          if [ "$LATEST" = "" ]; then
+            LATEST=$(gh api "/repos/$OWNER_SLASH_REPO/tags" --jq ".[] | .name" | head -n1 2>/dev/null)
+          fi
 
           if [ "$LATEST" = "$REV" ]; then
             echo -e "${FILE}: ${GREEN}current=${REV}, latest=${LATEST}${NC}"

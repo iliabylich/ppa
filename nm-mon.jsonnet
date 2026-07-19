@@ -5,11 +5,11 @@ configure(
   name='nm-mon',
   description='A simple NetworkManager monitoring service that sends data over UNIX socket',
   arch='amd64',
-  version='1.0.0',
+  version='2.0.0',
   source={
     type: 'git',
     url: 'https://github.com/iliabylich/nm-mon.git',
-    rev: 'v1.0.0',
+    rev: 'v2.0.0',
   },
   scripts=[],
   dependencies=['${shlibs:Depends}'],

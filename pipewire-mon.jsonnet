@@ -5,7 +5,7 @@ configure(
   name='pipewire-mon',
   description='A daemon service that triggers Pipewire volume events over UNIX socket',
   arch='amd64',
-  version='1.0.0',
+  version='2.0.0',
   install=[
     'libpipewire-0.3-dev',
     'libclang-rt-dev',
@@ -14,7 +14,7 @@ configure(
   source={
     type: 'git',
     url: 'https://github.com/iliabylich/pipewire-mon.git',
-    rev: 'v1.0.0',
+    rev: 'v2.0.0',
   },
   scripts=[],
   dependencies=['${shlibs:Depends}', 'pipewire-bin'],

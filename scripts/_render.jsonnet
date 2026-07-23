@@ -24,7 +24,7 @@ local aptInstall = function(install)
   if std.length(install) != 0 then
     [
       'apt update',
-      'apt install -y ' + std.join(' ', install),
+      'apt install --no-install-recommends --no-install-suggests -y ' + std.join(' ', install),
     ]
   else
     [];

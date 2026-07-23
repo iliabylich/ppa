@@ -10,6 +10,8 @@ configure(
     'qt6-base-dev',
     'liblayershellqtinterface-dev',
     'libqtermwidget-dev',
+    'libutf8proc-dev',
+    'qt6-base-dev-tools',
     'sassc',
     'xxd',
     'meson',
@@ -31,6 +33,13 @@ configure(
   ],
   rules={
     '%': ['dh $@'],
-    override_dh_auto_configure: ['dh_auto_configure -- --buildtype=release'],
+    override_dh_auto_configure: ['meson setup builddir --buildtype=release --prefix=$$PWD/debian/layer-shell/usr'],
+    override_dh_auto_build: [
+      'meson compile -C builddir',
+    ],
+    override_dh_auto_install: [
+      'meson install -C builddir',
+      'strip debian/layer-shell/usr/bin/layer-shell',
+    ],
   },
 )

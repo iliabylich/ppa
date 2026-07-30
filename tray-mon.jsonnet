@@ -1,16 +1,18 @@
 local configure = import 'scripts/base.jsonnet';
 
+local version = '1.0.1';
+
 configure(
   file=std.thisFile,
   name='tray-mon',
   description='A daemon service that triggers tray events over a UNIX socket',
   arch='amd64',
-  version='1.0.0',
+  version=version,
   install=[],
   source={
     type: 'git',
     url: 'https://github.com/iliabylich/tray-mon.git',
-    rev: 'v1.0.0',
+    rev: 'v' + version,
   },
   scripts=[],
   dependencies=['${shlibs:Depends}'],

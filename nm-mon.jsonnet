@@ -1,15 +1,17 @@
 local configure = import 'scripts/base.jsonnet';
 
+local version = '2.0.1';
+
 configure(
   file=std.thisFile,
   name='nm-mon',
   description='A simple NetworkManager monitoring service that sends data over UNIX socket',
   arch='amd64',
-  version='2.0.0',
+  version=version,
   source={
     type: 'git',
     url: 'https://github.com/iliabylich/nm-mon.git',
-    rev: 'v2.0.0',
+    rev: 'v' + version,
   },
   scripts=[],
   dependencies=['${shlibs:Depends}'],

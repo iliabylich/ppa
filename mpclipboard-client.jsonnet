@@ -1,6 +1,5 @@
 local direct = import 'scripts/direct.jsonnet';
-
-local version = '1.0.7';
+local version = '2.0.2';
 
 direct(
   file=std.thisFile,

@@ -1,11 +1,12 @@
 local configure = import 'scripts/base.jsonnet';
+local version = '0.22.0';
 
 configure(
   file=std.thisFile,
   name='satty',
   description='Satty - Modern Screenshot Annotation. A tool inspired by Swappy and Flameshot.',
   arch='amd64',
-  version='0.20.1',
+  version=version,
   install=[
     'libgtk-4-dev',
     'libadwaita-1-dev',
@@ -16,7 +17,7 @@ configure(
   source={
     type: 'git',
     url: 'https://github.com/gabm/Satty.git',
-    rev: 'v0.20.1',
+    rev: 'v' + version,
   },
   scripts=[],
   dependencies=['${shlibs:Depends}'],

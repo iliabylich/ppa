@@ -1,11 +1,12 @@
 local configure = import '../scripts/base.jsonnet';
+local version = '3.5.0';
 
 configure(
   file=std.thisFile,
   name='fonts-adwaita-mono-nerd',
   description='The Adwaita Mono font family (patched with NerdFont)',
   arch='all',
-  version='3.4.0',
+  version=version,
   install=[
     'wget',
     'unzip',
@@ -13,14 +14,14 @@ configure(
   source={
     type: 'git',
     url: 'https://github.com/ryanoasis/nerd-fonts.git',
-    rev: 'v3.4.0',
+    rev: 'v' + version,
   },
   scripts=[],
   dependencies=[],
   rules={
     '%': ['dh $@'],
     override_dh_auto_build: [
-      'wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/AdwaitaMono.zip',
+      'wget https://github.com/ryanoasis/nerd-fonts/releases/download/v' + version + '/AdwaitaMono.zip',
       'unzip -o AdwaitaMono.zip',
     ],
     override_dh_auto_install: [

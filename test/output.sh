@@ -9,7 +9,7 @@ export BAR="bar"
 export FOO="foo"
 export PATH="/foo/bin:/bar/bin:$PATH"
 apt update
-apt install -y foo-dev bar-dev
+apt install --no-install-recommends --no-install-suggests -y foo-dev bar-dev
 cargo binstall -y cargo-foo cargo-bar
 mkdir -p /build
 git clone https://github.com/test/repo.git --filter=blob:none --recursive --shallow-submodules --depth=1 -q --branch=v1.2.3 /build/testpackage-1.2.3

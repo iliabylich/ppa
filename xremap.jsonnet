@@ -1,16 +1,17 @@
 local configure = import 'scripts/base.jsonnet';
+local version = '0.15.10';
 
 configure(
   file=std.thisFile,
   name='xremap',
   description='Key remapper for X11 and Wayland',
   arch='amd64',
-  version='0.15.0',
+  version=version,
   install=[],
   source={
     type: 'git',
     url: 'https://github.com/xremap/xremap.git',
-    rev: 'v0.15.0',
+    rev: 'v' + version,
   },
   scripts=[],
   dependencies=['${shlibs:Depends}'],

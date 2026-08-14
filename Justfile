@@ -53,3 +53,9 @@ check-updates:
 
             jsonnet "$1" --ext-str timestamp="$(date +%s)" --tla-str action=check-updates -S | bash
         ' _
+
+reload-metapackage:
+    sudo apt-mark auto $(jsonnet metapackage.jsonnet --tla-str action=print-dependencies -S)
+
+remove-opt-packages:
+    sudo apt autoremove -o Apt::AutoRemove::RecommendsImportant=false -o Apt::AutoRemove::SuggestsImportant=false

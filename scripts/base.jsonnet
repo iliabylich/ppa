@@ -1,5 +1,6 @@
 local checkUpdates = import './_checkUpdates.jsonnet';
 local debian = import './_debian.jsonnet';
+local printDependencies = import './_printDependencies.jsonnet';
 local render = import './_render.jsonnet';
 
 function(
@@ -49,6 +50,8 @@ function(
         rules=rules
       ),
     },
+
+    dependencies: dependencies,
   };
 
   function(action)
@@ -58,5 +61,7 @@ function(
       render(config)
     else if action == 'check-updates' then
       checkUpdates(config)
+    else if action == 'print-dependencies' then
+      printDependencies(config)
     else
       error 'unknown action ' + action

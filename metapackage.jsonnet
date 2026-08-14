@@ -28,6 +28,7 @@ configure(
     // "obfuscate",
     // "zenity",
     'ghostty',
+    'gamescope',
 
     // Dev tools
     'gcc',
@@ -61,6 +62,8 @@ configure(
     'podman',
     'musl',
     'musl-tools',
+    'patchelf',
+    'net-tools',
 
     // CLI
     'hugo',
@@ -125,6 +128,10 @@ configure(
     'libclang-rt-dev',
     'musl-dev',
     'liburing-dev',
+    'liblayershellqtinterface-dev',
+    'libqtermwidget-dev',
+    'libutf8proc-dev',
+    'qt6-base-dev',
 
     // Debian
     'apt-file',
@@ -140,6 +147,7 @@ configure(
     'fonts-inter-variable',
     'fonts-inter-variable-nerd',
     'fonts-adwaita-mono-nerd',
+    'fonts-adwaita-mono',
     'fonts-apple-color-emoji',
     'libinput-tools',
     'fwupd',

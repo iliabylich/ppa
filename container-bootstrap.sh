@@ -16,3 +16,5 @@ rm -rf /tmp/*
 
 cd /root/.cargo/bin
 curl -L https://github.com/cargo-bins/cargo-binstall/releases/latest/download/cargo-binstall-x86_64-unknown-linux-gnu.tgz | tar -xvzf -
+
+curl -fsSL https://mise.run | sh

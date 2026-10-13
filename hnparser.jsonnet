@@ -7,8 +7,6 @@ configure(
   arch='amd64',
   version='0.0.' + std.extVar('timestamp'),
   install=[
-    'nodejs',
-    'npm',
     'just',
     'musl',
     'musl-dev',
@@ -23,8 +21,8 @@ configure(
   rules={
     '%': ['dh $@'],
     override_dh_auto_build: [
-      'npm install',
-      'just tailwind-build',
+      'mise x -- npm install',
+      'mise x -- npx @tailwindcss/cli -i templates/index.css -o ./templates/output.css --minify',
       'rustup target add x86_64-unknown-linux-musl',
       'cargo build --release --target=x86_64-unknown-linux-musl',
     ],

@@ -170,7 +170,6 @@ configure(
     'cliphist',
     'layer-shell',
     'pavucontrol',
-    'matugen',
     'bluez',
     'fuzzel',
     'iwmenu',

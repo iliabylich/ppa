@@ -1,6 +1,8 @@
 local configure = import 'scripts/base.jsonnet';
 
-local version = '1.0.2';
+local version = '1.0.4';
+local tag = 'v' + version;
+local releaseUrl = 'https://github.com/iliabylich/tray-mon/releases/download/' + tag;
 
 configure(
   file=std.thisFile,
@@ -12,17 +14,21 @@ configure(
   source={
     type: 'git',
     url: 'https://github.com/iliabylich/tray-mon.git',
-    rev: 'v' + version,
+    rev: tag,
   },
   scripts=[],
   dependencies=['${shlibs:Depends}'],
   rules={
     '%': ['dh $@'],
-    override_dh_auto_build: ['cargo build --release'],
+    override_dh_auto_build: [
+      'wget ' + releaseUrl + '/tray-mon -O tray-mon',
+      'wget ' + releaseUrl + '/tray-mon.service -O tray-mon.service',
+      'wget ' + releaseUrl + '/tray-mon.socket -O tray-mon.socket',
+    ],
     override_dh_auto_install: [
-      'install -Dm0755 target/release/tray-mon debian/tray-mon/usr/bin/tray-mon',
-      'install -Dm0644 systemd/tray-mon.service debian/tray-mon/usr/lib/systemd/user/tray-mon.service',
-      'install -Dm0644 systemd/tray-mon.socket debian/tray-mon/usr/lib/systemd/user/tray-mon.socket',
+      'install -Dm0755 tray-mon debian/tray-mon/usr/bin/tray-mon',
+      'install -Dm0644 tray-mon.service debian/tray-mon/usr/lib/systemd/user/tray-mon.service',
+      'install -Dm0644 tray-mon.socket debian/tray-mon/usr/lib/systemd/user/tray-mon.socket',
     ],
   },
 )

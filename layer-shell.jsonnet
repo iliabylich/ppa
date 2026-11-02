@@ -1,31 +1,28 @@
 local configure = import 'scripts/base.jsonnet';
 
+local version = '1.0.0';
+local tag = 'v' + version;
+local releaseUrl = 'https://github.com/iliabylich/layer-shell/releases/download/' + tag;
+
 configure(
   file=std.thisFile,
   name='layer-shell',
   description='A custom layer shell',
   arch='amd64',
-  version='0.0.' + std.extVar('timestamp'),
+  version=version,
   install=[
-    'qt6-base-dev',
-    'liblayershellqtinterface-dev',
-    'libqtermwidget-dev',
-    'libutf8proc-dev',
-    'qt6-base-dev-tools',
-    'sassc',
-    'xxd',
-    'meson',
-    'liburing-dev',
+    'libqt6core6t64',
+    'libqt6gui6',
+    'libqt6widgets6',
+    'liblayershellqtinterface6',
+    'libqtermwidget6-2',
   ],
   source={
     type: 'git',
     url: 'https://github.com/iliabylich/layer-shell.git',
-    rev: 'master',
+    rev: tag,
   },
-  scripts=[
-    'wget https://github.com/mozilla/cbindgen/releases/download/0.28.0/cbindgen -O /bin/cbindgen',
-    'chmod +x /bin/cbindgen',
-  ],
+  scripts=[],
   dependencies=[
     '${shlibs:Depends}',
     'fonts-inter-variable-nerd',
@@ -33,13 +30,14 @@ configure(
   ],
   rules={
     '%': ['dh $@'],
-    override_dh_auto_configure: ['meson setup builddir --buildtype=release --prefix=$$PWD/debian/layer-shell/usr'],
+    override_dh_auto_configure: ['@true'],
     override_dh_auto_build: [
-      'meson compile -C builddir',
+      'wget ' + releaseUrl + '/layer-shell -O layer-shell',
+      'wget ' + releaseUrl + '/layer-shell.service -O layer-shell.service',
     ],
     override_dh_auto_install: [
-      'meson install -C builddir',
-      'strip debian/layer-shell/usr/bin/layer-shell',
+      'install -Dm0755 layer-shell debian/layer-shell/usr/bin/layer-shell',
+      'install -Dm0644 layer-shell.service debian/layer-shell/usr/lib/systemd/user/layer-shell.service',
     ],
   },
 )

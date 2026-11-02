@@ -1,34 +1,32 @@
 local configure = import 'scripts/base.jsonnet';
 
+local version = '1.0.0';
+local tag = 'v' + version;
+local releaseUrl = 'https://github.com/iliabylich/hn-parser/releases/download/' + tag;
+
 configure(
   file=std.thisFile,
   name='hnparser',
   description='HN parser',
   arch='amd64',
-  version='0.0.' + std.extVar('timestamp'),
-  install=[
-    'just',
-    'musl',
-    'musl-dev',
-  ],
+  version=version,
+  install=[],
   source={
     type: 'git',
     url: 'https://github.com/iliabylich/hn-parser.git',
-    rev: 'master',
+    rev: tag,
   },
   scripts=[],
   dependencies=['${shlibs:Depends}'],
   rules={
     '%': ['dh $@'],
     override_dh_auto_build: [
-      'mise x -- npm install',
-      'mise x -- npx @tailwindcss/cli -i templates/index.css -o ./templates/output.css --minify',
-      'rustup target add x86_64-unknown-linux-musl',
-      'cargo build --release --target=x86_64-unknown-linux-musl',
+      'wget ' + releaseUrl + '/hnparser -O hnparser',
+      'wget ' + releaseUrl + '/hnparser.service -O hnparser.service',
     ],
     override_dh_auto_install: [
-      'install -Dm0755 target/x86_64-unknown-linux-musl/release/hnparser debian/hnparser/usr/bin/hnparser',
-      'install -Dm0644 debian/hnparser.service debian/hnparser/usr/lib/systemd/system/hnparser.service',
+      'install -Dm0755 hnparser debian/hnparser/usr/bin/hnparser',
+      'install -Dm0644 hnparser.service debian/hnparser/usr/lib/systemd/system/hnparser.service',
     ],
   },
 )

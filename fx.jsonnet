@@ -1,6 +1,6 @@
 local configure = import 'scripts/base.jsonnet';
 
-local version = '40.0.0';
+local version = '40.0.1';
 
 configure(
   file=std.thisFile,

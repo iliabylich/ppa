@@ -12,7 +12,6 @@ configure(
   },
   path=['/foo/bin', '/bar/bin'],
   install=['foo-dev', 'bar-dev'],
-  binstall=['cargo-foo', 'cargo-bar'],
   source={
     type: 'git',
     url: 'https://github.com/test/repo.git',
@@ -22,7 +21,6 @@ configure(
   dependencies=['${shlibs:Depends}', 'libfoo'],
   rules={
     foo: ['foo1', 'foo2 --yes'],
-    '%': ['dh $@'],
     bar: ['bar1', 'bar2 --yes'],
   },
 )

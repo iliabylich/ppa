@@ -10,7 +10,7 @@ local exportEnvironmentVariables = function(env)
     );
   std.map(
     function(kv)
-      'export ' + kv.key + '="' + kv.value + '"',
+      kv.key + '="' + kv.value + '"; export ' + kv.key,
     default + sorted,
   );
 
@@ -23,17 +23,10 @@ local exportPath = function(path)
 local aptInstall = function(install)
   if std.length(install) != 0 then
     [
-      'apt update',
-      'apt install --no-install-recommends --no-install-suggests -y ' + std.join(' ', install),
+      'apt-get update',
+      'apt-get install --no-install-recommends --no-install-suggests -y ' + std.join(' ', install),
     ]
   else
-    [];
-
-local binstall = function(binstall)
-  if std.length(binstall) != 0 then
-    [
-      'cargo binstall -y ' + std.join(' ', binstall),
-    ] else
     [];
 
 local fetchSource = function(source, buildDir)
@@ -51,6 +44,8 @@ local fetchSource = function(source, buildDir)
       buildDir,
     ])
   else if source.type == 'none' then
+    'mkdir -p ' + buildDir
+  else if source.type == 'release' then
     'mkdir -p ' + buildDir
   else if source.type == 'custom' then
     source.func(buildDir)
@@ -72,7 +67,6 @@ function(config)
     exportEnvironmentVariables(config.env),
     exportPath(config.path),
     aptInstall(config.install),
-    binstall(config.binstall),
 
     'mkdir -p /build',
     fetchSource(config.source, config.buildDir),
@@ -85,9 +79,6 @@ function(config)
     "tee debian/changelog <<'EOF'",
     config.debian.changelog,
     'EOF',
-    "tee debian/compat <<'EOF'",
-    config.debian.compat,
-    'EOF',
     "tee debian/control <<'EOF'",
     config.debian.control,
     'EOF',
@@ -96,7 +87,7 @@ function(config)
     'EOF',
     'chmod +x debian/rules',
 
-    'dh binary',
+    'debian/rules binary',
     'ls -l /build --color=always',
 
     'cp /build/' + debfile + ' /shared/' + debfile,

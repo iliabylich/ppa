@@ -1,20 +1,19 @@
 local configure = import '../scripts/base.jsonnet';
+local version = '50.0';
 
 configure(
   file=std.thisFile,
   name='fonts-adwaita-mono',
   description='The Adwaita Mono font family',
   arch='all',
-  version='50.0',
+  version=version,
   source={
     type: 'git',
     url: 'https://gitlab.gnome.org/GNOME/adwaita-fonts.git',
-    rev: '50.0',
+    rev: version,
   },
-  scripts=[],
   dependencies=[],
   rules={
-    '%': ['dh $@'],
     override_dh_auto_build: [
       '@true',
     ],

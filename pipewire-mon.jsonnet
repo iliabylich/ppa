@@ -8,18 +8,15 @@ configure(
   file=std.thisFile,
   name='pipewire-mon',
   description='A daemon service that triggers Pipewire volume events over UNIX socket',
-  arch='amd64',
   version=version,
   install=['libpipewire-0.3-0t64'],
   source={
-    type: 'git',
+    type: 'release',
     url: 'https://github.com/iliabylich/pipewire-mon.git',
     rev: tag,
   },
-  scripts=[],
   dependencies=['${shlibs:Depends}', 'pipewire-bin'],
   rules={
-    '%': ['dh $@'],
     override_dh_auto_build: [
       'wget ' + releaseUrl + '/pipewire-mon -O pipewire-mon',
       'wget ' + releaseUrl + '/pipewire-mon.service -O pipewire-mon.service',

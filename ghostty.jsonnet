@@ -25,7 +25,6 @@ configure(
   ],
   dependencies=['${shlibs:Depends}'],
   rules={
-    '%': ['dh $@'],
     override_dh_auto_configure: ['@true'],
     override_dh_auto_build: ['@true'],
     override_dh_auto_install: [

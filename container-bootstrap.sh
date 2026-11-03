@@ -1,20 +1,15 @@
 #!/usr/bin/env bash
 
-set -eux
+set -euxo pipefail
 
-apt update
-apt -y upgrade
+apt-get update
+apt-get -y upgrade
 
-apt install -y wget curl git debhelper pkg-config jq g++ meson cmake musl musl-dev libgtest-dev ca-certificates
-apt autoremove -y
+apt-get install -y wget curl git debhelper pkg-config jq ca-certificates
+apt-get autoremove -y
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | bash -s -- --profile minimal -y
 
-apt clean
+apt-get clean
 rm -rf /var/lib/apt/lists/*
 rm -rf /tmp/*
-
-cd /root/.cargo/bin
-curl -L https://github.com/cargo-bins/cargo-binstall/releases/latest/download/cargo-binstall-x86_64-unknown-linux-gnu.tgz | tar -xvzf -
-
-curl -fsSL https://mise.run | sh

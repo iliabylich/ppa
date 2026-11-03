@@ -8,18 +8,14 @@ configure(
   file=std.thisFile,
   name='onemorebeer-ui',
   description='onemorebeer ui',
-  arch='amd64',
   version=version,
-  install=[],
   source={
-    type: 'git',
+    type: 'release',
     url: 'https://github.com/iliabylich/onemorebeer-ui.git',
     rev: tag,
   },
-  scripts=[],
   dependencies=['${shlibs:Depends}'],
   rules={
-    '%': ['dh $@'],
     override_dh_auto_build: [
       'wget ' + releaseUrl + '/onemorebeer-ui -O onemorebeer-ui',
       'wget ' + releaseUrl + '/onemorebeer-ui.service -O onemorebeer-ui.service',

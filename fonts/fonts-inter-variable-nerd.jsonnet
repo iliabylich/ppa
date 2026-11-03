@@ -1,11 +1,12 @@
 local configure = import '../scripts/base.jsonnet';
+local version = '4.1';
 
 configure(
   file=std.thisFile,
   name='fonts-inter-variable-nerd',
   description='The Inter font family (patched with NerdFont)',
   arch='all',
-  version='4.1',
+  version=version,
   install=[
     'wget',
     'unzip',
@@ -14,17 +15,15 @@ configure(
     'parallel',
   ],
   source={
-    type: 'git',
+    type: 'release',
     url: 'https://github.com/rsms/inter.git',
-    rev: 'v4.1',
+    rev: 'v' + version,
   },
-  scripts=[],
   dependencies=[],
   rules={
-    '%': ['dh $@'],
     override_dh_auto_build: [
-      'wget https://github.com/rsms/inter/releases/download/v4.1/Inter-4.1.zip',
-      'unzip -o Inter-4.1.zip',
+      'wget https://github.com/rsms/inter/releases/download/v' + version + '/Inter-' + version + '.zip',
+      'unzip -o Inter-' + version + '.zip',
       'wget https://github.com/ryanoasis/nerd-fonts/releases/latest/download/FontPatcher.zip',
       'unzip -o FontPatcher.zip',
       '/shared/fonts/patch-inter.sh',

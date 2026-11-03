@@ -32,7 +32,7 @@ local ownerRepoTagParser = {
 
   // ({ type: String, url: String, rev: String }) -> ((String, String), null) | ((null, null), err)
   parse(source)::
-    if source.type != 'git' then
+    if source.type != 'git' && source.type != 'release' then
       [[null, null], 'not a git source']
     else
       local ownerSlashRepoOrErr = self.extractOwnerSlashRepo(source.url);
@@ -61,8 +61,6 @@ local render = function(file, dataOrErr)
     |||
       #!/usr/bin/env bash
 
-      # set -eu
-
       RED='\x1b[0;31m'
       GREEN='\x1b[0;32m'
       YELLOW='\x1b[0;33m'
@@ -81,7 +79,7 @@ local render = function(file, dataOrErr)
         |||
           LATEST=$(gh release view -R "$OWNER_SLASH_REPO" --json tagName --jq .tagName 2>/dev/null)
           if [ "$LATEST" = "" ]; then
-            LATEST=$(gh api "/repos/$OWNER_SLASH_REPO/tags" --jq ".[] | .name" | head -n1 2>/dev/null)
+            LATEST=$(gh api "/repos/$OWNER_SLASH_REPO/tags" --jq ".[0].name" 2>/dev/null) || LATEST="(lookup failed)"
           fi
 
           if [ "$LATEST" = "$REV" ]; then

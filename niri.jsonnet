@@ -1,11 +1,11 @@
 local configure = import 'scripts/base.jsonnet';
+local version = '26.04';
 
 configure(
   file=std.thisFile,
   name='niri',
   description='A scrollable-tiling Wayland compositor.',
-  arch='amd64',
-  version='26.04',
+  version=version,
   install=[
     'libgio-2.0-dev',
     'libudev-dev',
@@ -21,23 +21,21 @@ configure(
   source={
     type: 'git',
     url: 'https://github.com/niri-wm/niri.git',
-    rev: 'v26.04',
+    rev: 'v' + version,
   },
-  scripts=[],
   dependencies=[
     '${shlibs:Depends}',
     'libwayland-server0',
   ],
   rules={
-    '%': ['dh $@'],
     override_dh_auto_build: [
-      'CARGO_TERM_COLOR=always cargo build --release',
+      'cargo build --release',
       'target/release/niri completions bash > resources/niri.bash',
     ],
     override_dh_auto_install: [
       'install -Dm0755 target/release/niri debian/niri/usr/bin/niri',
       'install -Dm0644 resources/niri.bash debian/niri/usr/share/bash-completion/completions/niri',
-      'install -Dm0644 resources/niri-session debian/niri/usr/bin/niri-session',
+      'install -Dm0755 resources/niri-session debian/niri/usr/bin/niri-session',
       'install -Dm0644 resources/niri.desktop debian/niri/usr/share/wayland-sessions/niri.desktop',
       'install -Dm0644 resources/niri-portals.conf debian/niri/usr/share/xdg-desktop-portal/niri-portals.conf',
       'install -Dm0644 resources/niri.service debian/niri/usr/lib/systemd/user/niri.service',

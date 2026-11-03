@@ -8,18 +8,14 @@ configure(
   file=std.thisFile,
   name='tray-mon',
   description='A daemon service that triggers tray events over a UNIX socket',
-  arch='amd64',
   version=version,
-  install=[],
   source={
-    type: 'git',
+    type: 'release',
     url: 'https://github.com/iliabylich/tray-mon.git',
     rev: tag,
   },
-  scripts=[],
   dependencies=['${shlibs:Depends}'],
   rules={
-    '%': ['dh $@'],
     override_dh_auto_build: [
       'wget ' + releaseUrl + '/tray-mon -O tray-mon',
       'wget ' + releaseUrl + '/tray-mon.service -O tray-mon.service',

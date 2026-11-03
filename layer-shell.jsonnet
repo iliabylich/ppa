@@ -8,7 +8,6 @@ configure(
   file=std.thisFile,
   name='layer-shell',
   description='A custom layer shell',
-  arch='amd64',
   version=version,
   install=[
     'libqt6core6t64',
@@ -18,18 +17,16 @@ configure(
     'libqtermwidget6-2',
   ],
   source={
-    type: 'git',
+    type: 'release',
     url: 'https://github.com/iliabylich/layer-shell.git',
     rev: tag,
   },
-  scripts=[],
   dependencies=[
     '${shlibs:Depends}',
     'fonts-inter-variable-nerd',
     'fonts-adwaita-mono-nerd',
   ],
   rules={
-    '%': ['dh $@'],
     override_dh_auto_configure: ['@true'],
     override_dh_auto_build: [
       'wget ' + releaseUrl + '/layer-shell -O layer-shell',

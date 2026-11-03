@@ -12,7 +12,6 @@ function(
   env={},
   path=[],
   install=[],
-  binstall=[],
   source,
   scripts=[],
   dependencies,
@@ -29,7 +28,6 @@ function(
     path: path,
 
     install: install,
-    binstall: binstall,
 
     source: source,
     scripts: scripts,
@@ -39,7 +37,6 @@ function(
         name=name,
         version=version
       ),
-      compat: debian.compat(),
       control: debian.control(
         name=name,
         description=description,

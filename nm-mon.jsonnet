@@ -8,18 +8,14 @@ configure(
   file=std.thisFile,
   name='nm-mon',
   description='A simple NetworkManager monitoring service that sends data over UNIX socket',
-  arch='amd64',
   version=version,
-  install=[],
   source={
-    type: 'git',
+    type: 'release',
     url: 'https://github.com/iliabylich/nm-mon.git',
     rev: tag,
   },
-  scripts=[],
   dependencies=['${shlibs:Depends}'],
   rules={
-    '%': ['dh $@'],
     override_dh_auto_build: [
       'wget ' + releaseUrl + '/nm-mon -O nm-mon',
       'wget ' + releaseUrl + '/nm-mon.service -O nm-mon.service',

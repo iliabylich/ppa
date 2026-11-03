@@ -1,5 +1,5 @@
-local download = function(name, version, url)
-  local debfile = name + '_' + version + '_amd64.deb';
+local download = function(name, version, arch, url)
+  local debfile = name + '_' + version + '_' + arch + '.deb';
 
   std.join('\n', std.flattenDeepArray([
     '#!/usr/bin/env bash',
@@ -22,8 +22,10 @@ function(file, name, version, arch='amd64', url)
     if action == 'dump' then
       error 'unsupported'
     else if action == 'render' then
-      download(name, version, url)
+      download(name, version, arch, url)
     else if action == 'check-updates' then
       'echo -e "' + file + ': \\e[0;33mskipping (direct)\\e[0m"'
+    else if action == 'print-dependencies' then
+      ''
     else
       error 'unknown action ' + action

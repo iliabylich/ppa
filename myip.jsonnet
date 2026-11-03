@@ -8,18 +8,14 @@ configure(
   file=std.thisFile,
   name='myip',
   description='a tiny service that returns client\'s IP',
-  arch='amd64',
   version=version,
-  install=[],
   source={
-    type: 'git',
+    type: 'release',
     url: 'https://github.com/iliabylich/myip.git',
     rev: tag,
   },
-  scripts=[],
   dependencies=['${shlibs:Depends}'],
   rules={
-    '%': ['dh $@'],
     override_dh_auto_build: [
       'wget ' + releaseUrl + '/myip -O myip',
       'wget ' + releaseUrl + '/myip.service -O myip.service',

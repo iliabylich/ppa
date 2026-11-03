@@ -8,18 +8,14 @@ configure(
   file=std.thisFile,
   name='weather-mon',
   description='A daemon service that fetches weather and shares it over a UNIX socket',
-  arch='amd64',
   version=version,
-  install=[],
   source={
-    type: 'git',
+    type: 'release',
     url: 'https://github.com/iliabylich/weather-mon.git',
     rev: tag,
   },
-  scripts=[],
   dependencies=['${shlibs:Depends}'],
   rules={
-    '%': ['dh $@'],
     override_dh_auto_build: [
       'wget ' + releaseUrl + '/weather-mon -O weather-mon',
       'wget ' + releaseUrl + '/weather-mon.service -O weather-mon.service',

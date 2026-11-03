@@ -8,27 +8,26 @@
       ' -- John Doe <john@doe.org>  Wed, 22 May 2024 17:54:24 +0000',
     ]),
 
-  compat()::
-    '10',
-
   control(name, description, arch, dependencies)::
-    std.join('\n', [
+    std.join('\n', std.prune([
       'Source: ' + name,
       'Section: utils',
-      'Priority: extra',
+      'Priority: optional',
       'Maintainer: John Doe <john@doe.org>',
-      'Standards-Version: 4.6.2',
+      'Build-Depends: debhelper-compat (= 14)',
+      'Standards-Version: 4.7.4',
       '',
       'Package: ' + name,
       'Section: utils',
-      'Priority: extra',
+      'Priority: optional',
       'Architecture: ' + arch,
-      'Depends: ' + std.join(',', dependencies),
+      if std.length(dependencies) > 0 then 'Depends: ' + std.join(', ', dependencies),
       'Description: ' + std.trim(description),
-    ]),
+    ])),
 
   rules(rules)::
     local default = {
+      '%': ['dh $@ --without=single-binary'],
       override_dh_auto_test: ['@true'],
       override_dh_strip: ['@true'],
     };
@@ -56,7 +55,7 @@
     local lines = std.flattenDeepArray([
       prefix,
       renderList(
-        asSortedArray(rules + default)
+        asSortedArray(default + rules)
       ),
     ]);
     std.join('\n', lines),

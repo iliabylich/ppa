@@ -12,14 +12,12 @@ configure(
     'unzip',
   ],
   source={
-    type: 'git',
+    type: 'release',
     url: 'https://github.com/ryanoasis/nerd-fonts.git',
     rev: 'v' + version,
   },
-  scripts=[],
   dependencies=[],
   rules={
-    '%': ['dh $@'],
     override_dh_auto_build: [
       'wget https://github.com/ryanoasis/nerd-fonts/releases/download/v' + version + '/AdwaitaMono.zip',
       'unzip -o AdwaitaMono.zip',

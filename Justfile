@@ -4,6 +4,7 @@ default:
 clean:
     rm -f *.deb
     rm -rf deb-latest
+    rm -rf tmp
 
 container-rebuild:
     podman image rm -f ppa-builder
@@ -16,7 +17,7 @@ _jsonnet config action:
     jsonnet {{config}} --ext-str timestamp=$(date +%s) --tla-str action={{action}} -S
 
 build config:
-    podman run --rm -t -v "$PWD:/shared" --entrypoint bash ppa-builder -c "$(just render {{config}}) | bash"
+    podman run --rm -t -v "$PWD:/shared" --entrypoint bash ppa-builder -c "$(just render {{config}})"
 
 render config:
     @just _jsonnet {{config}} render
@@ -36,7 +37,7 @@ unpack debfile:
     dpkg-deb -R {{debfile}} tmp
 
 shellcheck:
-    shellcheck -x **/*.sh
+    shellcheck -x $(git ls-files '*.sh')
 
 check-updates:
     #!/usr/bin/env bash

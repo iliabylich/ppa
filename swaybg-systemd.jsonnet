@@ -4,12 +4,10 @@ configure(
   file=std.thisFile,
   name='swaybg-systemd',
   description='Systemd service file for swaybg',
-  arch='amd64',
-  version='1.0.0',
+  version='1.0.1',
   source={ type: 'none' },
-  dependencies=[],
+  dependencies=['swaybg'],
   rules={
-    '%': ['dh $@'],
     override_dh_auto_configure: ['@true'],
     override_dh_auto_build: ['@true'],
     override_dh_auto_install: [

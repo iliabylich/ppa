@@ -8,18 +8,14 @@ configure(
   file=std.thisFile,
   name='hnparser',
   description='HN parser',
-  arch='amd64',
   version=version,
-  install=[],
   source={
-    type: 'git',
+    type: 'release',
     url: 'https://github.com/iliabylich/hn-parser.git',
     rev: tag,
   },
-  scripts=[],
   dependencies=['${shlibs:Depends}'],
   rules={
-    '%': ['dh $@'],
     override_dh_auto_build: [
       'wget ' + releaseUrl + '/hnparser -O hnparser',
       'wget ' + releaseUrl + '/hnparser.service -O hnparser.service',

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-set eux
+set -euxo pipefail
 
-parallel -j $(nproc) fontforge -script font-patcher --variable-width-glyphs -q -c {} -out ./patched &> /dev/null ::: extras/otf/*.otf
+parallel --halt now,fail=1 -j "$(nproc)" fontforge -script font-patcher --variable-width-glyphs -q -c {} -out ./patched &> /dev/null ::: extras/otf/*.otf

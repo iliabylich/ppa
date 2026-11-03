@@ -8,18 +8,15 @@ configure(
   file=std.thisFile,
   name='kb-mod-monitor',
   description='Tiny Linux daemon that watches system input devices and exposes {Caps,Num} Lock state changes over a UNIX socket',
-  arch='amd64',
   version=version,
   install=['libxkbcommon0'],
   source={
-    type: 'git',
+    type: 'release',
     url: 'https://github.com/iliabylich/kb-mod-monitor.git',
     rev: tag,
   },
-  scripts=[],
   dependencies=['${shlibs:Depends}'],
   rules={
-    '%': ['dh $@'],
     override_dh_auto_build: [
       'wget ' + releaseUrl + '/kb-mod-monitor -O kb-mod-monitor',
       'wget ' + releaseUrl + '/kb-mod-monitor.service -O kb-mod-monitor.service',

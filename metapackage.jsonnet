@@ -4,11 +4,8 @@ configure(
   file=std.thisFile,
   name='metapackage',
   description='Meta-package that depends on all packages that I use',
-  arch='amd64',
   version='0.0.' + std.extVar('timestamp'),
-  install=[],
   source={ type: 'none' },
-  scripts=[],
   dependencies=[
     // Gnome
     'gnome-system-monitor',
@@ -183,7 +180,5 @@ configure(
     'mpclipboard-client',
     'tray-mon',
   ],
-  rules={
-    '%': ['dh $@'],
-  },
+  rules={},
 )
